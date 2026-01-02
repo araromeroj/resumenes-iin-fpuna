@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "308bb6f116f3caf5",
+        "id": "98c56a0a97cd0de5",
         "type": "tabs",
         "children": [
           {
-            "id": "c6247c92794c2cb7",
+            "id": "d7109c22b8e4eecf",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "ejemplo de ecuación diferencial"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de ejemplo de ecuación diferencial"
+              "title": "Enlaces entrantes de README"
             }
           },
           {
@@ -111,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de ejemplo de ecuación diferencial"
+              "title": "Enlaces salientes de README"
             }
           },
           {
@@ -154,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de ejemplo de ecuación diferencial"
+              "title": "Esquema de README"
             }
           },
           {
@@ -192,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48d79d420377a052",
+  "active": "69d810c3a88bc2a7",
   "lastOpenFiles": [
+    "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png",
     "04 - Cuarto Semestre/Cálculo III/c3-multimedia",
-    "README.md",
-    "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png"
+    "README.md"
   ]
 }
