@@ -13,24 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Cuarto Semestre/Cálculo III/C3.2 - ED Ordinarias.md",
+                "file": "04 - Cuarto Semestre/Cálculo III/C3.1 - Ecuaciones Diferenciales.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C3.2 - ED Ordinarias"
+              "title": "C3.1 - Ecuaciones Diferenciales"
             }
           },
           {
-            "id": "f3cbf3860901af28",
+            "id": "961f53c6cfdc2d61",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Atajos y más de Obsidian/atajos.png"
+                "file": "Atajos y más de Obsidian/Obsidian.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "atajos"
+              "icon": "lucide-file",
+              "title": "Obsidian"
             }
           }
         ],
@@ -91,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "74f4b28845a7280a",
@@ -207,14 +209,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48d79d420377a052",
+  "active": "961f53c6cfdc2d61",
   "lastOpenFiles": [
-    "Atajos y más de Obsidian/Obsidian.md",
-    "Atajos y más de Obsidian/recursos",
     "Atajos y más de Obsidian/atajos.png",
-    "04 - Cuarto Semestre/Cálculo III/C3.2 - ED Ordinarias.md",
-    "Atajos y más de Obsidian",
+    "Atajos y más de Obsidian/Obsidian.md",
     "04 - Cuarto Semestre/Cálculo III/C3.1 - Ecuaciones Diferenciales.md",
+    "04 - Cuarto Semestre/Cálculo III/C3.2 - ED Ordinarias.md",
+    "Atajos y más de Obsidian/recursos",
+    "Atajos y más de Obsidian",
     "04 - Cuarto Semestre/Cálculo III/C3.3 - ED Lineales.md",
     "04 - Cuarto Semestre/Cálculo III/C3.4 - ED Parciales.md",
     "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png",
