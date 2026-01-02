@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "98c56a0a97cd0de5",
+        "id": "44f19d0f0d97a156",
         "type": "tabs",
         "children": [
           {
-            "id": "d7109c22b8e4eecf",
+            "id": "cab814fbb2edf442",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -194,10 +194,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "69d810c3a88bc2a7",
+  "active": "cab814fbb2edf442",
   "lastOpenFiles": [
+    "04 - Cuarto Semestre/00 - Horario de 4to.md",
+    "04 - Cuarto Semestre/Cálculo III/C3.3 - ED Lineales.md",
+    "04 - Cuarto Semestre/Cálculo III/C3.2 - ED Ordinarias.md",
+    "04 - Cuarto Semestre/Cálculo III/C3.1 - Ecuaciones Diferenciales.md",
+    "README.md",
     "04 - Cuarto Semestre/Cálculo III/c3-multimedia/ejemplo de ecuación diferencial.png",
-    "04 - Cuarto Semestre/Cálculo III/c3-multimedia",
-    "README.md"
+    "04 - Cuarto Semestre/Cálculo III/c3-multimedia"
   ]
 }
