@@ -1,0 +1,2 @@
+## Atajos
+![[atajos.png]]
