@@ -1,4 +1,4 @@
-## Atajos
+## Destacados
 
 >[!quote]
 
@@ -161,3 +161,26 @@
 
 
 ---
+## Enlaces y Organización
+
+- **Enlaces Internos**: Usa `[[Nombre de la nota]]` para enlazarlas.
+- **Alias**: `[[Nombre de la nota | Nombre que quiero que se vea]]`
+- **Enlaces a bloques**: `[Nombre de la nota #^identificador]` pero con doble corchete.
+- **Incrustar contenido**: `![[nota]]` para ver el contenido de esa nota dentro de la nota actual.
+- **Tags**: `#etiqueta`
+
+
+---
+
+## Atajos de teclado
+### Navegación y Archivos
+**Ctrl + O**: Apertura rápida.
+**Ctrl + N**: Nueva nota.
+**Ctrl + W**: Cerrar nota actual.
+**Ctrl + E**: Cambiar entre modo Lectura y modo Edición.
+
+### Edición y Vista
+**Ctrl + Enter**: marca/desmarca el checklist si estás en una linea. Si no, crea un enlace.
+**Ctrl + F / Ctrl + H**: Buscar / Reemplazar dentro de la nota.
+**Ctrl + Shift + F**: Búsqueda global en toda la bóveda.
+**Ctrl + P**: Paleta de comandos en caso de que te olvides de un atajo.
