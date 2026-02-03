@@ -1,22 +1,22 @@
 
-| **Día**     | **Profesor**    | **Materia**                           | **Hora**      | **SECCION** |
-| ----------- | --------------- | ------------------------------------- | ------------- | ----------- |
-| *Lunes*     |                 | Probabilidad y Estadística            | 10:00 - 12:15 |             |
-|             | Gerardo Riveros | Redes de Computadoras I               | 14:00 - 17:00 |             |
-| *Martes*    | Osvaldo Vega    | Cálculo III                           | 10:00 - 12:15 |             |
-|             | Luis Moré       | Algoritmos y Estructuras de Datos III | 15:00 - 17:15 |             |
-|             | A CONFIRMAR     | Física II                             | 17:30 - 19:00 |             |
-|             | Estela Mary     | Técnicas de Organización y Métodos    | 20:45 - 22:15 |             |
-| *Miércoles* |                 | Redes de Computadoras I               | 14:00 - 16:15 |             |
-|             |                 | Economía y Finanzas                   | 16:30 - 18:45 |             |
-|             |                 |                                       |               |             |
-| *Jueves*    | Osvaldo Vega    | Cálculo III                           | 10:00 - 12:15 |             |
-|             |                 | Economía y Finanzas                   | 17:30 - 19:00 |             |
-|             | Estela Mary     | Técnicas de Organización y Métodos    | 19:00 - 20:30 |             |
-| *Viernes*   | Luis Moré       | Algoritmos y Estructuras de Datos III | 14:15 - 17:15 |             |
-|             | A CONFIRMAR     | Física II                             | 17:30 - 19:45 |             |
-|             |                 | Probabilidad y Estadística            | 10:00 - 12-15 |             |
-|             |                 |                                       |               |             |
+| **Día**     | **Profesor** | **Materia**                           | **Hora**      | **SECCION** |
+| ----------- | ------------ | ------------------------------------- | ------------- | ----------- |
+| *Lunes*     | FANTASMA     | Probabilidad y Estadística            | 10:00 - 12:15 |             |
+|             | FANTASMA     | Redes de Computadoras I               | 14:00 - 17:00 |             |
+| *Martes*    | Osvaldo Vega | Cálculo III                           | 10:00 - 12:15 |             |
+|             | Luis Moré    | Algoritmos y Estructuras de Datos III | 15:00 - 17:15 |             |
+|             | FANTASMA     | Física II                             | 17:30 - 19:00 |             |
+|             | Estela Mary  | Técnicas de Organización y Métodos    | 20:45 - 22:15 |             |
+| *Miércoles* |              | Redes de Computadoras I               | 14:00 - 16:15 |             |
+|             | FANTASMA     | Economía y Finanzas                   | 16:30 - 18:45 |             |
+|             |              |                                       |               |             |
+| *Jueves*    | Osvaldo Vega | Cálculo III                           | 10:00 - 12:15 |             |
+|             |              | Economía y Finanzas                   | 17:30 - 19:00 |             |
+|             | Estela Mary  | Técnicas de Organización y Métodos    | 19:00 - 20:30 |             |
+| *Viernes*   | Luis Moré    | Algoritmos y Estructuras de Datos III | 14:15 - 17:15 |             |
+|             | A CONFIRMAR  | Física II                             | 17:30 - 19:45 |             |
+|             |              | Probabilidad y Estadística            | 10:00 - 12-15 |             |
+|             |              |                                       |               |             |
 
 ## Primer Parcial
 
