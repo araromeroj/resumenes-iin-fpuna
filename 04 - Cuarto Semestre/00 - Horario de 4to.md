@@ -1,20 +1,22 @@
 
-| **Día**     | **Profesor**                  | **Materia**                           | **Hora**      | **Aula** |
-| ----------- | ----------------------------- | ------------------------------------- | ------------- | -------- |
-| *Lunes*     | Gerardo Riveros               | Redes de Computadoras I               | 14:00 - 17:00 |          |
-|             | Luis Ojeda o Ascención Vera   | Probabilidades y Estadística          | 17:30 - 20:30 |          |
-| *Martes*    | Osvaldo Vega                  | Cálculo III                           | 10:00 - 12:15 |          |
-|             | Luis Moré                     | Algoritmos y Estructuras de Datos III | 15:00 - 17:15 |          |
-|             | Juan Fatecha o Crispín Vargas | Física II                             | 17:30 - 19:00 |          |
-|             | Estela Mary                   | Técnicas de Organización y Métodos    | 20:45 - 22:15 |          |
-| *Miércoles* | Gerardo Riveros               | Redes de Computadoras I               | 14:00 - 16:15 |          |
-|             | Julio Laspina                 | Economía y Finanzas                   | 16:30 - 18:45 |          |
-|             | Luis Ojeda o Ascención Vera   | Probabilidades y Estadística          | 19:15 - 20:45 |          |
-| *Jueves*    | Osvaldo Vega                  | Cálculo III                           | 10:00 - 12:15 |          |
-|             | Julio Laspina                 | Economía y Finanzas                   | 17:30 - 19:00 |          |
-|             | Estela Mary                   | Técnicas de Organización y Métodos    | 19:00 - 20:30 |          |
-| *Viernes*   | Luis Moré                     | Algoritmos y Estructuras de Datos III | 14:15 - 17:15 |          |
-|             | Juan Fatecha o Crispín Vargas | Física II                             | 17:30 - 19:45 |          |
+| **Día**     | **Profesor**                  | **Materia**                           | **Hora**      | **SECCION** |
+| ----------- | ----------------------------- | ------------------------------------- | ------------- | ----------- |
+| *Lunes*     | Gerardo Riveros               | Redes de Computadoras I               | 14:00 - 17:00 |             |
+|             | Luis Ojeda o Ascención Vera   | Probabilidades y Estadística          | 17:30 - 20:30 |             |
+| *Martes*    | Osvaldo Vega                  | Cálculo III                           | 10:00 - 12:15 |             |
+|             | Luis Moré                     | Algoritmos y Estructuras de Datos III | 15:00 - 17:15 |             |
+|             | Juan Fatecha o Crispín Vargas | Física II                             | 17:30 - 19:00 |             |
+|             | Estela Mary                   | Técnicas de Organización y Métodos    | 20:45 - 22:15 |             |
+| *Miércoles* | Gerardo Riveros               | Redes de Computadoras I               | 14:00 - 16:15 |             |
+|             | Julio Laspina                 | Economía y Finanzas                   | 16:30 - 18:45 |             |
+|             | Luis Ojeda o Ascención Vera   | Probabilidades y Estadística          | 19:15 - 20:45 |             |
+| *Jueves*    | Osvaldo Vega                  | Cálculo III                           | 10:00 - 12:15 |             |
+|             | Julio Laspina                 | Economía y Finanzas                   | 17:30 - 19:00 |             |
+|             | Estela Mary                   | Técnicas de Organización y Métodos    | 19:00 - 20:30 |             |
+| *Viernes*   | Luis Moré                     | Algoritmos y Estructuras de Datos III | 14:15 - 17:15 |             |
+|             | Juan Fatecha o Crispín Vargas | Física II                             | 17:30 - 19:45 |             |
+|             |                               |                                       |               |             |
+|             |                               |                                       |               |             |
 
 ## Primer Parcial
 
@@ -60,3 +62,14 @@
 | *Cálculo III*                           | Martes    | 09/07/26  | 08:00    |          |
 | *Probabilidades y Estadística*          | Jueves    | 09/07/26  | 18:00    |          |
 | *Redes de Computadoras I*               | Lunes     | 29/07/26  | 15:00    |          |
+
+## SECCIONES
+| **Materia**                             | **OPCION 1** | **OPCIÓN 2**         |
+| --------------------------------------- | ------------ | -------------------- |
+| Técnicas de Organización y Métodos      |              |                      |
+| *Algoritmos y Estructuras de Datos III* | TR           | Sufriré con Cappo TQ |
+| *Física II* (si o si)                   | TS           |                      |
+| *Economía y Finanzas*                   | TR           |                      |
+| *Cálculo III*                           | MJ           | M Pezoa              |
+| *Probabilidades y Estadística*          | TQ           |                      |
+| *Redes de Computadoras I*               | TR           | Sufriré con Dávalos  |
