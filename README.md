@@ -1,3 +1,3 @@
 # resumenes-iin-fpuna
 Cuaderno digital
-notas y resumenes de cada semestre para no morir en el intento :)
+notas y resúmenes de cada semestre para no morir en el intento :)
