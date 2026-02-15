@@ -1,20 +1,20 @@
 
-| **Día**     | **Profesor**       | **Materia**                           | **Hora**      | **Aula** |
-| ----------- | ------------------ | ------------------------------------- | ------------- | -------- |
-| *Lunes*     | FANTASMA - M/K     | Probabilidad y Estadística            | 10:00 - 12:15 |          |
-|             | FANTASMA - T/S     | Redes de Computadoras I               | 14:00 - 17:00 |          |
-| *Martes*    | Osvaldo Vega - MJ  | Cálculo III                           | 10:00 - 12:15 |          |
-|             | Luis Moré - T/R    | Algoritmos y Estructuras de Datos III | 15:00 - 17:15 |          |
-|             | FANTASMA - T/U     | Física II                             | 17:30 - 19:00 |          |
-|             | Estela Mary - N/A  | Técnicas de Organización y Métodos    | 20:45 - 22:15 |          |
-| *Miércoles* | FANTASMA - T/S     | Redes de Computadoras I               | 14:00 - 16:15 |          |
-|             | FANTASMA -         | Economía y Finanzas                   | 16:30 - 18:45 |          |
-| *Jueves*    | Osvaldo Vega - M/J | Cálculo III                           | 10:00 - 12:15 |          |
-|             | FANTASMA -         | Economía y Finanzas                   | 17:30 - 19:00 |          |
-|             | Estela Mary - N/A  | Técnicas de Organización y Métodos    | 19:00 - 20:30 |          |
-| *Viernes*   | Luis Moré - T/Q    | Algoritmos y Estructuras de Datos III | 14:15 - 17:15 |          |
-|             | FANTASMA - T/U     | Física II                             | 17:30 - 19:45 |          |
-|             | FANTASMA - M/K     | Probabilidad y Estadística            | 10:00 - 12-15 |          |
+| **Día**     | **Profesor**          | **Materia**                           | **Hora**      | **Aula** |
+| ----------- | --------------------- | ------------------------------------- | ------------- | -------- |
+| *Lunes*     | FANTASMA - M/K        | Probabilidad y Estadística            | 10:00 - 12:15 |          |
+|             | Enrique Dávalos - T/Q | Redes de Computadoras I               | 14:00 - 17:00 |          |
+| *Martes*    | Osvaldo Vega - MJ     | Cálculo III                           | 10:00 - 12:15 |          |
+|             | Luis Moré - T/R       | Algoritmos y Estructuras de Datos III | 15:00 - 17:15 |          |
+|             | FANTASMA - T/U        | Física II                             | 17:30 - 19:45 |          |
+|             | Estela Mary - N/A     | Técnicas de Organización y Métodos    | 20:45 - 22:15 |          |
+| *Miércoles* | Enrique Dávalos - T/Q | Redes de Computadoras I               | 14:00 - 16:15 |          |
+|             | FANTASMA - T/T        | Economía y Finanzas                   | 16:30 - 18:45 |          |
+| *Jueves*    | Osvaldo Vega - M/J    | Cálculo III                           | 10:00 - 12:15 |          |
+|             | FANTASMA - T/T        | Economía y Finanzas                   | 17:30 - 19:00 |          |
+|             | Estela Mary - N/A     | Técnicas de Organización y Métodos    | 19:00 - 20:30 |          |
+| *Viernes*   | FANTASMA - M/K        | Probabilidad y Estadística            | 10:00 - 12-15 |          |
+|             | Luis Moré - T/Q       | Algoritmos y Estructuras de Datos III | 14:15 - 17:15 |          |
+|             | FANTASMA - T/U        | Física II                             | 17:30 - 19:45 |          |
 
 
 ## Primer Parcial
