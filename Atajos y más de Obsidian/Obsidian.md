@@ -32,6 +32,8 @@
 
 >[!attention]
 
+>[!bug]
+
 >[!failure]
 
 >[!fail]
@@ -41,8 +43,6 @@
 >[!error]
 
 >[!danger]
-
->[!bug]
 
 >[!cite]
 
