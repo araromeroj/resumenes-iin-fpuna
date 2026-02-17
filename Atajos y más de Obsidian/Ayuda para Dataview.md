@@ -10,6 +10,30 @@ WHERE tipo = "materia" AND parcial_1 >= date(today)
 SORT parcial_1 ASC
 ```
 
+### Clases de Hoy
+
+```sql
+```dataview
+TABLE 
+    split(replace(h, dateformat(date(today), "cccc"), ""), "-")[0] as "Inicio",
+    aula as "Aula"
+FROM "4to Semestre/Materias"
+FLATTEN horario as h
+WHERE contains(h, dateformat(date(today), "cccc"))
+```
+
+### Exámenes en los próximos {x} días
+
+```sql
+```dataview
+TABLE 
+    parcial_1 as "Fecha",
+    (parcial_1 - date(today)) as "Faltan"
+FROM ""
+WHERE parcial_1 - date(today) <= dur(15 days) AND parcial_1 >= date(today)
+SORT parcial_1 ASC
+```
+
 ### Muestra un mensaje si falta menos de 7 días para una fecha
 
 ```sql
@@ -22,6 +46,7 @@ TABLE
 ```
 
 ## Calendario
+
 ```sql
 ```dataview
 CALENDAR parcial_1
@@ -37,6 +62,26 @@ WHERE tipo = "materia"
     
 - **CALENDAR:** Para visualizar fechas de exámenes en un calendario.
 
+### Tareas Pendientes
+Muestra todas las tareas
+```sql
+```dataview
+TABLE 
+    vencimiento as "Vence",
+    choice(vencimiento < date(today), "🔴 VENCIDO", "🟢 A tiempo") as "Estado"
+FROM "Facultad"
+WHERE !completed AND vencimiento
+SORT vencimiento ASC
+```
+
+Muestra todas las tareas pendientes por hacer
+```sql
+```dataview
+TASK
+FROM ""
+WHERE !completed
+GROUP BY file.link
+```
 ### "Muéstrame solo lo que rindo en {mes}"
 
 ```sql
@@ -55,7 +100,6 @@ WHERE tipo = "materia"
 ````
 
 ### "Lista de materias que curso a la tarde (después de las 14:00)"
-
 
 ```sql
 ```dataview
