@@ -184,3 +184,13 @@
 **Ctrl + F / Ctrl + H**: Buscar / Reemplazar dentro de la nota.
 **Ctrl + Shift + F**: Búsqueda global en toda la bóveda.
 **Ctrl + P**: Paleta de comandos en caso de que te olvides de un atajo.
+
+## Templates
+
+>[!Important] Importante
+>Crear notas para cada plantilla dependiendo de lo que se desee
+>Siempre guardarlas en la carpeta _Plantillas
+
+- Ctrl + P
+- Insertar Plantilla
+- Elegir la plantilla correspondiente
