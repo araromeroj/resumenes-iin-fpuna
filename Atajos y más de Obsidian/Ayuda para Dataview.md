@@ -54,7 +54,8 @@ FROM ""
 WHERE tipo = "materia"
 ````
 
-### "Lista de materias que rindo a la tarde (después de las 14:00)"
+### "Lista de materias que curso a la tarde (después de las 14:00)"
+
 
 ```sql
 ```dataview
