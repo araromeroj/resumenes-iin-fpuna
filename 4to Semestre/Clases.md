@@ -3,9 +3,9 @@
 TABLE 
 	split(replace(h, "Lunes ", ""), "-")[0] as "Inicio",
 	split(replace(h, "Lunes ", ""), "-")[1] as "Fin"
-FROM "4to Semestre/Materias"
+FROM "_Materias"
 FLATTEN horario as h
-WHERE tipo = "materia" 
+WHERE tipo = "materia"
   AND contains(h, "Lunes")
 SORT split(h, " ")[1] ASC
 ```
@@ -15,7 +15,7 @@ SORT split(h, " ")[1] ASC
 TABLE
 	split(replace(h, "Martes ", ""), "-")[0] as "Inicio",
 	split(replace(h, "Martes ", ""), "-")[1] as "Fin"
-FROM "4to Semestre/Materias"
+FROM "_Materias"
 FLATTEN horario as h
 WHERE tipo = "materia" 
   AND contains(h, "Martes")
@@ -27,7 +27,7 @@ SORT split(h, " ")[1] ASC
 TABLE 
 	split(replace(h, "Miércoles ", ""), "-")[0] as "Inicio",
 	split(replace(h, "Miércoles ", ""), "-")[1] as "Fin"
-FROM "4to Semestre/Materias"
+FROM "_Materias"
 FLATTEN horario as h
 WHERE tipo = "materia" 
   AND contains(h, "Miércoles")
@@ -39,7 +39,7 @@ SORT split(h, " ")[1] ASC
 TABLE 
 	split(replace(h, "Jueves ", ""), "-")[0] as "Inicio",
 	split(replace(h, "Jueves ", ""), "-")[1] as "Fin"
-FROM "4to Semestre/Materias"
+FROM "_Materias"
 FLATTEN horario as h
 WHERE tipo = "materia" 
   AND contains(h, "Jueves")
@@ -51,7 +51,7 @@ SORT split(h, " ")[1] ASC
 TABLE 
 	split(replace(h, "Viernes ", ""), "-")[0] as "Inicio",
 	split(replace(h, "Viernes ", ""), "-")[1] as "Fin"
-FROM "4to Semestre/Materias"
+FROM "_Materias"
 FLATTEN horario as h
 WHERE tipo = "materia" 
   AND contains(h, "Viernes")
