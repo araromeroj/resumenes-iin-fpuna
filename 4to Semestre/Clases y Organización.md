@@ -1,4 +1,5 @@
-## Lunes
+## Horario
+### Lunes
 ```dataview
 TABLE 
 	split(replace(h, "Lunes ", ""), "-")[0] as "Inicio",
@@ -10,7 +11,7 @@ WHERE tipo = "materia"
 SORT split(h, " ")[1] ASC
 ```
 
-## Martes
+### Martes
 ```dataview
 TABLE
 	split(replace(h, "Martes ", ""), "-")[0] as "Inicio",
@@ -22,7 +23,7 @@ WHERE tipo = "materia"
 SORT split(h, " ")[1] ASC
 ```
 
-## Miércoles
+### Miércoles
 ```dataview
 TABLE 
 	split(replace(h, "Miércoles ", ""), "-")[0] as "Inicio",
@@ -34,7 +35,7 @@ WHERE tipo = "materia"
 SORT split(h, " ")[1] ASC
 ```
 
-## Jueves
+### Jueves
 ```dataview
 TABLE 
 	split(replace(h, "Jueves ", ""), "-")[0] as "Inicio",
@@ -46,7 +47,7 @@ WHERE tipo = "materia"
 SORT split(h, " ")[1] ASC
 ```
 
-## Viernes
+### Viernes
 ```dataview
 TABLE 
 	split(replace(h, "Viernes ", ""), "-")[0] as "Inicio",
@@ -56,5 +57,13 @@ FLATTEN horario as h
 WHERE tipo = "materia" 
   AND contains(h, "Viernes")
 SORT split(h, " ")[1] ASC
+```
+
+## Profes y Secciones
+
+```dataview
+TABLE profesor, seccion
+FROM "_Materias"
+WHERE tipo = "materia"
 ```
 
