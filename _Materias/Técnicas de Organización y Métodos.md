@@ -10,6 +10,6 @@ parcial_2: 2026-06-04T19:30:00
 final_1: 2026-06-25T19:30:00
 final_2: 2026-07-09T19:30:00
 semestre: 5
-Aula: A53
+aula: A53
 nota: Clase sábado 28/03 y 23/05
 ---

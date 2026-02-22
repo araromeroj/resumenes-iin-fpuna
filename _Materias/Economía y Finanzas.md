@@ -10,5 +10,5 @@ parcial_2: 2026-05-27T18:00:00
 final_1: 2026-06-17T18:00:00
 final_2: 2026-07-01T18:00:00
 semestre: 4
-Aula: A CONFIRMAR
+aula: A CONFIRMAR
 ---
