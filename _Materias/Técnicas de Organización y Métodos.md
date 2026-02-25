@@ -13,7 +13,6 @@ semestre: 5
 aula: A53
 nota: Clase sábado 28/03 y 23/05
 ---
-
 ## Índice
 
 ```dataview
