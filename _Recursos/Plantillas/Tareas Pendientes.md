@@ -1,7 +1,9 @@
+## Pendientes
 
+```sql
 ```dataview
 TASK
-FROM "4to Semestre"
+FROM "Carpeta"
 WHERE !completed and file.name != this.file.name
 GROUP BY file.link
 ```
