@@ -1,6 +1,6 @@
 ---
 tipo: materia
-profesor: FANTASMA
+profesor: Darío Zárate
 seccion: TT
 horario:
   - Miércoles 16:30-18:45
