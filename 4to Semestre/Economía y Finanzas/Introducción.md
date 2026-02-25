@@ -3,4 +3,3 @@
 >[!Info] Definición
 >La economía es el estudio de la forma en que las sociedades deciden que van a producir, como y para quién con los recursos escasos y limitados.
 
-[[3. Modelos de Referencia]]
