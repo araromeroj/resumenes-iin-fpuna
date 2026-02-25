@@ -1,5 +1,11 @@
 ## Por Hacer
 - [ ] to-do
+```dataview
+TASK
+FROM "4to Semestre"
+WHERE !completed
+GROUP BY file.link
+```
 ## Sin terminar
 
 - [/] [[1. Clasificación de Redes]]
