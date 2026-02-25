@@ -12,3 +12,11 @@ final_2: 2026-07-06T15:00:00
 semestre: 4
 aula: A51
 ---
+
+## Índice
+
+```dataview
+LIST
+FROM "4to Semestre/Redes de Computadoras I"
+SORT file.name ASC
+```

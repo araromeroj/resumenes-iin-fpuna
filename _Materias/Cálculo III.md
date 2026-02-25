@@ -12,3 +12,11 @@ final_2: 2026-07-14T08:00:00
 semestre: 4
 aula: A59
 ---
+
+## Índice
+
+```dataview
+LIST
+FROM "4to Semestre/Cálculo III"
+SORT file.name ASC
+```
