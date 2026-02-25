@@ -1,3 +1,12 @@
+## Pendientes
+```sql
+```dataview
+TASK
+FROM "4to Semestre"
+WHERE !completed
+GROUP BY file.link
+```
+
 ## Tablas
 
 ```sql

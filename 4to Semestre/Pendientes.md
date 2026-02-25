@@ -1,6 +1,5 @@
 ## Por Hacer
 - [ ] to-do
-
 ## Sin terminar
 
 - [/] [[1. Clasificación de Redes]]
