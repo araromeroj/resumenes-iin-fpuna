@@ -17,3 +17,8 @@ También denominadas funciones administrativas
 
 Organigrama: representación gráfica de la estructura organizacional de una empresa. (Unidad 4)
 
+## Teoría de la contingencia de la administración
+
+>[!note] Contingencia
+>Condición que influye en cómo debe administrarse una organización. Depende del tamaño de la empresa.
+
