@@ -12,3 +12,12 @@ final_2: 2026-07-15T08:00:00
 semestre: 4
 aula: A56
 ---
+
+## Índice
+
+```dataview
+LIST
+FROM "4to Semestre/Probabilidades y Estadística"
+SORT file.name ASC
+```
+

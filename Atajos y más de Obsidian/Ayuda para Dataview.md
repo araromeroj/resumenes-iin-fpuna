@@ -1,3 +1,37 @@
+## Pendientes
+```sql
+```dataview
+TASK
+FROM "4to Semestre"
+WHERE !completed
+GROUP BY file.link
+```
+
+## Índices
+
+### Índice de materia
+
+Muestra las notas de una carpeta de manera ascendente de acuerdo al nombre (crea un enlace)
+
+```sql
+```dataview
+LIST
+FROM "Carpeta"
+SORT file.name ASC
+```
+
+### Índice de Estado o Etiquetas
+
+Muestra de qué trata cada nota o en qué estado se encuentra
+
+```sql
+```dataview
+TABLE tags AS "Etiquetas", estatus AS "Estado"
+FROM "Nombre de tu Carpeta"
+WHERE file.name != this.file.name
+SORT file.name ASC
+```
+
 ## Tablas
 
 ```sql

@@ -13,3 +13,11 @@ semestre: 5
 aula: A53
 nota: Clase sábado 28/03 y 23/05
 ---
+## Índice
+
+```dataview
+LIST
+FROM "4to Semestre/Técnicas de Organización y Métodos"
+SORT file.name ASC
+```
+

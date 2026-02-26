@@ -13,3 +13,12 @@ nota: Final 1 en segunda oportunidad, Final 2 sí o sí
 semestre: 4
 aula: A57
 ---
+
+## Índice
+
+```dataview
+LIST
+FROM "4to Semestre/Física II"
+SORT file.name ASC
+```
+
