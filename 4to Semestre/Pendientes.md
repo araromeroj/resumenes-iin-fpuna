@@ -3,7 +3,7 @@
 TASK
 FROM "4to Semestre"
 WHERE !completed and file.name != this.file.name and status = " "
-GROUP BY file.link
+GROUP BY file.folder
 ```
 
 ## Resúmenes Pendientes
@@ -12,7 +12,7 @@ GROUP BY file.link
 TASK
 FROM "4to Semestre"
 WHERE !completed and file.name != this.file.name and status = "<"
-GROUP BY file.link
+GROUP BY file.folder
 ```
 
 ## Completadas
@@ -20,5 +20,5 @@ GROUP BY file.link
 TASK
 FROM "4to Semestre"
 WHERE completed and file.name != this.file.name
-GROUP BY file.link
+GROUP BY file.folder
 ```
