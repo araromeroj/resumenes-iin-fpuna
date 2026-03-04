@@ -3,7 +3,7 @@
 TASK
 FROM "4to Semestre"
 WHERE !completed and file.name != this.file.name and status = " "
-GROUP BY file.folder
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
 ```
 
 ## Resúmenes Pendientes
@@ -12,7 +12,7 @@ GROUP BY file.folder
 TASK
 FROM "4to Semestre"
 WHERE !completed and file.name != this.file.name and status = "<"
-GROUP BY file.folder
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
 ```
 
 ## Completadas
@@ -20,5 +20,5 @@ GROUP BY file.folder
 TASK
 FROM "4to Semestre"
 WHERE completed and file.name != this.file.name
-GROUP BY file.folder
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
 ```
