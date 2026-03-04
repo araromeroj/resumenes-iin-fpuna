@@ -15,6 +15,15 @@ WHERE !completed and file.name != this.file.name and status = "<"
 GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
 ```
 
+## Bookmarks
+
+```dataview
+TASK
+FROM "4to Semestre"
+WHERE !completed and file.name != this.file.name and status = "b"
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
+```
+
 ## Completadas
 ```dataview
 TASK
