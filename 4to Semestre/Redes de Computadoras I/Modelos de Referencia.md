@@ -22,3 +22,10 @@
 - El proceso se invierte: La capa física de la otra máquina recibe las señales y las vuelve a convertir en bits.
 - Cada capa superior elimina la cabecera que le corresponde, verifica que no haya errores y entrega el contenido limpio a la capa que tiene arriba.
 - Finalmente, la capa de transporte vuelve a unir los segmentos en el orden correcto y la capa de aplicación le entrega el mensaje original al usuario receptor.
+
+## Modelo TCP/IP
+
+- [<] Modelo TCP/IP CONCEPTO
+## Modelo Híbrido
+
+- [<] Modelo Híbrido CONCEPTO

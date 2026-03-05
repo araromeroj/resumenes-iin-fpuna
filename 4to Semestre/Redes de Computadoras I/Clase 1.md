@@ -142,7 +142,7 @@ La principal función de un punto de acceso (AP) en una red inalámbrica 802.11 
 
 ### Interredes (Internetworks o Red de Redes)
 
-Conjunto de redes heterogéneas interconectadas.
+==Conjunto de redes heterogéneas interconectadas mediante pasarelas o routers para formar una unidad mayor.==
 
 - **Puertas de enlace (Gateways):** Máquinas que permiten la comunicación entre redes incompatibles.
     

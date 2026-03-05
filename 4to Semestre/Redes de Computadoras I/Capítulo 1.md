@@ -1,3 +1,4 @@
+#RedesTest1
 Este capítulo presenta una introducción exhaustiva a las redes de computadoras, abarcando desde sus aplicaciones básicas hasta los modelos teóricos que rigen su funcionamiento.
 
 ### 1.1 Usos de las redes informáticas
@@ -5,8 +6,8 @@ Este capítulo presenta una introducción exhaustiva a las redes de computadoras
 >[!note] Red Informática
 >Una **red informática** es una colección de dispositivos autónomos interconectados que pueden intercambiar información.
 
-Tradicionalmente, la interacción se basaba en el **modelo cliente-servidor**, donde un cliente solicita datos y un **servidor** los aloja y responde. Otro modelo popular es la [[1. Introducción#Comunicación de Persona a Persona (Peer-to-Peer)|comunicación entre iguales (P2P)]], donde no hay una división fija y cada usuario puede comunicarse con cualquier otro del grupo. En el ámbito del entretenimiento, destaca la **IPTV (Televisión IP)**, que entrega contenidos mediante protocolos de Internet.
-Finalmente, la [[1. Introducción#Internet de los Objetos (IoT)|revolución del IoT (Internet de los Objetos)]] está conectando a la red casi cualquier dispositivo electrónico cotidiano, desde contadores de energía hasta electrodomésticos.
+Tradicionalmente, la interacción se basaba en el **modelo cliente-servidor**, donde un cliente solicita datos y un **servidor** los aloja y responde. Otro modelo popular es la [[Clase 1#Comunicación de Persona a Persona (Peer-to-Peer)|comunicación entre iguales (P2P)]], donde no hay una división fija y cada usuario puede comunicarse con cualquier otro del grupo. En el ámbito del entretenimiento, destaca la **IPTV (Televisión IP)**, que entrega contenidos mediante protocolos de Internet.
+Finalmente, la [[Clase 1#Internet de los Objetos (IoT)|revolución del IoT (Internet de los Objetos)]] está conectando a la red casi cualquier dispositivo electrónico cotidiano, desde contadores de energía hasta electrodomésticos.
 
 ### 1.2 Tipos de redes informáticas
 
@@ -21,11 +22,11 @@ Las redes se categorizan según su función y el servicio que prestan:
 
 La clasificación por escala geográfica es fundamental para entender la tecnología empleada:
 
-- [[1. Introducción#PAN (Personal Area Network)|PAN (Red de Área Personal)]]: Dispositivos que se comunican en el rango de una persona, comúnmente usando **Bluetooth**.
-- [[1. Introducción#LAN (Local Area Network)|LAN (Red de Área Local):]] Redes privadas dentro de un edificio; la tecnología más común es **Ethernet (IEEE 802.3)**, que utiliza **conmutadores (switches)** para retransmitir paquetes.
-- [[1. Introducción#MAN (Metropolitan Area Network)|MAN (Red de Área Metropolitana)]]: Cubre una ciudad entera, siendo las redes de televisión por cable el ejemplo más conocido.
-- [[1. Introducción#WAN (Wide Area Network)|WAN (Red de Área Extensa)]]: Abarca países o continentes; utiliza **líneas de transmisión** y **elementos de conmutación** llamados **routers**.
-- [[1. Introducción#Interredes (Internetworks o Red de Redes)|Internetworks]]: Un conjunto de redes incompatibles interconectadas; el dispositivo que las une y traduce se llama **pasarela (gateway)**.
+- [[Clase 1#PAN (Personal Area Network)|PAN (Red de Área Personal)]]: Dispositivos que se comunican en el rango de una persona, comúnmente usando **Bluetooth**.
+- [[Clase 1#LAN (Local Area Network)|LAN (Red de Área Local):]] Redes privadas dentro de un edificio; la tecnología más común es **Ethernet (IEEE 802.3)**, que utiliza **conmutadores (switches)** para retransmitir paquetes.
+- [[Clase 1#MAN (Metropolitan Area Network)|MAN (Red de Área Metropolitana)]]: Cubre una ciudad entera, siendo las redes de televisión por cable el ejemplo más conocido.
+- [[Clase 1#WAN (Wide Area Network)|WAN (Red de Área Extensa)]]: Abarca países o continentes; utiliza **líneas de transmisión** y **elementos de conmutación** llamados **routers**.
+- [[Clase 1#Interredes (Internetworks o Red de Redes)|Internetworks]]: Un conjunto de redes incompatibles interconectadas; el dispositivo que las une y traduce se llama **pasarela (gateway)**.
 
 ### 1.4 Ejemplos de redes
 
@@ -55,3 +56,8 @@ Los estándares son vitales para la **interoperabilidad** entre fabricantes. Las
 ### 1.9 Unidades métricas
 
 En redes, se utilizan prefijos métricos (Kilo, Mega, Giga) basados en potencias de 10 para las velocidades de transmisión (ej. 1 Mbps = $10^6$ bits/seg). Sin embargo, para medir memoria o archivos, se utilizan potencias de 2 (ej. 1 KB = $2^{10}$ bytes), lo que suele generar confusión en la industria.
+
+---
+
+
+
