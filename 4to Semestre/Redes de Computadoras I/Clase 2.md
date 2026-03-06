@@ -11,3 +11,6 @@ Capítulo 1.5 del libro (6ta edición)
 
 - [ ] Control de flujo:
 - [ ] Congestión de datos:
+
+## Tareas pendientes
+- [<] Terminar PPT 2
