@@ -38,3 +38,5 @@ Ejemplo: nivel de satisfacción en la carrera (muy satisfecho, satisfecho, neutr
 Ejemplo: cantidad de materias que llevamos
 - Continuas: todas aquellas que pueden medirse
 Ejemplo: altura de los estudiantes
+
+- [ ] Ejercitario de estadística 
