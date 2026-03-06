@@ -1,6 +1,11 @@
 #RedesTest1
 Este capítulo presenta una introducción exhaustiva a las redes de computadoras, abarcando desde sus aplicaciones básicas hasta los modelos teóricos que rigen su funcionamiento.
 
+Algunos términos a saber:
+- [I] Internet: es una red de redes, es una interconexión entre redes.
+- [I] ISP: Internet Red Provider (Red Proveedora de Internet).
+- [I] IP (Protocolo de Internet): etiqueta numérica irrepetible que identifica un dispositivo conectado a una red que utiliza el protocolo IP. Existen IP públicas (IPv4) y privadas (IPv6)
+
 ### 1.1 Usos de las redes informáticas
 
 >[!note] Red Informática
@@ -83,4 +88,8 @@ En redes, se utilizan prefijos métricos (Kilo, Mega, Giga) basados en potencias
 ---
 
 
+#### Enlaces relacionados
 
+[[1. Usos de las Redes]]
+[[2. Tipos de Redes Informáticas]]
+[[3. Modelos de Referencia]]
