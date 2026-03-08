@@ -1,0 +1,39 @@
+/* Símbolos personalizados por nivel de viñeta */
+
+/* Configuración general para limpiar el estilo por defecto */
+.list-bullet:after {
+    background-color: transparent !important;
+    visibility: visible !important;
+}
+
+/* NIVEL 1 - Círculo sólido (Color principal) */
+.markdown-source-view.mod-cm6 .cm-list-1 .list-bullet:after,
+.markdown-reading-view ul > li > .list-bullet:after {
+    content: "●";
+    color: var(--text-accent);
+    font-size: 1.2em;
+}
+
+/* NIVEL 2 - Círculo hueco */
+.markdown-source-view.mod-cm6 .cm-list-2 .list-bullet:after,
+.markdown-reading-view ul > li > ul > li > .list-bullet:after {
+    content: "○";
+    color: var(--text-muted);
+    font-size: 1.1em;
+}
+
+/* NIVEL 3 - Cuadrado pequeño */
+.markdown-source-view.mod-cm6 .cm-list-3 .list-bullet:after,
+.markdown-reading-view ul > li > ul > li > ul > li > .list-bullet:after {
+    content: "■";
+    color: var(--text-faint);
+    font-size: 0.9em;
+}
+
+/* NIVEL 4 - Rombo o Diamante */
+.markdown-source-view.mod-cm6 .cm-list-4 .list-bullet:after,
+.markdown-reading-view ul > li > ul > li > ul > li > ul > li > .list-bullet:after {
+    content: "◈";
+    color: var(--text-accent);
+    font-size: 1em;
+}
