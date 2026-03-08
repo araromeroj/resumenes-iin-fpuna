@@ -91,5 +91,5 @@ En redes, se utilizan prefijos métricos (Kilo, Mega, Giga) basados en potencias
 #### Enlaces relacionados
 
 [[1. Usos de las Redes]]
-[[2. Tipos de Redes Informáticas]]
+[[2. Redes y Enlaces]]
 [[3. Modelos de Referencia]]
