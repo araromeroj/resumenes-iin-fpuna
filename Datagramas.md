@@ -27,3 +27,9 @@ Generalmente, el servicio de datagramas se considera **poco fiable** (también l
 
 >[!summary] En resumen
 >Un datagrama es la unidad básica de información en redes donde la flexibilidad y la falta de estado previo son prioritarias sobre la garantía de orden y entrega en la capa de red.
+
+## Enlaces Relacionados
+
+- [[Protocolos de Red]]
+- [[Capítulo 1]]
+- [[2. Redes y Enlaces]]
