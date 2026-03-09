@@ -15,13 +15,13 @@ Permiten la conectividad para dispositivos en movimiento, como portátiles y sma
 - **Ejemplos:**
 	- M-commerce (mobile commerce) usan telefonía celular
 	- [I] **NFC (Near Field Communication):** permite al dispositivo móvil actual como una tarjeta inteligente (smartcard)
-	- [ ] **Redes de Sensores:** usan nodos reuniendo información acerca de parámetros físicos. Pueden estar embeidos en dispositivos
+	- [I] **Redes de Sensores:** usan nodos reuniendo información acerca de parámetros físicos. Pueden estar embeidos en dispositivos
 
 ### Proveedoras de Contenidos
 
 Utilizan **CDN (Redes de Entrega de Contenidos)**, que son conjuntos masivos de servidores distribuidos geográficamente para situar los datos lo más cerca posible de los usuarios.
 
-- [I] **Datacenters:** concentran cientos de miles o millones de servidores en ubicaciones únicas (la nube) para mover cantidades masivas de datos.
+- [I] **Redes de Datacenters:** concentran cientos de miles o millones de servidores en ubicaciones únicas (la nube) para mover cantidades masivas de datos.
 - [I] **CDN (Content Delivery Networks):** Conjuntos de servidores distribuidos geográficamente para que el contenido (como YT o Netflix) esté físicamente más cerca del usuario, mejorando el rendimiento.
 
 ### De Tránsito (Backbones)
