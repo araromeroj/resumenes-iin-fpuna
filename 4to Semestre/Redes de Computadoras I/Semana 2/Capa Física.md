@@ -23,6 +23,7 @@ semana: "2"
 - Señales Balanceadas
 - Bipolar o AMI y Pseudoternario
 - Manchester (Bifase)
+- Tasa de Baudios
 ## Importante
 
 El ancho de banda define la cantidad de Hz que puede transmitir un medio de transmisión.
@@ -75,14 +76,15 @@ El cambio de alto a bajo se hace con el bot "0"
 
 ![[Manchester (bifase).png|500]]
 
+### Tasa de Baudios
 
-
+las veces en el tiempo en que se tuvo que cambiar el indicador de + o - (símbolos o elementos de señal) (ya me quiero ir, no se como se llama lo que dijo)
 
 ___ 
 # Tareas
 
-- [<] Resumen pendiente
-- [ ] Tarea pendiente
+- [<] Resumen de Capitulo 2. Diapositiva 3 cap 2.4
+
 # Terminología
 
 - [I] **Datos:** Entidades que contienen significado, o información. Pueden ser digitales (bits) o analógicos.
