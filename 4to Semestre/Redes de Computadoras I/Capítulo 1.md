@@ -88,8 +88,9 @@ En redes, se utilizan prefijos métricos (Kilo, Mega, Giga) basados en potencias
 ---
 
 
-#### Enlaces relacionados
+# Enlaces relacionados
 
-[[Usos de las Redes]]
-[[Arquitectura y Clasificación de Redes]]
-[[3. Modelos de Referencia]]
+- [[Usos de las Redes]]
+- [[Arquitectura y Clasificación de Redes]]
+- [[Modelo OSI]]
+- [[Modelo TCP-IP]]
