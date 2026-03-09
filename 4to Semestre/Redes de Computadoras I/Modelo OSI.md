@@ -1,12 +1,4 @@
-
->[!note] Definición
->- Son abstracciones conceptuales clave en el diseño de redes que sirven para definir la funcionalidad de cada capa y las interacciones que ocurren entre ellas.
->- Es un marco de trabajo o estándar conceptual utilizado para *comprender y estandarizar cómo deben organizarse las redes de computadoras.*
-
-## Modelo OSI
-
 El proceso de transmisión de datos que funciona como una pila, los datos van desde lo más alto (capa 7) hasta lo más bajo (Capa 1) en el emisor y van hacia el receptor desde lo más bajo (Capa 1) a lo más alto (Capa 7).
-
 
 ### Proceso de Transmisión de datos
 #### Fase de envío (Emisor)
@@ -24,9 +16,8 @@ El proceso de transmisión de datos que funciona como una pila, los datos van de
 - Cada capa superior elimina la cabecera que le corresponde, verifica que no haya errores y entrega el contenido limpio a la capa que tiene arriba.
 - Finalmente, la capa de transporte vuelve a unir los segmentos en el orden correcto y la capa de aplicación le entrega el mensaje original al usuario receptor.
 
-## Modelo TCP/IP
+---
+# Terminología
 
-- [<] Modelo TCP/IP CONCEPTO
-## Modelo Híbrido
-
-- [<] Modelo Híbrido CONCEPTO
+- [I] **Modelos de referencia:** Son abstracciones conceptuales clave en el diseño de redes que sirven para definir la funcionalidad de cada capa y las interacciones que ocurren entre ellas.
+	 Es un marco de trabajo o estándar conceptual utilizado para *comprender y estandarizar cómo deben organizarse las redes de computadoras.*
