@@ -12,6 +12,10 @@ Servicios de **alta velocidad** para hogares (típicamente 1 Gbps) que utilizan 
 Permiten la conectividad para dispositivos en movimiento, como portátiles y smartphones.
 - **Inalámbricas:** WiFi (IEEE 802.11). Alcance limitado, típicamente dentro de un edificio. Las velocidades varían entre 11Mbps (802.11b) hasta 7 Gbps (802.11ad).
 - **Redes de Celulares:** Divididas en celdas geográficas, cada una con su estación base. Su alcance es mayor, medido en kilómetros. La tecnología 4G LTE ofrece unos 100 Mbps, mientras que la 5G promete velocidades de hasta 10 Gbps.
+- **Ejemplos:**
+	- M-commerce (mobile commerce) usan telefonía celular
+	- [I] **NFC (Near Field Communication):** permite al dispositivo móvil actual como una tarjeta inteligente (smartcard)
+	- [ ] **Redes de Sensores:** usan nodos reuniendo información acerca de parámetros físicos. Pueden estar embeidos en dispositivos
 
 ### Proveedoras de Contenidos
 

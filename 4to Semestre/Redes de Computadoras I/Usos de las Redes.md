@@ -52,7 +52,7 @@ Se basa en la información *ubicua*, donde sensores integrados en objetos cotidi
 - **Redes de sensores:** Nodos que monitorean el mundo físico (seguimiento de fauna, telemetría de vehículos).
 - **Redes power-line:** Redes a través de cables eléctricos.
 
-- [I] **Ubicua:** tecnología que está integrada de manera invisible en la vida cotidiana.
+- [I] **Ubicua:** tecnología que está integrada de manera invisible en la vida cotidiana y están conectadas a la red.
 
 ### Usos Empresariales
 
