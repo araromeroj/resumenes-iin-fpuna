@@ -17,7 +17,7 @@ Alcance limitado a un edificio o campus (casa, oficina). Tienen **alta velocidad
     - **Inalámbricas (WLAN):** Basadas en el estándar **IEEE 802.11 (Wi-Fi)** mediante un [[Punto de Acceso]].
 
 >[!important] Función del AP
->- [I] **Función de un punto de acceso (AP)** en una red inalámbrica 802.11 (WiFi) es retransmitir paquetes enter los ordenadores inalámbricos y entre estos e internet
+>- [I] **Función de un punto de acceso (AP)** en una red inalámbrica 802.11 (WiFi) es retransmitir paquetes entre los ordenadores inalámbricos y entre estos e internet
 
 ### MAN (Metropolitan Area Network)
 
