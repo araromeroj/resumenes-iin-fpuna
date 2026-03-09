@@ -12,6 +12,8 @@ final_2: 2026-07-06T15:00:00
 semestre: 4
 aula: A51
 ---
+>[!Warning] Test Semanales
+>Los test se basan en **lo que se dió en clase** ESPECÍFICAMENTE.
 
 ## Índice
 

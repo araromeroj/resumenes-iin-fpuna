@@ -22,7 +22,7 @@ Interacciones ricas en medios que sustituyen o potencian la telefonía tradicion
 
 ![[sistema peer to peer.png]]
 
-- [I] Wiki: sitio web colaborativo que editan los miembros de una comunidad (como wikipedia).
+- [I] **Wiki:** sitio web colaborativo que editan los miembros de una comunidad (como wikipedia).
 ### Comercio Electrónico (e-Commerce)
 
 Transacciones financieras y comerciales a través de la red.

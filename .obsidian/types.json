@@ -3,6 +3,7 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "horarios": "text"
+    "horarios": "text",
+    "fecha": "datetime"
   }
 }
