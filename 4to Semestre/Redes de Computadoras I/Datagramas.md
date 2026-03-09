@@ -1,4 +1,4 @@
-Un **datagrama** es un paquete de datos que se utiliza en el contexto de un **servicio de red sin conexión**. Su nombre se deriva de una analogía con los telegramas, donde cada mensaje es una unidad independiente que contiene toda la información necesaria para su entrega.
+Un **datagrama** es un paquete de datos que se utiliza en el contexto de un **servicio de red sin conexión.** Su nombre se deriva de una analogía con los telegramas, donde cada mensaje es una unidad independiente que contiene toda la información necesaria para su entrega.
 
 
 >[!example] Ejemplos
