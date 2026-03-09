@@ -1,10 +1,16 @@
-# Ignorar archivos de sistema
+# Sistema
 .DS_Store
 Thumbs.db
+.trash/
 
-# Ignorar archivos temporales de Obsidian
+# Obsidian - Interfaz y Cache (Causan el 90% de los conflictos)
 .obsidian/workspace
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/app.json
 .obsidian/cache/
 .obsidian/indexedDB/
+
+# Opcional: Si quieres temas/plugins distintos por dispositivo
+# .obsidian/appearance.json
+# .obsidian/plugins/
