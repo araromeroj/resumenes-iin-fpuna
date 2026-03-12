@@ -34,4 +34,4 @@ Para que una función sea derivable en un punto $a$, primero **debe ser continua
 
 # Enlaces Relacionados
 
- - [[1. Ecuaciones Diferenciales - Introducción]]
+ - [[1. Introducción- ED]]
