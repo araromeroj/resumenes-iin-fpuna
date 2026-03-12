@@ -32,7 +32,7 @@ $$\vec{E}_{total} = \vec{E}_1 + \vec{E}_2 + \vec{E}_3 + \dots$$
 Se genera típicamente entre dos placas paralelas con cargas opuestas. En este caso, el campo tiene la misma magnitud y dirección en todos los puntos entre las placas.
 
 ---
-**Vínculos relacionados:**
+# **Vínculos relacionados:**
 - [[1. Electricidad]]
 - [[Ley de Coulomb]]
 - [[Potencial Eléctrico]]

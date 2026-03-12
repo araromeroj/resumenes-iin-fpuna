@@ -30,6 +30,6 @@ $$F = k \cdot \frac{|q_1 \cdot q_2|}{r^2}$$
 - Solo funciona con cargas en reposo o a velocidades bajas.
 
 ---
-**Vínculos relacionados:**
+# **Vínculos relacionados:**
 - [[1. Electricidad]]
 - [[Campo Eléctrico]]

@@ -52,7 +52,7 @@ Donde:
 
 ---
 
-**Vínculos relacionados:**
+# **Vínculos relacionados:**
 
 - [[1. Electricidad]]
 - [[Campo Eléctrico]]
