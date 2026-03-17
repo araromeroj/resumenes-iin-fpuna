@@ -15,7 +15,9 @@ La transmisión de datos implica el transporte de información mediante la varia
 ## Conceptos del Dominio del Tiempo y Frecuencia
 
 - **Análisis de Fourier**: Proceso matemático que demuestra que cualquier señal periódica de comportamiento razonable con período $T$ puede reconstruirse mediante la suma de un número infinito (y a veces finito) de senos y cosenos.
-	Ver: [[Serie de Fourier]]
+	Ver:
+	- [[Serie de Fourier]]
+	- [[Análisis de Gráfica A = F(f)]]
 	
 - [I] **Espectro**: Rango de frecuencias que contiene una señal.
 - [I] **Ancho de Banda (Bandwidth)**: Es el rango de frecuencias en el cual la amplitud de la señal no se ha atenuado más allá de cierto límite. Es una propiedad física del medio de transmisión.
@@ -25,26 +27,47 @@ La transmisión de datos implica el transporte de información mediante la varia
 
 La transmisión no es perfecta y está sujeta a impedimentos físicos:
 
-- [I] **Atenuación**: Pérdida de energía de la señal a medida que viaja por el medio. Aumenta con la frecuencia.
-- [I] **Distorsión de Retardo**: Ocurre porque la velocidad de propagación de la señal varía con la frecuencia, deformando la fase de la señal recibida.
+- [I] **Atenuación**: Pérdida de energía de la señal a medida que viaja por el medio. Aumenta con la frecuencia y es debido a la distancia.
+	Se calcula como: $$\text{Atenuación}=10*log_{10}(\frac{P_2}{P_1})$$
+- [I] **Distorsión por Atenuación**: Debido a que la atenuación es diferente a distintas frecuencias (crítico para señales analógicas).
+- [I] **Distorsión de Retardo**: Ocurre porque la velocidad de propagación de la señal varía con la frecuencia, deformando la fase de la señal recibida (crítico para señales digitales).
 - [I] **Ruido**: Energía no deseada que se suma a la señal.
     - **Ruido Térmico**: Debido a la agitación de electrones.
     - **Intermodulación**: Mezcla de frecuencias en sistemas no lineales.
     - **Crosstalk (Diafonía)**: Acoplamiento no deseado entre líneas cercanas.
     - **Ruido Impulsivo**: Picos irregulares de corta duración.
 
-## Teoremas de Capacidad
+## Teoremas de Capacidad o Tasa máx de datos
+
+La tasa de bits máxima posible (medida en bits sobre segundo) es una función de:
+- Ancho de banda -> en ciclos sobre segundo o Hz.
+- Ruido -> en enlaces comunes.
+- Tasa de errores -> de bits corruptos.
 
 1. **Teorema de Nyquist**: Para un canal perfecto (sin ruido), la tasa máxima de datos está limitada por el ancho de banda $B$ y los niveles de la señal $V$:   $$C = 2B \log_2(V)$$
-2. **Teorema de Shannon**: Define la capacidad máxima teórica para un canal con ruido térmico, basada en la relación señal/ruido (SNR):   $$C = B \log_2(1 + S/N)$$
-
+2. **Teorema de Shannon**: Define la capacidad máxima teórica para un canal con ruido térmico, basada en la relación señal/ruido (SNR): 
+	- $$C = B \log_2(1 + SNR_\text{lineal})$$
+	- $$\text{SNR}=\text{Potencia}_{\text{señal}}/\text{Potencia}_{\text{ruido}}$$
+	- $$\text{SNR}_{\text{dB}}=10*log_{10}(\text{SNR}_{\text{lineal}})$$
+---
 # Modulación Digital (De Bits a Señales)
 
-Proceso de transformar bits en señales físicas para su transporte.
+Proceso de transformar bits en señales físicas para su transporte. La entrada de datos puede ser digital o analógica.
+## Aspectos de la codificación
+
+- Espectro de señal - Ancho de banda
+- Existencia o no del componente DC
+- Clocking o sincronización simple o compleja
+- Facilidad para la detección de errores
+- Interferencia de señal e inmunidad de ruido
+- Costo y complejidad
 
 ## Transmisión en Banda Base
 
+Se utilizan frecuencias desde 0 hasta un cierto valor. Se convierten los **bits a señales digitales** que son pulsos de voltaje o amplitud discretos, discontinuos.
+
 - **NRZ (Non-Return to Zero)**: El nivel de voltaje es constante durante el intervalo del bit. Problema principal: falta de sincronización en largas secuencias de 0s o 1s.
+	- Ver: [[NRZ]]
     
 - **Señales Balanceadas (Bipolares)**: Utilizan tres niveles de voltaje (+, 0, -) para evitar la componente de corriente continua (DC).
     
