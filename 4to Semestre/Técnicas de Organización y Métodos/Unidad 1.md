@@ -25,4 +25,4 @@ Organigrama: representación gráfica de la estructura organizacional de una emp
 ---
 # Tareas
 
-- [ ] Actividad 1 (Estudio de la unidad 1) - Es largo
+- [x] Actividad 1 (Estudio de la unidad 1) - Es largo

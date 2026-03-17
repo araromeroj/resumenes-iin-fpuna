@@ -1,4 +1,4 @@
-## 1. ¿Qué es la Serie de Fourier?
+## ¿Qué es la Serie de Fourier?
 
 Imagina que una señal compleja (como el sonido de una guitarra o una onda cuadrada electrónica) es un batido de frutas. La Serie de Fourier es la "receta" que te dice exactamente qué frutas (frecuencias puras) y en qué cantidad (amplitudes) necesitas mezclar para recrear ese batido.
 
@@ -8,7 +8,7 @@ En lugar de ver una señal en el **dominio del tiempo** (cómo cambia la amplitu
 
 ---
 
-### 2. Su aplicación en las Señales de Ancho de Banda
+## Su aplicación en las Señales de Ancho de Banda
 
 El concepto de "ancho de banda" (bandwidth) y las Series de Fourier van de la mano en el mundo de las telecomunicaciones, el procesamiento de audio y las redes.
 
@@ -17,11 +17,9 @@ El concepto de "ancho de banda" (bandwidth) y las Series de Fourier van de la ma
 - **¿Para qué usamos Fourier aquí?** Las señales reales (como tu voz en una llamada telefónica o los datos del WiFi) están compuestas por muchísimas frecuencias. Al aplicar Fourier, obtenemos el espectro de frecuencias de esa señal.
     
 - **Diseño de Filtros y Canales:** Los cables, la fibra óptica y el aire físico tienen un límite en la cantidad de frecuencias que pueden transmitir sin distorsionarlas. Al conocer las frecuencias de nuestra señal gracias a Fourier, los ingenieros saben exactamente qué **ancho de banda** necesita un canal para transmitir esa señal correctamente. Si el canal es estrecho, Fourier nos ayuda a calcular qué frecuencias (generalmente las más altas) podemos "cortar" sin perder la información principal.
-    
 
 ---
-
-### 3. Guía paso a paso para resolver Series de Fourier
+## Guía paso a paso para resolver Series de Fourier
 
 Para una función periódica $f(t)$ con un periodo $T$, la Serie de Fourier trigonométrica se define como:
 
@@ -72,4 +70,4 @@ Una vez que tengas los resultados de las integrales, simplemente reemplaza $a_0$
 
 > **Consejo práctico para las integrales:** Ten a mano una tabla de integrales trigonométricas y recuerda propiedades básicas como $\sin(n\pi) = 0$ y $\cos(n\pi) = (-1)^n$ (para números enteros $n$). Aparecen constantemente al evaluar los límites.
 
-[[Capa Física]]
+[[Capa física]]

@@ -1,97 +1,81 @@
+# Bases Teóricas de la Transmisión de Datos
+
+La transmisión de datos implica el transporte de información mediante la variación de propiedades físicas en un medio.
+
+- [I] **Datos**: Entidades que contienen significado o información. Pueden ser analógicos o digitales (bits).
+- [I] **Señales**: Representaciones eléctricas o electromagnéticas de los datos que se propagan físicamente.
+
+### Tipos de Canales según el Sentido:
+
+- **Simplex**: Transmisión en una sola dirección (ej. televisión).
+- **Half-duplex**: Transmisión en ambas direcciones, pero no simultáneamente (ej. radio policial).
+- **Full-duplex**: Transmisión en ambas direcciones al mismo tiempo (ej. telefonía).
+
 ---
-tipo: Nota
-materia: Redes de Computadoras I
-fecha: 2026-03-09T14:00:00
-semana: "2"
+## Conceptos del Dominio del Tiempo y Frecuencia
+
+- **Análisis de Fourier**: Proceso matemático que demuestra que cualquier señal periódica de comportamiento razonable con período $T$ puede reconstruirse mediante la suma de un número infinito (y a veces finito) de senos y cosenos.
+- [I] **Espectro**: Rango de frecuencias que contiene una señal.
+- [I] **Ancho de Banda (Bandwidth)**: Es el rango de frecuencias en el cual la amplitud de la señal no se ha atenuado más allá de cierto límite. Es una propiedad física del medio de transmisión.
+
 ---
-## Temas
-- Tipos de canales según el sentido de transmisión
-- Conceptos en el dominio del tiempo
-- Análisis de Fourier
-- Funciones en el dominio de la frecuencia
-- Ancho de banda de la señal
-- Ancho de banda del canal
-- Señales de Audio
-- Impedimentos de la transmisión de datos
-- Máxima tasa de datos en un canal
-- Fórmula de Nyquist
-- Fórmula de Shannon
-- Modulación Digital
-	- Transmisión en banda base
-- Aspectos en la codificación
-- NRZ-L y NRZ-I
-- Señales Balanceadas
-- Bipolar o AMI y Pseudoternario
-- Manchester (Bifase)
-- Tasa de Baudios
-## Importante
+# Limitaciones y Capacidad del Canal
 
-El ancho de banda define la cantidad de Hz que puede transmitir un medio de transmisión.
-- Atenuación: cuando se pierde la potencia de la señal debido a la distancia, de forma uniforme. (A mayor frecuencia, mayor atenuación) y se mide en **DECIBELES**.
-- Distorsión por retraso y por atenuación: cuando varía la amplitud en las señales pero de forma desigual. Es la pérdida de la forma de la señal.
-- Ruido
+La transmisión no es perfecta y está sujeta a impedimentos físicos:
 
-Retardo por propagación: depende de la distancia entre los puntos y de la velocidad de propagación ($\frac{m}{s}$)
+- [I] **Atenuación**: Pérdida de energía de la señal a medida que viaja por el medio. Aumenta con la frecuencia.
+- [I] **Distorsión de Retardo**: Ocurre porque la velocidad de propagación de la señal varía con la frecuencia, deformando la fase de la señal recibida.
+- [I] **Ruido**: Energía no deseada que se suma a la señal.
+    - **Ruido Térmico**: Debido a la agitación de electrones.
+    - **Intermodulación**: Mezcla de frecuencias en sistemas no lineales.
+    - **Crosstalk (Diafonía)**: Acoplamiento no deseado entre líneas cercanas.
+    - **Ruido Impulsivo**: Picos irregulares de corta duración.
 
-### Fórmula de Nyquist
->[!warning] el profe se quedó mucho tiempo explicando esto.
->
->
+## Teoremas de Capacidad
 
-Considera canales sin ruido.
+1. **Teorema de Nyquist**: Para un canal perfecto (sin ruido), la tasa máxima de datos está limitada por el ancho de banda $B$ y los niveles de la señal $V$:   $$C = 2B \log_2(V)$$
+2. **Teorema de Shannon**: Define la capacidad máxima teórica para un canal con ruido térmico, basada en la relación señal/ruido (SNR):   $$C = B \log_2(1 + S/N)$$
 
-Si se toma muestras de menos del doble del ancho de banda estamos **perdiendo** bits.
-Si se toma muestras de más del doble del ancho de banda estamos midiendo **datos inservibles**.
+# Modulación Digital (De Bits a Señales)
 
->[!example] FÓRMULA DE NYQUIST
-$$
-C=2*B*log_2(M)
-$$ 
+Proceso de transformar bits en señales físicas para su transporte.
 
-- M: número de niveles o valores posibles para cada muestra o cantidad de muestras.
-- C: máxima tasa de datos. 
-- B: ancho de banda
-- Tasa de muestreo puede ser como máximo el doble del ancho de banda.
+## Transmisión en Banda Base
 
-### Fórmula de Shannon
+- **NRZ (Non-Return to Zero)**: El nivel de voltaje es constante durante el intervalo del bit. Problema principal: falta de sincronización en largas secuencias de 0s o 1s.
+    
+- **Señales Balanceadas (Bipolares)**: Utilizan tres niveles de voltaje (+, 0, -) para evitar la componente de corriente continua (DC).
+    
+- **Manchester**: Existe una transición en el centro de cada intervalo de bit. La dirección de la transición indica el valor (0 o 1) y sirve como mecanismo de reloj para el receptor.
 
-SNR: Relación señal-ruido recibida.
-$$\text{Máx tasa de datos} = B*log_2(1+SNR)\text{ [bits/segundo]}$$
----
-### Modulación Digital
+## Transmisión de Paso de Banda (Modulación de Portadora)
 
-NRZ-L: si la señal es 0 entonces es ALTA, si la señal es 1 entonces es BAJA.
-NRZI (No return to zero interted to ones): la señal debe invertirse si va a transmitir un bit 1. 
+Se utiliza una señal portadora de alta frecuencia alterando sus parámetros:
 
-![[Comparacion NRZL y NRZI.png|500]]
+- **ASK (Amplitude Shift Keying)**: Se varía la amplitud.
+    
+- **FSK (Frequency Shift Keying)**: Se varía la frecuencia.
+    
+- **PSK (Phase Shift Keying)**: Se varía la fase de la onda.
+    
+- **QAM (Quadrature Amplitude Modulation)**: Combina variaciones de amplitud y fase para permitir el envío de más bits por símbolo (ej. 16-QAM, 64-QAM).
 
-Cosas a considerar
-- Ancho de banda
-- Componente "DC"
-- Sincronismo
-### Manchester (Bifase)
-El cambio de bajo a alto se hace con el bit "1"
-El cambio de alto a bajo se hace con el bot "0"
-> Usado en IEEE 802.5
+# Técnicas de Multiplexado
 
-![[Manchester (bifase).png|500]]
+Permiten compartir un único medio de transmisión entre múltiples usuarios o flujos de datos.
 
-### Tasa de Baudios
+- **FDM (Frequency Division Multiplexing)**: El espectro de frecuencia se divide en bandas lógicas, cada una asignada a un usuario de forma permanente. Requiere "bandas de guarda" para evitar interferencias.
+    
+- **TDM (Time Division Multiplexing)**: Los usuarios comparten el ancho de banda total, pero en intervalos de tiempo (slots) distintos.
+    
+- **WDM (Wavelength Division Multiplexing)**: Variación de FDM utilizada en fibra óptica, donde se envían múltiples señales de luz a diferentes longitudes de onda (colores).
+    
+- **OFDM (Orthogonal FDM)**: Divide el canal en muchas subportadoras ortogonales que se solapan estrechamente sin interferir, optimizando el uso del espectro. Es la base de Wi-Fi y 4G/5G.
+    
+- **CDMA (Code Division Multiple Access)**: Cada usuario tiene asignado un código único (secuencia de chips). Todas las señales se transmiten simultáneamente en la misma frecuencia, y el receptor recupera la señal deseada mediante el producto interno del código.
 
-las veces en el tiempo en que se tuvo que cambiar el indicador de + o - (símbolos o elementos de señal) (ya me quiero ir, no se como se llama lo que dijo)
+# Conceptos Complementarios
 
-___ 
-# Tareas
-
-- [<] Resumen de Capitulo 2. Diapositiva 3 cap 2.4
-
-# Terminología
-
-- [I] **Datos:** Entidades que contienen significado, o información. Pueden ser digitales (bits) o analógicos.
-- [I] **Señales:** Representación eléctrica o electromagnética de los datos, se propagan físicamente a través de un medio.
-- [I] **Transmisión de datos:** Entre un transmisor y un receptor vía un medio de transmisión, a través de la variación de propiedades de una señal en el tiempo.
-- [I] **Espectro:** Rango de frecuencias contenidas en la señal, puede ser infinito.
-- [I] **Ancho de Banda:** Es el rango de frecuencias de una señal entre las cuales se concentra la mayor parte de la energía de la señal.
-- [I] **Señal analógica:** degradación de la calidad de señal.
-- [I] **Señal digital:** errores de bits.
-- [I] **Modulación digital:** La conversión de datos digitales (bits) a señales físicas.
+- [I] **[[Baudios]]**: Número de cambios de símbolo o transiciones por segundo. No siempre es igual a la tasa de bits.
+- [I] **[[SNR]]**: Relación señal-ruido, usualmente medida en decibelios (dB).
+- [I] **[[Ortogonalidad]]**: Propiedad matemática en CDMA y OFDM que permite que señales solapadas sean recuperadas sin ambigüedad.

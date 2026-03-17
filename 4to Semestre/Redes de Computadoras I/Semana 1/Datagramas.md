@@ -32,4 +32,4 @@ Generalmente, el servicio de datagramas se considera **poco fiable** (también l
 
 - [[Protocolos de Red]]
 - [[Capítulo 1]]
-- [[Arquitectura y Clasificación de Redes]]
+- [[Clasificación de Redes]]

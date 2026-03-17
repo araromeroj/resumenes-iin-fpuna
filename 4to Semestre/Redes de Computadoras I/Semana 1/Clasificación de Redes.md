@@ -39,8 +39,6 @@ Utilizadas en campus, edificios de oficinas u organizaciones para facilitar el t
 - **VPN (Redes Privadas Virtuales):** Conectan oficinas remotas a través de Internet para que funcionen como una sola red lógica, eliminando la "tiranía de la geografía".
 
 ---
-
----
 ## Tipos de Enlaces
 
 | **Tipo**          | **Descripción**                                                                       | **Ejemplo**                         |
@@ -59,8 +57,3 @@ Utilizadas en campus, edificios de oficinas u organizaciones para facilitar el t
 Ver: [[Mensaje - Información a transmitirse]]
 
 ---
-
-#### Enlaces Relacionados
-
-- [[IP]]
-- 
