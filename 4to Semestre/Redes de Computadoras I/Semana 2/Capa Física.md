@@ -15,6 +15,8 @@ La transmisión de datos implica el transporte de información mediante la varia
 ## Conceptos del Dominio del Tiempo y Frecuencia
 
 - **Análisis de Fourier**: Proceso matemático que demuestra que cualquier señal periódica de comportamiento razonable con período $T$ puede reconstruirse mediante la suma de un número infinito (y a veces finito) de senos y cosenos.
+	Ver: [[Serie de Fourier]]
+	
 - [I] **Espectro**: Rango de frecuencias que contiene una señal.
 - [I] **Ancho de Banda (Bandwidth)**: Es el rango de frecuencias en el cual la amplitud de la señal no se ha atenuado más allá de cierto límite. Es una propiedad física del medio de transmisión.
 
@@ -76,6 +78,6 @@ Permiten compartir un único medio de transmisión entre múltiples usuarios o f
 
 # Conceptos Complementarios
 
-- [I] **[[Baudios]]**: Número de cambios de símbolo o transiciones por segundo. No siempre es igual a la tasa de bits.
-- [I] **[[SNR]]**: Relación señal-ruido, usualmente medida en decibelios (dB).
-- [I] **[[Ortogonalidad]]**: Propiedad matemática en CDMA y OFDM que permite que señales solapadas sean recuperadas sin ambigüedad.
+- [I] **Baudios**: Número de cambios de símbolo o transiciones por segundo. No siempre es igual a la tasa de bits.
+- [I] **SNR**: Relación señal-ruido, usualmente medida en decibelios (dB).
+- [I] **Ortogonalidad**: Propiedad matemática en CDMA y OFDM que permite que señales solapadas sean recuperadas sin ambigüedad.
