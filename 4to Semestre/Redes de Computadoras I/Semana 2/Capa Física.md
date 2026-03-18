@@ -70,8 +70,10 @@ Se utilizan frecuencias desde 0 hasta un cierto valor. Se convierten los **bits 
 	- Ver: [[NRZ]]
     
 - **Señales Balanceadas (Bipolares)**: Utilizan tres niveles de voltaje (+, 0, -) para evitar la componente de corriente continua (DC).
+	- Ver: [[Señales Balanceadas]]
     
 - **Manchester**: Existe una transición en el centro de cada intervalo de bit. La dirección de la transición indica el valor (0 o 1) y sirve como mecanismo de reloj para el receptor.
+	- Ver: [[Codificación Manchester]]
 
 ## Transmisión de Paso de Banda (Modulación de Portadora)
 
@@ -82,8 +84,12 @@ Se utiliza una señal portadora de alta frecuencia alterando sus parámetros:
 - **FSK (Frequency Shift Keying)**: Se varía la frecuencia.
     
 - **PSK (Phase Shift Keying)**: Se varía la fase de la onda.
+	
+	- **QPSK (Quadrature Phase Keying)**: se varía la frecuencia y usa 4 fases distintas, con desplazamiento de $\pi/90°$. Cada elemento de señal representa 2 bits y la tasa de baudios es de $\text{bps}/2$.
     
 - **QAM (Quadrature Amplitude Modulation)**: Combina variaciones de amplitud y fase para permitir el envío de más bits por símbolo (ej. 16-QAM, 64-QAM).
+	- Donde $M$ es la cantidad de niveles o estados que puede adoptar la señal.
+	$$\text{BitRate}=\text{BaudRate}*log_2(M)$$
 
 # Técnicas de Multiplexado
 
@@ -97,7 +103,7 @@ Permiten compartir un único medio de transmisión entre múltiples usuarios o f
     
 - **OFDM (Orthogonal FDM)**: Divide el canal en muchas subportadoras ortogonales que se solapan estrechamente sin interferir, optimizando el uso del espectro. Es la base de Wi-Fi y 4G/5G.
     
-- **CDMA (Code Division Multiple Access)**: Cada usuario tiene asignado un código único (secuencia de chips). Todas las señales se transmiten simultáneamente en la misma frecuencia, y el receptor recupera la señal deseada mediante el producto interno del código.
+- **CDMA (Code Division Multiple Access)**: Cada usuario tiene asignado un código único (secuencia de $k$ chips). Todas las señales se transmiten simultáneamente en la misma frecuencia, y el receptor recupera la señal deseada mediante el producto interno del código.
 
 # Conceptos Complementarios
 

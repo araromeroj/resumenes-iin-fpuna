@@ -13,7 +13,7 @@ Es la forma más simple de codificación digital. Aquí, el valor del bit depend
         
 - **Problema principal**: Si envías una cadena larga de ceros o de unos, el voltaje se mantiene plano (una línea recta). El receptor no puede saber cuántos bits han pasado exactamente porque no hay cambios en la señal que le ayuden a sincronizar su reloj (problema de **clocking**).
 
-## NRZI (Non-Return to Zero Inverted)
+## NRZ-I (Non-Return to Zero Inverted)
 
 Esta variante es más robusta porque el valor del bit no depende del nivel de voltaje, sino de la **presencia o ausencia de un cambio (transición)** al inicio del intervalo del bit.
 
@@ -30,16 +30,24 @@ Esta variante es más robusta porque el valor del bit no depende del nivel de vo
 ---
 # Comparativa Técnica
 
-|**Característica**|**NRZ-L**|**NRZI**|
-|---|---|---|
-|**Basado en**|Nivel de voltaje absoluto.|Transición (cambio) de voltaje.|
-|**Interpretación del 1**|Voltaje fijo (ej. bajo).|Hay una transición al inicio.|
-|**Interpretación del 0**|Voltaje fijo (ej. alto).|No hay transición.|
-|**Sincronización**|Pobre en cadenas largas de 0 y 1.|Mejor en cadenas de 1, pobre en 0.|
-
+| **Característica**       | **NRZ-L**                         | **NRZI**                           |
+| ------------------------ | --------------------------------- | ---------------------------------- |
+| **Basado en**            | Nivel de voltaje absoluto.        | Transición (cambio) de voltaje.    |
+| **Interpretación del 1** | Voltaje fijo (ej. bajo).          | Hay una transición al inicio.      |
+| **Interpretación del 0** | Voltaje fijo (ej. alto).          | No hay transición.                 |
+| **Sincronización**       | Pobre en cadenas largas de 0 y 1. | Mejor en cadenas de 1, pobre en 0. |
+>[!danger] Ojo
+>Ninguna elimina el componente DC
+>Ver: [[Análisis de Gráfica A = F(f)]]
 ### ¿Por qué son importantes?
 
 Ambas técnicas son eficientes en cuanto al uso del ancho de banda porque no requieren que la señal cambie constantemente (como la codificación Manchester). Sin embargo, debido a los problemas de sincronización mencionados, suelen utilizarse junto con otras técnicas como el **relleno de bits (bit stuffing)** o códigos de línea como **4B/5B** para asegurar que nunca haya demasiados ceros o unos seguidos.
+
+>[!note] Usos del NRZ-L y NRZ-I
+>- Grabaciones magnéticas
+>- USB
+>- Transmisión serial
+>- No son muy usados para la transmisión de datos por sus desventajas
 
 # Enlaces relacionados
 - [[Capa física]]
