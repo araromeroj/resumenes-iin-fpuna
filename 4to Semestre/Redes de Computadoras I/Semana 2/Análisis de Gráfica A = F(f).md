@@ -56,4 +56,4 @@ Imagina que tienes una gráfica de una señal de radio con los siguientes puntos
 
 ---
 ## Enlaces relacionados
-- [[Capa física]]
+- [[1. Capa física]]
