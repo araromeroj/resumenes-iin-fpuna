@@ -15,3 +15,7 @@ Son ondas producidas por el movimiento de los electrones, estas pueden propagars
 >En el cobre o la fibra, la velocidad de la luz disminuye a unos $2/3$ de su valor y pasa a depender ligeramente de la frecuencia
 
 ![[Pasted image 20260323134808.png|600]]
+## Usos del espectro electromagnético
+
+![[Pasted image 20260323142118.png]]
+
