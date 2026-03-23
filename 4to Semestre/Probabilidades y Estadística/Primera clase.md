@@ -39,4 +39,6 @@ Ejemplo: cantidad de materias que llevamos
 - Continuas: todas aquellas que pueden medirse
 Ejemplo: altura de los estudiantes
 
-- [ ] Ejercitario de estadística 
+- [ ] Ejercitario de estadística
+- [ ] Ejercitario 2
+- [ ] Ejercitario 3
