@@ -6,7 +6,29 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"4to Semestre/Redes de Computadoras I\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 3735082
+      }
+    },
+    {
+      "query": "path:\"4to Semestre/Cálculo III\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:\"4to Semestre/Física II\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14570208
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.40868784898956106,
+  "scale": 1.1301115516842934,
   "close": true
 }

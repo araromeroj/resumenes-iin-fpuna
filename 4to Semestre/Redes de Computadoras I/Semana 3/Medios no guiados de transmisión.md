@@ -1,4 +1,4 @@
-## El espectro electromagnético
+## [[El espectro electromagnético]]
 
 Es el rango completo de todas las posibles frecuencias de radiación electromagnética. Estas ondas se crean cuando los electrones se mueven y tienen la capacidad de propagarse incluso a través del vacío.
 - [I] Frecuencia ($f$): es el numero de oscilaciones por segundo y se mide en Hertz ($\text{Hz}$).
