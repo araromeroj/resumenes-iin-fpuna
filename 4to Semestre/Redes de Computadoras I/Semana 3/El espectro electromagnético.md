@@ -36,4 +36,4 @@ Son las denominaciones oficiales para las distintas porciones del espectro elect
 
 - [[Radiofrecuencias]]
 - [[Microondas]]
-
+- [[Medios no guiados de transmisión]]

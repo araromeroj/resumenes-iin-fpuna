@@ -24,3 +24,4 @@ Se da en las bandas **VHF y UHF** (de $30 \text{ MHz a } 3\text{ GHz}$). A estas
 # Enlaces relacionados
 - [[2. Capa Física]]
 - [[Microondas]]
+- [[Medios no guiados de transmisión]]

@@ -28,4 +28,4 @@ Las **microondas** son ondas electromagnéticas que operan en un rango de frecue
 # Enlaces relacionados
 - [[2. Capa Física]]
 - [[Transmisión por infrarrojo]]
-- 
+- [[Medios no guiados de transmisión]]
