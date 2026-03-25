@@ -18,16 +18,16 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 >[!important]
 >**Hasta** la Cat.6 son UTP
 
-![[Pasted image 20260325082743.png|50]]
+![[UTP.png|50]]
 ### FTP - Foiled Twisted Pair - Con hoja metálica
 - Hoja metálica que rodea a los cuatro pares de cables
 - Protección intermedia
-![[Pasted image 20260325082809.png|50]]
+![[FTP.png|50]]
 
 ### STP - Shielded Twisted Pair - Con malla metálica
 - Malla metálica que reduce la interferencia
 - Más caras y difíciles de manejar por ser pesadas y gruesas
-![[Pasted image 20260325082827.png|50]]
+![[STP 1.png|50]]
 ## Categorías de cable de par trenzado
 ![[Pasted image 20260325083618.png]]
 >[!info]
@@ -43,7 +43,7 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 2. Rodeado de un material aislante.
 3. El aislante está envuelto por un conductor cilíndrico, en forma de malla trenzada.
 4. El conductor está cubierto por una funda protectora de plástico.
-![[Pasted image 20260325084654.png]]
+![[Cable coaxial.png]]
 
 - Tiene mejor apantallamiento.
 - Ancho de banda **amplio**. Mayor ancho de banda que los UTP.
@@ -86,10 +86,13 @@ Llevan la electricidad a las casas y el cableado de las casas distribuye la elec
 
 ---
 ## Fibra óptica
-Transmite pulsos de luz a través de una fibra de vidrio ultrafina mediante el principio de reflexión interna total. ==Un pulso de luz indica bit 1 y la ausencia de luz indica bit 0==. Se compone de:
-1. Fuente de luz
-2. Medio de transmisión
+Transmite pulsos de luz a través de una fibra de vidrio ultrafina mediante el principio de reflexión interna total. ==Un pulso de luz indica bit 1 y la ausencia de luz indica bit 0==. Es inmune a interferencias electromagnéticas porque el medio de transmisión es vidrio y utiliza luz en lugar de señales eléctricas.
+- [I] **Dispersión cromática:** El fenómeno que provoca que los pulsos de luz se extiendan en longitud a medida que se propagan por la fibra.
+Se compone de:
+1. Fuente de luz ([[Medios Guiados de Transmisión#Tipos de fuentes de luz|LED o ILD]])
+2. Medio de transmisión (vidrio)
 3. Detector
+- [I] **Fotodiodo:** dispositivo que convierte la señal del dominio óptico al eléctrico en el extremo receptor.
 
 | **Ventajas**                                                 | **Desventajas**              |
 | ------------------------------------------------------------ | ---------------------------- |
@@ -98,7 +101,7 @@ Transmite pulsos de luz a través de una fibra de vidrio ultrafina mediante el p
 | Baja atenuación                                              | Costo elevado                |
 | Espaciado entre repetidores                                  | Tecnología muy específica    |
 
-![[Pasted image 20260325091553.png|400]]
+![[Fibra óptica dibujo.png|400]]
 
 >[!important] No olvidar!
 >**Convertir una relación de potencia a escala logarítmica de decibelios**
@@ -121,7 +124,8 @@ Transmite pulsos de luz a través de una fibra de vidrio ultrafina mediante el p
 | Vida **LARGA**                          | Vida **CORTA**                               |
 | Sensibilidad a la temperatura **MENOR** | Sensibilidad a la temperatura **SUSTANCIAL** |
 | Costo **BAJO**                          | Costo **ALTO**                               |
-
+### Métodos de multiplexación de señales en fibra óptica
+- [I] **WDM (Wavelength Division Multiplexing):** multiplexa múltiples señales en una sola fibra óptica usando diferentes longitudes de onda.
 ---
 # Enlaces relacionados
 - [[2. Capa Física]]
