@@ -5,14 +5,124 @@ Se refiere al transporte físico de datos mediante cintas magnéticas, CD o DVD.
 
 ## Cables de Par Trenzado
 Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reducir la interferencia eléctrica.
-![[Cables de par trenzado.png|500]]
-### UTP - Unshielded Twiste Pair - Sin blindaje
+
+>[!tip] Utilizado en el sistema telefónico
+
+>[!danger] A distancias mayores necesitan repetidores
+
+### UTP - Unshielded Twisted Pair - Sin blindaje
 - Utilizado en líneas telefónicas LAN Ethernet
 - Más barato y fácil de instalar
 - Sufre más interferencia externa EM
-### STP - Shielded Twisted Pair - Con malla metálica
-- Malla metálica que reduce la interferencia
-- Más caras y difíciles de manejar por ser pesadas y gruesas
+
+>[!important]
+>**Hasta** la Cat.6 son UTP
+
+![[Pasted image 20260325082743.png|50]]
 ### FTP - Foiled Twisted Pair - Con hoja metálica
 - Hoja metálica que rodea a los cuatro pares de cables
 - Protección intermedia
+![[Pasted image 20260325082809.png|50]]
+
+### STP - Shielded Twisted Pair - Con malla metálica
+- Malla metálica que reduce la interferencia
+- Más caras y difíciles de manejar por ser pesadas y gruesas
+![[Pasted image 20260325082827.png|50]]
+## Categorías de cable de par trenzado
+![[Pasted image 20260325083618.png]]
+>[!info]
+>Cables de categoría 6 pueden ser UTP y soportar hasta 10Gbps
+>Cables nuevos Cat.8 con ancho de banda de 2 HHz usados en Ethernet 25 y 40 Gb con distancias de 30 m
+
+- [I] Full-duplex: Enlaces que pueden utilizarse en ambos sentidos.
+- [I] Semi-duplex: Enlaces que pueden usarse en ambos sentidos pero no en simultáneo.
+- [I] Simplex: Enlace que solo permite el tráfico en una dirección y sentido.
+---
+## Cable Coaxial
+1. Consta de un hilo de cobre rígido como núcleo
+2. Rodeado de un material aislante.
+3. El aislante está envuelto por un conductor cilíndrico, en forma de malla trenzada.
+4. El conductor está cubierto por una funda protectora de plástico.
+![[Pasted image 20260325084654.png]]
+
+- Tiene mejor apantallamiento.
+- Ancho de banda **amplio**. Mayor ancho de banda que los UTP.
+- Abarca distancias más largas a mayor velocidad.
+- **Inmunidad al ruido**.
+- Permite transmitir muchas conversaciones simultáneamente a través de un solo cable.
+
+>[!info] Cable Twinaxial
+>Tiene dos cables trenzados, pero sigue siendo coaxial
+>**USO:** Ethernet de 10 GB
+
+### Cable de 50 Ohmios
+Se utiliza para la **transmisión digital**.
+
+| Categoria                | Resistencia Eléctrica |
+| ------------------------ | --------------------- |
+| RG-58 (ethernet delgado) | 50 $\ohm$             |
+| RG-11 (ethernet grueso)  | 50 $\ohm$             |
+
+### Cable de 75 Ohmios
+Se utiliza para la **transmisión analógica** y la **TV por cable**.
+
+| Categoría | Resistencia Eléctrica |
+| --------- | --------------------- |
+| RG-59     | 75 $\ohm$             |
+
+---
+## Líneas eléctricas o Líneas de potencia (PLC)
+Llevan la electricidad a las casas y el cableado de las casas distribuye la electricidad a tomas eléctricas.
+
+- [I] **PLC - Power Line Communications:** Consiste en la utilización del cableado eléctrico doméstico para la comunicación de datos, diseñado para distribuir señales eléctricas. Es una opción conveniente por la ubicuidad de los enchufes, aunque es un medio muy ruidoso y deficiente para altas velocidades.
+
+>[!important] Ventajas
+>Conveniente por la ubicuidad de enchufes
+>Bueno para distribución eléctrica
+
+>[!danger] Desventajas
+>Es muy ruidoso y deficiente para altas velocidades
+>Malo para el envío de datos
+
+---
+## Fibra óptica
+Transmite pulsos de luz a través de una fibra de vidrio ultrafina mediante el principio de reflexión interna total. ==Un pulso de luz indica bit 1 y la ausencia de luz indica bit 0==. Se compone de:
+1. Fuente de luz
+2. Medio de transmisión
+3. Detector
+
+| **Ventajas**                                                 | **Desventajas**              |
+| ------------------------------------------------------------ | ---------------------------- |
+| Es **inmune a interferencias electromagnéticas** (aislación) | Unidireccional (**simplex**) |
+| Ofrece ancho de banda **extremadamente** altos.              | Frágil                       |
+| Baja atenuación                                              | Costo elevado                |
+| Espaciado entre repetidores                                  | Tecnología muy específica    |
+
+![[Pasted image 20260325091553.png|400]]
+
+>[!important] No olvidar!
+>**Convertir una relación de potencia a escala logarítmica de decibelios**
+> $$10*log_{10}(\text{Factor Lineal})=\text{dB}$$
+### Tipos
+
+| **Monomodo**                                                                                                             | **Multimodo**                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| La fibra actúa como guía de ondas y la luz sólo puede propagarse en línea recta, **sin rebotar**, se llama **monomodo**. | Si cada rayo tiene un modo diferente se llama **multimodo**.                              |
+| Núcleo delgado<br>Para largas distancias hasta 100 km<br>Caras<br>Mayor ancho de banda                                   | Núcleo grueso<br>Para distancias cortas hasta 15 Km<br>Baratas<br>Ancho de banda limitado |
+### Tipos de fuentes de luz
+- [I] LED: Diodos emisores de luz
+- [I] ILD: Laser semiconductor
+
+| LED                                     | LID                                          |
+| --------------------------------------- | -------------------------------------------- |
+| Velocidad **BAJA**                      | Velocidad **ALTA**                           |
+| Tipo **MULTIMODO**                      | Tipo **MONOMODO O MULTIMODO**                |
+| Distancia **CORTA**                     | Distancia **LARGA**                          |
+| Vida **LARGA**                          | Vida **CORTA**                               |
+| Sensibilidad a la temperatura **MENOR** | Sensibilidad a la temperatura **SUSTANCIAL** |
+| Costo **BAJO**                          | Costo **ALTO**                               |
+
+---
+# Enlaces relacionados
+- [[2. Capa Física]]
+- Siguiente cap: [[Medios no guiados de transmisión]]
