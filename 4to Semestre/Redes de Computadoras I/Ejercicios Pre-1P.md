@@ -1,14 +1,14 @@
-![[Pasted image 20260324154845.png]]
+![[Ejercicio 1P (1).png]]
 
-![[Pasted image 20260324154910.png]]
+![[Ejercicio 1P (2).png]]
 - Ver: [[1. Capa física#Técnicas de Multiplexado]]
 
-![[Pasted image 20260324155120.png]]
+![[Ejercicio 1P (3).png]]
 - Ver:
 	- [[El espectro electromagnético#Bandas ITU]]
 	- [[1. Capa física#Transmisión de Paso de Banda (Modulación de Portadora)]]
 
-![[Pasted image 20260324155412.png]]
+![[Ejercicio 1P (4).png]]
 
 ![[Pasted image 20260324155425.png]]
 - Ver: 
