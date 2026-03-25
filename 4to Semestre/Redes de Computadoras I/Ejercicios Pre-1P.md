@@ -10,72 +10,73 @@
 
 ![[Ejercicio 1P (4).png]]
 
-![[Pasted image 20260324155425.png]]
+![[Ejercicio 1P (5).png]]
 - Ver: 
 	- [[1. Capa física#Técnicas de Multiplexado]]
 
-![[Pasted image 20260324155549.png]]
+![[Ejercicio 1P (6).png]]
 - Ver: 
 	- [[1. Capa física#Técnicas de Multiplexado]]
 	- [[1. Capa física#Transmisión de Paso de Banda (Modulación de Portadora)]]
 
-![[Pasted image 20260324155702.png]]
+![[Ejercicio 1P (7).png]]
 - Ver:
 	- [[NRZ]]
 	- [[Fibra Óptica]]
 	- [[Modelo OSI]]
 
-![[Pasted image 20260324155835.png]]
+![[Ejercicio 1P (8).png]]
 - Ver: TODO
 
-![[Pasted image 20260324155901.png]]
+![[Ejercicio 1P (9).png]]
 
-![[Pasted image 20260324155928.png]]
+![[Ejercicio 1P (10).png]]
 
-![[Pasted image 20260324160014.png]]
+![[Ejercicio 1P (11).png]]
 
-![[Pasted image 20260324160027.png]]
+![[Ejercicio 1P (12).png]]
 
-![[Pasted image 20260324160042.png]]
+![[Ejercicio 1P (13).png]]
 
-![[Pasted image 20260324160056.png]]
+![[Ejercicio 1P (14).png]]
 
-![[Pasted image 20260324160112.png]]
+![[Ejercicio 1P (15).png]]
 
-![[Pasted image 20260324160148.png]]
+![[Ejercicio 1P (16).png]]
 
-![[Pasted image 20260324160218.png]]
+![[Ejercicio 1P (17).png]]
 - Ver: 
 	- [[1. Capa física]]
 
-![[Pasted image 20260324160251.png]]
+![[Ejercicio 1P (18).png]]
 
-![[Pasted image 20260324160308.png]]
+![[Ejercicio 1P (19).png]]
 ![[Pasted image 20260324160326.png]]
 
-![[Pasted image 20260324160339.png]]
+![[Ejercicio 1P (20).png]]
 
-![[Pasted image 20260324160351.png]]
+![[Ejercicio 1P (21).png]]
 
-![[Pasted image 20260324160411.png]]
+![[Ejercicio 1P (22).png]]
 
-![[Pasted image 20260324160501.png]]
+![[Ejercicio 1P (23).png]]
 
-![[Pasted image 20260324160514.png]]
+![[Ejercicio 1P (24).png]]
 
-![[Pasted image 20260324160535.png]]
+![[Ejercicio 1P (25).png]]
 
-![[Pasted image 20260324160550.png]]
+![[Ejercicio 1P (26).png]]
 
-![[Pasted image 20260324160603.png]]
+![[Ejercicio 1P (27).png]]
 
-![[Pasted image 20260324160612.png]]
+![[Ejercicio 1P (28).png]]
 
-![[Pasted image 20260324160713.png]]
+![[Ejercicio 1P (29).png]]
 
-![[Pasted image 20260324160720.png]]
+![[Ejercicio 1P (30).png]]
 
-![[Pasted image 20260324160744.png]]
+![[Ejercicio 1P (31).png]]
 
-![[Pasted image 20260324160754.png]]
+![[Ejercicio 1P (32).png]]
 
+![[Ejercicio 1P (33).png]]
