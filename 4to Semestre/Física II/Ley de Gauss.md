@@ -21,7 +21,6 @@ A diferencia de la [[Ley de Coulomb|ley de Coulomb]], que requiere integrar sobr
 Para aplicar Gauss, se deben seguir estos pasos:
 
 1. **Identificar la simetría**:
-    
     - **Esférica**: Usar una esfera gaussiana (para cargas puntuales o esferas cargadas).
     - **Cilíndrica**: Usar un cilindro gaussiano (para cables infinitos o cilindros).
     - **Plana**: Usar una "caja" o cilindro gaussiano (para planos infinitos).
