@@ -27,6 +27,8 @@ Cubre una ciudad entera.
 
 ### WAN (Wide Area Network)
 
+^f39625
+
 Se extiende sobre un país o continente. Utiliza **líneas de transmisión** y **routers** para mover paquetes. Normalmente no pertenecen a una compañía y son más lentas que las LAN's.
 
 - **Rango:** Países (100 km) o continentes (1.000 km).
