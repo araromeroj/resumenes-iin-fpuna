@@ -41,3 +41,8 @@ Al tenerse señales reservadas
 - Es fácil encontrar el inicio y fin de cada trama.
 - Sin necesidad de rellenar mucho los datos (no hay problemas de longitud).
 - [I] **Preámbulo:** es un patrón bien definido que se encuentra al inicio de cada trama, muy utilizado en Wi-Fi (802.11) y Ethernet (802.3). Puede ser bastante largo (72 bits para 802.11). Va seguido de un campo de conteo en la cabecera que se utiliza para localizar el final de la trama. (se mezclan los métodos)
+---
+# Enlaces relacionados
+- Siguiente nota: [[Corrección de errores]]
+- [[Corrección de errores de un solo bit]]
+- [[Código de Hamming]]
