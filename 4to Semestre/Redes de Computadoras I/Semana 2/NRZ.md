@@ -45,7 +45,7 @@ Ambas técnicas son eficientes en cuanto al uso del ancho de banda porque no req
 
 >[!note] Usos del NRZ-L y NRZ-I
 >- Grabaciones magnéticas
->- USB
+>- - [I] USB - Universal serial bus
 >- Transmisión serial
 >- No son muy usados para la transmisión de datos por sus desventajas
 
