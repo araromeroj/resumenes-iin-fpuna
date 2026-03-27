@@ -20,7 +20,7 @@ Desventaja: está ligado al uso de bytes (8 bits) si o si.
 	Si el byte ESC también se encuentra dentro de la secuencia de bytes de la trama, se añade otro byte ESC o FLAG identificador.
 
 ## Bits de bandera con relleno de bits - bit stuffing
-Las tramas pueden contener un número arbitrario de bits formados por unidades de **cualquier tamaño**.
+Las tramas pueden contener un número arbitrario de bits formados por unidades de **cualquier tamaño**. El relleno no permite que se interpongan los bits de relleno con los bits de los datos.
 
 - [I] **Bit stuffing:** es la técnica que permite que los datos del usuario contengan cualquier combinación de "1" y "0" sin que el receptor los confunda con las señales de control que marcan el inicio o el fin de una trama. Cada trama comienza y termina con un patrón especial de bits
 
@@ -36,3 +36,8 @@ Cada trama comienza y termina con un patrón de bits igual a $01111110_2$ (es el
 >	- si ve **6** bits "1" seguidos de un "0", sabe que es el FLAG de **fin de trama**.
 >	- si ve **7** bits "1" se considera **error de transmisión**.
 ## Violaciones de codificación de la capa física
+Se usa un atajo de la capa física, violaciones de codificación que serían **caracteres no válidos** para delimitar las tramas.
+Al tenerse señales reservadas
+- Es fácil encontrar el inicio y fin de cada trama.
+- Sin necesidad de rellenar mucho los datos (no hay problemas de longitud).
+- [I] **Preámbulo:** es un patrón bien definido que se encuentra al inicio de cada trama, muy utilizado en Wi-Fi (802.11) y Ethernet (802.3). Puede ser bastante largo (72 bits para 802.11). Va seguido de un campo de conteo en la cabecera que se utiliza para localizar el final de la trama. (se mezclan los métodos)
