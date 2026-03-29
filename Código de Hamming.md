@@ -25,6 +25,7 @@ Se presenta en el código de Hamming
 >$$(m+r+1)\leq{2^r}$$
 
 
+
 ---
 # Enlaces relacionados
 - Siguiente nota: 
