@@ -7,12 +7,12 @@ Se usa un campo al inicio de la trama indicando el número de bytes de la misma.
 >	Si la cuenta de bytes es 5 en la segunda trama, se convierte en 7 debido a un solo bit.
 >- [i] Rara vez se utiliza por sí solo por esta razón
 
-![[Pasted image 20260327160201.png|400]]
+![[Conteo de caracteres o bytes.png|400]]
 ## Marcar Bytes con relleno de Bytes - byte stuffing
 Resuelve el problema de desincronización tras un error de transmisión haciendo que cada trama comience y termine con bytes especiales (banderas -> FLAG). 
 
 > [!important] La bandera se adiciona **al inicio y al final** de la trama
-![[Pasted image 20260327160815.png]]
+![[byte stuffing.png]]
 
 Desventaja: está ligado al uso de bytes (8 bits) si o si.
 
@@ -43,6 +43,6 @@ Al tenerse señales reservadas
 - [I] **Preámbulo:** es un patrón bien definido que se encuentra al inicio de cada trama, muy utilizado en Wi-Fi (802.11) y Ethernet (802.3). Puede ser bastante largo (72 bits para 802.11). Va seguido de un campo de conteo en la cabecera que se utiliza para localizar el final de la trama. (se mezclan los métodos)
 ---
 # Enlaces relacionados
-- Siguiente nota: [[Corrección de errores]]
-- [[Corrección de errores de un solo bit]]
+- Siguiente nota: [[Control de flujo o caudal]]
+- [[Corrección de errores]]
 - [[Código de Hamming]]
