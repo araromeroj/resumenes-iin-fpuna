@@ -60,7 +60,7 @@ Se presenta en el código de Hamming
 | **Detección de errores**                                                                                                       | **Corrección de errores**                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | $d_{\text{min}}$ : distancia de Hamming<br>$s$ : cantidad de bits con error **máximos a detectar**<br>$$d_\text{{min}}\gt{s}$$ | $d_{\text{min}}$ : distancia de Hamming<br>$t$ : cantidad de bits con error **máximos a corregir**<br>$$d_{min}\gt{2t}$$ |
-| ![[Pasted image 20260329172902.png\|250]]                                                                                      | ![[Pasted image 20260329172830.png\|300]]                                                                                |
+| ![[detección de error y hamming.png\|250]]                                                                                      | ![[corrección de error y hamming.png\|300]]                                                                                |
 
 
 ---
