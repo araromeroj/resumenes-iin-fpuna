@@ -3,8 +3,10 @@ Los bits de la palabra clave se enumeran secuencialmente, empezando desde el 1 h
 
 Si la palabra con longitud **m** es $00010011001$ se obtiene lo siguiente:
 ![[Pasted image 20260329205916.png]]
+Si se recibe con error (en este caso el 6)
 ![[Pasted image 20260329210053.png]]
 
+## CDH en errores de ráfaga
 
 ---
 # Enlaces relacionados
