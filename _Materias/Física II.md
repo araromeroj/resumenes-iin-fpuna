@@ -12,6 +12,8 @@ final_2: 2026-07-10T18:00:00
 nota: Final 1 en segunda oportunidad, Final 2 sí o sí
 semestre: 4
 aula: A57
+aulap1: A52
+aulap2: A52
 ---
 
 ## Índice

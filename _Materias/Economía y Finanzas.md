@@ -11,6 +11,8 @@ final_1: 2026-06-17T18:00:00
 final_2: 2026-07-01T18:00:00
 semestre: 4
 aula: C01
+aulap1: C01
+aulap2: C01
 ---
 ## Índice
 

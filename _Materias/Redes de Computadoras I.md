@@ -11,6 +11,8 @@ final_1: 2026-06-15T15:00:00
 final_2: 2026-07-06T15:00:00
 semestre: 4
 aula: A51
+aulap1: A51
+aulap2: A51
 ---
 >[!Warning] Test Semanales
 >Los test se basan en **lo que se dió en clase** ESPECÍFICAMENTE.

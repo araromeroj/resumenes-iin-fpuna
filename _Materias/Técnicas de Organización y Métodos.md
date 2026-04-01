@@ -12,6 +12,8 @@ final_2: 2026-07-09T19:30:00
 semestre: 5
 aula: A53
 nota: Clase sábado 28/03 y 23/05
+aulap1: A53
+aulap2: A53
 ---
 ## Índice
 

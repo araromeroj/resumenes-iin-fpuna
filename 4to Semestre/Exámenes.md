@@ -4,7 +4,8 @@ TABLE
     profesor AS "Profesor", 
     dateformat(parcial_1, "dd/MM") AS "1er Parcial", 
     dateformat(parcial_1, "HH:mm") AS "Horario",
-    (parcial_1 - date(today)) AS "Días restantes"
+    (parcial_1 - date(today)) AS "Días restantes",
+    aulap1 AS "Aula"
 FROM "_Materias"
 WHERE tipo = "materia"
 SORT parcial_1 ASC
