@@ -26,3 +26,20 @@ Se añade al final del mensaje y su propósito principal es garantizar la integr
 - **Suma de comprobación (Checksum) o CRC:** Contiene un código (como el CRC de 32 bits en Ethernet) calculado a partir de los bits del mensaje. El receptor recalcula este valor; si no coincide con el del tráiler, sabe que la información se dañó durante la transmisión.
 - **Ubicación estratégica:** Los protocolos suelen colocar estos códigos en el tráiler en lugar del encabezado porque permite al hardware calcular el valor **mientras los bits salen** por la interfaz de red, lo que resulta más eficiente.
 - **Información adicional:** En algunos casos específicos (como el protocolo AAL5), el tráiler también puede incluir la **longitud** de la carga útil para asegurar que el mensaje se reconstruya correctamente.
+
+---
+# Tipos de enlaces
+## Tipos de Enlaces
+
+| Tipo              | Descripción                                                                         | Ejemplo                            |
+| ----------------- | ----------------------------------------------------------------------------------- | ---------------------------------- |
+| **Punto a punto** | Conectan pares individuales de máquinas                                             | Enlaces satelitales, fibra directa |
+| **Multipunto**    | Un único canal compartido, todos reciben el paquete pero solo el destino lo procesa | Redes WiFi, Ethernet cl            |
+### Tipos de mensajes
+
+- [I] **Unidifusión (Unicast):** Envío de un emisor a un único receptor específico.
+- [I] **Multidifusión (Multicast):** Envío a un grupo selecto de máquinas.
+- [I] **Broadcasting:** A todos los equipos.
+- [I] **Anycast (IPv6):** Primer equipo de un grupo.
+
+---
