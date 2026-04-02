@@ -14,7 +14,7 @@ Contiene la **información de control** necesaria para que el mensaje llegue a s
 
 ## Carga útil (Payload)
 
-Es la parte que contiene el **mensaje original** o los datos reales que se desean transmitir.
+- [I] **Carga útil:** Es la parte que contiene el **mensaje original** o los datos reales que se desean transmitir.
 
 - Desde el punto de vista de una capa específica, la carga útil es **"información pura"**.
 - En la arquitectura de capas, la carga útil de una trama suele ser el **paquete completo** proveniente de la capa de red superior.
