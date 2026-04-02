@@ -2,11 +2,13 @@
 
 ![[Ejercicio 1P (2).png]]
 - Ver: [[1. Capa física#Técnicas de Multiplexado]]
+![[IMG_20260402_200907.jpg|400]]
 
 ![[Ejercicio 1P (3).png]]
 - Ver:
 	- [[El espectro electromagnético#Bandas ITU]]
 	- [[1. Capa física#Transmisión de Paso de Banda (Modulación de Portadora)]]
+![[IMG_20260402_202755.jpg]]
 
 ![[Ejercicio 1P (4).png]]
 
@@ -24,6 +26,7 @@
 	- [[NRZ]]
 	- [[Fibra Óptica]]
 	- [[Modelo OSI]]
+![[IMG_20260402_204857.jpg]]
 
 ![[Ejercicio 1P (8).png]]
 - Ver: TODO

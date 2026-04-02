@@ -1,4 +1,4 @@
-- [I] **Protocolo de Red:** Conjunto de reglas y normas que deben cumplir los dispositivos para la comunicación de datos de red. ^c8ac35
+- [I] **Protocolo de Red:** Conjunto de reglas y normas que deben cumplir los dispositivos para la comunicación de datos de red.
 
 ## Componentes
 
@@ -52,7 +52,5 @@ El diseño de protocolos modernos persigue cuatro metas principales:
 - **Seguridad:** Defender la red contra ataques de escucha (confidencialidad) y garantizar que los datos no sean alterados (integridad).
 
 ---
-
-# Terminología
 
 - [I] **Datagrama:** Es un paquete de datos que se utiliza en el contexto de un **servicio de red sin conexión.** Ver [[Datagramas]]
