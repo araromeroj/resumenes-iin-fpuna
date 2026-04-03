@@ -29,7 +29,7 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 - Más caras y difíciles de manejar por ser pesadas y gruesas
 ![[STP 1.png|50]]
 ## Categorías de cable de par trenzado
-![[Pasted image 20260325083618.png]]
+![[cable por categoría.png]]
 >[!info]
 >Cables de categoría 6 pueden ser UTP y soportar hasta 10Gbps
 >Cables nuevos Cat.8 con ancho de banda de 2 HHz usados en Ethernet 25 y 40 Gb con distancias de 30 m
