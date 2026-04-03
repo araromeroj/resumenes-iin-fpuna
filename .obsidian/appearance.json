@@ -1,9 +1,0 @@
-{
-  "cssTheme": "Dracula Gemini",
-  "baseFontSize": 15,
-  "accentColor": "#fa7dfc",
-  "enabledCssSnippets": [
-    "centrar-imagenes"
-  ],
-  "theme": "obsidian"
-}
