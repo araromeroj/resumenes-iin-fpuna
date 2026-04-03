@@ -25,7 +25,7 @@ Para una señal binaria, el proceso se puede resumir de la siguiente manera:
 
 Matemáticamente, la señal modulada s(t) se puede expresar como:
 
-s(t)=Ai​cos(2πfc​t)
+$s(t)=A_icos(2πf_c​t)$
 
 Donde:
 
@@ -41,9 +41,9 @@ Donde:
 La forma más simple y común de ASK es el **OOK**. En este método:
 
 - El **1 lógico** se representa mediante la presencia de la portadora.
-    
+
 - El **0 lógico** se representa mediante la ausencia total de la portadora.
-    
+
 
 Es el método utilizado, por ejemplo, en transmisiones de fibra óptica (encendido/apagado de luz) y en algunos controles remotos sencillos.
 
@@ -54,26 +54,26 @@ Es el método utilizado, por ejemplo, en transmisiones de fibra óptica (encendi
 ###  Ventajas
 
 - **Simplicidad:** Tanto el modulador como el demodulador son muy fáciles y baratos de implementar.
-    
+
 - **Eficiencia de ancho de banda:** Requiere menos ancho de banda que otras técnicas como FSK (Frequency Shift Keying).
-    
+
 
 ###  Desventajas
 
 - **Sensibilidad al ruido:** La amplitud es muy susceptible a las interferencias atmosféricas y al ruido electrónico, lo que puede causar errores en la detección de los bits.
-    
+
 - **Ineficiencia de potencia:** No es la técnica más eficiente para transmisiones de larga distancia en medios muy ruidosos.
-    
+
 
 ---
 
 ## 5. Aplicaciones Comunes
 
 - **Sistemas de Fibra Óptica:** Donde se usa luz "encendida" o "apagada".
-    
+
 - **Comunicaciones Inalámbricas de Corto Alcance:** Mandos de garaje, llaves de coche y sensores domésticos.
-    
+
 - **Telegrafía:** Históricamente relacionada con el código Morse.
-    
+
 
 ---

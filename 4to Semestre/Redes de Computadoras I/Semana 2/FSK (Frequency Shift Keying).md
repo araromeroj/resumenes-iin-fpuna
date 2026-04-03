@@ -9,9 +9,9 @@ La **Modulación por Desplazamiento de Frecuencia** (Frequency Shift Keying o **
 En FSK, los valores binarios (0 y 1) se representan mediante dos frecuencias distintas alrededor de una frecuencia central.
 
 - La amplitud y la fase de la portadora permanecen **constantes**.
-    
+
 - Solo cambia la **frecuencia**.
-    
+
 
 ## 2. Funcionamiento Técnico
 
@@ -24,20 +24,20 @@ En la forma más básica, llamada **BFSK** (Binary FSK), se utilizan dos frecuen
 
 La señal modulada se puede describir matemáticamente como:
 
-s(t)=Acos(2πfi​t)
+$s(t)=Acos(2πf_i​t)$
 
-Donde fi​ cambia entre f1​ y f0​ dependiendo del bit de datos entrante.
+Donde $f_i$​ cambia entre f1​ y f0​ dependiendo del bit de datos entrante.
 
 ---
 
 ## 3. Características Principales
 
-A diferencia de ASK, FSK es mucho más robusto frente a los problemas de transmisión:
+A diferencia de **ASK**, **FSK** es mucho más robusto frente a los problemas de transmisión:
 
 - **Inmunidad al ruido:** Como el ruido suele afectar a la amplitud de la señal, FSK (que depende de la frecuencia) es mucho menos propenso a errores causados por interferencias atmosféricas o ruido eléctrico.
-    
+
 - **Consumo de potencia:** La potencia de la señal es constante ya que la amplitud no varía.
-    
+
 
 ---
 
@@ -46,9 +46,9 @@ A diferencia de ASK, FSK es mucho más robusto frente a los problemas de transmi
 ###  Ventajas
 
 - **Resistencia al ruido:** Mayor fiabilidad en canales con muchas interferencias.
-    
+
 - **Simplicidad:** Sigue siendo relativamente fácil de implementar en comparación con técnicas más avanzadas como QAM.
-    
+
 
 ###  Desventajas
 

@@ -27,7 +27,7 @@ Matemáticamente, la señal se expresa como:
 
 $s(t) = A \cos(2\pi f_c t + \phi_i)$
 
-Donde $ϕ_i​$ puede ser 0 o $π$ (180°) según el bit.
+Donde $ϕ_i​$ puede ser 0 (0°) o $π$ (180°) según el bit.
 
 ---
 
@@ -36,9 +36,9 @@ Donde $ϕ_i​$ puede ser 0 o $π$ (180°) según el bit.
 A diferencia de ASK o FSK, PSK permite enviar más de un bit por cada cambio en la señal (símbolo) usando más ángulos de fase:
 
 - **BPSK (Binary PSK):** 2 fases, 1 bit por símbolo.
-    
+
 - **QPSK (Quadrature PSK):** 4 fases $(45°, 135°, 225°, 315°)$, lo que permite enviar **2 bits por símbolo**. Esto duplica la velocidad de transmisión sin aumentar el ancho de banda.
-    
+
 
 ---
 
@@ -47,27 +47,27 @@ A diferencia de ASK o FSK, PSK permite enviar más de un bit por cada cambio en 
 ### Ventajas
 
 - **Alta eficiencia:** Especialmente en sus versiones como QPSK, permite transmitir mucha información en poco ancho de banda.
-    
+
 - **Excelente inmunidad al ruido:** Es mucho más resistente a las interferencias que ASK.
-    
+
 - **Baja tasa de error:** Es muy eficiente en términos de potencia para la cantidad de datos que mueve.
-    
+
 
 ### Desventajas
 
 - **Complejidad técnica:** El receptor debe ser capaz de detectar cambios de fase muy precisos, lo que requiere circuitos de recuperación de portadora más complejos y costosos.
-    
+
 - **Sensibilidad al desfase:** Pequeños retardos en la señal pueden confundir al receptor.
-    
+
 
 ---
 
 ## 5. Aplicaciones Comunes
 
 - **Redes Wi-Fi:** Utilizan variantes de PSK para las conexiones inalámbricas.
-    
+
 - **Bluetooth:** Emplea técnicas basadas en el desplazamiento de fase.
-    
+
 - **Comunicaciones por Satélite:** Es el estándar debido a su gran eficiencia.
-    
+
 - **Telefonía móvil:** Fundamental en tecnologías 4G y 5G.
