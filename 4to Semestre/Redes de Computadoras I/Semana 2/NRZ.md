@@ -1,7 +1,8 @@
 Para entender **NRZ (Non-Return to Zero)**, es fundamental comprender que se llama así porque la señal no regresa a cero voltios en la mitad del intervalo de un bit; mantiene un nivel de voltaje constante durante todo el tiempo que dura el bit.
-
+- [*] **NRZ - Non Return to Zero:** Sin retorno a cero
 ---
 ## NRZ-L (Non-Return to Zero Level)
+- [*] **NRZL - Non Return to Zero Level:** Sin retorno a nivel cero
 
 Es la forma más simple de codificación digital. Aquí, el valor del bit depende directamente del **nivel de voltaje**.
 
@@ -14,6 +15,7 @@ Es la forma más simple de codificación digital. Aquí, el valor del bit depend
 - **Problema principal**: Si envías una cadena larga de ceros o de unos, el voltaje se mantiene plano (una línea recta). El receptor no puede saber cuántos bits han pasado exactamente porque no hay cambios en la señal que le ayuden a sincronizar su reloj (problema de **clocking**).
 
 ## NRZ-I (Non-Return to Zero Inverted)
+- [*] **NRZI - Non Return to Zero Inverted:** Sin retorno a cero invertido
 
 Esta variante es más robusta porque el valor del bit no depende del nivel de voltaje, sino de la **presencia o ausencia de un cambio (transición)** al inicio del intervalo del bit.
 
