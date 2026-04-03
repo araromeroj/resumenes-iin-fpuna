@@ -1,7 +1,7 @@
 {
-  "cssTheme": "",
+  "cssTheme": "Dracula Gemini",
   "baseFontSize": 15,
-  "accentColor": "#ff0000",
+  "accentColor": "#fa7dfc",
   "enabledCssSnippets": [
     "centrar-imagenes"
   ],
