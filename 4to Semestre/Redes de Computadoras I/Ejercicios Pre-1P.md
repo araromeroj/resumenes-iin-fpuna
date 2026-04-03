@@ -35,12 +35,12 @@
 
 ![[Ejercicio 1P (10).png]]
 
-![[Ejercicio 1P (11).png]]
+![[Ejercicio 1P (11).png|697]]
 
 ![[Ejercicio 1P (12).png]]
 
 ![[Ejercicio 1P (13).png]]
-
+![[IMG_20260403_141904.jpg]]
 ![[Ejercicio 1P (14).png]]
 
 ![[Ejercicio 1P (15).png]]
@@ -54,12 +54,12 @@
 ![[Ejercicio 1P (18).png]]
 
 ![[Ejercicio 1P (19).png]]
-![[Pasted image 20260324160326.png]]
+![[IMG_20260403_143108.jpg]]
 
 ![[Ejercicio 1P (20).png]]
 
 ![[Ejercicio 1P (21).png]]
-
+![[IMG_20260403_143730.jpg]]
 ![[Ejercicio 1P (22).png]]
 
 ![[Ejercicio 1P (23).png]]
@@ -71,8 +71,11 @@
 ![[Ejercicio 1P (26).png]]
 
 ![[Ejercicio 1P (27).png]]
+![[Pasted image 20260403150929.png]]
+![[IMG_20260403_154248.jpg]]
 
 ![[Ejercicio 1P (28).png]]
+
 
 ![[Ejercicio 1P (29).png]]
 

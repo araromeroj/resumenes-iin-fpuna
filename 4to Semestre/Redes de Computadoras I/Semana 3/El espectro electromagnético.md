@@ -17,7 +17,7 @@
 
 ![[Usos del espectro.png|600]]
 
-## Bandas ITU
+## Bandas ITU - T
 Son las denominaciones oficiales para las distintas porciones del espectro electromagnético basadas en sus longitudes de onda y frecuencias. Estas bandas permiten organizar el uso de las ondas de radio y microondas para diferentes tecnologías de comunicación a nivel mundial.
 
 | **Banda**                      | **Rango**                          | **Propagación**                   | **Aplicación**                                               |
