@@ -1,6 +1,6 @@
 {
   "version": "version1",
-  "enabled": true,
+  "enabled": false,
   "activeScheme": {
     "id": "cherry-mx-brown",
     "caption": "Cherry MX Brown",
