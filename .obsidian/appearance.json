@@ -1,8 +1,9 @@
 {
-  "cssTheme": "Tokyo Night",
+  "cssTheme": "",
   "baseFontSize": 15,
-  "accentColor": "#ff80f4",
+  "accentColor": "#ff0000",
   "enabledCssSnippets": [
     "centrar-imagenes"
-  ]
+  ],
+  "theme": "obsidian"
 }

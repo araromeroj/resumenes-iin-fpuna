@@ -11,6 +11,6 @@ Thumbs.db
 .obsidian/cache/
 .obsidian/indexedDB/
 
-# Opcional: Si quieres temas/plugins distintos por dispositivo
-# .obsidian/appearance.json
-# .obsidian/plugins/
+Opcional: Si quieres temas/plugins distintos por dispositivo
+.obsidian/appearance.json
+.obsidian/plugins/
