@@ -39,45 +39,82 @@
 
 ![[Ejercicio 1P (12).png]]
 
+---
+
 ![[Ejercicio 1P (13).png]]
 ![[Redundancia 1.jpg]]
 ![[Ejercicio 1P (14).png]]
 
+---
 ![[Ejercicio 1P (15).png]]
 
+---
 ![[Ejercicio 1P (16).png]]
+
+---
 
 ![[Ejercicio 1P (17).png]]
 - Ver: 
 	- [[1. Capa física]]
 
+---
+
 ![[Ejercicio 1P (18).png]]
+
+---
 
 ![[Ejercicio 1P (19).png]]
 ![[ancho de banda y capacidad 1.jpg]]
 
+---
+
 ![[Ejercicio 1P (20).png]]
+
+---
 
 ![[Ejercicio 1P (21).png]]
 ![[redundancia 2.jpg]]
+
+---
+
 ![[Ejercicio 1P (22).png]]
+
+---
 
 ![[Ejercicio 1P (23).png]]
 
+---
+
 ![[Ejercicio 1P (24).png]]
+
+---
 
 ![[Ejercicio 1P (25).png]]
 
+---
+
 ![[Ejercicio 1P (26).png]]
+
+---
 
 ![[Ejercicio 1P (27).png]]
 ![[A = f(f).png]]
 ![[de todo un poco.jpg]]
 
+---
+
 ![[Ejercicio 1P (28).png]]
 ![[almacenamiento y ancho de banda.jpg]]
 
+---
+
 ![[Ejercicio 1P (29).png]]
+![[NRZ MANCHESTER.jpg|]]
+![[BIPOLAR AMI.jpg|321BIPOLAR AMI.jpg]]
+![[IMG_20260403_183926.jpg]]
+
+
+---
 
 ![[Ejercicio 1P (30).png]]
 
