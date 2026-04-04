@@ -1,4 +1,4 @@
-El modelo **TCP/IP** (al que probablemente te refieres como TCL/IP) es una arquitectura de referencia para los protocolos de Internet que tiene un **origen práctico**, a diferencia del modelo OSI que es eminentemente teórico. Fue diseñado originalmente para la red **ARPANET** con el objetivo de interconectar múltiples redes de manera fluida y sin fisuras. Este modelo se organiza tradicionalmente en **cuatro capas**: **Aplicación, Transporte, Internet y Enlace**.
+El modelo **TCP/IP** es una arquitectura de referencia para los protocolos de Internet que tiene un **origen práctico**, a diferencia del modelo OSI que es eminentemente teórico. Fue diseñado originalmente para la red **ARPANET** con el objetivo de interconectar múltiples redes de manera fluida y sin fisuras. Este modelo se organiza tradicionalmente en **cuatro capas**: **Aplicación, Transporte, Internet y Enlace**.
 
 A continuación se detallan las funciones de cada nivel:
 
