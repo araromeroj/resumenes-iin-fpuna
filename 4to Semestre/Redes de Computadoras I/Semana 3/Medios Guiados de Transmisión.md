@@ -34,9 +34,9 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 >Cables de categoría 6 pueden ser UTP y soportar hasta 10Gbps
 >Cables nuevos Cat.8 con ancho de banda de 2 HHz usados en Ethernet 25 y 40 Gb con distancias de 30 m
 
-- [I] Full-duplex: Enlaces que pueden utilizarse en ambos sentidos.
-- [I] Semi-duplex: Enlaces que pueden usarse en ambos sentidos pero no en simultáneo.
-- [I] Simplex: Enlace que solo permite el tráfico en una dirección y sentido.
+- [I] **Full-duplex:** Enlaces que pueden utilizarse en ambos sentidos.
+- [I] **Semi-duplex:** Enlaces que pueden usarse en ambos sentidos pero no en simultáneo.
+- [I] **Simplex:** Enlace que solo permite el tráfico en una dirección y sentido.
 ---
 ## Cable Coaxial
 1. Consta de un hilo de cobre rígido como núcleo
