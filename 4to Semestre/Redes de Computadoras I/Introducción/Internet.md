@@ -3,6 +3,7 @@ comunes y prestan ciertos servicios comunes.
 
 - [*] **ARPA - Advaced Research Proyects Agency:** Agencia de proyectos de investigación avanzada.
 - [*] **NSFNET - National Science Foundation's Network:** Red de la fundación internacional de ciencia.
+
 El NSFNET reemplazó a arpanet como la principal columna vertebral de internet, permitiendo la expansión académica y comercial. Abierto para todos los grupos de investigación de las universidades.
 
 ## Arquitectura de la Internet

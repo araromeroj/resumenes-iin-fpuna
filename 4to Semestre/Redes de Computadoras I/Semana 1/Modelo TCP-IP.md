@@ -3,8 +3,27 @@ El modelo **TCP/IP** es una arquitectura de referencia para los protocolos de In
 A continuación se detallan las funciones de cada nivel:
 
 - **Capa de Internet (o Inter-red):** Es el eje que mantiene unida toda la arquitectura; su trabajo es permitir que los hosts inyecten paquetes en cualquier red y que estos viajen de forma independiente hasta su destino, incluso llegando en un orden distinto al original. Define el formato oficial de los paquetes y el protocolo **IP** (Internet Protocol), además del protocolo complementario **ICMP** que ayuda a su funcionamiento.
-- **Capa de Transporte:** Está diseñada para permitir que las entidades pares de los hosts de origen y destino mantengan una conversación. Define dos protocolos principales: **TCP** (Transmission Control Protocol), que es fiable y orientado a la conexión, y **UDP** (User Datagram Protocol), que es un protocolo sin conexión y no responsable, utilizado cuando la entrega rápida es más importante que la precisión absoluta.
+- **Capa de Transporte:** Está diseñada para permitir que las entidades pares de los hosts de origen y destino mantengan una conversación. Define dos protocolos principales: **TCP** que es fiable y orientado a la conexión y el **UDP** que es un protocolo sin conexión y no responsable, utilizado cuando la entrega rápida es más importante que la precisión absoluta.
 - **Capa de Aplicación:** Contiene todos los protocolos de alto nivel que interactúan con los programas del usuario. Entre los protocolos más importantes se encuentran **HTTP** para la web, **SMTP** para el correo electrónico, **FTP** para la transferencia de archivos y **DNS** para mapear nombres de host a direcciones de red.
 - **Capa de Enlace:** Describe lo que deben hacer los enlaces de transmisión (como líneas serie o Ethernet) para satisfacer las necesidades de la capa de Internet sin conexión. Técnicamente, más que una capa, funciona como una interfaz entre los hosts y los enlaces físicos de transmisión.
 
 Entre las críticas principales a este modelo se encuentra que no distingue claramente entre los conceptos de **servicios, interfaces y protocolos**, ni separa adecuadamente la **capa física** de la de **enlace de datos**. Sin embargo, su éxito masivo se debió a que sus protocolos estaban bien pensados, se ofrecieron de forma gratuita en sistemas como Berkeley UNIX y han demostrado una enorme capacidad para evolucionar con el tiempo.
+
+---
+# Terminología
+
+- [*] **TCP - Transmission Control Protocol:** Protocolo de control de transmisión
+- [*] **IP - Internet Protocol:** Protocolo de Internet
+- [*] **OSI - Open Systems Interconnection:** Interconexión de Sistemas Abiertos
+- [*] **ARPANET - Advanced Research Projects Agency Network:** Red de la Agencia de Proyectos de Investigación Avanzada
+- [*] **ICMP - Internet Control Message Protocol:** Protocolo de Mensajes de Control de Internet
+- [*] **UDP - User Datagram Protocol:** Protocolo de datagramas de usuario
+- [*] **HTTP - Hypertext Transfer Protocol:** Protocolo de transferencia de hipertexto
+- [*] **SMTP - Simple Mail Transfer Protocol:** Protocolo para transferencia simple de correo
+- [*] **FTP - File Transfer Protocol:** Protocolo de transferencia de archivos
+- [*] **DNS - Domain Name System:** Sistema de nombres de dominio
+
+---
+# Enlaces relacionados
+- [[Introducción]]
+- [[Modelo OSI]]
