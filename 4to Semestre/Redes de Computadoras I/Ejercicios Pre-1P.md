@@ -37,8 +37,11 @@
 ![[Ejercicio 1P (11).png|697]]
 
 ![[Ejercicio 1P (12).png]]
-
+- Ver: [[Análisis de Gráfica A = F(f)]], [[Medios Guiados de Transmisión]]
+![[IMG_20260404_103543.jpg]]
+- [i] OJO: Gemini dice 250MHz, pero en el PPT dice 200Mhz, en ese caso sería $66,6\text{MHz}$
 ---
+
 
 ![[Ejercicio 1P (13).png]]
 ![[Redundancia 1.jpg]]
@@ -53,8 +56,7 @@
 ---
 
 ![[Ejercicio 1P (17).png]]
-- Ver: 
-	- [[1. Capa física]]
+- Ver: [[1. Capa física]]
 
 ---
 

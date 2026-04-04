@@ -7,6 +7,10 @@
 
 - [I] **Velocidad de propagación:** en el vacío, todas las ondas viajan a la velocidad de la luz, que es aproximadamente $3*10^8 \text{m/s}$.
 - [f] #fórmula $c=\lambda*f$ es la relación fundamental del espectro electromagnético.
+
+- [I] **Frecuencia fundamental:** es la nota base, la más lenta y principal de la señal.
+- [I] **Armónico:** es una onda cuya frecuencia es un múltiplo entero de la frecuencia fundamental (si se quiere el tercer armónico entonces sería 3f)
+- [I] **Amplitud:** es la altura de 
 - [I] Pie: es la distancia que recorre la luz en el vacío en 1 nano segundo ($1*10^{-9}\text{s}$)
 
 >[!note] Nota:

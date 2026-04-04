@@ -29,6 +29,7 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 - Más caras y difíciles de manejar por ser pesadas y gruesas
 ![[STP 1.png|50]]
 ## Categorías de cable de par trenzado
+
 ![[cable por categoría.png]]
 >[!info]
 >Cables de categoría 6 pueden ser UTP y soportar hasta 10Gbps
@@ -75,6 +76,7 @@ Se utiliza para la **transmisión analógica** y la **TV por cable**.
 Llevan la electricidad a las casas y el cableado de las casas distribuye la electricidad a tomas eléctricas.
 
 - [I] **PLC - Power Line Communications:** Consiste en la utilización del cableado eléctrico doméstico para la comunicación de datos, diseñado para distribuir señales eléctricas. Es una opción conveniente por la ubicuidad de los enchufes, aunque es un medio muy ruidoso y deficiente para altas velocidades.
+- [*] **PLC - Power Line Communications:** Comunicación de linea de potencia.
 
 >[!important] Ventajas
 >Conveniente por la ubicuidad de enchufes
@@ -113,8 +115,8 @@ Se compone de:
 | La fibra actúa como guía de ondas y la luz sólo puede propagarse en línea recta, **sin rebotar**, se llama **monomodo**. | Si cada rayo tiene un modo diferente se llama **multimodo**.                              |
 | Núcleo delgado<br>Para largas distancias hasta 100 km<br>Caras<br>Mayor ancho de banda                                   | Núcleo grueso<br>Para distancias cortas hasta 15 Km<br>Baratas<br>Ancho de banda limitado |
 ### Tipos de fuentes de luz
-- [I] LED: Diodos emisores de luz
-- [I] ILD: Laser semiconductor
+- [*] **LED - Light Emitting Diode:** Diodos emisores de luz.
+- [*] **ILD - Injection Laser Diode:** Laser semiconductor o diodo láser.
 
 | LED                                     | LID                                          |
 | --------------------------------------- | -------------------------------------------- |
