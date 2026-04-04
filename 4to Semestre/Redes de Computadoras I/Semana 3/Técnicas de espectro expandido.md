@@ -2,7 +2,9 @@
 Ver: [[2. Capa Física]]
 ## FHSS - Espectro ensanchado por Salto de Frecuencia
 
-En el Frequency Hopping Spread Spectrum, la señal no se mantiene en una frecuencia fija, sino que el transmisor **salta de una frecuencia a otra e cientos de veces por segundo**.
+- [*] **FHSS - Frequency Hopping Spread Spectrum:** Espectro expandido por salto de frecuencia.
+
+En el FHSS, la señal no se mantiene en una frecuencia fija, sino que el transmisor **salta de una frecuencia a otra e cientos de veces por segundo**.
 
 >[!tip] Funcionamiento
 > Los saltos siguen una **secuencia pseudoaleatoria** de frecuencias conocida tanto por el emisor como el receptor, quienes deben estar sincronizados.
@@ -17,6 +19,8 @@ El tiempo entre saltos es menor que la duración del elemento de señal, lo que 
 $$T_c<T_s$$
 ![[Fast FHSS.png|500]]
 ## DSSS - Espectro ensanchado de secuencia directa
+
+- [*] **DSSS -  Direct Sequence Spread Spectrum:** Espectro ensanchado por secuencia directa.
 
 Utiliza una secuencia de códigos para distribuir la señal de datos por una banda de frecuencias más amplia.
 
