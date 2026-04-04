@@ -11,7 +11,7 @@ Servicios de **alta velocidad** para hogares (típicamente 1 Gbps) que utilizan 
 
 >[!important] Ley de Metcalfe
 >Dice que el valor de la Internet es proporcional al cuadrado de la cantidad de usuarios.
->$$\text{Valor}_\text{Internet} = X/\text{Usuarios}^2$$
+>$$\text{Valor}_\text{Internet} = X * \text{Usuarios}^2$$
 
 ## Acceso móviles e inalámbricas (wireless)
 Permiten la conectividad para dispositivos en movimiento, como portátiles y smartphones.

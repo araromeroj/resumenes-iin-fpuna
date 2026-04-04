@@ -28,7 +28,7 @@
 ![[ancho de banda y SNR.jpg]]
 
 ![[Ejercicio 1P (8).png]]
-- Ver: TODO
+	- Ver: TODO
 
 ![[Ejercicio 1P (9).png]]
 
