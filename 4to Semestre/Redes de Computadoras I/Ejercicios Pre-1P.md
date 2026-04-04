@@ -24,8 +24,7 @@
 ![[Ejercicio 1P (7).png]]
 - Ver:
 	- [[NRZ]]
-	- [[Fibra Óptica]]
-	- [[Modelo OSI]]
+	
 ![[ancho de banda y SNR.jpg]]
 
 ![[Ejercicio 1P (8).png]]
