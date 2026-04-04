@@ -8,7 +8,7 @@
 - Ver:
 	- [[El espectro electromagnético#Bandas ITU]]
 	- [[1. Capa física#Transmisión de Paso de Banda (Modulación de Portadora)]]
-![[QPSK y SNR 1.jpg]]
+![[IMG_20260404_193742 1.jpg]]
 
 ![[Ejercicio 1P (4).png]]
 
@@ -25,7 +25,7 @@
 - Ver:
 	- [[NRZ]]
 	
-![[ancho de banda y SNR.jpg]]
+![[IMG_20260404_194257.jpg]]
 
 ![[Ejercicio 1P (8).png]]
 	- Ver: TODO
