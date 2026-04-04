@@ -15,6 +15,11 @@ La transmisión por infrarrojo es una forma de comunicación inalámbrica que ut
 - **Sistemas antiguos:** Las primeras versiones del estándar **IEEE 802.11** (WiFi) incluían una técnica de transmisión por infrarrojos, aunque esta desapareció en las versiones posteriores en favor de las radiofrecuencias.
 
 ---
+# Terminología
+
+- [*] **IrDA - Infrared Data Association:** Asociación de datos por infrarrojos.
+
+---
 # Enlaces relacionados
 - [[2. Capa Física]]
 - [[Medios no guiados de transmisión]]

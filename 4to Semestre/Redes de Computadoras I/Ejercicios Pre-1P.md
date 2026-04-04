@@ -38,7 +38,7 @@
 
 ![[Ejercicio 1P (12).png]]
 - Ver: [[Análisis de Gráfica A = F(f)]], [[Medios Guiados de Transmisión]]
-![[IMG_20260404_103543.jpg]]
+![[señal cuadrada.jpg]]
 - [i] OJO: Gemini dice 250MHz, pero en el PPT dice 200Mhz, en ese caso sería $66,6\text{MHz}$
 ---
 
@@ -112,7 +112,7 @@
 ![[Ejercicio 1P (29).png]]
 ![[NRZ MANCHESTER.jpg|]]
 ![[BIPOLAR AMI.jpg|321BIPOLAR AMI.jpg]]
-![[IMG_20260403_183926.jpg]]
+![[QAM 64.jpg]]
 
 
 ---
