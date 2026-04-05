@@ -47,7 +47,7 @@ Los datos se representan mediante la presencia o ausencia de transiciones en lug
 - **Autosincronización (Clocking):** Al garantizar una transición en el medio de cada bit, el receptor puede extraer fácilmente la señal de reloj del flujo de datos. Esto evita que el receptor pierda el sincronismo ante largas cadenas de bits idénticos (ya sean "0"s o "1"s).
 	
 - **Detección de Errores:** Al ser un código que requiere transiciones constantes, cualquier intervalo de bit que carezca de la transición central puede ser identificado inmediatamente por la capa física como una "violación de código" o error de transmisión.
-	Ver: [[Control de errores (Detección y corrección)]], [[1. Capa física]]
+	Ver: [[Control de errores (Detección y corrección)]], [[2. Capa Física]]
 	
 - **Uso de Ancho de Banda:** Al igual que el Manchester estándar, este esquema requiere el **doble de ancho de banda** que la codificación NRZ simple, ya que la señal cambia al menos una vez (y a veces dos) por cada bit transmitido.
 
@@ -64,4 +64,4 @@ Ambos esquemas pertenecen a la categoría de códigos de línea que facilitan la
 
 ---
 # Enlaces relacionados
-- [[1. Capa física]]
+- [[2. Capa Física]]

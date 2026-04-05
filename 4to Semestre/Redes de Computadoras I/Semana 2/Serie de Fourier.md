@@ -70,4 +70,5 @@ Una vez que tengas los resultados de las integrales, simplemente reemplaza $a_0$
 
 > **Consejo práctico para las integrales:** Ten a mano una tabla de integrales trigonométricas y recuerda propiedades básicas como $\sin(n\pi) = 0$ y $\cos(n\pi) = (-1)^n$ (para números enteros $n$). Aparecen constantemente al evaluar los límites.
 
-[[1. Capa física]]
+[[1. Bases Teóricas de la Transmisión de Datos]]
+[[2. Capa Física]]

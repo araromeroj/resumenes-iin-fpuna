@@ -52,5 +52,6 @@ Ambas técnicas son eficientes en cuanto al uso del ancho de banda porque no req
 >- No son muy usados para la transmisión de datos por sus desventajas
 
 # Enlaces relacionados
-- [[1. Capa física]]
+- [[1. Bases Teóricas de la Transmisión de Datos]]
+- [[2. Capa Física]]
 - [[Codificación Manchester]]

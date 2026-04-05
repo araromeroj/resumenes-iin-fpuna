@@ -34,5 +34,4 @@ Entre las críticas principales a este modelo se encuentra que no distingue clar
 
 ---
 # Enlaces relacionados
-- [[Introducción]]
 - [[Modelo OSI]]

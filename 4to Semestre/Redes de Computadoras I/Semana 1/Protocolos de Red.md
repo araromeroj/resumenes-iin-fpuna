@@ -18,9 +18,8 @@ Las redes se organizan como una pila de capas o niveles, donde cada capa se cons
 ---
 ## Servicio vs. Protocolo
 
-| SERVICIO                                                                                                                 | PROTOCOLO                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| Es una **abstracción** que define qué hace la capa para su usuario superior, pero no dice nada sobre cómo se implementa. | Define **cómo** se implementa el servicio mediante reglas que tigen el intercambio de paquetes entre entidades pares. |
+- [I] **Servicio:** Es una **abstracción** que define qué hace la capa para su usuario superior, pero no dice nada sobre cómo se implementa.
+- [I] **Protocolo:** Define **cómo** se implementa el servicio mediante reglas que tigen el intercambio de paquetes entre entidades pares.
 
 ## El Encapsulamiento
 
@@ -42,6 +41,8 @@ Los protocolos pueden ofrecer distintos modelos de entrega:
 - **Sin conexión:** Sigue el modelo postal; cada paquete (llamado **datagrama**) es independiente y lleva la dirección de destino completa.
 - **Fiabilidad:** Un servicio es **fiable** si el receptor envía un **acuse de recibo (ACK)** por cada mensaje recibido correctamente. Si no hay confirmación, el emisor utiliza temporizadores para retransmitir el dato.
 
+- [*] **ACK - acknowledgement:** Acuse de recibo.
+- [I] **ACK:** es la señal de control que confirma la correcta recepción de paquetes de datos. Fundamental en TCP.
 ## Objetivos de Diseño
 
 El diseño de protocolos modernos persigue cuatro metas principales:
@@ -54,3 +55,7 @@ El diseño de protocolos modernos persigue cuatro metas principales:
 ---
 
 - [I] **Datagrama:** Es un paquete de datos que se utiliza en el contexto de un **servicio de red sin conexión.** Ver [[Datagramas]]
+
+---
+# Enlaces relacionados
+- siguiente nota: [[Modelo OSI]]

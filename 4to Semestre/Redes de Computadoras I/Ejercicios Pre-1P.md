@@ -1,25 +1,25 @@
 ![[Ejercicio 1P (1).png]]
 
 ![[Ejercicio 1P (2).png]]
-- Ver: [[1. Capa física#Técnicas de Multiplexado]]
+- Ver: [[1. Bases Teóricas de la Transmisión de Datos#Técnicas de Multiplexado]]
 ![[CDMA 1.jpg|400]]
 
 ![[Ejercicio 1P (3).png]]
 - Ver:
 	- [[El espectro electromagnético#Bandas ITU]]
-	- [[1. Capa física#Transmisión de Paso de Banda (Modulación de Portadora)]]
+	- [[1. Bases Teóricas de la Transmisión de Datos#Transmisión de Paso de Banda (Modulación de Portadora)]]
 ![[IMG_20260404_193742 1.jpg]]
 
 ![[Ejercicio 1P (4).png]]
 
 ![[Ejercicio 1P (5).png]]
 - Ver: 
-	- [[1. Capa física#Técnicas de Multiplexado]]
+	- [[1. Bases Teóricas de la Transmisión de Datos#Técnicas de Multiplexado]]
 
 ![[Ejercicio 1P (6).png]]
 - Ver: 
-	- [[1. Capa física#Técnicas de Multiplexado]]
-	- [[1. Capa física#Transmisión de Paso de Banda (Modulación de Portadora)]]
+	- [[1. Bases Teóricas de la Transmisión de Datos#Técnicas de Multiplexado]]
+	- [[1. Bases Teóricas de la Transmisión de Datos#Transmisión de Paso de Banda (Modulación de Portadora)]]
 
 ![[Ejercicio 1P (7).png]]
 - Ver:
@@ -56,7 +56,7 @@
 ---
 
 ![[Ejercicio 1P (17).png]]
-- Ver: [[1. Capa física]]
+- Ver: [[1. Bases Teóricas de la Transmisión de Datos]]
 
 ---
 
@@ -119,8 +119,24 @@
 
 ![[Ejercicio 1P (30).png]]
 
+---
 ![[Ejercicio 1P (31).png]]
+![[IMG_20260404_213246.jpg]]
 
+---
 ![[Ejercicio 1P (32).png]]
+![[IMG_20260404_211706.jpg]]
 
+---
 ![[Ejercicio 1P (33).png]]
+> [!solución]
+> $\text{bitrate}=\text{Baudrate}*2$
+> 1.2. $9200 = 2400/2$? Falso, necesita $9200/2 = 4600$ baudios
+> 1.3. $2*4000\text{Hz}=8000\text{muestras/seg}$, Falso son 8000 **muestras/seg**
+> 1.4. Falso, la frecuencia ITU-T para 900MHz es de **UHF**
+
+---
+# Ejercicios de corrección de errores
+
+1- Utilizando el código de Hamming, si se tiene un mensaje de m=7 bits de datos, ¿cuál es el número mínimo de bits de redundancia (r) necesarios para corregir errores de un solo bit?
+![[IMG_20260404_203546.jpg]]

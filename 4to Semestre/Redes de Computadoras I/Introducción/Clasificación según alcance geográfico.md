@@ -30,7 +30,7 @@ La clasificación de las redes según su **alcance geográfico** permite organiz
 - [*] **LAN - Local area networks:** redes de área local
 - [*] **VLAN - Virtual local area networks:** redes virtuales de área local
 
-Podría interesar: [[1. Capa física]], [[Medios Guiados de Transmisión]]
+Podría interesar: [[1. Bases Teóricas de la Transmisión de Datos]], [[Medios Guiados de Transmisión]]
 ### 3. MAN (Metropolitan Area Network) - Red de Área Metropolitana
 
 - **Alcance:** Una **ciudad** entera.
