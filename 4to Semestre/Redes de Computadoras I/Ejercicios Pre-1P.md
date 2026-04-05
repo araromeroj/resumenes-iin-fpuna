@@ -1,5 +1,6 @@
 ![[Ejercicio 1P (1).png]]
 
+
 ![[Ejercicio 1P (2).png]]
 - Ver: [[1. Bases Teóricas de la Transmisión de Datos#Técnicas de Multiplexado]]
 ![[CDMA 1.jpg|400]]
@@ -31,6 +32,7 @@
 	- Ver: TODO
 
 ![[Ejercicio 1P (9).png]]
+
 
 ![[Ejercicio 1P (10).png]]
 
@@ -118,6 +120,7 @@
 ---
 
 ![[Ejercicio 1P (30).png]]
+![[IMG_20260405_153326 1.jpg]]
 
 ---
 ![[Ejercicio 1P (31).png]]
