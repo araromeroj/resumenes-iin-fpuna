@@ -38,7 +38,7 @@ Cuando un mensaje se transmite, viaja hacia abajo a través de la pila de protoc
 Los protocolos pueden ofrecer distintos modelos de entrega:
 
 - **Orientado a la conexión:** Sigue el modelo del sistema telefónico; requiere establecer una conexión, transmitir los datos y luego liberarla (negociación previa).
-- **Sin conexión:** Sigue el modelo postal; cada paquete (llamado **datagrama**) es independiente y lleva la dirección de destino completa.
+- **Sin conexión:** Sigue el modelo postal; cada paquete (llamado **datagrama**) es independiente y lleva la dirección de destino completa. Ver: [[Datagramas]]
 - **Fiabilidad:** Un servicio es **fiable** si el receptor envía un **acuse de recibo (ACK)** por cada mensaje recibido correctamente. Si no hay confirmación, el emisor utiliza temporizadores para retransmitir el dato.
 
 - [*] **ACK - acknowledgement:** Acuse de recibo.

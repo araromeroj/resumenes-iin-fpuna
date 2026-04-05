@@ -14,7 +14,7 @@ A continuación se detallan las funciones de cada nivel:
 	- [I] **FTP:** para la transferencia de archivos
 	- [I] **DNS:** para mapear nombres de host a direcciones de red.
 	
-- **Capa de Enlace:** Describe lo que deben hacer los enlaces de transmisión (como líneas serie o Ethernet) para satisfacer las necesidades de la capa de Internet sin conexión. Técnicamente, más que una capa, funciona como una interfaz entre los hosts y los enlaces físicos de transmisión.
+- **Capa de Enlace:** Describe lo que deben hacer los enlaces de transmisión (como líneas serie o Ethernet) para satisfacer las necesidades de la capa de Internet sin conexión. Técnicamente, más que una capa, **funciona como una interfaz entre los hosts y los enlaces físicos de transmisión.**
 
 Entre las críticas principales a este modelo se encuentra que no distingue claramente entre los conceptos de **servicios, interfaces y protocolos**, ni separa adecuadamente la **capa física** de la de **enlace de datos**. Sin embargo, su éxito masivo se debió a que sus protocolos estaban bien pensados, se ofrecieron de forma gratuita en sistemas como Berkeley UNIX y han demostrado una enorme capacidad para evolucionar con el tiempo.
 
