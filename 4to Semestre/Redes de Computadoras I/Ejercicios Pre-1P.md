@@ -12,6 +12,9 @@
 ![[IMG_20260404_193742 1.jpg]]
 
 ![[Ejercicio 1P (4).png]]
+c) el direccionamiento de la capa 2 (enlace) es direccionamiento físico y utiliza MAC ADDRESS y en la capa 3 es el direccionamiento lógico y utiliza dirección IP.
+d) NRZL es el non return to zelo level que consiste en que un bit "0" representa señal alta y un bit "1" significa señal baja. En el NRZI es el non return to zero inverted que consiste en que los bits "1" representan un cambio y el bit "0" representa el no cambio.
+e) la distorsión por retardo se debe al ruido y la distorsión por atenuación es la pérdida de señal 
 
 ![[Ejercicio 1P (5).png]]
 - Ver: 
@@ -29,10 +32,10 @@
 ![[IMG_20260404_194257.jpg]]
 
 ![[Ejercicio 1P (8).png]]
-	- Ver: TODO
+e) red sin conexión no confiable: ethernet
+h) 
 
 ![[Ejercicio 1P (9).png]]
-
 
 ![[Ejercicio 1P (10).png]]
 
