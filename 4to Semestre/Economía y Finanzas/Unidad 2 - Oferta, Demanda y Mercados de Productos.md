@@ -59,3 +59,10 @@ El modelo de oferta y demanda son el núcleo básico común.
 ## Asignación de recursos
 
 - [I] Los recursos se asignan eficientemente (en el sentido de Pareto) cuando no es posible mejorar el bienestar de ninguna persona sin empeorar el de ninguna otra.
+
+- [I] **Equilibrio de un mercado perfectamente competitivo:** 
+	$\text{Valor marginal de consumidores}=\text{Precio}=\text{Costo marginal de producción}$
+
+- [I] **Costo Marginal:** Es el costo adicional en el que incurre un productor para fabricar una unidad más de un bien o servicio.
+- [I] **Valoración o Beneficio Marginal:** beneficio o bienestar adicional que recibe un individuo al consumir o adquirir una unidad más de un bien.
+- [I] **El papel de los precios:** 
