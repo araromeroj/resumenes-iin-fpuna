@@ -7,10 +7,6 @@ El modelo de oferta y demanda son el núcleo básico común.
 - Mercados de automóviles de segunda.
 - Las bolsas de valores. Funcionan por teléfono.
 
-## Clasificación del Mercado
-- Mercado de Competencia Perfecta
-- Mercado de Competencia Imperfecta
-
 ## La Curva de Demanda
 
 - [I] **Oferta:** es la cantidad de bienes y servicios que una empresa o persona lanza en el mercado a un precio determinado. Describe la conducta de los vendedores reales y potenciales de un bien.
@@ -60,9 +56,38 @@ El modelo de oferta y demanda son el núcleo básico común.
 
 - [I] Los recursos se asignan eficientemente (en el sentido de Pareto) cuando no es posible mejorar el bienestar de ninguna persona sin empeorar el de ninguna otra.
 
+- [I] **Costo Marginal:** Es el costo adicional en el que incurre un productor para fabricar una unidad más de un bien o servicio.
+- [I] **Valoración o Beneficio Marginal:** beneficio o bienestar adicional que recibe un individuo al consumir o adquirir una unidad más de un bien.
 - [I] **Equilibrio de un mercado perfectamente competitivo:** 
 	$\text{Valor marginal de consumidores}=\text{Precio}=\text{Costo marginal de producción}$
 
-- [I] **Costo Marginal:** Es el costo adicional en el que incurre un productor para fabricar una unidad más de un bien o servicio.
-- [I] **Valoración o Beneficio Marginal:** beneficio o bienestar adicional que recibe un individuo al consumir o adquirir una unidad más de un bien.
-- [I] **El papel de los precios:** 
+- [I] **El papel de los precios:** los precios dirigen los recursos hacia sus usos óptimos.
+	- guía la decisión del consumidor y del precio del vendedor (?
+	- transmiten toda la información necesaria a todos los que participan en el mercado.
+- [I] **Excedente de los consumidores:** es la diferencia entre la cantidad máxima que están dispuestos a pagar los consumidores por la cantidad que demandan y la que pagan realmente.
+	- Es el área bajo la curva de la demanda y una línea horizontal al precio de mercado.
+- [I] **Excedente de los productores:** es la diferencia acumulativa entre el precio y el costo marginal de producción.
+	- Es el área situada bajo la curva oferta y la línea horizontal correspondiente al precio de mercado.
+- [I] **Eficiencia del equilibrio competitivo:** es la suma del excedente adicional de los consumidores y el excedente adicional de los productores.
+	- Es el área entre la curva de demanda y la curva de oferta.
+- [I] **Eficiencia económica:** es el que minimiza el costo de oportunidad de los factores utilizados en la producción.
+- [I] **Eficiencia técnica:** si la producción que se obtiene es la máxima posible con las cantidades de factores especificadas.
+
+## Clasificación del Mercado
+### Mercado de competencia perfecta
+1. Variantes ofertantes y varios demandantes de productos homogéneos.
+2. Ningún oferente ni demandante individualmente puede incidir sobre la fijación del precio.
+3. Pleno conocimiento del Mercado de Oferentes y Demandantes.
+4. Ingreso y Egreso libre al mercado.
+### Mercado de competencia imperfecta
+- Monopolio:
+	1. Un solo oferente y varios demandantes
+	2. El oferente puede incidir sobre la fijación del precio.
+
+# Elasticidad
+- [I] **Elasticidad:** es el cociente entre la variación porcentual de la cantidad por una variación porcentual del precio.
+	1. Perfectamente elástica: a una pequeña variación del  precio corresponde gran variación de oferta o demanda.
+	2. Relativamente elástica:
+	3. Elasticidad Unitaria
+	4. Relativamente inelástica
+	5. Perfectamente inelástica.
