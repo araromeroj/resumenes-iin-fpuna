@@ -4,8 +4,7 @@ Respuesta: ¨La Economía es el estudio de la forma en que las sociedades decide
 
 **Exprese su concepción de Mercados, precios, Nivel de precios e índice de precios e Índice de precios de consumo.**
 
-Respuesta: Los mercados son importantes en todas las economías y en las economías occidentales la mayoría de las decisiones relacionadas con la asignación de recursos se toman en mercados
-
+Respuesta: 
 Precio x cantidad = monetaria
 
 Los precios, las cantidades y los valores monetarios describen las transacciones que se realizan en el mercado de un único bien o servicio.
@@ -16,19 +15,18 @@ Un índice de precios expresa el costo de una cesta dada de mercado o conjunto d
 
 El Índice de precios de consumo IPC se basa en el costo de una cesta de mercado de bienes que refleja las compras de una economía domestica urbana representativa. Es el precio o índice del costo de la vida mas utilizado.   
 
-**Exprese el concepto de la Asignación eficiente de los recursos (Pareto)**, el papel de los precios, del excedente de los consumidores y la función de oferta en el mismo.
+**Exprese el concepto de la Asignación eficiente de los recursos (Pareto), el papel de los precios, del excedente de los consumidores y la función de oferta en el mismo.**
 
-Respuesta: Eficiencia y Equidad: El concepto de eficiente en el sentido de Pareto se basa en el juicio de valor relativamente poco controvertido de que el despilfarro es algo malo, ya que es posible mejorar el bienestar de algunas personas si se puede eliminar este. Para elegir uno de los puntos eficientes en el Sentido de Pareto debemos abordar explícitamente la cuestión de la equidad o la justicia.
+**Respuesta**:
+Eficiencia y Equidad: El concepto de eficiente en el sentido de Pareto se basa en el juicio de valor relativamente poco controvertido de que el despilfarro es algo malo, ya que es posible mejorar el bienestar de algunas personas si se puede eliminar este. Para elegir uno de los puntos eficientes en el Sentido de Pareto debemos abordar explícitamente la cuestión de la equidad o la justicia.
 
-El papel de los precios: en una economía de mercado competitiva, los precios dirigen los recursos hacia sus usos óptimos. P.a., en condiciones competitivas el precio al que puede venderse una bicicleta guía la decisión del productor de incurrir o no en el costo marginal de fabricar otra. El precio también guía la decisión del consumidor de comprar o no una. Generalmente le da igual el costo marginal de la producción de la bicicleta; utiliza el precio para ver si disfrutaría de un mayor bienestar comprando una bicicleta o comprando otra cosa.
+**El papel de los precios:** en una economía de mercado competitiva, los precios dirigen los recursos hacia sus usos óptimos. P.a., en condiciones competitivas el precio al que puede venderse una bicicleta guía la decisión del productor de incurrir o no en el costo marginal de fabricar otra. El precio también guía la decisión del consumidor de comprar o no una. Generalmente le da igual el costo marginal de la producción de la bicicleta; utiliza el precio para ver si disfrutaría de un mayor bienestar comprando una bicicleta o comprando otra cosa.
 
 El excedente de los consumidores es la diferencia entre la cantidad máxima que estarían dispuestos a pagar los consumidores por la cantidad del bien que demandan y la que pagan realmente
 
 La función de oferta indica la cantidad que desean vender los vendedores a cada uno de los precios
 
 **El tema de l****a Doble contabilización en el PNB**
-
-:
 
 Respuesta: En primer lugar, al medir la producción tenemos que evitar la Doble Contabilización, es decir, el contabilizar dos veces la misma producción.
 
@@ -54,13 +52,13 @@ Se trata de fondos depositados en bancos y otras instituciones financieras contr
 
  Respuesta: Los principales instrumentos de la política fiscal discrecional – los programas que exigen tomar una decisión pública explicita - son:
 
-          **Los programas de obras públicas y otros programas de gastos**. Las Obras publicas. Cuando los gobiernos de EEUU empezaron a hacer frente a las depresiones activamente, utilizaron frecuentemente proyectos de inversión pública para dar trabajos a los desempleados. Algunas inversiones, entre las que cabe citar la electrificación rural o los proyectos de agua, resultaron de enorme utilidad para las áreas subdesarrolladas. Obras no fueron más que ineficientes instrumentos para dar trabajo y fueron de poca utilidad (por ejemplo, la recogida de hojas durante la Depresión). El caso extremo fue un programa para cavar hoyos y rellenarlos después.
+**Los programas de obras públicas y otros programas de gastos**. Las Obras publicas. Cuando los gobiernos de EEUU empezaron a hacer frente a las depresiones activamente, utilizaron frecuentemente proyectos de inversión pública para dar trabajos a los desempleados. Algunas inversiones, entre las que cabe citar la electrificación rural o los proyectos de agua, resultaron de enorme utilidad para las áreas subdesarrolladas. Obras no fueron más que ineficientes instrumentos para dar trabajo y fueron de poca utilidad (por ejemplo, la recogida de hojas durante la Depresión). El caso extremo fue un programa para cavar hoyos y rellenarlos después.
 
-          Actualmente comprendemos mucho mejor los efectos económicos de los programas anti cíclicos y raras veces recurrimos a proyectos de obras publicas para luchar contra las recesiones ¿A que se debe este cambio de actitud de las autoridades económicas contraria a las obras publicas como cura de la recesión?
+Actualmente comprendemos mucho mejor los efectos económicos de los programas anti cíclicos y raras veces recurrimos a proyectos de obras publicas para luchar contra las recesiones ¿A que se debe este cambio de actitud de las autoridades económicas contraria a las obras publicas como cura de la recesión?
 
 **Los proyectos públicos de empleo** En el otro extremo de las obras públicas extraordinariamente intensivas en capital, se encuentra un reciente instrumento de la política de estabilización de los EEUU: los proyectos públicos de empleo o el empleo en servicios públicos (ESP). Se trata de proyectos destinados a contratar trabajadores desempleados durante un periodo de un año aproximadamente. Este instrumento se utilizo después de la recesión de 1975 y dio trabajo a 700.000 adultos y a un millón de adolescentes.
 
-    Los puestos de trabajo de los ESP evitan uno de los principales inconvenientes de los proyectos de obras públicas, pues se pueden comenzar y abandonar muy deprisa.
+Los puestos de trabajo de los ESP evitan uno de los principales inconvenientes de los proyectos de obras públicas, pues se pueden comenzar y abandonar muy deprisa.
 
 Los críticos de estos programas piensan, sin embargo, que son despilfarradores. A menudo tienen una importancia secundaria (de los contrario ya se habrían realizado). Por otra parte, la transición de estos puestos de trabajo a otros regulares ha sido dura, la mayoría de los estudios indica que el hecho de ocupar un empleo ESP no mejora significativamente las posibilidades de conseguir después un trabajo regular. 
 
@@ -79,10 +77,9 @@ Respuesta: El capital se intensifica cuando su oferta crece más deprisa que la 
 En ausencia de cambio tecnológico, la intensificación del capital eleva la producción por trabajador, el producto marginal del trabajo y los salarios; también hace que el capital muestre rendimientos decrecientes y que, como consecuencia, baje el tipo de interés real.
 
 **Explique brevemente las ESTRATEGIAS DE DESARROLLO ECONOMICO y cite algunas**  
-
 Respuesta: Los países deben combinar el trabajo, los recursos, el capital y la tecnología par alcanzar una situación de opulencia.  Las preguntas más profundas son las siguientes: ¿Por qué unos países consiguen correr más de prisa que otros? ¿Cómo pueden los países pobres llegar a iniciar la carrera del desarrollo económico?
 
-Mas impresionantes son la
+Mas impresionantes son la:
 
 Hipótesis del despegue (según la cual los rendimientos crecientes y el capital social fijo permiten conseguir un rápido crecimiento en un breve periodo de tiempo),
 
@@ -124,33 +121,25 @@ Desalentar al consumo suntuario y prohibir actividades que sean nocivas para el 
 
 **Explique los componentes del Crecimiento económico:**
 
-**Respuesta**: Tres grandes fuerzas han impulsado el crecimiento económico y han ampliado espectacularmente con el tiempo las opciones entre las que podía elegir la mayoría de las economías reales:
-
-El aumento de los activos productivos,
-
-El aumento de las cualificaciones y la educación de la población activa y
-
-Los avances de los conocimientos.
-
-Todos estos fenómenos deseables tienen un importante rasgo en común: la sociedad solo puede obtener una mayor cantidad de ellos consumiendo menos hoy.
-
-Nuestra economía hipotética, al igual que las economías reales, se enfrenta a una importante elección entre consumir hoy y consumir en el futuro. Para crecer rápidamente, debe reducir el consumo actual y realizar inversiones (en tractores, en educación e investigación), que darán sus frutos en el futuro.
+**Respuesta**:
+1. El aumento de los activos productivos
+2. El aumento de las cualificaciones y la educación de la población activa
+3. Los avances de los conocimientos.
 
 **Describa los tipos de Sistemas Económicos**
 
-**Respuesta**: Existen los casos extremos: los mercados participan en la asignación de recursos en todas las economías, pero ninguna se basa absolutamente en ellos. Para comprender porque, resulta útil examinar dos casos extremos: Una economía en la que no hay mercados y una economía en la que hay solo mercados. Hay tres tipos:
+**Respuesta**: 
+1. La economía autoritaria En una economía autoritaria el Estado toma todas las decisiones relacionadas con la producción y el consumo.
 
-La economía autoritaria En una economía autoritaria el Estado toma todas las decisiones relacionadas con la producción y el consumo
+2. La economía de libre mercado. En una economía de libre mercado el Estado no interviene en la asignación de los recursos.
 
-La economía de libre mercado          En una economía de libre mercado el Estado no interviene en la asignación de los recursos
-
-La economía Mixta    En una economía mixta tanto el Estado como el sector privado (empresas y consumidores) desempeñan un importante papel en la manera en que se decide el que, el como y el para quien del conjunto de la sociedad
+3. La economía Mixta: En una economía mixta tanto el Estado como el sector privado (empresas y consumidores) desempeñan un importante papel en la manera en que se decide el que, el como y el para quien del conjunto de la sociedad
 
 **Describa brevemente los Modelos, variables y datos Económicos,**  
 
 **Respuesta**: En la economía se utilizan más números, gráficos y ecuaciones que en otras ciencias sociales, debido principalmente, a que el aspecto material de la vida, del que se ocupa esta disciplina, se describe fácilmente y de manera natural por medio de números
 
-**Modelo económico**: Un modelo o teoría es una descripción simplificada de la realidad o, en otras palabras, una descripción exacta de una economía imaginaria sencilla. En el modelo se analiza el papel que desempeña la teoría en la economía se presenta un modelo ilustrativo – el flujo circular de la renta - que sirve también de base a todo el análisis macroeconómico. También se describe la utilización de los datos para desarrollar y evaluar modelos económicos. Los modelos económicos describen las relaciones existentes entre las variables económicas.
+**Modelo económico**: Un modelo o teoría es una descripción simplificada de la realidad o, en otras palabras, una descripción exacta de una economía imaginaria sencilla. El flujo circular de la renta, sirve también de base a todo el análisis macroeconómico. Los modelos económicos describen las relaciones existentes entre las variables económicas.
 
 **Una variable económica**: es algo que influye en las decisiones relacionadas con el ¨qué¨, el ¨cómo¨ y el para quién de que se ocupa la economía o algo que describe los resultados de esas decisiones. Las actitudes de los consumidores sobre el futuro son, pues, variables económicas, ya que pueden influir en sus decisiones relacionadas con el gasto y el ahorro
 
@@ -164,27 +153,19 @@ La economía Mixta    En una economía mixta tanto el Estado como el sector p
 
 **Conceptos de función de demanda**, **la Curva de demanda, Curva de Oferta, función de Oferta**
 
-**Respuesta:**
+- **La Función de Demanda** es la relación entre la cantidad demandada de un bien y su precio.
 
-**la Función de Demanda** es la relación entre la cantidad demandada de un bien y su precio.
+- **La curva de demanda** muestra gráficamente la cantidad demandada de un bien a cada uno de los precios, manteniéndose constante los demás factores que influyen en ella. Suele ser descendente.
 
-**La curva de demanda** muestra gráficamente la cantidad demandada de un bien a cada uno de los precios, manteniéndose constante los demás factores que influyen en ella. Suele ser descendente.
+- **La curva de oferta** Lo mismo que la palabra demanda es un termino general que describe la conducta de los compradores, la palabra oferta es un termino general que describe la conducta de los vendedores reales y potenciales de un bien.
 
-**La curva de oferta** Lo mismo que la palabra demanda es un termino general que describe la conducta de los compradores, la palabra oferta es un termino general que describe la conducta de los vendedores reales y potenciales de un bien.
-
-Definimos la cantidad ofrecida, la función de oferta y la curva de oferta por analogía con la demanda
-
-La relación entre la oferta y la demanda esta dada por **el equilibrio del mercado**. El precio real de un mercado y la cantidad comprada y vendida realmente dependen del juego de la oferta y la demanda.
+	La relación entre la oferta y la demanda esta dada por **el equilibrio del mercado**. El precio real de un mercado y la cantidad comprada y vendida realmente dependen del juego de la oferta y la demanda.
 
 **Describa los factores subyacentes a la curva de oferta**
 
-Tres importantes factores que influyen en estos costos. Estos factores del lado de la oferta son importantes determinantes de la conducta de los vendedores
-
-Los activos productivos duraderos
-
-La tecnología existente
-
-Los precios de los factores variables
+1. Los activos productivos duraderos
+2. La tecnología existente
+3. Los precios de los factores variables
 
 **Defina el Producto Nacional Bruto (PNB), concepto y medición.**
 
@@ -221,43 +202,3 @@ B) la teoría Clásica: en la que los precios y los salarios son sumamente flexi
 **Exprese los conceptos de La determinación de la producción: el modelo del multiplicador.**
 
 **Respuesta:** El modelo del multiplicador es un enfoque rudimentario por el que la demanda agregada determina el nivel de producción. En este enfoque el consumo de las economías domesticas depende de la renta disponible y la inversión es fija. El deseo de los individuos de consumir y la disposición de las empresas a invertir son igualados por medio de variaciones de la producción.
-
-  
-
-UNIDAD SEXTA
-
-**Cite LAS VARIABLES Y SUS INFLUENCIAS SOBRE LA DA**
-
-•        A- Variables de política
-
-A.1.   Política monetaria
-
-A. 2.  Política Fiscal
-
-•        B- Variables externas
-
-B.1   Expectativas y confianza de las empresas.
-
-B.2   Producción exterior
-
-B.3   Valor de los activos
-
-B.4   Cambios demográficos
-
-**Distintas visiones de la oferta agregada**
-
-Hay dos grandes maneras de enfocar la teoría de la Oferta agregada:
-
-A) La convencional moderna, según la cual los precios y los salarios son rígidos a corto plazo debido a las rigideces contractuales, como los convenios. En este tipo de economía, la producción responde positivamente a los aumentos del nivel de demanda, y
-
-B) la teoría Clásica: en la que los precios y los salarios son sumamente flexibles, estos varían rápidamente para eliminar cualquier exceso de oferta o de demanda que puedan surgir en los mercados, lo que conduce a una situación en la que la producción total es inflexible 
-
-**Una de las controversias más fuertes en el ámbito macroeconómico gira en torno al comportamiento de la oferta agregada, es decir, a la forma de la curva OA. Así expresan sus ideas los modelos Clásicos y Keynesiano.**
-
-**El modelo clásico sostiene que la producción no resulta afectada por las variaciones de la demanda agregada, por lo que la Política Económica no puede estabilizar el ciclo económico o reducir el desempleo en los periodos de depresión.**
-
-**En cambio, el modelo keynesiano sostiene que la producción es afectada significativamente a corto plazo por las fluctuaciones de la demanda agregada.**
-
-**La determinación de la producción: el modelo del multiplicador.**
-
-**El modelo del multiplicador es un enfoque rudimentario por el que la demanda agregada determina el nivel de producción. En este enfoque el consumo de las economías domesticas depende de la renta disponible y la inversión es fija. El deseo de los individuos de consumir y la disposición de las empresas a invertir son igualados por medio de variaciones de la producción**

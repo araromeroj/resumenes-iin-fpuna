@@ -31,6 +31,14 @@
 - [I] **Macroeconomía:** estudia el funcionamiento de la economía en su conjunto.
 	- Se centra en la producción total de los bienes y servicios y las variaciones del nivel medio de los precios.
 
+### Instrumentos de la macroeconomía para lograr sus objetivos
+
+1. **La Política Fiscal (el gasto público y los impuestos):** ayuda a determinar la distribución de los recursos entre los bienes privados y los colectivos, afecta a las rentas y al consumo de los individuos y ofrece incentivos a la inversión y otras decisiones económicas.
+
+2. **La Política Monetaria:** (especialmente la regulación de la oferta monetaria por parte del Banco central para influir el los tipos de interés y en las condiciones crediticias) afecta a sectores de la economía que son sensibles a los tipos de interés. Los más importantes son la vivienda, la inversión empresarial y las exportaciones netas.
+
+3. **Las Políticas de Rentas:** (que son programas de los gobiernos que afectan directamente las decisiones relacionadas con los precios y los salarios) son intentos de controlar la inflación sin incurrir en elevados costos de las recesiones y el desempleo.
+
 ## Modelos y técnicas económicas
 - [I] **Modelo:** es una descripción simplificada de la realidad, o bien, es una descripción exacta de una economía imaginaria sencilla.
 	- Los modelos económicos describen las relaciones existentes entre las variables económicas.
