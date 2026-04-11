@@ -72,6 +72,8 @@ $$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\
 - $\sigma$: Desviación estándar.  
 - $\pi$: Constante Pi (aproximadamente **3.14159**).
 
+---
+>[!note] Segundo Parcial
 ### Distribución Exponencial
 
 Modela el tiempo o espacio que transcurre entre eventos en un proceso de Poisson.

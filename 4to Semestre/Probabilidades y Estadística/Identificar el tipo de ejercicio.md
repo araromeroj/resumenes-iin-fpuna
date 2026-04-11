@@ -30,7 +30,7 @@ Si determinaste que tu variable es discreta, pregúntate: **¿Qué estoy contand
     
     - _Características:_ Tienes una tasa promedio de ocurrencia (llamada $\lambda$). No cuentas "intentos", sino cuántas veces pasa algo en una hora, en un metro cuadrado, en una página web.
     - _Fórmula:_ **Distribución de Poisson**. (Ej: ¿Cuántos clientes llegan a una caja registradora en 15 minutos?).
-        
+    
 - **¿Cuentas éxitos en una muestra pequeña extraída SIN REEMPLAZO?**
     
     - _Características:_ Es como la Binomial, pero al no devolver el elemento sacado, la probabilidad $p$ cambia en cada intento.
