@@ -1,7 +1,5 @@
 ## 1. El primer filtro: ¿Qué tipo de variable tienes?
 
-Antes que nada, aclaremos los términos que mencionaste, porque de ellos depende todo:
-
 - **Cualitativas vs. Cuantitativas:** En los modelos de probabilidad, casi siempre trabajamos con variables **cuantitativas** (números). Si tu problema habla de variables cualitativas (ej. "cara" o "cruz", "semáforo en verde" o "rojo", "pieza defectuosa" o "sana"), lo que hacemos es _cuantificarlas_ asignándoles un valor numérico (generalmente 1 para "éxito" y 0 para "fracaso"). A esto le llamamos **Variable Aleatoria**.
 - **Discretas vs. Continuas:** Esta es la distinción más importante.
     - **Discreta:** Se **cuenta** en números enteros. (Ej: número de autos, cantidad de semáforos, tiros de un dado). Saltan de un valor a otro (1, 2, 3...).
