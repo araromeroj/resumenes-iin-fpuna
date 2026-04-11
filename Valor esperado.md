@@ -3,7 +3,6 @@ El **valor esperado** (también conocido como Esperanza Matemática o media teó
 Para encontrar el valor esperado, existe una fórmula general matemática:
 
 - **Para variables discretas:** Multiplicas cada valor posible por su probabilidad y sumas todo: $E(X) = \sum x \cdot P(X=x)$
-    
 - **Para variables continuas:** Usas integrales en lugar de sumatorias: $E(X) = \int x \cdot f(x) dx$
 ---
 ## 1. Para Variables Discretas
