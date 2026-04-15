@@ -10,7 +10,7 @@ Una función $f(x)$ es continua en un punto $a$ si no hay saltos, huecos o asín
 
 1. **Existencia de la imagen:** $f(a)$ debe estar definida.
 2. **Existencia del límite:** El límite de la función cuando $x$ tiende a $a$ debe existir ($\lim_{x \to a} f(x) = L$). Esto implica que los límites laterales deben ser iguales:
-$$\lim_{x \to a^-} f(x) = \lim_{x \to a^2} f(x)$$
+$$\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x)$$
 3. **Coincidencia:** El valor del límite debe ser exactamente igual al valor de la imagen: $$\lim_{x \to a} f(x) = f(a)$$
 ---
 # Derivabilidad (Diferenciabilidad)
