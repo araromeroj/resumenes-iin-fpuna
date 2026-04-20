@@ -15,3 +15,6 @@ El **receptor** mantiene una ventana de recepción con números de tramas que pu
 >$t$: tiempo
 
 En el método de las tramas de control uno de los dos tiempos de propagación es despreciable.
+
+>[!important] El profe:
+>se quedó muchísimo tiempo explicando cada cosa del envío y recepción con ventanas corredizas
