@@ -45,3 +45,45 @@ $$D_p\text{ [segundos]}= \text{retardo de propagación}$$
 - [*] **Stop and wait:** parada y espera
 - [*] **Go back N:** retroceso N
 - [*] **Selective Repeat:** repetición selectiva
+
+## Stop and wait (Parada y Espera) $(W=1)$
+
+- [I] **Stop and Wait:** Es el control de flujo y errores en la capa de enlace de datos, es un protocolo de ventana corrediza con **tamaño de ventana igual a 1** $(W=1)$. Utiliza el número de secuencia de 1 bit, alternando entre 0 y 1 para distinguir entre una trama nueva y una retransmisión.
+
+>[!info] Funcionamiento de SAW
+>El emisor transmite una única trama y luego debe detenerse y esperar una confirmación del receptor antes de poder enviar el siguiente elemento de datos.
+
+### Proceso el emisor
+1. Obtiene un paquete de la capa de red, construye una trama y la envía a través de la capa física.
+2. Inicia un temporizador o RTO para recuperarse en caso de pérdida de la trama o de su ACK.
+3. Queda bloqueado esperando un evento. Si recibe un ACK válido, detiene el timer, avanza el número de secuencia y busca el siguiente paquete.
+4. Si el timer expira antes de recibir el ACK, el emisor retransmite la misma trama almacenada en su búffer.
+
+### Proceso del receptor
+1. Espera la llegada de una trama. Al recibirla, comprueba si el número de secuencia es el esperado.
+2. Si es la correcta, entrega los datos a la capa de red y actualiza el número de secuencia que espera a continuación.
+3. Envía una trama de ACK de vuelta al emisor para darle permiso de continuar.
+
+## Go back N (Retroceso N) $(W>1)$
+
+- [I] **Go back N:** Es una técnica de ventana corrediza diseñada para gestionar la transmisión de datos de forma eficiente a través de canales que pueden presentar errores, permitiendo que el emisor transmita múltiples tramas antes de recibir una confirmación.
+$$W>1, W=2^k-1$$
+- [*] **MAX_SEQ - Maximum Sequence Number:** Número máximo de secuencia
+
+>[!tip] La ventana de envío $(W)$ es como máximo $(2^k-1)$
+
+>[!info] Funcionamiento
+>Permite el pipelining (mantiene varias tramas en vuelo simultáneamente) para no desperdiciar la capacidad de enlace.
+
+### En el emisor
+El emisor mantiene una ventana de envío que contiene números de secuencia de tramas que tiene permitido transmitir sin esperar a un ACK.
+Si el emisor alcanza un límite de su ventana y no recibe ACK de la trama más antigua, se bloquea.
+Al expirar un timer para una trama específica, el emisor retrocede y vuelve a transmitir esa trama y todas las siguientes que ya habían sido enviadas pero no confirmadas.
+
+### En el receptor
+El receptor tiene una ventana de recepción de tamaño 1, lo que significa que solo acepta tramas que lleguen estrictamente en el orden correcto.
+Si llega una trama con un error o fuera de secuencia, el receptor la descarta, así como a todas las tramas que le sigan, sin enviar confirmación por ellas.
+
+>[!example] Ejemplo
+>Si el receptor recibe la trama 3 pero esperaba la trama 2, hasta que no exista el ACK de la trama 2 entonces el receptor descartará la 3 y todas las que le siguen, sin enviar confirmación por ellas.
+
