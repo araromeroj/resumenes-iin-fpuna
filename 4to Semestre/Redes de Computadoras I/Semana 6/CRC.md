@@ -30,7 +30,5 @@ La capacidad del CRC para detectar fallos depende de las propiedades de G(x):
     - Una ráfaga de error de **longitud** L≤r (donde r es el grado del polinomio generador) será **detectada siempre**, siempre que G(x) incluya un término independiente x0.
     - Si la longitud de la ráfaga es exactamente r+1, la probabilidad de que el error no se detecte es de 1/2r−1.
     - Para ráfagas más largas de r+1 bits, la probabilidad de que el error pase desapercibido es de 1/2r
-![[Pasted image 20260421131114.png]]
-
 
 [[Ventanas corredizas]]
