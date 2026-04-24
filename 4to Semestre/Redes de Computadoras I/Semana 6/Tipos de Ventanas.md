@@ -11,6 +11,7 @@
 > - **Ventana de recepción:** $1$
 > - **Números de secuencia:** Basta con **1 bit** (0 y 1).
 > - **Mecanismo:** Si el temporizador expira antes del ACK, se retransmite.
+
 ### Proceso del emisor
 1. Obtiene un paquete de la capa de red, construye una trama y la envía a través de la capa física.
 2. Inicia un temporizador o RTO para recuperarse en caso de pérdida de la trama o de su ACK.
@@ -25,6 +26,7 @@
 ## Características de SAW
 
 Es sencillo de implementar. Se utiliza en enlaces donde el producto ancho de banda-retardo es muy pequeño, como en **WiFi (802.11)**, donde tener una ventana mayor no mejoraría el rendimiento y añadiría complejidad innecesaria.
+
 # 2. Retroceso-N (Go-Back-N)
 
 - [I] **Go back N:** Es una técnica de ventana corrediza diseñada para gestionar la transmisión de datos de forma eficiente a través de canales que pueden presentar errores, permitiendo que el emisor transmita múltiples tramas antes de recibir una confirmación. La ventana de envío $(W)$ es como máximo $(2^k-1)$
@@ -40,8 +42,16 @@ $$W>1, W_\text{max}=2^k-1$$
 > - **Límite Máximo:** Si $k$ es el número de bits de secuencia:
 >   $$W_{max} = 2^k - 1$$
 
+### En el emisor
+El emisor mantiene una ventana de envío que contiene números de secuencia de tramas que tiene permitido transmitir sin esperar a un ACK.
+Si el emisor alcanza un límite de su ventana y no recibe ACK de la trama más antigua, se bloquea.
+Al expirar un timer para una trama específica, el emisor retrocede y vuelve a transmitir esa trama y todas las siguientes que ya habían sido enviadas pero no confirmadas.
+
 > [!danger] El "Costo" del Error
 > Si la trama $n$ falla, el emisor debe **retransmitir la trama $n$ y todas las posteriores** que ya había enviado, aunque estas hayan llegado bien originalmente.
+### En el receptor
+El receptor tiene una ventana de recepción de tamaño 1, lo que significa que solo acepta tramas que lleguen estrictamente en el orden correcto.
+Si llega una trama con un error o fuera de secuencia, el receptor la descarta, así como a todas las tramas que le sigan, sin enviar confirmación por ellas.
 
 > [!tip] ¿Por qué se usa?
 >Es más eficiente que Parada y Espera en enlaces rápidos. Se prefiere cuando los errores son poco frecuentes, ya que evita la complejidad de almacenar tramas desordenadas en el receptor. El tamaño máximo de 2k−1 es crítico para evitar que el emisor confunda un ACK de una ventana vieja con uno de la ventana nueva si se pierden las confirmaciones
@@ -115,6 +125,4 @@ La trama está orientada a bytes y su diseño se basa en el protocolo **HDLC**.
 > - **Packet over SONET:** PPP se utiliza sobre enlaces de fibra óptica SONET en redes troncales de ISPs para delimitar paquetes.
 > - **ADSL:** En conexiones domésticas, se suele usar **PPPoA (PPP over ATM)**, donde la trama PPP se adapta para viajar sobre celdas ATM mediante la capa **AAL5**.
 > - **DOCSIS:** En redes de televisión por cable, PPP también puede implementarse para el acceso a Internet.
-,
-
 
