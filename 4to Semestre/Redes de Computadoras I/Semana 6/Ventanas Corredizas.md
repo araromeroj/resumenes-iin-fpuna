@@ -53,7 +53,7 @@ $$D_p\text{ [segundos]}= \text{retardo de propagación}$$
 >[!info] Funcionamiento de SAW
 >El emisor transmite una única trama y luego debe detenerse y esperar una confirmación del receptor antes de poder enviar el siguiente elemento de datos.
 
-### Proceso el emisor
+### Proceso del emisor
 1. Obtiene un paquete de la capa de red, construye una trama y la envía a través de la capa física.
 2. Inicia un temporizador o RTO para recuperarse en caso de pérdida de la trama o de su ACK.
 3. Queda bloqueado esperando un evento. Si recibe un ACK válido, detiene el timer, avanza el número de secuencia y busca el siguiente paquete.
