@@ -40,3 +40,4 @@ $$D_p\text{ [segundos]}= \text{retardo de propagación}$$
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Mejor uso del ancho de banda del canal<br>Menos carga de procesamiento en el receptor | Se debe determinar el tiempo que la capa de enlace espera por un paquete para enviar el ACK |
 
+[[Tipos de Ventanas]]
