@@ -1,4 +1,4 @@
-- [I] **Ventanas Corredizas:** son una clase de protocolos de comunicación bidireccional que permiten un control eficiente del flujo de datos y del error en la capa de enlace y en la de transporte. Este concepto permite que el emisor transmita significativamente el rendimiento del canal.
+- [I] **Ventanas Corredizas - pipelining:** son una clase de protocolos de comunicación bidireccional que permiten un control eficiente del flujo de datos y del error en la capa de enlace y en la de transporte. Este concepto permite que el emisor transmita significativamente el rendimiento del canal.
 	- tiene tramas **numeradas**
 	- para confirmar tramas utiliza **superposición en la trama de datos** y **trama de control ACK**
 	- también puede usar confirmación negativa o NAK
