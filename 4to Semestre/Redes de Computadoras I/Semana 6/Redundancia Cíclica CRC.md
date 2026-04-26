@@ -5,7 +5,7 @@ El **CRC (Cálculo de Redundancia Cíclica)** es un método de detección de err
 
 El algoritmo se basa en la aritmética de **módulo 2** y utiliza un **polinomio generador $G(x)$** predefinido y conocido tanto por el emisor como por el receptor. La efectividad del CRC depende del diseño de este polinomio:
 
-- **Detección de ráfagas:** Un polinomio de grado $r$ garantiza la detección de cualquier ráfaga de errores cuya longitud $L$ sea menor o igual a $r$ ($L \le r$).
+- **Detección de ráfagas:** Un polinomio de grado $r$ garantiza la detección de cualquier ráfaga de errores cuya longitud $L$ sea menor o igual a $r$ ($L \le r$) si $G(x)$ contiene un término $x^0$.
 - **Errores de un solo bit:** Se detectan siempre que el polinomio tenga al menos dos términos.
 - **Errores impares:** Si $G(x)$ incluye el factor $(x + 1)$, podrá detectar todos los errores que afecten a un número impar de bits.
 
