@@ -1,6 +1,6 @@
 {
   "version": "version1",
-  "enabled": false,
+  "enabled": true,
   "activeScheme": {
     "id": "cherry-mx-brown",
     "caption": "Cherry MX Brown",
@@ -12,5 +12,5 @@
       "delete": ".obsidian/plugins/click-clack/resources/cherry-mx-brown/delete.wav"
     }
   },
-  "volumn": 10
+  "volumn": 20
 }
