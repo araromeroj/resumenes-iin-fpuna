@@ -52,17 +52,7 @@ Las fórmulas para calcular la eficiencia de utilización del canal ($Ef$) varí
 > Para que el emisor nunca se detenga, la ventana debe ser:
 > $$W \ge 2BT_p + 1$$
 
-[[Tipos de Ventanas]]
 
----- 
-# EJEMPLO (EXPLICACION DE IMAGENES)
-![[Pasted image 20260422223545.png]]
-- **Imagen de los cuadritos numéricos:** Aquí está la magia de la clase. Verás una fila de números del 1 al 10 y un recuadro azul que envuelve algunos números.
-- **El Emisor:** Imagina que tienes 100 paquetes por enviar. En lugar de enviar el #1 y sentarte a esperar su ACK para enviar el #2 (lo cual sería lentísimo), usas una **ventana de emisión**.
-    
-    - Si tu ventana es de tamaño 8 (el recuadro envuelve del paquete 1 al 8), tú envías los paquetes del 1 al 8 de un solo golpe, sin esperar.
-        
-    - **El deslizamiento:** Cuando tu computadora recibe el "ACK" diciendo que el paquete #1 llegó bien, el recuadro _se desliza_ hacia la derecha. Ahora envuelve del paquete 2 al 9. Como el 9 acaba de entrar a la ventana, tu computadora lo envía inmediatamente. ¡Así la tubería nunca se queda vacía!
-    
-
---- 
+----
+# Enlaces relacionados
+- Siguiente nota: [[Tipos de Ventanas]]
