@@ -122,8 +122,9 @@ Existen diferentes estrategias sobre qué hacer cuando el canal está ocupado:
 
 - [I] **CSMA/CD (Collision Detection):** Es la base de la **Ethernet clásica** (no conmutadas). Además de escuchar antes de transmitir, la estación sigue escuchando mientras transmite (**es persistente**). Si detecta una colisión, detiene la transmisión inmediatamente para no desperdiciar ancho de banda y ejecuta un algoritmo de **backoff exponencial binario** para retransmitir.
 	Al tenerse un tiempo máximo de detección de colisiones, se define: $$L_{\text{trama mínima}}=V_t*2*\tau$$
-	- $\tau:$ Es el tiempo que tarda una señal en viajar desde un extremo de la red al otro extremo y regresar. Es el tiempo en que una trama llega + el tiempo de respuesta.
-	
+	- $\tau:$ Es el tiempo que tarda una señal en viajar desde un extremo de la red al otro extremo y regresar.
+	- El tiempo de detección de colisión es apenas 2 veces el tiempo de propagación por el canal:
+	$$t_{\text{detección de colisión}}=2*t_p$$
 - [I] **CSMA/CA (Collision Avoidance):** Utilizado en redes **Wi-Fi (802.11)**. Como en redes inalámbricas es difícil detectar colisiones mientras se transmite, el protocolo intenta **evitarlas** mediante el uso de confirmaciones (ACKs) y, opcionalmente, tramas de reserva como RTS/CTS.
 
 |**Característica**|**CSMA/CD (Ethernet)**|**CSMA/CA (Wi-Fi)**|
@@ -134,6 +135,73 @@ Existen diferentes estrategias sobre qué hacer cuando el canal está ocupado:
 |**Confirmación**|No usa ACKs en la subcapa MAC.|Requiere ACKs explícitos.|
 
 ---
-# Protocolos de contención limitada
+# Protocolos libres de colisiones
+## Protocolo de Mapa de Bits (Bitmap)
 
-# Protocolos para LAN inalámbricas
+- [I] **Bitmap:** Es un protocolo sin colisiones donde cada periodo de contención consta exactamente de N ranuras, siendo N el número total de estaciones.
+
+>[!info] Funcionamiento:
+> Si la estación 0 tiene una trama que enviar, transmite un bit **1** durante la ranura 0; de lo contrario, transmite un **0**.
+> - Este proceso se repite para cada estación hasta completar las N ranuras.
+> - Al finalizar las N ranuras, todas las estaciones saben quiénes desean transmitir y lo hacen en orden numérico.
+
+- **Propiedades más importantes:**
+    - **Ausencia de colisiones:** El orden de transmisión queda establecido de antemano durante el periodo de reserva.    
+    - **Eficiencia:** Es muy eficiente con carga alta, ya que el gasto extra es de solo 1 bit por trama.    
+    - **Sobrecarga:** Con carga baja, el retraso promedio es de N/2 ranuras antes de poder transmitir.
+## Paso de Testigo (Token Ring)
+
+- [I] **Token Ring:** Este protocolo utiliza una trama especial llamada **testigo (token)** que circula por la red para otorgar el permiso de transmisión.
+
+>[!info] Funcionamiento:
+>- El testigo se envía por el anillo definiendo un orden estricto de turno.
+>- La estación que posee el testigo es la única autorizada para enviar una trama antes de pasar el turno a la siguiente estación.
+
+- **Propiedades más importantes:**
+    - **Determinismo:** Garantiza un tiempo máximo de espera antes de que una estación pueda transmitir, lo cual es ideal para tráfico en tiempo real.    
+    - **Orden:** Evita el desperdicio de ancho de banda que producen las colisiones en protocolos como CSMA/CD.   
+## 3. Cuenta Regresiva Binaria (Countdown)
+
+- [I] **Binary Countdown:** Es una mejora sobre el protocolo de mapa de bits que reduce la sobrecarga de las ranuras de contención.
+
+>[!info] Funcionamiento:
+>- Las estaciones transmiten su **dirección (ID)** en bits binarios durante la ranura de contención.
+>- Se aplica una operación **OR lógica** en el medio: si una estación intenta enviar un "0" pero ve un "1" en el canal (afirmado por una estación con ID más alta), se rinde y deja de transmitir sus bits restantes.
+>- La estación con la dirección numérica más alta gana el derecho a transmitir.
+
+- **Propiedades más importantes:**    
+    - **Eficiencia de bits:** Solo requiere log2​N bits para el arbitraje en lugar de N bits.
+    - **Prioridad implícita:** Las estaciones con números de dirección más altos siempre tienen prioridad sobre las de números inferiores.    
+    - **Supuesto crítico:** Supone que los retardos de transmisión son despreciables para que todas las estaciones vean los bits casi instantáneamente.
+
+> **Frase destacada en la bibliografía:** _"En el protocolo de cuenta atrás binaria, una estación con un número inferior puede quedarse sin enviar un paquete"_ debido a la prioridad que otorga el sistema a las direcciones más altas.
+# Protocolos de contención limitada
+Los protocolos de contención limitada buscan combinar las mejores propiedades de las estrategias de contención (buen rendimiento con carga baja) y los protocolos sin colisiones (buen rendimiento con carga alta).
+
+>[!info] Funcionamiento
+>Dividen a las estaciones en grupos y limitan la contención dentro de cada grupo para reducir la probabilidad de colisiones.
+## Protocolo de recorrido de Arbol Adaptable
+
+>[!info] Funcionamiento
+>Las estaciones se ven como hojas de un árbol binario. En la primera ranura de contención, todas las estaciones intentan transmitir. Si hay una colisión, se busca de forma recursiva en el subárbol izquierdo y luego en el derecho hasta que se resuelva la contención.
+>- **Propiedad importante:** Es adaptable; si la carga es baja, permite que todos compitan, pero si es alta, restringe la búsqueda a niveles más bajos del árbol para aislar a los emisores.
+
+# Protocolos para LAN Inalámbricas
+A diferencia de las redes cableadas (Ethernet), las inalámbricas no pueden usar CSMA/CD de manera efectiva porque las estaciones no pueden detectar colisiones mientras transmiten (debido a la gran diferencia de potencia entre la señal transmitida y la recibida).
+## Problemas Fundamentales:
+- **Nodo Oculto:** Una estación (A) transmite a otra (B), pero una tercera estación (C) no oye a A y transmite también a B, causando una colisión en B. 
+- **Nodo Expuesto:** Una estación cree que no puede transmitir porque oye una comunicación cercana, aunque su destino esté fuera del alcance de esa interferencia.
+## Protocolo MACAW / IEEE 802.11 (CSMA/CA):
+
+>[!info] Funcionamiento (Intercambio RTS/CTS):
+>1. El emisor envía una trama corta **RTS** (Request to Send) para reservar el canal.
+>2. El receptor responde con un **CTS** (Clear to Send) si está libre.
+>3. Al oír el CTS, las estaciones cercanas al receptor saben que deben guardar silencio para evitar colisiones.
+
+- **Propiedades más importantes:**
+    - **Evitación de Colisiones (CA):** En lugar de detectar colisiones una vez ocurren, intenta evitarlas mediante reservas.
+    - **Confiabilidad:** Utiliza confirmaciones de recepción (**ACK**) a nivel de capa de enlace debido a que los canales inalámbricos son inestables.
+    - **Ahorro de Energía:** Incluye técnicas para que los dispositivos duerman y ahorren batería.
+---
+# Enlaces relacionados
+- Siguiente nota: [[Ethernet]]
