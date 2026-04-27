@@ -54,7 +54,7 @@ El receptor tiene una ventana de recepción de tamaño 1, lo que significa que s
 Si llega una trama con un error o fuera de secuencia, el receptor la descarta, así como a todas las tramas que le sigan, sin enviar confirmación por ellas.
 
 > [!tip] ¿Por qué se usa?
->Es más eficiente que Parada y Espera en enlaces rápidos. Se prefiere cuando los errores son poco frecuentes, ya que evita la complejidad de almacenar tramas desordenadas en el receptor. El tamaño máximo de 2k−1 es crítico para evitar que el emisor confunda un ACK de una ventana vieja con uno de la ventana nueva si se pierden las confirmaciones
+>Es más eficiente que Parada y Espera en enlaces rápidos. Se prefiere cuando los errores son poco frecuentes, ya que evita la complejidad de almacenar tramas desordenadas en el receptor. El tamaño máximo de $2^k−1$ es crítico para evitar que el emisor confunda un ACK de una ventana vieja con uno de la ventana nueva si se pierden las confirmaciones
 
 ## 3. Repetición Selectiva (Selective Repeat)
 
