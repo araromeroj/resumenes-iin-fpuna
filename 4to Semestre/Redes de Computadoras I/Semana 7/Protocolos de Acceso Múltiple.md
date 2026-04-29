@@ -204,4 +204,4 @@ A diferencia de las redes cableadas (Ethernet), las inalámbricas no pueden usar
     - **Ahorro de Energía:** Incluye técnicas para que los dispositivos duerman y ahorren batería.
 ---
 # Enlaces relacionados
-- Siguiente nota: [[Ethernet]]
+- Siguiente nota: [[Ethernet Conmutado]]

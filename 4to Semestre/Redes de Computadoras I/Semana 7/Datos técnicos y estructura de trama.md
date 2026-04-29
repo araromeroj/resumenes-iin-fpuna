@@ -29,5 +29,5 @@ Si el campo indica la longitud, el Ethertype está al principio de los datos, en
 
 ---
 # Enlaces relacionados
-- [[Ethernet]]
+- [[Ethernet Conmutado]]
 - [[Evolución del Ethernet]]

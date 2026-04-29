@@ -19,39 +19,70 @@ Fue el inicio de todo bajo el estándar **IEEE 802.3**. Su característica princ
 >- El HUB es un dispositivo de "capa 1" comparable a un repetidor de bits.
 
 - **Características:** usa CSMA/CD, estaciones half duplex, todos los puertos del hub constituyen un "dominio de colisión".
-
-#### Sub-capa MAC
-Usa CSMA/CD 1-persistente
+#### Sub capa MAC
 
 >[!info] Funcionamiento del CSMA/CD 1-persistente
->- Antes de transmitir, la estación escucha el canal.
->- Si está libre, transmite la trama.
->- Si está ocupado, espera que esté libre y luego transmite.
->- Mientras transmite, escucha el canal. Si detecta una colisión, interrumpe la transmisión y espera un tiempo aleatorio computado con el algoritmo exponencial binario.
->- Todas las colisiones ocurren entre el byte 1 y el byte 64.
+>- Antes de transmitir, la estación escucha el canal
+>	- Si está libre, transmite la trama
+>	- Si está ocupado, espera que esté libre y luego transmite
+>- Mientras transmite, escucha el canal.
+>	- Si se detecta una colisión, interrumpe la transmisión y espera un tiempo aleatorio computado con el **algoritmo exponencial binario**
+>- Todas las colisiones ocurren entre el byte 1 y el byte 64 (que es el tamaño de trama mínimo).
+
 #### Algoritmo Exponencial Binario
 
->[!info] Funcionamiento
->- División de tiempo en ranuras discretas de 64 bytes.
->- Tras $i$ colisiones: se escoge entre $0$ y $2^i-1$ ranuras.
->- **Límite del Algoritmo:** 1023 ranuras (10 colisiones).
->- **Límites de Colisiones:** 16
->- El algoritmo es injusto: No es FIFO
+>[!info] Funcionamiento del Algoritmo Exponencial Binario
+>- División de tiempo en ranuras discretas (de contención) de 64 bytes (mínimo de trama).
+>- Tras $i$ colisiones: se escoge entre $0$ y $2^i-1$
+>- **Límite del algoritmo:** 1023 ranuras (10 colisiones)
+>- **Límite de colisiones:** 16 colisiones
+>- No es FIFO !!!
 
-
+[[Datos técnicos y estructura de trama]]
 ## Fast Ethernet (100 Mbps)
 
 Llegó en 1995 como el estándar **802.3u**. El objetivo era ser 10 veces más rápido manteniendo la compatibilidad con las tramas del Ethernet original.
 
 - **Innovación:** Introdujo la **Auto-negociación**. Este protocolo permite que dos dispositivos "hablen" y decidan la mejor velocidad (10 o 100 Mbps) y el modo (Half o Full Duplex).
-    
 - **Cableado:** Se estandarizó el uso de **UTP Categoría 5** y conectores RJ-45.
-    
 - **Dato Técnico:** El tiempo de bit se redujo de $100 ns$ a $10 ns$.
+- Se mantiene la longitud mínima de trama (64 bytes) a pesar de que la velocidad de transmisión es de 100 Mbps.
+- Puede ser conmutado (full dúplex) o con hubs (half dúplex).
+
+| **Nombre**    | **Cable**    | **Maximo segmento** | **Ventajas**                              |
+| ------------- | ------------ | ------------------- | ----------------------------------------- |
+| 100 Base - T4 | Par trenzado | 100 m               | UTP Cat 3                                 |
+| 100 Base - TX | Par trenzado | 100 m               | Full Duplex a 100 Mbps                    |
+| 100 Base - FX | Fibra óptica | 2000 m              | Full Duplex a 100 Mbps<br>Carreras largas |
+100 Base TX: 
+	- Es el más usado y soportado
+	- Usa dos pares UTP Cat 5
+	- **Codificación:** 4B/5B a 125 MHz
+	- Full dúplex
+
+100 Base T4:
+	- Usa cuatro pares UTP Cat 3
+		Uno hacia el hub, uno hacia el host y 2 configurables
+	- **Codificación:** 8B/6T en tres pares - señales terna
+	- Full dúplex
+
+100 Base - FX:
+	- Fibra multimodo
+	- Distancia máxima de 400 metros (en half dúplex) y 2000 metros (en full dúplex)
+	- **Codificación:** 4B/5B y NRZI
+
+==TODOS COMPATIBLES CON ETHERNET 10 Mbps AUTONEGOCIACIÓN==
 
 ## Gigabit Ethernet (1 Gbps)
 
 Estandarizado como **802.3z** (fibra) y **802.3ab** (cobre). Aquí la industria empezó a abandonar los Hubs masivamente.
+- IEEE 802.3ab: 1000Base-T Gigabit Ethernet
+	- Usa 4 pares cat 5e (125 MHz)
+	- Full dúplex dual
+	- Permite uso de hubs (CSMA/CD) y conmutadores.
+- [*] **FDX:** Full dúplex dual
+
+![[Pasted image 20260429185030.png]]
 
 - **Conmutación:** Aunque soporta CSMA/CD para ser compatible, casi todas las instalaciones son **Full-Duplex** conectadas a un Switch.
     
@@ -59,9 +90,14 @@ Estandarizado como **802.3z** (fibra) y **802.3ab** (cobre). Aquí la industria 
     
 - **Manejo de Trama:** Introduce el "Carrier Extension" (extensión de portadora) para mantener el tamaño de trama de 64 bytes en modo Half-Duplex, aunque hoy en día es casi obsoleto.
 
+$$L_{\text{ Trama minima}}=2*\tau *V_{\text{transmisión}}$$ $$L_{\text{ Trama minima}}=2*(d_\text{max}/V_{\text{propagación}}) *V_{\text{transmisión}}$$
+==Se requiere la misma longitud de trama mínima para mantener la compatibilidad==
+
 ## 10-Gigabit Ethernet (10 Gbps) y Superiores
 
 El estándar **802.3ae** marcó un antes y un después.
+
+![[Pasted image 20260429185231.png]]
 
 - **Adiós al CSMA/CD:** Este estándar **no soporta CSMA/CD**. Solo funciona en modo Full-Duplex.
     
@@ -70,6 +106,16 @@ El estándar **802.3ae** marcó un antes y un después.
 - **Uso:** Principalmente para centros de datos y _backbones_ (núcleos) de redes empresariales.
     
 - **Evolución Continua:** Ya existen estándares de **40 Gbps, 100 Gbps y hasta 400 Gbps**, utilizados para mover volúmenes masivos de datos en la nube.
+
+IEEE 802.3z:
+	1000Base-SX: Con LEDs (más barato)
+	1000Base-LX: ILDs (más caro)
+
+### 1000 Base-TX
+- **1000Base-TX:** 2 pares de UTP cat 6 - TIA/EIA 854 - Estándar distinto al 1000Base-T
+- **Jumbo frames:** tramas de 9000 bytes (no estandarizado por IEEE)
+
+![[Pasted image 20260429190422.png]]
 
 ---
 # Diferencias Clave
@@ -90,3 +136,31 @@ El estándar **802.3ae** marcó un antes y un después.
 |**Medio Típico**|Coaxial / UTP Cat 3|UTP Cat 5|UTP Cat 5e/6 / Fibra|Fibra / UTP Cat 6a/7|
 |**Dispositivo Central**|Hub (principalmente)|Hub o Switch|Switch|**Solo Switch**|
 |**Auto-negociación**|No disponible|Introducida|Obligatoria/Estándar|Estándar|
+
+---
+# Autonegociación
+
+La **autonegociación** es un mecanismo de la capa física (Capa 1) introducido originalmente con el estándar **Fast Ethernet (802.3u)** que permite que dos dispositivos conectados por un cable de red "hablen" y se pongan de acuerdo sobre la mejor velocidad y modo de transmisión que ambos soportan.
+## 1. ¿Cómo funciona? (Los pulsos FLP)
+
+La autonegociación no utiliza tramas de datos complejas para comunicarse, ya que en ese punto la conexión aún no está establecida. En su lugar, utiliza **Pulsos de Enlace Rápido** (FLP - _Fast Link Pulses_).
+
+- Los dispositivos envían una ráfaga de pulsos que codifican sus capacidades.    
+- Estos pulsos son compatibles con los "pulsos de integridad de enlace" del Ethernet antiguo (10 Mbps), por lo que un dispositivo moderno no "romperá" a uno viejo al intentar negociar.
+
+## 2. ¿Qué es lo que negocian?
+
+Los dispositivos comparan sus listas de capacidades y eligen el **máximo común denominador** siguiendo esta jerarquía de prioridad (de mejor a peor):
+
+1. **1000Base-T** (Gigabit) Full Duplex
+2. **1000Base-T** (Gigabit) Half Duplex
+3. **100Base-TX** (Fast Ethernet) Full Duplex
+4. **100Base-TX** (Fast Ethernet) Half Duplex
+5. **10Base-T** (Ethernet clásico) Full Duplex
+6. **10Base-T** (Ethernet clásico) Half Duplex
+
+- Permite ajustar el protocolo a utilizarse de forma automática (puertos 10/100/1000).
+- Al conectarse los equipos negocian la comunicación siguiendo una prioridad
+- Sólo se utiliza en puertos con cable UTP. En la fibra lo único negociable es el modo dúplex.
+- La Autonegociación puede no ser posible entre equipos de marcas diferentes
+- La autonegociación es opcional, puede estar o no.
