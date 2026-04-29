@@ -56,11 +56,14 @@
 	- **Codificación:** 4B/5B y NRZI
 
 ==TODOS COMPATIBLES CON ETHERNET 10 Mbps AUTONEGOCIACIÓN==
-## Gigabit Ethernet
+## Gigabit Ethernet - IEEE 802.3ab (cobre) 802.3z (fibra)
 
 >[!important] IMPORTANTE
 >- Soporte para la fibra óptica y cobre
 >- Mantiene el formato pero operando principalmente en full-duplex sin colisiones
+>- La longitud de trama mínima es de 512 Bytes para mantener la compatibilidad
+
+$$L_{\text{ Trama minima}}=2*\tau *V_{\text{transmisión}}$$ $$L_{\text{ Trama minima}}=2*(d_\text{max}/V_{\text{propagación}}) *V_{\text{transmisión}}$$
 
 ## 10 Gigabit Ethernet
 >[!important] IMPORTANTE
