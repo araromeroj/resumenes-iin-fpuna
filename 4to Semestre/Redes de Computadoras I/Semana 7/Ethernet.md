@@ -15,9 +15,25 @@
 >- CSMA/CD 1persistente
 >- Algoritmo de retroceso exponencial binario
 
-### El HUB
+>[!info] Funcionamiento del CSMA/CD 1-persistente
+>-Antes de transmitir, la estación escucha el canal
+>	- Si está libre, transmite la trama
+>	- Si está ocupado, espera que esté libre y luego transmite
+>- Mientras transmite, escucha el canal.
+>	- Si se detecta una colisión, interrumpe la transmisión y espera un tiempo aleatorio computado con el **algoritmo exponencial binario**
+>- Todas las colisiones ocurren entre el byte 1 y el byte 64 (que es el tamaño de trama mínimo).
+
+>[!info] Funcionamiento del Algoritmo Exponencial Binario
+>- División de tiempo en ranuras discretas (de contención) de 64 bytes (mínimo de trama).
+>- Tras $i$ colisiones: se escoge entre $0$ y $2^i-1$
+>- **Límite del algoritmo:** 1023 ranuras (10 colisiones)
+>- **Límite de colisiones:** 16 colisiones
+>- No es FIFO !!!
+
+### El HUB Ethernet 10BASE - T
+
 >[!important] IMPORTANTE
->- Es un dispositivo repetidor de bits
+>- [I] **HUB:** Es un dispositivo de capa 1 comparable a un repetidor de bits
 >- Usa CSMA/CD - estaciones en modo half-duplex
 >- Todos los puertos del hub constituyen un "dominio de colisión"
 >- Es comparable a un bus de datos
@@ -25,7 +41,8 @@
 >[!info] Funcionamiento
 >Si recibe una transmisión en un Puerto, lo repite en todos los otros puertos
 >	Si sucede una colisión, se escucha en todos los puertos
->	Es un dispositivo de capa 1 comparable a un repetidor de bits
+
+
 ## Fast Ethernet - IEEE 802.3u
 
 >[!important] IMPORTANTE
