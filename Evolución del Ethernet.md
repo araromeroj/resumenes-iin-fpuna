@@ -2,11 +2,42 @@
 
 Fue el inicio de todo bajo el estándar **IEEE 802.3**. Su característica principal era el uso de un medio compartido (cable coaxial o Hubs).
 
-- **Mecanismo:** Utiliza el algoritmo **CSMA/CD** (Detección de Portadora y Detección de Colisiones).
-    
+- **Mecanismo:** Utiliza el algoritmo **CSMA/CD** (Detección de Portadora y Detección de Colisiones).    
 - **Restricción Crítica:** Para que la detección de colisiones funcione, la trama debe ser lo suficientemente larga para que el emisor siga transmitiendo cuando el "eco" de la colisión regrese. Por eso, el tamaño mínimo de trama es de **64 bytes**.
-    
 - **Topología:** Originalmente en bus (cable grueso/fino), luego evolucionó a estrella usando **Hubs** (Capa 1).
+- **Características:** Usa codificación Manchester, cable UTP 2 Cat 3, conectores RJ-45, distancia máxima de $100 \text{ m}$
+
+### Ethernet 10BASE-T
+
+>[!summary] HUB
+>- [I] **HUB:** es un dispositivo repetidor de bits
+>- Es comparable a un bus de datos.
+
+>[!info] Funcionamiento
+>- Si recibe una transmisión en un Puerto, lo repite en todos los otros puertos.
+>- Si sucede una colisión, se escucha en todos los puertos.
+>- El HUB es un dispositivo de "capa 1" comparable a un repetidor de bits.
+
+- **Características:** usa CSMA/CD, estaciones half duplex, todos los puertos del hub constituyen un "dominio de colisión".
+
+#### Sub-capa MAC
+Usa CSMA/CD 1-persistente
+
+>[!info] Funcionamiento del CSMA/CD 1-persistente
+>- Antes de transmitir, la estación escucha el canal.
+>- Si está libre, transmite la trama.
+>- Si está ocupado, espera que esté libre y luego transmite.
+>- Mientras transmite, escucha el canal. Si detecta una colisión, interrumpe la transmisión y espera un tiempo aleatorio computado con el algoritmo exponencial binario.
+>- Todas las colisiones ocurren entre el byte 1 y el byte 64.
+#### Algoritmo Exponencial Binario
+
+>[!info] Funcionamiento
+>- División de tiempo en ranuras discretas de 64 bytes.
+>- Tras $i$ colisiones: se escoge entre $0$ y $2^i-1$ ranuras.
+>- **Límite del Algoritmo:** 1023 ranuras (10 colisiones).
+>- **Límites de Colisiones:** 16
+>- El algoritmo es injusto: No es FIFO
+
 
 ## Fast Ethernet (100 Mbps)
 

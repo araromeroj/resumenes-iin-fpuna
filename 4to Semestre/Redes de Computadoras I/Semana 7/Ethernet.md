@@ -16,7 +16,7 @@
 >- Algoritmo de retroceso exponencial binario
 
 >[!info] Funcionamiento del CSMA/CD 1-persistente
->-Antes de transmitir, la estación escucha el canal
+>- Antes de transmitir, la estación escucha el canal
 >	- Si está libre, transmite la trama
 >	- Si está ocupado, espera que esté libre y luego transmite
 >- Mientras transmite, escucha el canal.
