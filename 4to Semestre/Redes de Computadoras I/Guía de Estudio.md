@@ -116,4 +116,5 @@ Ruteo de paquetes a través de subredes.
     - **ICMP** (**Internet Control Message Protocol** - Protocolo de Mensajes de Control de Internet): Reporte de errores y diagnóstico.
     - **NAT** (**Network Address Translation** - Traducción de Direcciones de Red): Permite usar direcciones privadas para acceder a la Internet pública.
 
+
 ---
