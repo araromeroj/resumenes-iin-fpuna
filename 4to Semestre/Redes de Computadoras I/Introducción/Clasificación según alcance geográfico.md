@@ -51,7 +51,7 @@ El host se encarga de los aspectos de aplicación, mientras que la subred (route
 - [*] **LTE - Long term evolution:** evolución a largo plazo
 - [*] **WAN - Wide area networks:** redes de área extensa
 ### 5. Internetwork (Red de Redes) o Interred
-- [I] Inter-red o Interner: colección de redes interconectadas. Interconexión de redes operadas independientemente, conectando una LAN y una WAN o conectando dos LANSs. La red combina subredes y hosts. Una subred puede ser ocmo una ISP y una inter-red puede ser como una WAN.
+- [I] **Inter-red o Internet:** colección de redes interconectadas. Interconexión de redes operadas independientemente, conectando una LAN y una WAN o conectando dos LANSs. La red combina subredes y hosts. Una subred puede ser ocmo una ISP y una inter-red puede ser como una WAN.
 - [I] **Gateways:** hacen una conexión entre dos o más redes.
 - **Alcance:** El **planeta** entero.
 - **Definición:** Es un conjunto de redes independientes (LANs y WANs) interconectadas para funcionar como una unidad global mediante dispositivos de traducción llamados **pasarelas** o routers.

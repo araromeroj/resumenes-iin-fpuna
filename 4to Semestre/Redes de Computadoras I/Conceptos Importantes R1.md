@@ -18,7 +18,6 @@ WHERE status = "*"
   AND !completed 
   AND file.name != this.file.name
 SORT text ASC
-GROUP BY regexreplace(file.folder, ".*\/", "")
 ```
 
 
