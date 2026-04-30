@@ -1,6 +1,6 @@
-- [*] **Stop and wait:** parada y espera
-- [*] **Go back N:** retroceso N
-- [*] **Selective Repeat:** repetición selectiva
+- [*] **SAW - Stop and wait:** parada y espera
+- [*] **GBN - Go back N:** retroceso N
+- [*] **SR - Selective Repeat:** repetición selectiva
 # 1. Parada y Espera (Stop-and-Wait)
 
 - [I] **Stop and Wait:** Es el control de flujo y errores en la capa de enlace de datos, es un protocolo de ventana corrediza con **tamaño de ventana igual a 1** $(W=1)$. Utiliza el número de secuencia de 1 bit, alternando entre 0 y 1 para distinguir entre una trama nueva y una retransmisión.
@@ -13,12 +13,14 @@
 > - **Mecanismo:** Si el temporizador expira antes del ACK, se retransmite.
 
 ### Proceso del emisor
+
 1. Obtiene un paquete de la capa de red, construye una trama y la envía a través de la capa física.
 2. Inicia un temporizador o RTO para recuperarse en caso de pérdida de la trama o de su ACK.
 3. Queda bloqueado esperando un evento. Si recibe un ACK válido, detiene el timer, avanza el número de secuencia y busca el siguiente paquete.
 4. Si el timer expira antes de recibir el ACK, el emisor retransmite la misma trama almacenada en su búffer.
 
 ### Proceso del receptor
+
 1. Espera la llegada de una trama. Al recibirla, comprueba si el número de secuencia es el esperado.
 2. Si es la correcta, entrega los datos a la capa de red y actualiza el número de secuencia que espera a continuación.
 3. Envía una trama de ACK de vuelta al emisor para darle permiso de continuar.
@@ -58,7 +60,8 @@ Si llega una trama con un error o fuera de secuencia, el receptor la descarta, a
 
 ## 3. Repetición Selectiva (Selective Repeat)
 
-> [!star] Característica Principal
+> [!info] Funcionamiento
+> **Almacena en el búfer las tramas fuera de orden y envía NACK's para retransmitir solo lo perdido.**
 > Es el más eficiente, pero mas complejo. El receptor tiene memoria (búfer) y **acepta tramas desordenadas**. Solo se retransmite exactamente lo que se perdió. Utiliza ACKs acumulativos y a menudo **NAKs** (acuse negativo) para acelerar la recuperación de errores
 
 > [!example] Configuración Técnica
@@ -81,16 +84,22 @@ Si llega una trama con un error o fuera de secuencia, el receptor la descarta, a
 | **Go-Back-N**        |      $N$       |        1         | Todo desde el error | Media       |
 | **Selective Repeat** |      $N$       |       $N$        | Solo la perdida     | Alta        |
 ## Protocolo PPP (Point-to-Point Protocol)
-Introducción
-> El **PPP (Point-to-Point Protocol)**, definido en el **RFC 1661**, es el protocolo estándar de Internet utilizado para transportar paquetes a través de **enlaces punto a punto**. Se utiliza habitualmente en conexiones de routers, módems de cable y enlaces de banda ancha como **ADSL**.
+
+- [I] **PPP (Point-to-Point Protocol):** es el protocolo estándar de Internet utilizado para transportar paquetes a través de **enlaces punto a punto**. Se utiliza habitualmente en conexiones de routers, módems de cable y enlaces de banda ancha como **ADSL**.
+
+- [*] **PPP - Point to Point Protocol:** Protocolo punto a punto.
 
 # 1. Componentes principales de PPP
-PPP ofrece tres características fundamentales para garantizar la comunicación:
- 1. **Método de entramado:** Un mecanismo para **delimitar inequívocamente** el inicio y el fin de cada trama, que además incluye **detección de errores**.
- 
-2. **LCP (Link Control Protocol):** Un protocolo de control de enlace diseñado para **activar las líneas, probarlas, negociar opciones y desactivarlas** cuando ya no se necesitan.
 
-3. **NCP (Network Control Protocol):** Una familia de protocolos para negociar las opciones de la capa de red de forma independiente al protocolo utilizado (como **IPv4 o IPv6**). Existe un NCP diferente para cada capa de red soportada.
+- [I]  **Método de entramado:** Un mecanismo para **delimitar inequívocamente** el inicio y el fin de cada trama, que además incluye **detección de errores**.
+ 
+- [I] **LCP (Link Control Protocol):** Un protocolo de control de enlace diseñado para **activar las líneas, probarlas, negociar opciones y desactivarlas** cuando ya no se necesitan.
+
+- [I] **NCP (Network Control Protocol):** Una familia de protocolos para negociar las opciones de la capa de red de forma independiente al protocolo utilizado (como **IPv4 o IPv6**). Existe un NCP diferente para cada capa de red soportada.
+
+- [*] **LCP - Link Control Protocol:** Protocolo de Control de Enlace
+- [*] **NCP - Network Control Protocol:** Protocolo de Control de Red
+
 # 2. Formato de la trama PPP
 La trama está orientada a bytes y su diseño se basa en el protocolo **HDLC**.
 
@@ -103,7 +112,7 @@ La trama está orientada a bytes y su diseño se basa en el protocolo **HDLC**.
 > - **Checksum (Suma de comprobación):** Normalmente un **CRC de 2 o 4 bytes** para detectar errores de transmisión.
 # 3. Mecanismo de Relleno de Bytes (Byte Stuffing)
 
-> [!danger] ¡Importante: Evitar Confusión de Banderas!
+> [!danger] Importante: ¡Evitar Confusión de Banderas!
 > Para evitar que el byte de bandera (**0x7E**) aparezca accidentalmente dentro de los datos, PPP utiliza un **byte de escape (0x7D)**:
 > 
 > 1. Si el byte **0x7E** aparece en los datos, se inserta **0x7D** antes y se aplica una función **XOR con 0x20** al byte original (convirtiéndolo en **0x5E**).
