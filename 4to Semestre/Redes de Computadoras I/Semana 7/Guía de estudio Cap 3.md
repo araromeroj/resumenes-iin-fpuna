@@ -9,7 +9,9 @@ Esta subcapa es responsable de decidir qué dispositivo es el siguiente en trans
 
 El objetivo es determinar cómo repartir el ancho de banda entre los emisores.
 
-- **Asignación Estática:** Utiliza técnicas como **FDM (Frequency Division Multiplexing - Multiplexación por División de Frecuencia)** o **TDM (Time Division Multiplexing - Multiplexación por División de Tiempo)**. Es ineficiente para tráfico intermitente, ya que el ancho de banda se pierde si el usuario no transmite.
+- **Asignación Estática:** Es ineficiente para tráfico intermitente, ya que el ancho de banda se pierde si el usuario no transmite. Utiliza técnicas como:
+	- **FDM (Frequency Division Multiplexing - Multiplexación por División de Frecuencia)**
+	- **TDM (Time Division Multiplexing - Multiplexación por División de Tiempo)**.
 - **Asignación Dinámica:** El canal se asigna bajo demanda. Es potencialmente hasta $N$ veces más eficiente en sistemas con muchos emisores.
 - **Supuestos clave para la asignación dinámica:**
     1. **Tráfico independiente:** Las estaciones generan tramas de forma autónoma.
