@@ -36,9 +36,19 @@ Se estudia cómo los bits se convierten en señales físicas para viajar por el 
     - **Distorsión:** Por retardo o atenuación diferencial.
     - **Ruido:** Térmico, de intermodulación, **Crosstalk** (**Diafonía**) e impulsivo (picos electromagnéticos).
 - **Límites de Velocidad:** Definidos por los teoremas de **Nyquist** (para canales sin ruido) y **Shannon** (para canales con ruido térmico).
-- **Modulación Digital:** Conversión de bits a señales analógicas mediante **ASK** (**Amplitude Shift Keying** - Modulación por Desplazamiento de Amplitud), **FSK** (**Frequency Shift Keying** - Modulación por Desplazamiento de Frecuencia), **PSK** (**Phase Shift Keying** - Modulación por Desplazamiento de Fase) y **QAM** (**Quadrature Amplitude Modulation** - Modulación de Amplitud en Cuadratura).
-- **Multiplexación:** Compartición del medio mediante **FDM** (**Frequency Division Multiplexing** - Multiplexación por División de Frecuencia), **TDM** (**Time Division Multiplexing** - Multiplexación por División de Tiempo), **WDM** (**Wavelength Division Multiplexing** - Multiplexación por División de Longitud de Onda) y **CDM** (**Code Division Multiplexing** - Multiplexación por División de Código).
-- **Espectro Expandido:** Técnicas para resistir interferencias como **FHSS** (**Frequency Hopping Spread Spectrum** - Espectro Ensanchado por Salto de Frecuencia) y **DSSS** (**Direct Sequence Spread Spectrum** - Espectro Ensanchado por Secuencia Directa).
+- **Modulación Digital:** Conversión de bits a señales analógicas mediante:
+	- **ASK** (**Amplitude Shift Keying** - Modulación por Desplazamiento de Amplitud)
+	- **FSK** (**Frequency Shift Keying** - Modulación por Desplazamiento de Frecuencia)
+	- **PSK** (**Phase Shift Keying** - Modulación por Desplazamiento de Fase)
+	- **QAM** (**Quadrature Amplitude Modulation** - Modulación de Amplitud en Cuadratura).
+- **Multiplexación:** Compartición del medio mediante:
+	- **FDM** (**Frequency Division Multiplexing** - Multiplexación por División de Frecuencia)
+	- **TDM** (**Time Division Multiplexing** - Multiplexación por División de Tiempo)
+	- **WDM** (**Wavelength Division Multiplexing** - Multiplexación por División de Longitud de Onda)
+	- **CDM** (**Code Division Multiplexing** - Multiplexación por División de Código).
+- **Espectro Expandido:** Técnicas para resistir interferencias como:
+	- **FHSS** (**Frequency Hopping Spread Spectrum** - Espectro Ensanchado por Salto de Frecuencia)
+	- **DSSS** (**Direct Sequence Spread Spectrum** - Espectro Ensanchado por Secuencia Directa).
 
 ## 4. Infraestructura de Red y Conmutación (Diapositiva 5)
 
@@ -60,7 +70,9 @@ Responsable de la transferencia confiable entre dos nodos adyacentes.
     - **Checksums** (**Sumas de Comprobación**): Usados en protocolos como **IP**.
     - **CRC** (**Cyclic Redundancy Check** - Verificación de Redundancia Cíclica): El método más robusto basado en polinomios generadores.
 - **Corrección de Errores:** Uso de la **Distancia de Hamming** y códigos **FEC** (**Forward Error Correction** - Corrección de Errores hacia Adelante).
-- **Protocolos de Ventana Deslizante:** Permiten el envío de múltiples tramas sin esperar **ACK** (**Acknowledgment** - Acuse de Recibo) inmediato. Incluyen **Go-Back-N** (**Retroceder N**) y **Selective Repeat** (**Repetición Selectiva**).
+- **Protocolos de Ventana Deslizante:** Permiten el envío de múltiples tramas sin esperar **ACK** (**Acknowledgment** - Acuse de Recibo) inmediato. Incluyen:
+	- **Go-Back-N** (**Retroceder N**)
+	- **Selective Repeat** (**Repetición Selectiva**).
 - **Piggybacking:** Técnica de incluir el acuse de recibo dentro de una trama de datos que viaja en sentido contrario para optimizar el ancho de banda.
 
 ## 6. Subcapa MAC y Ethernet (Diapositiva 8)
@@ -90,7 +102,7 @@ Tecnologías sin cables basadas en ondas de radio.
 Gestión avanzada de redes de área local.
 
 - **Puentes/Switches:** Conectan múltiples **LANs** (**Local Area Networks** - Redes de Área Local) para manejar mayores cargas.
-- **STP** (**Spanning Tree Protocol** - Protocolo de Árbol de Expansión): Algoritmo para evitar bucles infinitos en redes con caminos redundantes [Diapositiva 10 agenda].
+- **STP** (**Spanning Tree Protocol** - Protocolo de Árbol de Expansión): Algoritmo para evitar bucles infinitos en redes con caminos redundantes.
 - **VLANs** (**Virtual LANs** - Redes de Área Local Virtuales): Segmentación lógica de una red física para mejorar la seguridad y reducir el tráfico de difusión.
 
 ## 9. Capa de Red e IPv4 (Diapositiva 11)
