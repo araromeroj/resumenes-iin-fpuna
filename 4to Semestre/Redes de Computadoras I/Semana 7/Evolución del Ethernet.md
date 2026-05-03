@@ -29,9 +29,19 @@ Fue el inicio de todo bajo el estándar **IEEE 802.3**. Su característica princ
 >	- Si se detecta una colisión, interrumpe la transmisión y espera un tiempo aleatorio computado con el **algoritmo exponencial binario**
 >- Todas las colisiones ocurren entre el byte 1 y el byte 64 (que es el tamaño de trama mínimo).
 
-#### Algoritmo Exponencial Binario
+#### Algoritmo Exponencial Binario (Binary Exponential Backoff)
+- [*] **Binary Exponential Backoff:** Algoritmo de Retroceso Exponencial Binario
+
+Es el corazón del protocolo CSMA/CD usado en Ethernet de half-dúplex. Su función es decidir cuánto tiempo debe esperar una estación después de que ocurre una colisión antes de intentar transmitir de nuevo.
 
 >[!info] Funcionamiento del Algoritmo Exponencial Binario
+>1. **Detección:** Si dos estación es transmiten al mismo tiempo, ocurre una colisión.
+>2. **Intento $k$:** Se registra el número de colisiones consecutivas para ese frame (máximo 16).
+>3. **Rango de espera:** La estación elige un número aleatorio $r$ dentro de ese rango de $[0, 2^k-1]$.
+>4. **Tiempo de espera:** El tiempo de espera real es de $r*\text{SlotTime}$ (512 bits en Ethernet)
+>5. **Crecimiento:** El rango de espera se duplica tras cada colisión por ser exponencial, lo que reduce la probabilidad de que las mismas estaciones vuelvan a chocar.
+
+>[!tip] Características
 >- División de tiempo en ranuras discretas (de contención) de 64 bytes (mínimo de trama).
 >- Tras $i$ colisiones: se escoge entre $0$ y $2^i-1$
 >- **Límite del algoritmo:** 1023 ranuras (10 colisiones)
@@ -39,6 +49,22 @@ Fue el inicio de todo bajo el estándar **IEEE 802.3**. Su característica princ
 >- No es FIFO !!!
 
 [[Datos técnicos y estructura de trama]]
+
+### Árbol Binario - Resolución de Colisiones
+
+Aunque el _Backoff_ es el estándar comercial, el **Algoritmo de Árbol** es una forma determinista de resolver colisiones dividiendo las estaciones en grupos.
+
+>[!info] Funcionamiento:
+>1. **División:** Cuando hay una colisión, todas las estaciones involucradas se dividen en dos grupos (un "árbol" con rama 0 y rama 1).
+>2. **Prioridad:** Solo las estaciones en la rama 0 (izquierda) intentan transmitir.
+>3. **Recursión:**
+>	- Si hay éxito, luego le toca a la rama 1.
+>	- Si hay otra colisión en la rama 0, ese grupo se vuelve a dividir en dos sub-ramas.
+>4. **Finalización:** El proceso continúa hasta que todas las estaciones han transmitido con éxito siguiendo un recorrido en orden (in-order traversal) del árbol.  
+
+![[Pasted image 20260503172819.png]]
+
+---
 ## Fast Ethernet (100 Mbps)
 
 Llegó en 1995 como el estándar **802.3u**. El objetivo era ser 10 veces más rápido manteniendo la compatibilidad con las tramas del Ethernet original.

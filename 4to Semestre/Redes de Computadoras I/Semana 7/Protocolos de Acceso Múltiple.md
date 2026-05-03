@@ -160,7 +160,7 @@ Existen diferentes estrategias sobre qué hacer cuando el canal está ocupado:
 - **Propiedades más importantes:**
     - **Determinismo:** Garantiza un tiempo máximo de espera antes de que una estación pueda transmitir, lo cual es ideal para tráfico en tiempo real.    
     - **Orden:** Evita el desperdicio de ancho de banda que producen las colisiones en protocolos como CSMA/CD.   
-## 3. Cuenta Regresiva Binaria (Countdown)
+## 3. Cuenta Regresiva Binaria (Binary Countdown)
 
 - [I] **Binary Countdown:** Es una mejora sobre el protocolo de mapa de bits que reduce la sobrecarga de las ranuras de contención.
 
@@ -180,7 +180,7 @@ Los protocolos de contención limitada buscan combinar las mejores propiedades d
 
 >[!info] Funcionamiento
 >Dividen a las estaciones en grupos y limitan la contención dentro de cada grupo para reducir la probabilidad de colisiones.
-## Protocolo de recorrido de Arbol Adaptable
+## Protocolo de recorrido de Arbol Adaptable o Adaptativo
 
 >[!info] Funcionamiento
 >Las estaciones se ven como hojas de un árbol binario. En la primera ranura de contención, todas las estaciones intentan transmitir. Si hay una colisión, se busca de forma recursiva en el subárbol izquierdo y luego en el derecho hasta que se resuelva la contención.
