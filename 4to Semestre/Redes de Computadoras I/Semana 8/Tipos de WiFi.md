@@ -13,64 +13,48 @@ provee corrección de errores
 codificación determina la tasa de bits
 
 ## IEEE 802.11b
-➢ Extensión del esquema 802.11 DSSS en la banda de
-2.4 GHz (más abarrotado pero de mayor alcance)
-⚫ Con tasas de bits típicas de 5.5 y 11 Mbps
-➢ Tasas de “chipping” de 11 MHz
-⚫ El mismo que el original esquema DSSS
-⚫ Modulación “Complementary Code Keying”
-(CCK) da tasas de bits más altas con el mismo
-ancho de banda
 
 >[!tip] Características
 >- **Frecuencia:** Opera en la banda de **2.4 GHz** (banda ISM).
 >- **Técnica:** Utiliza **DSSS** (Espectro Ensanchado de Secuencia Directa).
->- **Velocidad:** Ofrece tasas de datos de hasta **11 Mbps**.
+>- **Velocidad:** Ofrece tasas de datos de **5Mbps** hasta **11 Mbps**.
 >- **Compatibilidad:** Fue el primer estándar de adopción masiva, pero es propenso a interferencias con otros dispositivos (microondas, Bluetooth) que usan la misma banda de 2.4 GHz.
+>- **Modulación:** “Complementary Code Keying” (CCK) da tasas de bits más altas con el mismo ancho de banda.
 
 ## IEEE 802.11g
-➢ Extensión del 802.11b de alta velocidad
-➢ Opera en la banda de 2.4 GHz
-➢ Compatible con dispositivos 802.11b
-➢ Combina las técnicas de codificación de capa física
-usados en 802.11a y 802.11b para proveer servicio
-a una variedad de tasas de bits
-⚫ ERP-OFDM para tasas de bits de 6, 9, 12, 18, 24,
-36, 48, 54 Mbps
-⚫ ERP-PBCC para tasas de bits de 22 y 33 Mbps
 
+Extensión del 802.11b de alta velocidad
 >[!tip] Características
 >- **Frecuencia:** Regresa a la banda de **2.4 GHz**.
 >- **Técnica:** Emplea **OFDM** (al igual que el 11a) para lograr mayor eficiencia que el 11b.
 >- **Velocidad:** Hasta **54 Mbps**.
->- **Importancia:** Logró la velocidad del 11a pero manteniendo el rango y la compatibilidad con el ecosistema de 2.4 GHz.
+>- **Importancia:** Logró la velocidad del 11a pero manteniendo el rango y la compatibilidad con el ecosistema de 2.4 GHz y con dispositivos 802.11b.
 
-## IEEE 802.11n
-➢ También conocido como Wi-Fi 4 (año 2009)
-➢ Incremento significativo de 54 a 600 Mbps
-➢ Tecnología MIMO (multiple input, multiple
-output), hasta cuatro flujos, más OFDM
-➢ Channel Bonding: Uso de dos canales separados no
-solapados (total 40 Mhz)
-➢ Trabaja a 2.4 GHz y 5 GHz
+- ERP-OFDM para tasas de bits de 6, 9, 12, 18, 24,
+36, 48, 54 Mbps
+- ERP-PBCC para tasas de bits de 22 y 33 Mbps
+
+## IEEE 802.11n - WiFi 4
 
 >[!tip] Características
 >- **Frecuencia:** Puede operar tanto en **2.4 GHz como en 5 GHz**.
->- **Tecnología Clave:** Introduce **MIMO** (Multiple Input Multiple Output), usando múltiples antenas para transmitir y recibir datos simultáneamente.
+>- **Tecnología Clave:** Introduce **MIMO** (Multiple Input Multiple Output), usando múltiples antenas para transmitir y recibir datos simultáneamente, hasta cuatro flujos y OFDM.
 >- **Velocidad:** Puede alcanzar hasta **450 o 600 Mbps** mediante el uso de canales más anchos (40 MHz).
+>- **Channel Bonding:** Uso de dos canales separados no
+solapados (total 40 Mhz)
 
-## IEEE 802.11ac
-➢ También conocido como Wi-Fi 5 o Gigabit Wi-Fi
-(año 2013) – Tasa máxima de 6,93 Gbps
-➢ Canales de hasta 160 MHz, hasta ocho flujos
-MIMO usando la banda de 5 GHz
-➢ Multi-user MIMO (hasta cuatro clientes)
-➢ Modulación de alta densidad
-256-QAM
+## IEEE 802.11ac - WiFi 5 o Gigabit WiFi
 
 >[!tip] Características
 >- **Frecuencia:** Se enfoca casi exclusivamente en la banda de **5 GHz**
->- **Características:** Aumenta el ancho de canal (hasta 80 o 160 MHz) y utiliza modulaciones más complejas (256-QAM).
+>- **Características:** Aumenta el ancho de canal (hasta 80 o 160 MHz) y utiliza modulaciones más complejas (256-QAM), hasta ocho flujos y canales de hasta 160 MHz.
 >- **Velocidad:** Supera el **Gbps** en condiciones ideales.
+>- **Tasa máxima:** 6,93 Gbps
 
 ## IEEE 802.11ax
+
+>[!tip] Características
+>- **Frecuencia:** Funciona en todas las bandas entre **1 y 6 GHz**.
+>- **Tecnología Clave:** Introduce **OFDMA**, permitiendo que un solo canal se divida para atender a múltiples usuarios al mismo tiempo, mejorando drásticamente la eficiencia en lugares concurridos.
+>- **Enfoque:** Más que velocidad punta, busca mejorar el rendimiento promedio por usuario en entornos de alta densidad.
+
