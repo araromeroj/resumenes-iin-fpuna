@@ -88,14 +88,21 @@ Decide quién transmite en medios de acceso compartido.
 - **Ethernet (IEEE 802.3):** Evolución desde 10 Mbps hasta 100 Gbps. Uso de direcciones **MAC** de 48 bits y el algoritmo de **Backoff** (**Retroceso**) Exponencial Binario tras colisiones.
 - **Conmutación:** Diferencia entre **Hubs** (**Concentradores** - un solo dominio de colisión) y **Switches** (**Conmutadores** - microsegmentación y dominios de colisión por puerto).
 
-## 7. Redes Inalámbricas WiFi y PAN (Diapositiva 9)
+## [[1. Redes LAN inalámbricas - WiFi (IEEE 802.11)|7. Redes Inalámbricas WiFi y PAN (Diapositiva 9)]]
 
 Tecnologías sin cables basadas en ondas de radio.
 
-- **WiFi (IEEE 802.11):** Arquitecturas **BSS** (**Basic Service Set** - Conjunto de Servicio Básico) con un **AP** (**Access Point** - Punto de Acceso) y **ESS** (**Extended Service Set** - Conjunto de Servicio Extendido).
+- **WiFi (IEEE 802.11):**
+	- Arquitecturas **BSS** (**Basic Service Set** - Conjunto de Servicio Básico) con un **AP** (**Access Point** - Punto de Acceso)
+	- **ESS** (**Extended Service Set** - Conjunto de Servicio Extendido).
 - **Control de Acceso:** Utiliza **CSMA/CA** (**CSMA with Collision Avoidance** - CSMA con Evitación de Colisiones) mediante detección física y virtual.
-- **Variantes Físicas:** 802.11b (DSSS), 802.11a/g (OFDM), 802.11n (**MIMO** - **Multiple Input Multiple Output** - Múltiple Entrada Múltiple Salida).
-- **PAN** (**Personal Area Network** - Red de Área Personal): Bluetooth y **RFID** (**Radio Frequency Identification** - Identificación por Radiofrecuencia) como **EPC Gen2**.
+- **Variantes Físicas:**
+	- 802.11b (DSSS)
+	- 802.11a/g (OFDM)
+	- 802.11n (**MIMO** - **Multiple Input Multiple Output** - Múltiple Entrada Múltiple Salida).
+- **PAN** (**Personal Area Network** - Red de Área Personal):
+	- Bluetooth
+	- **RFID** (**Radio Frequency Identification** - Identificación por Radiofrecuencia) como **EPC Gen2**.
 
 ## 8. Puentes, STP y VLANs (Diapositiva 10)
 
