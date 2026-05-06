@@ -6,7 +6,7 @@ Esta guía de estudio detallada profundiza en los contenidos de la **Diapositiva
 
 WiFi es el estándar dominante para redes de área local inalámbricas (**LAN** - _Local Area Network_; Red de Área Local).
 
-### A. Arquitectura y Componentes
+### [[Arquitectura y Componentes|A. Arquitectura y Componentes]]
 
 - **BSS (Basic Service Set; Conjunto de Servicio Básico):** Es el bloque de construcción básico. Consiste en estaciones fijas o móviles y, opcionalmente, un **AP** (_Access Point_; Punto de Acceso).
 - **Modos de Operación:**
@@ -25,7 +25,7 @@ WiFi ha evolucionado a través de múltiples versiones que operan principalmente
 - **802.11ac (WiFi 5):** Opera en 5 GHz, usa canales más anchos y **MU-MIMO** (_Multi-User MIMO_; MIMO de Múltiples Usuarios) para velocidades de hasta 6.93 Gbps.
 - **802.11ax (WiFi 6):** Mejora la eficiencia en entornos densos mediante **OFDMA** (_Orthogonal Frequency Division Multiple Access_; Acceso Múltiple por División de Frecuencias Ortogonales).
 
-### C. [[Subcapa MAC y Protocolo CSMA-CA|Subcapa MAC y Protocolo CSMA/CA]]
+### [[Subcapa MAC y Protocolo CSMA-CA|C. Subcapa MAC y Protocolo CSMA/CA]]
 
 Debido a que las radios son típicamente semidúplex y no pueden detectar colisiones mientras transmiten, WiFi utiliza **CSMA/CA** (_Carrier Sense Multiple Access with Collision Avoidance_; Acceso Múltiple con Detección de Portadora y Evitación de Colisiones).
 

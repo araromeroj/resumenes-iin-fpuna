@@ -88,7 +88,7 @@ Decide quién transmite en medios de acceso compartido.
 - **Ethernet (IEEE 802.3):** Evolución desde 10 Mbps hasta 100 Gbps. Uso de direcciones **MAC** de 48 bits y el algoritmo de **Backoff** (**Retroceso**) Exponencial Binario tras colisiones.
 - **Conmutación:** Diferencia entre **Hubs** (**Concentradores** - un solo dominio de colisión) y **Switches** (**Conmutadores** - microsegmentación y dominios de colisión por puerto).
 
-## [[1. Redes LAN inalámbricas - WiFi (IEEE 802.11)|7. Redes Inalámbricas WiFi y PAN (Diapositiva 9)]]
+## [[Arquitectura y Componentes|7. Redes Inalámbricas WiFi y PAN (Diapositiva 9)]]
 
 Tecnologías sin cables basadas en ondas de radio.
 

@@ -66,3 +66,16 @@ solapados (total 40 Mhz) donde se juntan en uno solo para aumentar el ancho de b
 >- **Tecnología Clave:** Introduce **OFDMA**, permitiendo que un solo canal se divida para atender a múltiples usuarios al mismo tiempo, mejorando drásticamente la eficiencia en lugares concurridos.
 >- **Enfoque:** Más que velocidad punta, busca mejorar el rendimiento promedio por usuario en entornos de alta densidad.
 
+# Cuadro comparativo de algunos
+
+|                                  | IEEE 802.11n | IEEE 802.11ac    | IEEE 502.11ax    |
+| -------------------------------- | ------------ | ---------------- | ---------------- |
+| Generación                       | 4 - 2009     | 5 - 2013         | 6 - 2019         |
+| Frecuencia                       | 2,4 / 5 GHz  | 5 GHz            | 2,4 / 5 GHz      |
+| Ancho del canal                  | 20 / 40 MHZ  | 20/40/80/160 MHz | 20/40/80/160 MHz |
+| Compatibilidad                   | 802.11a/b/g  | 802.11a/n        | 802.11a/b/g/n/ac |
+| Modulación                       | OFDM         | OFDM             | OFDMA            |
+| Codificación máxima              | 64 - QAM     | 256 - QAM        | 1024 - QAM       |
+| Tasa de transmisión máx          | 600 Mbps     | 6,933 Gbps       | 9,607 Gbps       |
+| MIMO                             | MIMO         | MU-MIMO downlink | MU - MIMO ambos  |
+| Máximo de cadenas de transmisión | 4            | 8                | 8                |
