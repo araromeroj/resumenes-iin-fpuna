@@ -25,6 +25,7 @@ GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
 ```
 
 ## Completadas
+
 ```dataview
 TASK
 FROM "4to Semestre"

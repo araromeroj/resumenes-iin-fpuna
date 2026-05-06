@@ -23,16 +23,22 @@ codificación determina la tasa de bits
 
 ## IEEE 802.11g
 
-Extensión del 802.11b de alta velocidad
+
 >[!tip] Características
+>Es una extensión del 802.11b de alta velocidad
 >- **Frecuencia:** Regresa a la banda de **2.4 GHz**.
 >- **Técnica:** Emplea **OFDM** (al igual que el 11a) para lograr mayor eficiencia que el 11b.
 >- **Velocidad:** Hasta **54 Mbps**.
 >- **Importancia:** Logró la velocidad del 11a pero manteniendo el rango y la compatibilidad con el ecosistema de 2.4 GHz y con dispositivos 802.11b.
 
-- ERP-OFDM para tasas de bits de 6, 9, 12, 18, 24,
-36, 48, 54 Mbps
-- ERP-PBCC para tasas de bits de 22 y 33 Mbps
+>[!info] Mecanismos definidos por IEEE 802.11g
+>Para permitir la alta velocidad (54Mbps) de transmisión con la banda (2.4GHz)
+>- ERP-OFDM para tasas de bits de 6, 9, 12, 18, 24, 36, 48, 54 Mbps (desde el 6 hasta el $6*9$ de a 3)
+>- ERP-PBCC para tasas de bits de 22 y 33 Mbps
+
+- [*] **ERP-PBCC - Extended Rate Physical Packet Binary Convolutional Code:** Código Convolucional de Binario de Paquetes
+- [*] **ERP-OFDM - Extended Rate Physical - Orthogonal Frequency Division Multiplexing:** Multiplexado por División de Frecuencias Ortogonales
+- [*] **ERP - Extended Rate Physical:** Capa Física de Velocidad Extendida
 
 ## IEEE 802.11n - WiFi 4
 
@@ -41,15 +47,17 @@ Extensión del 802.11b de alta velocidad
 >- **Tecnología Clave:** Introduce **MIMO** (Multiple Input Multiple Output), usando múltiples antenas para transmitir y recibir datos simultáneamente, hasta cuatro flujos y OFDM.
 >- **Velocidad:** Puede alcanzar hasta **450 o 600 Mbps** mediante el uso de canales más anchos (40 MHz).
 >- **Channel Bonding:** Uso de dos canales separados no
-solapados (total 40 Mhz)
+solapados (total 40 Mhz) donde se juntan en uno solo para aumentar el ancho de banda.
 
+- [*] **MIMO - Multiple Input Multiple Output:** Múltiples Entradas y Salidas
 ## IEEE 802.11ac - WiFi 5 o Gigabit WiFi
 
 >[!tip] Características
 >- **Frecuencia:** Se enfoca casi exclusivamente en la banda de **5 GHz**
->- **Características:** Aumenta el ancho de canal (hasta 80 o 160 MHz) y utiliza modulaciones más complejas (256-QAM), hasta ocho flujos y canales de hasta 160 MHz.
+>- **Características:** Aumenta el ancho de canal (hasta 160 MHz) y utiliza modulaciones más complejas (256-QAM), hasta ocho flujos MIMO usando la banda de 5GHz.
 >- **Velocidad:** Supera el **Gbps** en condiciones ideales.
 >- **Tasa máxima:** 6,93 Gbps
+>- **Multi-user MIMO:** hasta cuatro clientes
 
 ## IEEE 802.11ax
 
