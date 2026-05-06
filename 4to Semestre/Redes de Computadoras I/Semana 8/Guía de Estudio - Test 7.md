@@ -1,63 +1,68 @@
-## 1. Redes LAN Inalámbricas WiFi (IEEE 802.11)
-Es el tema principal de la primera parte de la diapositiva, centrándose en cómo se estructuran y operan estas redes.
-- **Arquitectura de Red:**
-    - **BSS (Basic Service Set):** La unidad básica de una red 802.11, compuesta por estaciones inalámbricas y, opcionalmente, un Punto de Acceso (AP).
-    - **ESS (Extended Service Set):** Un conjunto de BSS conectados a través de un "Sistema de Distribución", permitiendo que los usuarios se muevan entre APs sin perder la conexión.
-    - **SSID (Service Set Identifier):** Identificador de texto que nombra a la red inalámbrica.
-    
-- **[[1. Redes LAN inalámbricas - WiFi (IEEE 802.11)#Capas del Protocolo|Capas del Protocolo]]:**
-    - **Capa Física:** Se profundiza en la compatibilidad de los NICs con múltiples estándares (802.11 a/b/g) y cómo la combinación de técnicas de **modulación** y **tasas de codificación** determinan la velocidad de bits (bitrate).
-    - **Subcapa MAC:** Es común a las diferentes capas físicas y se encarga de gestionar el acceso al medio compartido.
-    
-- **[[Servicios y tramas usados en WiFi 802.11#Tramas IEEE 802.11|Tipos de Tramas 802.11]]:**
-    - **Tramas de Administración:** Gestionan la comunicación entre estaciones y APs. Incluyen conceptos como **asociación**, **autenticación**, **reasociación** y **tramas de baliza (beacons)**.
-    - **Tramas de Datos:** Transportan la información del usuario. Una característica clave es que poseen entre **3 y 4 direcciones MAC** para permitir el paso de datos a través del AP.
-    - **Tramas de Control:** Ayudan en la entrega de tramas de datos. Conceptos clave: **RTS** (Request to Send), **CTS** (Clear to Send), **ACK** (Agradecimiento) y **PS-Poll**.
-    
-- **Gestión de Energía:**
-    - **Tramas de Baliza (Beacons):** Emisiones periódicas (típicamente cada 100 ms) del AP que anuncian su presencia y sincronizan parámetros del sistema.        
-    - **APSD (Automated Power Save Delivery):** Técnica de ahorro de energía donde se definen periodos de servicio para que el cliente pueda entrar en modo de reposo y despertar solo cuando sea necesario recibir datos.
-    
-- **[[Servicios y tramas usados en WiFi 802.11#Servicios|Servicios del Sistema]]:** Autenticación, Deautenticación, Privacidad, Distribución e Integración (conectar la red inalámbrica con una red cableada).
+Esta guía de estudio detallada profundiza en los contenidos de la **Diapositiva 9**, integrando la información técnica de los materiales de Tanenbaum sobre las tecnologías de red inalámbrica **WiFi** (**IEEE** - _Institute of Electrical and Electronics Engineers_; Instituto de Ingenieros Eléctricos y Electrónicos **802.11**) y **Bluetooth**.
 
 ---
-## 2. Redes PAN Inalámbricas Bluetooth (IEEE 802.15.1)
 
-[[2. Redes PAN Inalámbricas Bluetooth (IEEE 802.15.1)]]
->[!info] No es importante he'i el profe!!!
+## 1. Redes LAN Inalámbricas: WiFi (IEEE 802.11)
 
-Se enfoca en redes de área personal de corto alcance.
-- **Arquitectura Bluetooth:**
-    - **Piconet:** Una red pequeña con un **Maestro** y hasta **7 Esclavos activos** (y hasta 255 en modo "estacionado"). Utiliza un sistema TDM (Multiplexación por División de Tiempo) controlado por el maestro.
-    
-- **Capa de Radio:**
-    - Opera en la **banda ISM de 2.4 GHz**.
-    - Utiliza **79 canales de 1 MHz**.
-    - **Salto de Frecuencia (Frequency Hopping):** Realiza hasta 1600 saltos por segundo para evitar interferencias.
-    
-- **Clases de Potencia y Rango:**
-	- **Clase 1:** 100 mW (~100 metros).
-    - **Clase 2:** 2.5 mW (~10 metros).
-    - **Clase 3:** 1 mW (~1 metro).
-    - **Clase 4:** 0.5 mW (~0.5 metros).
-    
-- **Pila de Protocolos:**
-    - **Capa de Control de Enlace (Banda Base):** Convierte el flujo de bits en tramas.
-    - **Administrador de Enlace (Link Manager):** Gestiona canales lógicos, emparejamiento (pairing), encriptación y calidad de servicio (QoS).
-    - **Perfiles:** Definen el soporte para aplicaciones específicas (ej. manos libres, transferencia de archivos).
+WiFi es el estándar dominante para redes de área local inalámbricas (**LAN** - _Local Area Network_; Red de Área Local).
+
+### A. Arquitectura y Componentes
+
+- **BSS (Basic Service Set; Conjunto de Servicio Básico):** Es el bloque de construcción básico. Consiste en estaciones fijas o móviles y, opcionalmente, un **AP** (_Access Point_; Punto de Acceso).
+- **Modos de Operación:**
+    - **Modo Infraestructura:** Las estaciones se comunican a través de un **AP**, que suele estar conectado a una red cableada.
+    - **Modo Ad hoc:** Las estaciones se comunican directamente entre sí sin necesidad de un **AP** central.
+- **ESS (Extended Service Set; Conjunto de Servicio Extendido):** Unión de varios **BSS** a través de un sistema de distribución (red cableada) para formar una red inalámbrica de mayor alcance.
+- **SSID (Service Set Identifier; Identificador de Conjunto de Servicio):** Nombre lógico de la red inalámbrica que permite a las estaciones asociarse al **AP** correcto.
+
+### [[Tipos de WiFi|B. La Capa Física (PHY)]]
+
+WiFi ha evolucionado a través de múltiples versiones que operan principalmente en las bandas **ISM** (_Industrial, Scientific, and Medical_; Industrial, Científica y Médica) de 2.4 GHz y 5 GHz:
+
+- **802.11b:** Utiliza **DSSS** (_Direct Sequence Spread Spectrum_; Espectro Ensanchado por Secuencia Directa) y alcanza hasta 11 Mbps.
+- **802.11a/g:** Introdujeron **OFDM** (_Orthogonal Frequency Division Multiplexing_; Multiplexación por División de Frecuencias Ortogonales) para alcanzar 54 Mbps.
+- **802.11n (WiFi 4):** Introdujo la tecnología **MIMO** (_Multiple Input Multiple Output_; Múltiple Entrada Múltiple Salida), permitiendo hasta 600 Mbps mediante múltiples antenas.
+- **802.11ac (WiFi 5):** Opera en 5 GHz, usa canales más anchos y **MU-MIMO** (_Multi-User MIMO_; MIMO de Múltiples Usuarios) para velocidades de hasta 6.93 Gbps.
+- **802.11ax (WiFi 6):** Mejora la eficiencia en entornos densos mediante **OFDMA** (_Orthogonal Frequency Division Multiple Access_; Acceso Múltiple por División de Frecuencias Ortogonales).
+
+### C. [[Subcapa MAC y Protocolo CSMA-CA|Subcapa MAC y Protocolo CSMA/CA]]
+
+Debido a que las radios son típicamente semidúplex y no pueden detectar colisiones mientras transmiten, WiFi utiliza **CSMA/CA** (_Carrier Sense Multiple Access with Collision Avoidance_; Acceso Múltiple con Detección de Portadora y Evitación de Colisiones).
+
+- **DCF (Distributed Coordination Function; Función de Coordinación Distribuida):** Método de acceso estándar basado en competencia.
+- **Detección de Canal:**
+    - **Física:** Escuchar el medio.
+    - **Virtual:** Mediante el **NAV** (_Network Allocation Vector_; Vector de Asignación de Red), un temporizador que indica cuánto tiempo estará ocupado el canal según la información de las tramas previas.
+- **RTS/CTS (Request to Send / Clear to Send; Solicitud de Envío / Listo para Enviar):** Mecanismo opcional para resolver el problema del **terminal oculto**, donde dos estaciones no se ven entre sí pero ambas ven al **AP**.
+
+### D. [[Servicios y tramas usados en WiFi 802.11|Ahorro de Energía y Calidad de Servicio (QoS)]]
+
+- **Ahorro de Energía:** Los clientes pueden entrar en modo reposo y despertarse solo para recibir **Beacons** (Balizas), tramas periódicas del **AP** que anuncian tráfico pendiente. **APSD** (_Automatic Power Save Delivery_; Entrega Automática de Ahorro de Energía) optimiza esto para aplicaciones como voz sobre IP.
+- **QoS (Quality of Service; Calidad de Servicio):** Implementado en 802.11e, utiliza diferentes intervalos **IFS** (_InterFrame Spacing_; Espaciado entre Tramas) como el **AIFS** (_Arbitration Inter-Frame Space_; Espacio Inter-trama de Arbitraje) para dar prioridad al tráfico de voz o video sobre los datos comunes.
 
 ---
-## 3. Redes EPC Gen2 (RFID)
->[!info] No entra tampoco he'i el profe!!!
 
-Aunque se menciona como el punto 4 de la agenda, se centra en la identificación por radiofrecuencia.
-- **Concepto Central:** Protocolo de interfaz de aire para comunicaciones pasivas (sin batería en la etiqueta) entre un lector y etiquetas (tags) en la banda de UHF.
-- **Profundización:** Se estudia cómo los lectores identifican múltiples objetos simultáneamente y cómo se gestionan las colisiones cuando muchas etiquetas responden al mismo tiempo (protocolos de inventario).
+## 2. Redes PAN Inalámbricas: Bluetooth (IEEE 802.15.1)
+
+Bluetooth está diseñado para redes de área personal (**PAN** - _Personal Area Network_; Red de Área Personal) de bajo costo y corto alcance (unos 10 metros).
+
+### A. Arquitectura de Red
+
+- **Piconet:** Consiste en un nodo **Maestro** y hasta siete nodos **Esclavos** activos. El maestro dicta el reloj y la secuencia de salto de frecuencia.
+- **Scatternet:** Conjunto de piconetas interconectadas a través de un nodo que participa en más de una de ellas.
+
+### B. Pila de Protocolos y Capa Física
+
+- **Capa de Radio:** Opera en la banda de 2.4 GHz dividida en 79 canales. Utiliza **FHSS** (_Frequency Hopping Spread Spectrum_; Espectro Ensanchado por Salto de Frecuencia), realizando hasta 1600 saltos por segundo para evitar interferencias.
+- **Banda Base (Control de Enlace):** Gestiona el tiempo ranurado (slots) de 625 microsegundos y define tramas que pueden ocupar 1, 3 o 5 ranuras.
+- **L2CAP (Logical Link Control and Adaptation Protocol; Protocolo de Adaptación y Control de Enlace Lógico):** Encapsula paquetes de capas superiores, gestiona la fragmentación/reensamblado y el control de errores para enlaces de datos.
+
+### C. Perfiles Bluetooth
+
+A diferencia de WiFi, Bluetooth define **Perfiles**, que son pilas de protocolos específicas para aplicaciones concretas (ej. manos libres, teclados, transferencia de archivos) para garantizar la interoperabilidad total entre fabricantes.
 
 ---
-# Resumen de Conceptos Clave para el Examen:
 
-1. **WiFi:** Diferencia entre BSS y ESS; propósito de las tramas RTS/CTS para evitar colisiones.    
-2. **Ahorro de Energía:** Importancia de los Beacons y el modo APSD en dispositivos móviles.
-3. **Bluetooth:** El concepto de Piconet y cómo el salto de frecuencia ayuda a la coexistencia en la banda ISM de 2.4 GHz.
-4. **Capa Física vs MAC:** Cómo interactúan (una MAC única para múltiples físicas en WiFi).
+## 3. Otros Temas: EPC Gen2 (RFID)
+
+Mencionado en la agenda de la diapositiva, el estándar **EPC** (_Electronic Product Code_; Código Electrónico de Producto) **Gen2** rige los sistemas de **RFID** (_Radio Frequency Identification_; Identificación por Radiofrecuencia) para la identificación y rastreo automático de objetos mediante etiquetas inalámbricas.
