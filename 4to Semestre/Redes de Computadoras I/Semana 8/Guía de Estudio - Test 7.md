@@ -5,11 +5,11 @@ Es el tema principal de la primera parte de la diapositiva, centrándose en cóm
     - **ESS (Extended Service Set):** Un conjunto de BSS conectados a través de un "Sistema de Distribución", permitiendo que los usuarios se muevan entre APs sin perder la conexión.
     - **SSID (Service Set Identifier):** Identificador de texto que nombra a la red inalámbrica.
     
-- **Capas del Protocolo:**
+- **[[1. Redes LAN inalámbricas - WiFi (IEEE 802.11)#Capas del Protocolo|Capas del Protocolo]]:**
     - **Capa Física:** Se profundiza en la compatibilidad de los NICs con múltiples estándares (802.11 a/b/g) y cómo la combinación de técnicas de **modulación** y **tasas de codificación** determinan la velocidad de bits (bitrate).
     - **Subcapa MAC:** Es común a las diferentes capas físicas y se encarga de gestionar el acceso al medio compartido.
-        
-- **Tipos de Tramas 802.11:**
+    
+- **[[Servicios y tramas usados en WiFi 802.11#Tramas IEEE 802.11|Tipos de Tramas 802.11]]:**
     - **Tramas de Administración:** Gestionan la comunicación entre estaciones y APs. Incluyen conceptos como **asociación**, **autenticación**, **reasociación** y **tramas de baliza (beacons)**.
     - **Tramas de Datos:** Transportan la información del usuario. Una característica clave es que poseen entre **3 y 4 direcciones MAC** para permitir el paso de datos a través del AP.
     - **Tramas de Control:** Ayudan en la entrega de tramas de datos. Conceptos clave: **RTS** (Request to Send), **CTS** (Clear to Send), **ACK** (Agradecimiento) y **PS-Poll**.
@@ -18,10 +18,14 @@ Es el tema principal de la primera parte de la diapositiva, centrándose en cóm
     - **Tramas de Baliza (Beacons):** Emisiones periódicas (típicamente cada 100 ms) del AP que anuncian su presencia y sincronizan parámetros del sistema.        
     - **APSD (Automated Power Save Delivery):** Técnica de ahorro de energía donde se definen periodos de servicio para que el cliente pueda entrar en modo de reposo y despertar solo cuando sea necesario recibir datos.
     
-- **Servicios del Sistema:** Autenticación, Deautenticación, Privacidad, Distribución e Integración (conectar la red inalámbrica con una red cableada).
+- **[[Servicios y tramas usados en WiFi 802.11#Servicios|Servicios del Sistema]]:** Autenticación, Deautenticación, Privacidad, Distribución e Integración (conectar la red inalámbrica con una red cableada).
 
 ---
 ## 2. Redes PAN Inalámbricas Bluetooth (IEEE 802.15.1)
+
+[[2. Redes PAN Inalámbricas Bluetooth (IEEE 802.15.1)]]
+>[!info] No es importante he'i el profe!!!
+
 Se enfoca en redes de área personal de corto alcance.
 - **Arquitectura Bluetooth:**
     - **Piconet:** Una red pequeña con un **Maestro** y hasta **7 Esclavos activos** (y hasta 255 en modo "estacionado"). Utiliza un sistema TDM (Multiplexación por División de Tiempo) controlado por el maestro.
@@ -44,6 +48,8 @@ Se enfoca en redes de área personal de corto alcance.
 
 ---
 ## 3. Redes EPC Gen2 (RFID)
+>[!info] No entra tampoco he'i el profe!!!
+
 Aunque se menciona como el punto 4 de la agenda, se centra en la identificación por radiofrecuencia.
 - **Concepto Central:** Protocolo de interfaz de aire para comunicaciones pasivas (sin batería en la etiqueta) entre un lector y etiquetas (tags) en la banda de UHF.
 - **Profundización:** Se estudia cómo los lectores identifican múltiples objetos simultáneamente y cómo se gestionan las colisiones cuando muchas etiquetas responden al mismo tiempo (protocolos de inventario).
