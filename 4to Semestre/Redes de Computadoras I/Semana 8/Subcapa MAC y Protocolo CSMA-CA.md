@@ -16,9 +16,9 @@ Modos de Operación:
 	- Usa Binary Exponential Backoff con IFS (espaciado entre tramas)
 	- Se pierde la detección de colisiones
 	- Tiene trama ACK explícita
-	- Detección del canal
+	- [[Subcapa MAC y Protocolo CSMA-CA#Detección de Canal (Carrier Sensing)|Detección del canal]]
 		- Física: escuchando el canal
-		- Virtual: con los NAV (Network Allocation Vector) y opcionalmente con lso RTS y CTS
+		- Virtual: con los NAV (Network Allocation Vector) y opcionalmente con Iso RTS y CTS
 	- Usa tramas RTS/CTS para evitar estaciones escondidas o expuestas
 - **PCF** (**Point Coordination Function** - Función de Coordinación de Punto): Es un modo opcional y centralizado donde el **AP** sondea a las estaciones para darles permiso de transmitir (polling). No forma parte del estándar de interoperabilidad WiFi Alliance.
 
@@ -27,4 +27,21 @@ Modos de Operación:
 Para evitar colisiones, la subcapa **MAC** (**Medium Access Control** - Control de Acceso al Medio) realiza dos tipos de detección:
 
 - **Física:** La estación escucha el medio para detectar señales eléctricas.
-- **Virtual:** Se utiliza un temporizador interno llamado **NAV** (**Network Allocation Vector** - Vector de Asignación de Red). Cada trama lleva un campo de "duración" que indica cuánto tiempo estará ocupado el canal; las estaciones que escuchan esto actualizan su **NAV** (**Network Allocation Vector** - Vector de Asignación de Red) y permanecen en silencio
+- **Virtual:** Se utiliza un temporizador interno llamado **NAV** (**Network Allocation Vector** - Vector de Asignación de Red). Cada trama lleva un campo de "duración" que indica cuánto tiempo estará ocupado el canal; las estaciones que escuchan esto actualizan su **NAV** (**Network Allocation Vector** - Vector de Asignación de Red) y permanecen en silencio.
+
+- [*] **RTS - Request To Send:** Solicitud de envío
+- [*] **CTS - Clear to Send:** Listo para enviar
+
+
+![[Pasted image 20260506194604.png]]
+## Intervalos y Tiempos de Espera (IFS - InterFrame Spacing)
+
+- [*] **IFS - InterFrame Spacing:** Epaciado entre tramas
+
+- **SIFS (Short IFS):** El más corto, usado para respuestas inmediatas como **ACK**, **CTS** o fragmentos de datos. $$10\mu s$$
+- **PIFS (DCF IFS):** Es el espaciado entre tramas dentro de la función de DCF. Tiempo que debe esperar una estación antes de intentar transmitir una trama de datos regular.$$30\mu s$$
+- **DIFS (Extended IFS):** Usado por estaciones que recibieron una trama corrupta para evitar interferir con diálogos en curso.$$50 \mu s$$
+
+## Intervalos de Backoff
+
+- **Backoff Exponencial Binario:** Si el canal está ocupado, la estación elige un tiempo de espera aleatorio que se duplica tras cada intento fallido para reducir nuevas colisiones.
