@@ -2,7 +2,7 @@ Esta guía de estudio pormenorizada abarca los contenidos fundamentales presenta
 
 ---
 
-## 1. Introducción y Logística del Curso (Diapositiva 1)
+## [[Diapositiva 1 - Guía de estudio|1. Introducción y Logística del Curso (Diapositiva 1)]]
 
 Este apartado establece los cimientos del estudio y la bibliografía de referencia.
 
@@ -10,7 +10,7 @@ Este apartado establece los cimientos del estudio y la bibliografía de referenc
 - **Estructura de Evaluación:** Se destaca la importancia de los tests semanales (50% de la nota parcial) y los laboratorios obligatorios utilizando la herramienta **Packet Tracer**.
 - **Hoja de Ruta del Primer Parcial:** Incluye la Introducción (Capítulo 1) y la Capa Física (Capítulo 2). El segundo parcial cubre la Capa de Enlace de Datos (Capítulo 3), la Subcapa de Acceso al Medio (Capítulo 4) y el Protocolo **IPv4** (**Internet Protocol version 4** - Protocolo de Internet versión 4) (Capítulo 5).
 
-## 2. Conceptos de Protocolos y Modelos de Referencia (Diapositiva 2)
+## [[Diapositiva 2 - Guía de Estudio|2. Conceptos de Protocolos y Modelos de Referencia (Diapositiva 2)]]
 
 Se definen las reglas que rigen la comunicación y las arquitecturas de red.
 
@@ -26,7 +26,7 @@ Se definen las reglas que rigen la comunicación y las arquitecturas de red.
     - **Diferencias Clave:** OSI distingue claramente entre servicios, interfaces y protocolos; **TCP/IP** no lo hace de forma tan estricta pero sus protocolos son los más exitosos.
 
 ## 3. La Capa Física: Transmisión y Medios (Diapositivas 3 y 4)
-
+[[Diapositiva 3 - Guía de estudio]], [[Diapositiva 4 - Guía de Estudio]]
 Se estudia cómo los bits se convierten en señales físicas para viajar por el medio.
 
 - **Bases Teóricas:** Se distingue entre **Datos** (entidades con significado) y **Señales** (representaciones eléctricas o electromagnéticas).
@@ -104,7 +104,7 @@ Tecnologías sin cables basadas en ondas de radio.
 	- Bluetooth
 	- **RFID** (**Radio Frequency Identification** - Identificación por Radiofrecuencia) como **EPC Gen2**.
 
-## 8. [[Diapositiva 10 - Guía de Estudio|Puentes, STP y VLANs (Diapositiva 10)]]
+## [[Diapositiva 10 - Guía de Estudio|8. Puentes, STP y VLANs (Diapositiva 10)]]
 
 Gestión avanzada de redes de área local.
 
