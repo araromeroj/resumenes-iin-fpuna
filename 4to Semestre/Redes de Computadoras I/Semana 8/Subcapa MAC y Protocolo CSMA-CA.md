@@ -29,12 +29,17 @@ Para evitar colisiones, la subcapa **MAC** (**Medium Access Control** - Control 
 - **Física:** La estación escucha el medio para detectar señales eléctricas.
 - **Virtual:** Se utiliza un temporizador interno llamado **NAV** (**Network Allocation Vector** - Vector de Asignación de Red). Cada trama lleva un campo de "duración" que indica cuánto tiempo estará ocupado el canal; las estaciones que escuchan esto actualizan su **NAV** (**Network Allocation Vector** - Vector de Asignación de Red) y permanecen en silencio.
 
+>[!info] Funcionamiento
+>- Detección física: escucha el medio.
+>- Detección virtual: usa el NAV basado en el campo de duración de tramas ajenas.
+>- Si el canal está ocupado, la estación espera. Si está libre, pasa a la fase de IFS.
+
 - [*] **RTS - Request To Send:** Solicitud de envío
 - [*] **CTS - Clear to Send:** Listo para enviar
 
 
 ![[Pasted image 20260506194604.png]]
-## Intervalos y Tiempos de Espera (IFS - InterFrame Spacing)
+### Intervalos y Tiempos de Espera (IFS - InterFrame Spacing)
 
 - [*] **IFS - InterFrame Spacing:** Epaciado entre tramas
 
@@ -42,6 +47,28 @@ Para evitar colisiones, la subcapa **MAC** (**Medium Access Control** - Control 
 - **PIFS (DCF IFS):** Es el espaciado entre tramas dentro de la función de DCF. Tiempo que debe esperar una estación antes de intentar transmitir una trama de datos regular.$$30\mu s$$
 - **DIFS (Extended IFS):** Usado por estaciones que recibieron una trama corrupta para evitar interferir con diálogos en curso.$$50 \mu s$$
 
-## Intervalos de Backoff
+## Algoritmo de Backoff para manejo de colisiones
+
+>[!info] Funcionamiento
+>- Se espera un DIFS
+>- Si está libre: se transmite
+>	- Si hubo un intento previo fallido o para evitar colisiones cuando varias esperan, se activa el Binary Exponential Backoff
+>- Si está ocupado:
+>	- Se espera hasta que el medio esté libre
+>	- Se espera un IFS + algoritmo de backoff
 
 - **Backoff Exponencial Binario:** Si el canal está ocupado, la estación elige un tiempo de espera aleatorio que se duplica tras cada intento fallido para reducir nuevas colisiones.
+	- Elige un número de slots entre $[0, CW-1]$.
+		- $\text{CW}_\text{min}=15 \text{ slots}$
+		- $\text{CW}_\text{max}=1023 \text{ slots}$
+	- El timer baja solo cuando el canal está libre. Si el canal se ocupa, el conteo se congela y se reanuda cuando el canal vuelve a estar libre tras un DIFS.
+	- Si hay colisión (no llega el ACK), el $CW$ se duplica ($2^i-1$) hasta un máximo.
+
+
+![[Pasted image 20260510112629.png]]
+
+Donde: $1 \text{ slot} = 9 \text{ a } 20 \mu s$
+
+![[Pasted image 20260510112909.png]]
+
+![[Pasted image 20260510122249.png]]
