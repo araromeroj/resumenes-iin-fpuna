@@ -35,11 +35,10 @@ Debido a que las radios son típicamente semidúplex y no pueden detectar colisi
     - **Virtual:** Mediante el **NAV** (_Network Allocation Vector_; Vector de Asignación de Red), un temporizador que indica cuánto tiempo estará ocupado el canal según la información de las tramas previas.
 - **RTS/CTS (Request to Send / Clear to Send; Solicitud de Envío / Listo para Enviar):** Mecanismo opcional para resolver el problema del **terminal oculto**, donde dos estaciones no se ven entre sí pero ambas ven al **AP**.
 
-### D. [[Servicios y Tramas|Ahorro de Energía y Calidad de Servicio (QoS)]]
+### D. [[Técnicas usadas en WiFi|Ahorro de Energía y Calidad de Servicio (QoS)]]
 
 - **Ahorro de Energía:** Los clientes pueden entrar en modo reposo y despertarse solo para recibir **Beacons** (Balizas), tramas periódicas del **AP** que anuncian tráfico pendiente. **APSD** (_Automatic Power Save Delivery_; Entrega Automática de Ahorro de Energía) optimiza esto para aplicaciones como voz sobre IP.
 - **QoS (Quality of Service; Calidad de Servicio):** Implementado en 802.11e, utiliza diferentes intervalos **IFS** (_InterFrame Spacing_; Espaciado entre Tramas) como el **AIFS** (_Arbitration Inter-Frame Space_; Espacio Inter-trama de Arbitraje) para dar prioridad al tráfico de voz o video sobre los datos comunes.
-[[Técnicas usadas en WiFi]]
 
 ---
 

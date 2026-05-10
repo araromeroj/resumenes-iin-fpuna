@@ -24,3 +24,5 @@ La arquitectura permite dos formas principales de organizar la comunicación:
 - **Modo Infraestructura:** Es el más común y utiliza un **AP** (Access Point; Punto de Acceso) central. En este modo, todas las estaciones se asocian al **AP** (Access Point; Punto de Acceso) y este retransmite las tramas entre ellas o hacia otras redes.
 - **Modo Ad hoc:** En esta configuración, las estaciones se comunican directamente entre sí sin la intervención de un **AP** (Access Point; Punto de Acceso). Es una colección de ordenadores que se asocian de forma temporal y espontánea.
 
+# Enlaces Relacionados
+- Siguiente nota: [[Servicios y Tramas]]
