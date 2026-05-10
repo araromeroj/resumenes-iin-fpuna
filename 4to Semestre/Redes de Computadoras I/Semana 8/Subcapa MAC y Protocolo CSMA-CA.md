@@ -71,3 +71,4 @@ Donde: $1 \text{ slot} = 9 \text{ a } 20 \mu s$
 
 ![[Pasted image 20260510112909.png]]
 
+![[Pasted image 20260510122249.png]]
