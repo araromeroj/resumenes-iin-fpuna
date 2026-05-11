@@ -62,7 +62,7 @@ solapados (total 40 Mhz) donde se juntan en uno solo para aumentar el ancho de b
 ## IEEE 802.11ax
 
 >[!tip] Características
->- **Frecuencia:** Funciona en todas las bandas entre **1 y 6 GHz**.
+>- **Frecuencia:** Funciona en todas las bandas entre **2,4 y 5 GHz**.
 >- **Tecnología Clave:** Introduce **OFDMA**, permitiendo que un solo canal se divida para atender a múltiples usuarios al mismo tiempo, mejorando drásticamente la eficiencia en lugares concurridos.
 >- **Enfoque:** Más que velocidad punta, busca mejorar el rendimiento promedio por usuario en entornos de alta densidad.
 
