@@ -9,6 +9,19 @@ El IPv4 es el "pegamento" que mantiene unida a Internet, diseñado para proporci
     - La porción de red identifica el segmento específico al que pertenece la interfaz.
     - La porción de host identifica el dispositivo único dentro de esa red.
 - **Interfaces, no hosts:** Es crucial entender que una dirección IP no identifica a una computadora, sino a una **interfaz de red**. Si una computadora está conectada a dos redes, debe tener dos direcciones IP.
+#### Campos de la Cabecera IPv4:
+
+*   **Versión (4 bits):** Indica la versión del protocolo (actualmente 4).
+*   **IHL (Internet Header Length; Longitud de la Cabecera de Internet):** Indica cuántas palabras de 32 bits tiene la cabecera (mínimo 5).
+*   **Servicios Diferenciados:** Utilizado para indicar la prioridad del paquete.
+*   **Longitud Total:** Tamaño completo del datagrama (cabecera + datos).
+*   **Identificación, Flags (DF/MF) y Fragment Offset:** Campos utilizados para la fragmentación y reensamblado de paquetes cuando estos superan el **MTU** (**Maximum Transmission Unit**; Unidad Máxima de Transmisión) de un enlace.
+*   **TTL (Time to Live; Tiempo de Vida):** Contador que disminuye en cada salto de router para evitar que los paquetes circulen infinitamente en bucles 
+*   **Protocolo:** Indica qué protocolo de transporte sigue (ej. **TCP** o **UDP**).
+*   **Checksum de Cabecera:** Suma de comprobación para detectar errores solo en la cabecera.
+*   **Direcciones de Origen y Destino:** Direcciones lógicas de 32 bits de los hosts.
+
+![[Pasted image 20260513182752.png]]
 
 ### 1.2 Cálculo de Máscaras y Prefijos
 
