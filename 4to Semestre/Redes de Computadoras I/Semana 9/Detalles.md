@@ -1,14 +1,18 @@
 ## 1. El Protocolo IPv4 (Internet Protocol version 4 - Protocolo de Internet versión 4)
 
-El IPv4 es el "pegamento" que mantiene unida a Internet, diseñado para proporcionar una entrega de paquetes de "mejor esfuerzo" (no garantizada) desde un origen hasta un destino.
+El protocolo IPv4 es el pilar de la capa de red en la Internet moderna. Proporciona un servicio de entrega de datagramas (mensajes de capa de red) de "mejor esfuerzo", lo que significa que no garantiza la llegada, pero hace lo posible por enrutar el paquete hacia su destino.
 
-### 1.1 Estructura de la Dirección IP
+### 1.1 Estructura y Longitud
 
-- **Longitud y Formato:** Una dirección IPv4 es un número binario de 32 bits. Para facilitar su lectura, se agrupan en cuatro octetos (8 bits cada uno) separados por puntos y expresados en formato decimal (ej. 131.108.122.204).
-- **Jerarquía de la Dirección:** Cada dirección se divide en dos partes principales: el **Número de RED** (prefijo) y el **Número de HOST**.
-    - La porción de red identifica el segmento específico al que pertenece la interfaz.
-    - La porción de host identifica el dispositivo único dentro de esa red.
+- **Definición y Longitud:** Una dirección IPv4 es una dirección lógica de 32 bits que define de forma única la conexión de un dispositivo (ya sea un host, un servidor o un router -enrutador-) a una red IP (Internet Protocol - Protocolo de Internet).
+- **Notación y Formato:** Para que sea legible por humanos, los 32 bits se agrupan en cuatro octetos (8 bits cada uno). Se utiliza la **Notación Decimal con Puntos**, donde cada octeto se convierte a un número decimal entre 0 y 255 (ej. 128.11.3.31).
+- **Jerarquía de la Dirección:** Toda dirección IP se divide en dos partes:
+    1. **Número de RED (Prefijo):** Identifica el segmento de red específico.
+    2. **Número de HOST:** Identifica el dispositivo único dentro de esa red.
+- **Gestión Global:** Las direcciones son asignadas globalmente por la **ICANN** (Internet Corporation for Assigned Names and Numbers - Corporación de Internet para la Asignación de Nombres y Números) a través de registros regionales como **LACNIC** (Latin American and Caribbean Internet Addresses Registry - Registro de Direcciones de Internet para América Latina y el Caribe).
 - **Interfaces, no hosts:** Es crucial entender que una dirección IP no identifica a una computadora, sino a una **interfaz de red**. Si una computadora está conectada a dos redes, debe tener dos direcciones IP.
+
+![[Pasted image 20260514110149.png|500]]
 #### Campos de la Cabecera IPv4:
 
 *   **Versión (4 bits):** Indica la versión del protocolo (actualmente 4).
@@ -23,28 +27,36 @@ El IPv4 es el "pegamento" que mantiene unida a Internet, diseñado para proporci
 
 ![[Pasted image 20260513182752.png]]
 
-### 1.2 Cálculo de Máscaras y Prefijos
+### 1.2 Cálculo de Máscaras, Prefijos y Capacidad de Hosts
 
-- **Máscara de Subred:** Es un número de 32 bits que, mediante el uso de "1"s binarios, indica qué parte de la dirección IP corresponde a la red.
-- **Notación CIDR (Classless Inter-Domain Routing - Enrutamiento Entre Dominios Sin Clases):** Se expresa como `x.y.z.t /n`, donde `/n` indica la cantidad de bits de red (prefijo). Por ejemplo, un prefijo `/20` corresponde a una máscara `255.255.240.0`.
+- **Máscara de Subred:** Es un valor de 32 bits que utiliza "1"s binarios para indicar la porción de red y "0"s para la porción de host. Al realizar una operación lógica **AND** (Y) entre la IP y la máscara, el router obtiene la dirección de red.
+- **Prefijo (Notación CIDR - Classless Inter-Domain Routing - Enrutamiento Entre Dominios Sin Clases):** Se expresa como `/n`, donde `n` es el número de bits de la red. Por ejemplo, una máscara `255.255.240.0` corresponde a un prefijo `/20`.
+- **Agregación de Rutas:** Esta técnica permite juntar múltiples prefijos IP en una sola entrada más grande en la tabla de enrutamiento, reduciendo su tamaño y mejorando la eficiencia de los routers centrales.
+
+![[Pasted image 20260514110341.png]]
+
+- **Cálculo de Capacidad:** El número máximo de dispositivos direccionables en una subred se calcula con la fórmula ($2^{32−n}−2$). Se restan dos direcciones porque:
+	- La **Dirección de RED** (todos los bits de host en 0) está reservada para identificar al segmento.
+	- La **Dirección de Broadcast (Difusión)** (todos los bits de host en 1) está reservada para enviar datos a todos los hosts de la subred y no puede asignarse individualmente.
 
 ---
 
-## 2. Direcciones Especiales y Capacidad de Hosts
+## 2. Direcciones Especiales
 
 Existen direcciones reservadas que tienen propósitos específicos en la arquitectura de red.
 
 ### 2.1 Direcciones de Red y Broadcast
 
-- **Dirección de RED:** Es la identificación del segmento. Se obtiene poniendo en "0" todos los bits de la parte de host ($32 - n$ bits). **No se puede asignar** a ningún host físico.
-- **Dirección de Broadcast (Difusión):** Se utiliza para enviar un paquete a todos los dispositivos de la red local. Se obtiene asignando "1" a todos los bits de la parte de host. Al igual que la de red, es una dirección reservada y **no asignable** a hosts individuales.
+- **Dirección de RED:** Es la identificación del segmento. Se obtiene poniendo en "0" todos los bits de la parte de host ($32 - n$ bits). **No se puede asignar** a ningún host físico. Los hosts solo pueden comunicarse con los hosts que tienen el mismo ID de red.
+- **Esta red:** todos los campos rellenos de "0"
+- **Un host en esta red:** 00 ... 00 | Host. Todos son "0" al inicio en la parte de RED.
+- **Dirección de Broadcast (Difusión):** Se utiliza para enviar un paquete a todos los dispositivos de la red local. Se obtiene asignando "1" a todos los bits de la parte de host. Al igual que la de red, es una dirección reservada y **no asignable** a hosts individuales. El máximo de hosts en un bloque es igual a ($2^{32-n}-2$).
+	- **Difusión en red local:** Todo "1" en el campo de host y en el campo de red.
+	- **Difusión en red distante:** Red | 111 ... 111. Todo "1" en el campo de host.
 - **Loopback (Bucle de retorno):** Las direcciones en el rango `127.xx.yy.zz` se procesan localmente para pruebas de software; los paquetes enviados aquí nunca salen al cable de red.
 
-### 2.2 Cálculo de Capacidad
+![[Pasted image 20260514110515.png]]
 
-El número máximo de hosts direccionables en una subred se calcula mediante la fórmula:  
-**$(2^{32-n} - 2)$**  
-Se restan 2 porque la primera dirección (Red) y la última (Broadcast) están reservadas.
 
 ---
 
@@ -54,7 +66,9 @@ Se restan 2 porque la primera dirección (Red) y la última (Broadcast) están r
 
 - **Propósito:** Se realiza principalmente para reducir el tráfico de **Broadcast** (Difusión) y facilitar la gestión administrativa.
 - **Visibilidad:** Internamente, una organización divide su bloque IP en trozos más pequeños, pero para el mundo exterior (Internet), la red sigue apareciendo como un solo bloque grande.
+- **Prefijo más largo coincidente:** Los paquetes son enviados a la entrada con el prefijo más largo coincidente o bloque de direcciones más pequeño. Complica el envío pero agrega flexibilidad.
 
+![[Pasted image 20260514111228.png]]
 ### 3.2 Puerta de Enlace Predeterminada (Default Gateway)
 
 - **Comunicación Local:** Un host puede hablar directamente con otro si comparten el mismo ID de red.
@@ -66,10 +80,17 @@ Se restan 2 porque la primera dirección (Red) y la última (Broadcast) están r
 ## 4. Protocolo NAT (Network Address Translation - Traducción de Direcciones de Red)
 
 NAT es una técnica esencial para mitigar el agotamiento de direcciones IPv4, permitiendo que redes privadas utilicen direcciones no ruteables globalmente para acceder a Internet.
-
+- Consiste en el cambio de direcciones IP y/o los puertos de origen/destino de paquetes entrantes y salientes.
+- Se puede usar direcciones privadas LANs internas y tener una sola dirección IP global a Internet.
+- **Objetivo:** paliar la escasez de direcciones IP v4
 ### 4.1 Direcciones Privadas (RFC 1918)
 
 Existen tres rangos que las organizaciones pueden usar libremente de forma interna, pero que **nunca** deben aparecer en la Internet pública:
+
+>[!tip] Importante
+>Pueden ser usadas por:
+>- Las subredes que usan NAT, para conectarse a Internet.
+>- Los hosts que no se conectan a Internet.
 
 - `10.0.0.0` a `10.255.255.255` (Clase A).
 - `172.16.0.0` a `172.31.255.255` (Clase B).
