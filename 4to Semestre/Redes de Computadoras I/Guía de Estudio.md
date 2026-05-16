@@ -112,7 +112,7 @@ Gestión avanzada de redes de área local.
 - **STP** (**Spanning Tree Protocol** - Protocolo de Árbol de Expansión): Algoritmo para evitar bucles infinitos en redes con caminos redundantes.
 - **VLANs** (**Virtual LANs** - Redes de Área Local Virtuales): Segmentación lógica de una red física para mejorar la seguridad y reducir el tráfico de difusión.
 
-## 9. Capa de Red e IPv4 (Diapositiva 11)
+## [[Diapositiva 11 - Guía de Estudio|9. Capa de Red e IPv4 (Diapositiva 11)]]
 
 Ruteo de paquetes a través de subredes.
 

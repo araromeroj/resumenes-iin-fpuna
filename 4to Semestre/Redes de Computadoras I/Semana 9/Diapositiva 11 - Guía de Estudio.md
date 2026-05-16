@@ -11,7 +11,7 @@ La capa de red es la encargada de transportar paquetes desde el host de origen h
 
 ---
 
-## 2. El Protocolo IPv4 (Internet Protocol version 4)
+## [[Detalles|2. El Protocolo IPv4 (Internet Protocol version 4)]]
 
 Un datagrama **IPv4** (**Internet Protocol version 4**; Protocolo de Internet versión 4) consta de una cabecera fija de 20 bytes y una parte opcional.
 
