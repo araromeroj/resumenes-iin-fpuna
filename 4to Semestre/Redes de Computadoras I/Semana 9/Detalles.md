@@ -35,7 +35,7 @@ El protocolo IPv4 es el pilar de la capa de red en la Internet moderna. Proporci
 
 ![[Pasted image 20260514110341.png]]
 
-- **Cálculo de Capacidad:** El número máximo de dispositivos direccionables en una subred se calcula con la fórmula ($2^{32−n}−2$). Se restan dos direcciones porque:
+- **Cálculo de Capacidad:** El número máximo de dispositivos direccionables en una subred se calcula con la fórmula ($2^{32−n}−2$, siendo $n$ la cantidad de bits de la red). Se restan dos direcciones porque:
 	- La **Dirección de RED** (todos los bits de host en 0) está reservada para identificar al segmento.
 	- La **Dirección de Broadcast (Difusión)** (todos los bits de host en 1) está reservada para enviar datos a todos los hosts de la subred y no puede asignarse individualmente.
 
