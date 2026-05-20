@@ -73,6 +73,7 @@ Existen rangos con funciones predefinidas que no se pueden asignar a hosts norma
 
 Debido a que **IP** (**Internet Protocol**; Protocolo de Internet) es un protocolo de "mejor esfuerzo" y las direcciones son escasas, se requieren mecanismos adicionales:
 
-*   **ICMP (Internet Control Message Protocol; Protocolo de Mensajes de Control de Internet):** Utilizado por los routers y hosts para reportar errores en la entrega de paquetes o realizar diagnósticos (como el comando `ping`).
-*   **ARP (Address Resolution Protocol; Protocolo de Resolución de Direcciones):** Permite obtener la dirección física (**MAC**; **Medium Access Control**; Control de Acceso al Medio) de un dispositivo cuando solo se conoce su dirección **IP**.
-*   **NAT (Network Address Translation; Traducción de Direcciones de Red):** Permite que múltiples dispositivos en una red privada compartan una única dirección **IP** pública para acceder a Internet, traduciendo las direcciones y puertos en el router de salida.
+* **ICMP (Internet Control Message Protocol; Protocolo de Mensajes de Control de Internet):** Utilizado por los routers y hosts para reportar errores en la entrega de paquetes o realizar diagnósticos (como el comando `ping`).
+* **ARP (Address Resolution Protocol; Protocolo de Resolución de Direcciones):** Permite obtener la dirección física (**MAC**; **Medium Access Control**; Control de Acceso al Medio) de un dispositivo cuando solo se conoce su dirección **IP**.
+* **DHCP (Dynamic Host Configuration Protocol; Protocolo de Configuración de Host dinámico):**
+* **NAT (Network Address Translation; Traducción de Direcciones de Red):** Permite que múltiples dispositivos en una red privada compartan una única dirección **IP** pública para acceder a Internet, traduciendo las direcciones y puertos en el router de salida.
