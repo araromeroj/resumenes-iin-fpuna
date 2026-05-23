@@ -85,4 +85,4 @@ El uso de ventanas permite la canalización, lo que evita que el emisor se quede
 - **Mecanismos:**
     - **ACK Acumulativo:** Indica la trama más alta recibida en orden secuencial.
     - **NAK (Negative Acknowledgement - Acuse de Recibo Negativo):** Permite al receptor pedir específicamente la retransmisión de una sola trama que se perdió o dañó, sin reenviar el resto.
-- **Características:** Es el más eficiente en el uso del ancho de banda, pero el más complejo de implementar debido a la gestión de memoria y temporizadores individuales por trama.
+- **Características:** Es el más eficiente en el uso del ancho de banda, pero el más complejo de implementar debido a la gestión de memoria y temporizadores individuales por trama. $W_{max}=(MAXSEQ+1)/2$
