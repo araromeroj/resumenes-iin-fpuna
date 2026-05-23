@@ -142,6 +142,17 @@ Contiene las rutas hacia los destinos conocidos:
 - **Mecanismo:** Un host envía una solicitud por **broadcast** preguntando "¿Quién tiene esta IP?"; el dueño responde con su dirección MAC de 48 bits.
 - **Proxy ARP:** Caso donde el router responde con su propia MAC en nombre de un host que está en otra red.
 
+- **Concepto y Función:** Es el subprotocolo de la capa de red encargado del control y la notificación de errores para el **IP** (Internet Protocol - Protocolo de Internet). Su función principal es que los routers y hosts informen sobre eventos inesperados durante el procesamiento de paquetes o realicen pruebas de diagnóstico en la red.
+- **Longitud de los campos de la cabecera:** Los mensajes **ICMP** se encapsulan dentro de paquetes **IP** y presentan la siguiente estructura de campos fijos:
+    - **Tipo (Type):** 8 bits. Indica el propósito del mensaje (ej. destino inalcanzable).
+    - **Código (Code):** 8 bits. Proporciona información detallada sobre el tipo de mensaje.
+    - **Suma de comprobación (Checksum):** 16 bits. Se utiliza para verificar la integridad del mensaje.
+    - **Datos (ICMP Data):** Longitud variable. Depende del tipo de mensaje; suele incluir la cabecera del datagrama que causó el error.
+- **Comandos y Funciones:**
+    - **ping:** Utiliza los mensajes **Echo Request** (Solicitud de eco) y **Echo Reply** (Respuesta de eco) para comprobar si la comunicación con una entidad remota es posible y si esta se encuentra activa.
+    - **tracert / traceroute:** Despliega la ruta completa (saltos de router) hacia un destino. Funciona enviando paquetes con el campo **TTL** (Time To Live - Tiempo de Vida) incrementándose de uno en uno; cada router en el camino devuelve un mensaje **ICMP** de **Time Exceeded** (Tiempo excedido) al agotar dicho campo, permitiendo identificar cada punto de la ruta.
+
+
 ### 6.2 ICMP (Internet Control Message Protocol - Protocolo de Mensajes de Control de Internet)
 
 Se utiliza para reportar errores y diagnosticar problemas de red.
@@ -149,6 +160,29 @@ Se utiliza para reportar errores y diagnosticar problemas de red.
 - **Ping:** Usa mensajes _Echo Request_ y _Echo Reply_ para verificar conectividad.
 - **Tracert / Traceroute:** Herramienta que muestra todos los saltos (routers) por los que pasa un paquete, manipulando el campo TTL (Time To Live - Tiempo de Vida) de la cabecera IP.
 
+- **Concepto y Función:** Este protocolo tiene la misión de averiguar la dirección física o **MAC** (Media Access Control - Control de Acceso al Medio) de una interfaz a partir de su dirección lógica **IP**. Es esencial porque las tarjetas de red de la capa de enlace no entienden las direcciones **IP**, solo direcciones físicas de 48 bits.
+- **Longitud de los campos de trama (en contexto Ethernet):** Aunque el mensaje **ARP** tiene su propia estructura interna, se transmite dentro de una trama **Ethernet**:
+    - **MAC destino:** 6 bytes (48 bits). En una solicitud inicial, se usa la dirección de **Broadcast** (Difusión) **FF:FF:FF:FF:FF:FF**.
+    - **MAC origen:** 6 bytes (48 bits). Dirección física del emisor.
+    - **Carga útil (Mensaje ARP):** Contiene las direcciones **IP** y **MAC** de origen, y la **IP** destino cuya **MAC** se desea conocer.
+- **Comandos y Funciones:**
+    - **arp -a:** Muestra la **Tabla ARP** (Caché ARP) del dispositivo, la cual relaciona dinámicamente pares de direcciones **IP** y **MAC** para evitar consultas repetitivas en la red.
+    - **Proxy ARP (ARP por poder):** Permite que un router responda a solicitudes **ARP** en nombre de hosts que se encuentran en otras redes.
+    - **ARP Gratuito (Gratuitous ARP):** Un host difunde su propia dirección al configurarse para detectar conflictos de **IP** duplicadas.
+
+
 ### 6.3 DHCP (Dynamic Host Configuration Protocol - Protocolo de Configuración Dinámica de Host)
 
 Permite que un dispositivo obtenga automáticamente su dirección IP, máscara y puerta de enlace al conectarse a la red. Funciona mediante un proceso de **arrendamiento** (_lease_) donde la IP se asigna por un tiempo limitado.
+
+
+
+- **Concepto y Función:** Es un protocolo diseñado para la asignación automática y temporal de parámetros de configuración de red a los dispositivos, principalmente direcciones **IP**, máscaras de subred y puertas de enlace.
+- **Longitud y Proceso de Mensajes:** Funciona mediante un intercambio de cuatro pasos conocido como **DORA** (por sus siglas en inglés):
+    1. **DHCP DISCOVER (Descubrimiento):** El cliente envía un mensaje de difusión con su dirección **MAC** para localizar servidores.
+    2. **DHCP OFFER (Oferta):** El servidor responde con una dirección **IP** disponible.
+    3. **DHCP REQUEST (Solicitud):** El cliente confirma que acepta la oferta recibida.
+    4. **DHCP ACK (Acuse de recibo):** El servidor finaliza el proceso enviando la configuración completa.
+- **Funciones y Parámetros Especiales:**
+    - **Leasing (Arrendamiento):** La dirección **IP** se asigna por un periodo fijo de tiempo. El cliente debe solicitar una renovación antes de que el tiempo expire para seguir usando la dirección.
+    - **Información configurada:** Además de la **IP**, el servidor entrega la máscara de red, la dirección del **Default Gateway** (Puerta de enlace predeterminada) y los servidores **DNS** (Domain Name System - Sistema de Nombres de Dominio).
