@@ -38,8 +38,9 @@ Es la mejora sobre **CSMA** que detiene la transmisión inmediatamente al detect
 - **Regla de Tiempo:** El tiempo mínimo para detectar una colisión es 2τ, donde τ es el tiempo de propagación de un extremo a otro del cable. Esto define el tamaño de la **trama mínima** en Ethernet (64 bytes) para asegurar que el emisor note la colisión antes de terminar de enviar.
 **D. Protocolos Libres de Colisiones y de Contención Limitada**
 - **Mapeo de bits (Bitmap):** Las estaciones reservan turnos en una ranura de contención previa a los datos.
+- **Token ring:** El token enviado por el anillo define el orden en el que se va a transmitir. La estación con el token puede enviar una trama antes de pasar el turno.
 - **Cuenta atrás binaria (Binary Countdown):** Se usan las direcciones de las estaciones (bits) para arbitrar quién gana el canal sin colisiones.
-- **Árbol adaptativo:** Divide las estaciones en grupos jerárquicos (nodos de un árbol) para gestionar el acceso según la carga de la red.
+- **Árbol adaptativo:** Divide las estaciones en grupos jerárquicos (nodos de un árbol) para gestionar el acceso según la carga de la red. (es de contención limitada)
 
 ## 4. Redes Ethernet (IEEE 802.3)
 
