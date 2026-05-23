@@ -47,10 +47,10 @@ Es la mejora sobre **CSMA** que detiene la transmisión inmediatamente al detect
 Ethernet es la tecnología predominante para redes cableadas.
 
 **Trama Ethernet (Frame Format):**
-1. **Preámbulo (8 bytes):** Patrón para sincronizar relojes.
+1. **Preámbulo + SFD (8 bytes):** Patrón para sincronizar relojes, el sfd es la bandera de inicio de trama.
 2. **Dirección Destino y Origen (6 bytes cada una):** Direcciones físicas únicas de 48 bits.
 3. **Tipo/Longitud (2 bytes):** Indica el protocolo superior (ej. **IPv4** - **Internet Protocol version 4**) o el tamaño de la carga.
-4. **Datos (Payload):** El paquete de red (hasta 1500 bytes).
+4. **Datos (Payload):** El paquete de red (desde 46 bytes hasta 1500 bytes).
 5. **Relleno (Pad):** Asegura que la trama alcance los 64 bytes mínimos.
 6. **Checksum (CRC - Cyclic Redundancy Check):** Valor de 32 bits para detectar errores de bits.
 
