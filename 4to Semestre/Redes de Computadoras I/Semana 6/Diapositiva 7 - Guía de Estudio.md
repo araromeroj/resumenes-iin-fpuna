@@ -91,7 +91,7 @@ El uso de ventanas permite la canalización, lo que evita que el emisor se quede
 ## 6. Packet over SONET (Paquete sobre SONET)
 
 Este concepto define el método estándar para transportar paquetes de datos, principalmente **IP** (Internet Protocol - Protocolo de Internet), a través de infraestructuras de fibra óptica de alta velocidad.
-
+- **SONET** (Synchronous Optical NETwork - Red Óptica Síncrona)
 - **Mecanismo de transporte:** Se utiliza el protocolo **PPP** (Point-to-Point Protocol - Protocolo Punto a Punto) para realizar el entramado de los paquetes dentro de la carga útil de **SONET** (Synchronous Optical NETwork).
 - **Aplicación práctica:** Estos enlaces son fundamentales en las **WAN** (Wide Area Network - Red de Área Amplia) para interconectar routers de **ISP** (Internet Service Provider - Proveedor de Servicios de Internet) a distancias considerables.
 - **Sincronización:** Dado que **SONET** (Synchronous Optical NETwork) es un sistema síncrono, las tramas se emiten de forma continua cada 125 microsegundos, incluso si no hay datos de usuario que enviar, utilizando datos ficticios para mantener el flujo.
