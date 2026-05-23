@@ -86,3 +86,59 @@ El uso de ventanas permite la canalización, lo que evita que el emisor se quede
     - **ACK Acumulativo:** Indica la trama más alta recibida en orden secuencial.
     - **NAK (Negative Acknowledgement - Acuse de Recibo Negativo):** Permite al receptor pedir específicamente la retransmisión de una sola trama que se perdió o dañó, sin reenviar el resto.
 - **Características:** Es el más eficiente en el uso del ancho de banda, pero el más complejo de implementar debido a la gestión de memoria y temporizadores individuales por trama. $W_{max}=(MAXSEQ+1)/2$
+
+---
+## 6. Packet over SONET (Paquete sobre SONET)
+
+Este concepto define el método estándar para transportar paquetes de datos, principalmente **IP** (Internet Protocol - Protocolo de Internet), a través de infraestructuras de fibra óptica de alta velocidad.
+
+- **Mecanismo de transporte:** Se utiliza el protocolo **PPP** (Point-to-Point Protocol - Protocolo Punto a Punto) para realizar el entramado de los paquetes dentro de la carga útil de **SONET** (Synchronous Optical NETwork).
+- **Aplicación práctica:** Estos enlaces son fundamentales en las **WAN** (Wide Area Network - Red de Área Amplia) para interconectar routers de **ISP** (Internet Service Provider - Proveedor de Servicios de Internet) a distancias considerables.
+- **Sincronización:** Dado que **SONET** (Synchronous Optical NETwork) es un sistema síncrono, las tramas se emiten de forma continua cada 125 microsegundos, incluso si no hay datos de usuario que enviar, utilizando datos ficticios para mantener el flujo.
+
+---
+
+## 7. Protocolo PPP (Point-to-Point Protocol - Protocolo Punto a Punto)
+
+Es el protocolo más utilizado en Internet para establecer conexiones directas entre dos nodos a través de líneas punto a punto.
+
+### 7.1 Origen y Características
+
+- **Herencia:** Se basa en una evolución de los protocolos **HDLC** (High-level Data Link Control - Control de Enlace de Datos de Alto Nivel) y **SLIP** (Serial Line Internet Protocol - Protocolo de Internet de Línea Serial).
+- **Funciones Principales:**
+    1. **Entramado:** Define un método de delimitación de tramas no ambiguo que incluye la detección de errores mediante campos de verificación.
+    2. **LCP (Link Control Protocol - Protocolo de Control de Enlace):** Se encarga de activar, probar, negociar opciones y desactivar la línea de comunicación.
+    3. **NCP (Network Control Protocol - Protocolo de Control de Red):** Permite negociar parámetros específicos de la capa de red de forma independiente al protocolo utilizado (como la asignación de direcciones **IP**).
+
+### 7.2 Capacidades Técnicas
+
+El protocolo permite la configuración dinámica de enlaces, autenticación de las partes, compresión de los encabezados de los paquetes, verificación de la calidad del enlace y control de errores. Además, soporta **Multilink** (Multienlace), permitiendo combinar varias conexiones físicas en una sola interfaz lógica.
+
+---
+
+## 8. Formato de la Trama PPP
+
+El formato está diseñado para ser orientado a bytes, lo que significa que todas las tramas tienen una longitud que es múltiplo de un byte de 8 bits.
+
+- **Campos de la trama:**
+    - **Flag (Bandera):** Inicia y finaliza la trama con el valor binario `01111110` (0x7E en hexadecimal).
+    - **Address (Dirección):** Siempre se establece en `11111111` para indicar que todas las estaciones deben aceptar la trama, lo que evita la necesidad de asignar direcciones físicas individuales.
+    - **Control:** Su valor por defecto es `00000011`, indicando una trama no numerada en el modo más común de operación.
+    - **Protocol (Protocolo):** Indica qué tipo de paquete viaja en la carga útil (ej. **IPv4**, **IPv6**, o mensajes de control como **LCP**).
+    - **Payload (Carga útil):** Campo de longitud variable que contiene los datos transmitidos.
+    - **Checksum (Suma de comprobación):** Un campo de 2 o 4 bytes para detectar errores de transmisión.
+- **Relleno de Bytes (Byte Stuffing):** Si el valor del byte de bandera aparece dentro de los datos, se inserta un byte de **Escape** (Escape) `0x7D` para evitar confusiones en la delimitación de la trama.
+- **Scrambling (Mezclado):** Antes de enviarse a través de **SONET**, los datos se procesan con una función **XOR** (OR exclusivo) para asegurar que haya suficientes transiciones de bits, lo cual es necesario para mantener la sincronización del reloj en el receptor.
+
+---
+
+## 9. Diagrama de Estados de PPP
+
+El enlace pasa por varias fases críticas desde que se detecta la portadora física hasta que se cierra la sesión.
+
+1. **DEAD (Muerto):** Fase inicial donde no existe una conexión física activa.
+2. **ESTABLISH (Establecer):** Los nodos intercambian paquetes **LCP** (Link Control Protocol - Protocolo de Control de Enlace) para acordar las opciones del enlace.
+3. **AUTHENTICATE (Autenticar):** Fase opcional donde las dos partes verifican su identidad.
+4. **NETWORK (Red):** Se utilizan paquetes **NCP** (Network Control Protocol - Protocolo de Control de Red) para configurar el protocolo de capa de red (como asignar una dirección **IP** temporal).
+5. **OPEN (Abierto):** Estado en el que el transporte de datos de usuario tiene lugar.
+6. **TERMINATE (Terminar):** Fase de cierre de la conexión para liberar recursos.
