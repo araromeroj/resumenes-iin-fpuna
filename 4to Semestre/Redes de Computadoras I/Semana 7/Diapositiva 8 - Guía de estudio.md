@@ -71,9 +71,9 @@ Ethernet es la tecnología predominante para redes cableadas.
 - **Hubs vs. Switches:** En un **Hub (Concentrador)** todas las líneas comparten el mismo dominio de colisión. Un **Switch (Conmutador)** aísla cada puerto en un dominio separado, permitiendo transmisiones **Full-Duplex (Dúplex Completo)** sin colisiones.
 - **Tabla CAM (Content Addressable Memory - Memoria Direccionable por Contenido):** El switch asocia direcciones MAC con puertos físicos mediante un algoritmo de aprendizaje hacia atrás.
 - **Modos de trabajo del Switch:**
-    1. **Cut-through (Corte a través):** Reenvía la trama en cuanto lee la dirección de destino. Menor latencia pero puede propagar tramas corruptas.
-    2. **Free of segments (Libre de segmentos):** Reenvía la trama en cuanto lee la dirección de destino. Menor latencia pero puede propagar tramas corruptas.
-    3. **Store and forward (Almacenamiento y reenvío):** Recibe toda la trama, verifica el **CRC** y luego la envía. Es el más seguro pero lento.
+    1. **Cut-through (Corte a través):** El switch lee la dirección de destino y empieza a retransmitir inmediatamente, aún antes de recibir toda la trama.
+    2. **Free of segments (Libre de segmentos):** Espera a recibir el byte 64 (es decir, en el byte numero 65 recién empieza) para asegurar que no sea un segmento de trama proveniente de una colisión.
+    3. **Store and forward (Almacenamiento y reenvío):** Recibe toda la trama, la almacena, verifica el **CRC** y luego la envía al puerto de destino. Es el más seguro pero lento.
 
 ## 6. Evolución de Ethernet
 
