@@ -64,7 +64,7 @@ Ethernet es la tecnología predominante para redes cableadas.
     - **Broadcast (Difusión):** Dirigido a todas las estaciones (`FF:FF:FF:FF:FF:FF`).
     - **OUI (Organizationally Unique Identifier - Identificador Único de Organización):** Los primeros 3 bytes que identifican al fabricante.
 
-## 5. Ethernet Conmutado (Switched Ethernet)
+## 5. [[Ethernet Conmutado|Ethernet Conmutado (Switched Ethernet)]]
 
 - **Hub:** Es un dispositivo de Capa 1 (Física). Simplemente repite los bits por todos los puertos. Todas las estaciones comparten el mismo **dominio de colisión** y deben usar **CSMA/CD**.
 - **Switch:** Es un dispositivo de Capa 2 (Enlace). Analiza las direcciones **MAC**. Cada puerto es un **dominio de colisión** independiente. Permite transmisiones **Full-Duplex** (Dúplex Completo), eliminando las colisiones por completo si se usa conmutación dedicada.

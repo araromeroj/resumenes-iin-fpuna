@@ -9,6 +9,8 @@ A diferencia de los **hubs** (capa 1), que actúan como repetidores y mantienen 
 3. **Store and forward:** El switch recibe toda la trama, la almacena, verifica el CRC (control de errores) y luego la transmite en el puerto de destino. Es el método más seguro pero introduce mayor retardo.
 
 ### Algoritmos en Ethernet Conmutado
+
+- [I] **CAM - Content Addressable Memory:** Memoria direccionada de contenido.
 #### DE RETRANSMISIÓN
 ![[Pasted image 20260429103310.png]]
 
