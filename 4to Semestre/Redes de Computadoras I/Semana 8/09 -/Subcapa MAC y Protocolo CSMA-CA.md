@@ -47,7 +47,7 @@ Para evitar colisiones, la subcapa **MAC** (**Medium Access Control** - Control 
 - **PIFS (DCF IFS):** Es el espaciado entre tramas dentro de la función de DCF. Tiempo que debe esperar una estación antes de intentar transmitir una trama de datos regular.$$30\mu s$$
 - **DIFS (Extended IFS):** Usado por estaciones que recibieron una trama corrupta para evitar interferir con diálogos en curso.$$50 \mu s$$
 
-## Algoritmo de Backoff para manejo de colisiones
+## (IFS + BACKOFF) Algoritmo de Backoff para manejo de colisiones
 
 >[!info] Funcionamiento
 >- Se espera un DIFS
