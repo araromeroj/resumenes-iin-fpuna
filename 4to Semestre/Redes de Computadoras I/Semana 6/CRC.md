@@ -22,7 +22,7 @@ La capacidad del CRC para detectar fallos depende de las propiedades de G(x):
 ![[Pasted image 20260421130530.png]]
 
 
-- **Errores de dos bits:** Para detectar todos los errores dobles aislados, G(x) no debe dividir a xt+1 para ningún valor de t hasta la longitud máxima de la trama.
+- **Errores de dos bits:** Para detectar todos los errores dobles aislados, G(x) no debe dividir a xt+1 para ningún valor de t hasta la longitud máxima de la trama o bien hasta t menores o iguales a la longitud del mensaje.
 ![[Pasted image 20260421130836.png|697]]
 
 - **Número impar de bits con error:** Si se incluye (x+1) **como factor de** G(x), el código podrá detectar todos los errores que afecten a un número impar de bits. Si al dividir G(x) entre x+1 el resto es cero, significa que todos los errores con numero impar de bits seran detectados.
