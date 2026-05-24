@@ -28,6 +28,26 @@ La que domina Internet actualmente.
 > - Su cabecera tiene una parte fija de **20 bytes** y 13 campos para fragmentación y una suma de comprobación (checksum).
 > - Debido a su popularidad, las direcciones se han agotado, lo que llevó al uso de técnicas temporales como NAT y la creación del IPv6
 
+
+|**Campo**|**Tamaño**|**Función Principal**|
+|---|---|---|
+|**Versión**|4 bits|Indica la versión de IP (4).|
+|**IHL**|4 bits|Longitud del encabezado (en palabras de 32 bits).|
+|**Tipo de Servicio (ToS)**|8 bits|Prioridad y calidad de servicio (QoS).|
+|**Longitud Total**|16 bits|Tamaño total del paquete (encabezado + datos).|
+|**Identificación**|16 bits|Identificador único para reensamblar fragmentos.|
+|**Banderas (Flags)**|3 bits|Control de fragmentación (DF, MF).|
+|**Offset de Fragmento**|13 bits|Posición de este fragmento en el paquete original.|
+|**Tiempo de Vida (TTL)**|8 bits|Evita bucles infinitos (límite de saltos por routers).|
+|**Protocolo**|8 bits|Indica el protocolo de capa superior (ej. TCP, UDP).|
+|**Checksum del Encabezado**|16 bits|Verificación de errores solo para el encabezado.|
+|**IP Origen**|32 bits|Dirección IP del remitente.|
+|**IP Destino**|32 bits|Dirección IP del destinatario.|
+|**Opciones**|Variable|(Opcional) Funciones de red especiales/depuración.|
+|**Relleno (Padding)**|Variable|Asegura que el encabezado sea múltiplo de 32 bits.|
+---
+
+
 #### IPv6 (Protocolo de Internet Versión 6)
 
 
