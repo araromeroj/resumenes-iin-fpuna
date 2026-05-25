@@ -15,7 +15,7 @@ El objetivo es determinar cómo repartir el ancho de banda entre los emisores.
 	- **Desventaja:** Es ineficiente para el tráfico de datos de computadoras, que suele ser en ráfagas. Si un usuario no tiene nada que enviar, su porción de ancho de banda simplemente se pierde, mientras que otros podrían estar bloqueados por falta de recursos.
 - **Asignación Dinámica:** El canal se asigna bajo demanda únicamente a los usuarios que necesitan transmitir en ese momento.
 	- **Ventaja:** Potencialmente hasta N veces más eficiente en sistemas con muchos emisores activos de forma intermitente.
-	- **Supuestos Clave para el Diseño de Protocolos Dinámicos****:**
+	- **Supuestos Clave para el Diseño de Protocolos Dinámicos:**
 	    1. **Tráfico independiente:** Las estaciones generan tramas de forma autónoma (modelo de Poisson).
 	    2. **Canal único:** Un solo medio físico para todas las comunicaciones; no hay canales externos de coordinación.
 	    3. **Detección de portadora:** Capacidad de la estación para saber si el canal está ocupado antes de transmitir.
@@ -75,7 +75,7 @@ Ethernet es la tecnología predominante para redes cableadas.
     2. **Free of segments (Libre de segmentos):** Espera a recibir el byte 64 (es decir, en el byte numero 65 recién empieza) para asegurar que no sea un segmento de trama proveniente de una colisión.
     3. **Store and forward (Almacenamiento y reenvío):** Recibe toda la trama, la almacena, verifica el **CRC** y luego la envía al puerto de destino. Es el más seguro pero lento.
 
-## 6. Evolución de Ethernet
+## 6. [[Evolución del Ethernet|Evolución de Ethernet]]
 
 - **Fast Ethernet (IEEE 802.3u):** Transmite a 100 Mbps manteniendo la compatibilidad con tramas de 64 bytes.
     - **100Base-TX:** Utiliza dos pares de cables **UTP (Unshielded Twisted Pair - Par Trenzado No Blindado)** Categoría 5.

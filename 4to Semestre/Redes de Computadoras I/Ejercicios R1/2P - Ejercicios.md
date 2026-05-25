@@ -91,6 +91,31 @@ ALOHA puro vs ranurado
 ![[Pasted image 20260525115959.png]]
 
 Tipos de NAT
-- **NAT Estática:** Se establecen relaciones de 1 a 1, quiere decir que ya existe una tabla
-- **NAT Dinámica:**
-- **PAT o NAT con sobrecargaa:** 
+- **NAT Estática:** Se establecen relaciones de 1 a 1, quiere decir que ya existe una tabla en la que fueron asignadas las relaciones únicas de cada IP pública a cada IP privada.
+- **NAT Dinámica:** Se establecen relaciones muchos a muchos. Se determinan grupos de IPs para grupos de IPs, lo que hace que se asigne una IP solo a aquellas que las necesiten y quieran acceder, entonces al usarse todo se libera la IP para que otra pueda usarla después. Ayuda a gestionar el tráfico de VLANs
+- **PAT o NAT con sobrecarga:** Es una NAT con sobrecarga que se encarga de gestionar el acceso de hosts distintos a una misna red a través de los números de puerto disponibles.
+
+>[!note] Explique para que sirve el IEEE 802.11D
+
+**802.11D:** Es el estándar otorgado al STP - Spanning Tree Protocol. Sirve para evitar bucles entre VLANs interconectadas, lo que hace es restringir la bloquear los cables que generan bucles, por lo que si algún cable se suelta o deja de funcionar, el protocolo sabe que puede usar otros cables que generan el mismo camino.
+
+>[!note] Explique las diferencias entre la implementación 1000 BASE-T y 1000 BASE-Tx
+
+- **1000 BASE-T:** Utiliza 2 cables de par trenzado categoría 3
+- **1000 BASE-TX:** Utiliza 4 cables de par trenzado categoría 5
+Ambos son full duplex y de 100 me como máximo.
+
+>[!note] En una red de ALOHA puro, N estaciones transmiten a 1Mbps tramas de 100 Bytes con una media de 2 tramas por segundo. ¿Cuál es el valor máximo de N?
+
+En el ALOHA PURO se tiene una eficiencia de $1/2e$ aproximadamente 18,4%
+
+- N estaciones
+- Velocidad de transmisión: 1Mbps = $10^6$ BPS
+- Promedio de transmisión por estación: $\lambda = 2$ tramas/segundo
+
+Cada una de las N estaciones transmite a 1Mbps y cada una de ellas también tiene una media de 2 tramas por segundo, por lo que:
+
+$$N*\lambda = S_{\text{tramas totales}}$$
+
+$$N*2 = \frac{1}{2e}*\frac{10^6}{800}$$
+$$N=114,9\text{ estaciones}$$
