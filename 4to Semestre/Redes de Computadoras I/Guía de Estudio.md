@@ -62,6 +62,7 @@ Trata sobre la red telefónica y los métodos para mover datos a gran escala.
 
 ## 5. Capa de Enlace de Datos: Control y Errores (Diapositivas 6 y 7)
 
+[[Diapositiva 7 - Guía de Estudio]]
 Responsable de la transferencia confiable entre dos nodos adyacentes.
 
 - **Funciones Principales:** **Encuadre** (dividir bits en tramas), **Control de errores** y **Control de flujo**.
