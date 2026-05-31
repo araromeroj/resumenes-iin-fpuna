@@ -1,3 +1,5 @@
+Aquí tienes la resolución detallada de cada uno de los 20 ejercicios del ejercitario sobre **Prueba de Hipótesis para Grandes Muestras**.
+
 ### Ejercicio 1
 
 - **Datos:** $\mu_0 = 1.28$, $n = 40$, $\bar{x} = 1.08$, $s = 0.5$, $\alpha = 0.05$ (Unilateral izquierda).
