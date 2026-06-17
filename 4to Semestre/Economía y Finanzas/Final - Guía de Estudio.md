@@ -1,3 +1,4 @@
+Guía de Estudio realizada en base a los temarios globales dados por el profesor de cátedra.
 # I. Fundamentos de la Economía
 
 ## Definición y Conceptos Básicos
