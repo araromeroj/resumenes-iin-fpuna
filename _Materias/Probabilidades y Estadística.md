@@ -13,6 +13,8 @@ semestre: 4
 aula: A56
 aulap1: A56
 aulap2: A56
+aulaf1: A56
+aulaf2: A56
 ---
 
 ## Índice

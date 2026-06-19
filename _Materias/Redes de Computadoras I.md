@@ -13,7 +13,10 @@ semestre: 4
 aula: A51
 aulap1: A51
 aulap2: A51
+aulaf1: A50
+aulaf2: A50
 ---
+
 >[!Warning] Test Semanales
 >Los test se basan en **lo que se dió en clase** ESPECÍFICAMENTE.
 

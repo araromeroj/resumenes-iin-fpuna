@@ -11,4 +11,6 @@ final_1: 2026-06-26T15:00:00
 final_2: 2026-07-10T15:00:00
 semestre: 3
 aula: A53
+aulaf1: A53
+aulaf2: A53
 ---
