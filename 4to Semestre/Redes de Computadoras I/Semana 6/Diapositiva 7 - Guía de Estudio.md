@@ -1,4 +1,4 @@
-Esta guía de estudio detalla los conceptos, procesos y características técnicas presentados en la **diapositiva 7** (correspondiente a los índices de fuentes a), integrando explicaciones profundas para la preparación de exámenes sobre la **Capa de Enlace de Datos**.
+ Esta guía de estudio detalla los conceptos, procesos y características técnicas presentados en la **diapositiva 7** (correspondiente a los índices de fuentes a), integrando explicaciones profundas para la preparación de exámenes sobre la **Capa de Enlace de Datos**.
 
 ---
 

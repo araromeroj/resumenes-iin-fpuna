@@ -93,7 +93,7 @@ El modelo **OSI** (**Open Systems Interconnection** - Interconexión de Sistemas
 
 ## 6. Modelo de Referencia TCP/IP (Transmission Control Protocol/Internet Protocol)
 
-El modelo **TCP/IP** (**Transmission Control Protocol/Internet Protocol** - Protocolo de Control de Transmisión/Protocolo de Internet) tiene un origen práctico y es la base de la Internet actual.
+El modelo **TCP/IP** (**Transmission Control Protocol/Internet Protocol** - Protocolo de Control de Transmisión/Protocolo de Internet) tiene un origen práctico y es la base de la Internet actua
 
 **Capas del modelo TCP/IP:**
 

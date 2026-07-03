@@ -1,0 +1,3 @@
+>[!note]+ Ejercicio
+
+>[!example]- Solución

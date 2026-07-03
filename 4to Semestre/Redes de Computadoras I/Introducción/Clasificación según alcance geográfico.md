@@ -46,8 +46,6 @@ Podría interesar: [[1. Bases Teóricas de la Transmisión de Datos]], [[Medios 
 - **Variantes:** Incluyen redes de telefonía móvil, redes por satélite y **VPN** (redes virtuales que corren sobre Internet).
 - **Estándar:** WiMax IEEE 802.16
 
-El host se encarga de los aspectos de aplicación, mientras que la subred (routers y líneas) se encarga de la comunicación pura. Para conectarse a Internet, un host debe unirse a un proveedor de servicios (ISP) para intercambiar paquetes con otros hosts.
-
 - [*] **LTE - Long term evolution:** evolución a largo plazo
 - [*] **WAN - Wide area networks:** redes de área extensa
 ### 5. Internetwork (Red de Redes) o Interred
