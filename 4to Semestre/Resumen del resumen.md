@@ -1,3 +1,5 @@
+## CAPÍTULO 1
+
 **Redes:** conjuntos de dispositivos informáticos interconectados y autónomos para intercambiar información a través de medios de transmisión.
 
 **Usos de las redes de computadoras:**
@@ -83,5 +85,39 @@
 	- **ZIP**
 7. Aplicación: Permite el acceso a los recursos de la red, interactúa con la aplicación del usuario.
 	- **HTTP**
-Estandarización
-Unidades de Medidas
+
+**Modelo TCP/IP - Capas (comparadas con OSI)**
+1. Enlace (Física y Enlace): Describe qué deben realizar los enlace para conocer las necesidades de la capa de internet sin conexión.
+	- **Ethernet**
+2. Internet (Red): No orientada a la conexión, permite a los hosts inyectar paquetes para que viajen por las subredes. Define el ICMP y el protocolo IP.
+3. Transporte (Transporte): Permite al origen y destino mantener una conversación.
+	**TCP - Transmision Control Protocol:** confiable y orientado a la conexión, permite la entrega de bytes sin errores.
+	**UDP - User Datagram Protocol:** No confiable y no orientado a la conexión.
+4. Aplicación (Sesión, Presentación, Aplicación): Contiene todos los protocolos de nivel más alto.
+	- **TELNET:** terminal virtual.
+	- **SMTP:** correo electrónico.
+	- **FTP:** transmisión de archivos.
+
+**COMPARACIÓN OSI Y TCP/IP**
+OSI: Más usado, conceptos claros pero estancados por su complejidad y motivos políticos.
+TCP/IP: Muy exitoso, trabajan bien y se enriquece pero el modelo es pobre derivado de los protocolos y no distingue la capa de enlace de la física.
+
+**Estandarización**
+- [*] **ISO - International Standards Organization**
+- [*] **NIST - National Institute of Standards and Technology**
+- [*] **IEEE - Institute of Electrical and Electronic Engineers**
+- [*] **IAB - Internet Arquitecture Board**
+- [*] **W3C - World Wide Web Consortium**
+
+IMPORTANTES
+- 802.3 - Ethernet
+- 802.11 - WiFi
+- 802.15 - Bluetooth y Zigbee
+
+
+**Unidades de Medidas:** ALMACENAMIENTO -> POT de 10 | LO DEMÁS -> POT de 2
+$K = 2^{10}=10^3$ 
+$M = 2^{20}=10^6$
+$G = 2^{30} = 10^9$
+$T= 2^{40} = 10^{12}$
+$P= 2^{50} = 10^{15}$

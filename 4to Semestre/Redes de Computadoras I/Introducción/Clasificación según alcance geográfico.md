@@ -59,7 +59,7 @@ Podría interesar: [[1. Bases Teóricas de la Transmisión de Datos]], [[Medios 
 
 - [I] **Host:** computadoras de los usuarios finales destinadas a ejecutar programas de aplicación.
 - [I] **Conmutador o switch:** dispositivo especializado en la [[2. Capa de Enlace de Datos|capa de enlace de datos]] que interconecta computadoras o incluso otros conmutadores mediante enlaces punto a punto.
-- [I] **Router o enrutador:** dispositivo de interconexión que opera en la [[3. Capa de Red]] y tiene la función de conectar dos o más líneas de transmisión o redes diferentes.
+- [I] **Router o enrutador:** dispositivo de interconexión que opera en la Capa de Red y tiene la función de conectar dos o más líneas de transmisión o redes diferentes.
 
 ---
 # Enlaces relacionados
