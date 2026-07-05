@@ -86,6 +86,9 @@ Llevan la electricidad a las casas y el cableado de las casas distribuye la elec
 >Es muy ruidoso y deficiente para altas velocidades
 >Malo para el envío de datos
 
+>[!important] USO
+>CABLEADO ELÉCTRICO
+
 ---
 ## Fibra óptica
 Transmite pulsos de luz a través de una fibra de vidrio ultrafina mediante el principio de reflexión interna total. ==Un pulso de luz indica bit 1 y la ausencia de luz indica bit 0==. Es inmune a interferencias electromagnéticas porque el medio de transmisión es vidrio y utiliza luz en lugar de señales eléctricas.
@@ -95,6 +98,9 @@ Se compone de:
 2. Medio de transmisión (vidrio)
 3. Detector
 - [I] **Fotodiodo:** dispositivo que convierte la señal del dominio óptico al eléctrico en el extremo receptor.
+
+>[!important] USOS
+>REDES DE BACKBONE, ACCESO A INTERNET DE ALTA VELOCIDAD, LANS
 
 | **Ventajas**                                                 | **Desventajas**              |
 | ------------------------------------------------------------ | ---------------------------- |
@@ -107,7 +113,7 @@ Se compone de:
 
 >[!important] No olvidar!
 >**Convertir una relación de potencia a escala logarítmica de decibelios**
-> $$10*log_{10}(\text{Factor Lineal})=\text{dB}$$
+> $$10*log_{10}(\text{SNR})=\text{SNR dB}$$
 ### Tipos
 
 | **Monomodo**                                                                                                             | **Multimodo**                                                                             |
