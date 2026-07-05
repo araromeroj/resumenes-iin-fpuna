@@ -13,7 +13,7 @@ Permiten compartir un único medio de transmisión entre múltiples usuarios o f
 - [I] **OFDM:** Divide el canal en muchas subportadoras ortogonales que se solapan estrechamente sin interferir, optimizando el uso del espectro. Es la base de Wi-Fi y 4G/5G.
 	
 - [*] **CDMA (Code Division Multiple Access):** acceso múltiple por división de código.
-- [I] **CDMA:** Cada usuario tiene asignado un código único (secuencia de $k$ chips). Todas las señales se transmiten simultáneamente en la misma frecuencia, y el receptor recupera la señal deseada mediante el producto interno del código.
+- [I] **CDMA:** Cada usuario tiene asignado un código único (secuencia de $k$ chips). Todas las señales se transmiten simultáneamente en la misma frecuencia, y el receptor recupera la señal deseada mediante el producto interno del código. USADO EN TELEFONÍA CELULAR DE 2G Y 3G, TRANSMISIÓN SATELITAL Y EN REDES DE CABLE.
 
 - [I] **Ortogonalidad**: Propiedad matemática en CDMA y OFDM que permite que señales solapadas sean recuperadas sin ambigüedad.
 
