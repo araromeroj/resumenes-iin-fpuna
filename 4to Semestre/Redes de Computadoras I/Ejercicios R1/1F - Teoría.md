@@ -44,3 +44,16 @@
 >[!example]+ Respuesta
 >El **OFDM - orthogonal frequency division multiplexing** es mejor que el **FDM** ya que usa menos ancho de banda por permitir solapamiento de portadoras.
 
+>[!todo]+ Cite un ejemplo de red de datagramas confiable
+
+>[!example]+ Respuesta
+>**TCP + IP** 
+
+---
+>[!todo]+ Tres componentes del cableado estructurado con cables UTP son:
+
+>[!example]+ Respuesta
+>- Patch panel
+>- Patch cords
+>- Cableado horizontal
+>- Cableado vertical
