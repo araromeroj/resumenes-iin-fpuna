@@ -21,6 +21,8 @@ Se utilizan frecuencias desde 0 hasta un cierto valor. Se convierten los **bits 
 - **Manchester**: Existe una transición en el centro de cada intervalo de bit. La dirección de la transición indica el valor (0 o 1) y sirve como mecanismo de reloj para el receptor.
 	- Ver: [[Codificación Manchester]]
 
+>[!important] **USOS**
+>USB, GRABACIONES MAGNÉTICAS Y TRANSMISIÓN SERIAL
 ## Transmisión de Paso de Banda (Modulación de Portadora)
 
 Se utiliza una señal portadora de alta frecuencia alterando sus parámetros:
@@ -36,6 +38,11 @@ Se utiliza una señal portadora de alta frecuencia alterando sus parámetros:
 - **QAM (Quadrature Amplitude Modulation)**: Combina variaciones de amplitud y fase para permitir el envío de más bits por símbolo (ej. 16-QAM, 64-QAM).
 	- Donde $M$ es la cantidad de niveles o estados que puede adoptar la señal.
 	$$\text{BitRate}=\text{BaudRate}*log_2(M)$$
+>[!important] IMPORTANTE
+>V32 ES PARA 9600 bps
+>V32 BIS ES PARA 14400 bps
+>
+>Y QUE LA CODIFICACIÓN DE GRAY BUSCA COMETER LA MENOR CANTIDAD DE ERRORES DE BITS.
 # Limitaciones y Capacidad del Canal
 
 La transmisión no es perfecta y está sujeta a impedimentos físicos:

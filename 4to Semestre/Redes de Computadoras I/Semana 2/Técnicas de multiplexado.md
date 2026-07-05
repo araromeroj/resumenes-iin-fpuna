@@ -7,7 +7,7 @@ Permiten compartir un único medio de transmisión entre múltiples usuarios o f
 - [I] **TDM:** Los usuarios comparten el ancho de banda total, pero en intervalos de tiempo (slots) distintos.
 	
 - [*] **WDM - Wavelength Division Multiplexing:** Multiplexado por división de longitud de onda.
-- [I] **WDM:** Variación de FDM utilizada en fibra óptica, donde se envían múltiples señales de luz a diferentes longitudes de onda (colores).
+- [I] **WDM:** Variación de FDM utilizada en **fibra óptica**, donde se envían múltiples señales de luz a diferentes longitudes de onda (colores).
 	
 - [*] **OFDM (Orthogonal Frequency-Division Multiplexing):** Multiplexado por división de frecuencias ortogonal.
 - [I] **OFDM:** Divide el canal en muchas subportadoras ortogonales que se solapan estrechamente sin interferir, optimizando el uso del espectro. Es la base de Wi-Fi y 4G/5G.
