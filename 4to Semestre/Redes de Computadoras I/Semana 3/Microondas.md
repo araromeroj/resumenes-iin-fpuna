@@ -24,6 +24,8 @@ Las **microondas** son ondas electromagnéticas que operan en un rango de frecue
 - **Navegación y Localización:** Se utilizan en el sistema **GPS** y en radares de precisión.
 
 - **Distribución de contenidos:** Se emplean para la distribución de señales de televisión y en enlaces terrestres para proveedores de servicios.
+
+- [*] **GPS - Global Position System:** Sistema Global de Posición.
 ---
 # Enlaces relacionados
 - [[2. Capa Física]]
