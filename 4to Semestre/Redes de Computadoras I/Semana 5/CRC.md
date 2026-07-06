@@ -31,4 +31,4 @@ La capacidad del CRC para detectar fallos depende de las propiedades de G(x):
     - Si la longitud de la ráfaga es exactamente r+1, la probabilidad de que el error no se detecte es de 1/2r−1.
     - Para ráfagas más largas de r+1 bits, la probabilidad de que el error pase desapercibido es de 1/2r
 
-[[Ventanas corredizas]]
+[[Ventanas Corredizas]]
