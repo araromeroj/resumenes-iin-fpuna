@@ -5,6 +5,7 @@ El control de caudal es un **[[2. Capa de Enlace de Datos#Problemas de diseño d
 2. **Basado en la velocidad (tasas de bits):** Se usa un mecanismo definido que limita la velocidad a la que los remitentes pueden transmitir datos, sin usar la retroalimentación del receptor. (Capa de enlace o superiores).
 
 - [I] **NIC (Tarjetas de interfaz de red):** funcionan a velocidad de cable, pueden gestionar tramas tan rápido como llegan al enlace.
+- [*] **NIC - Network Interface Card:** Controlador de Interfaz de Red.
 ---
 # Enlaces relacionados
 - Siguiente nota: [[Control de errores (Detección y corrección)]].

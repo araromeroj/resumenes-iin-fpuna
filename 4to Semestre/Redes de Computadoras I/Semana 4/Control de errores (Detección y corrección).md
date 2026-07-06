@@ -41,7 +41,7 @@ Se presenta en el código de Hamming
 >- Mensajes posibles: $2^m$
 >- Cant de codewords: $(m+r+1)$
 >	Para indicar la ausencia de error (una codeword válida)
->	Para indicar la ubicación del error ($m+r$posibilidades)
+>	Para indicar la ubicación del error ($m+r$ posibilidades)
 >- Cant de codewords: $2^n=2^{m+r}$ palabras codificadas
 >$$2^m*(m+r+1)\leq{2^{m+r}=2^m*2^r}$$
 >$$(m+r+1)\leq{2^r}$$
