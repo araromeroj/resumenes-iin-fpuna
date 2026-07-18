@@ -11,4 +11,10 @@ final_1: AAAA-MM-DDTHH:mm:ss
 final_2: AAAA-MM-DDTHH:mm:ss
 semestre:
 aula:
+aulap1: 
+aulap2: 
+aulaf1: 
+aulaf2: 
 ---
+
+
