@@ -64,6 +64,19 @@ WHERE tipo = "materia"
 SORT split(h, " ")[1] ASC
 ```
 
+### Sábado
+```dataview
+TABLE 
+	split(replace(h, "Viernes ", ""), "-")[0] as "Inicio",
+	split(replace(h, "Viernes ", ""), "-")[1] as "Fin",
+	aula AS "Aula"
+FROM "_Materias"
+FLATTEN horario as h
+WHERE tipo = "materia" 
+  AND contains(h, "Sábado")
+SORT split(h, " ")[1] ASC
+```
+
 ## Profes y Secciones
 
 ```dataview

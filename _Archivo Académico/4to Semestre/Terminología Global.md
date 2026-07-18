@@ -1,8 +1,7 @@
 
-```sql
 ```dataview
 TASK
-FROM "_Archivo Académico/X Semestre"
+FROM "_Archivo Académico/4to Semestre"
 WHERE status = "I"
   AND !completed 
   AND file.name != this.file.name

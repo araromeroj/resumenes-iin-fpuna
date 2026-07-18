@@ -11,7 +11,7 @@ WHERE tipo = "materia"
 SORT parcial_1 ASC
 ```
 
-## Segundo Parcial - Mayo
+## Segundo Parcial
 ```dataview
 TABLE 
     profesor AS "Profesor",
@@ -25,7 +25,7 @@ SORT parcial_2 ASC
 ```
 
 ---
-## Primer Final - Junio
+## Primer Final
 ```dataview
 TABLE 
     profesor AS "Profesor",
@@ -38,7 +38,7 @@ WHERE tipo = "materia"
 SORT final_1 ASC
 ```
 
-## Segundo Final - Julio
+## Segundo Final
 ```dataview
 TABLE 
     profesor AS "Profesor",

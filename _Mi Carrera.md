@@ -1,7 +1,7 @@
 
 ```dataview
 LIST rows.file.link
-FROM "_Materias"
-WHERE tipo = "materia"
+FROM ""
+WHERE tipo = "materia" AND file.name != "Materia"
 GROUP BY semestre
 ```
