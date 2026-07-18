@@ -1,4 +1,4 @@
-## Primer Parcial - Abril
+## Primer Parcial
 ```dataview
 TABLE 
     profesor AS "Profesor",
@@ -6,7 +6,7 @@ TABLE
     dateformat(parcial_1, "HH:mm") AS "Horario",
     choice(parcial_1 < date(today), "Finalizado", (parcial_1 - date(today))) AS "Días restantes",
     aulap1 AS "Aula"
-FROM "_Materias"
+FROM "_Materias/"
 WHERE tipo = "materia"
 SORT parcial_1 ASC
 ```
@@ -50,4 +50,3 @@ FROM "_Materias"
 WHERE tipo = "materia"
 SORT final_2 ASC
 ```
-
