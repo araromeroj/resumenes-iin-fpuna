@@ -1,7 +1,7 @@
 ---
 tipo: materia
-profesor:
-seccion: T
+profesor: Salustiano Vega Gamarra
+seccion: TX
 horario:
   - Martes 14:15 - 17:15
   - Jueves 16:45 - 19:00

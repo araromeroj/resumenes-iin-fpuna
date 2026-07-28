@@ -1,9 +1,9 @@
 ---
 tipo: materia
-profesor:
-seccion: T
+profesor: Herman Agustín Mereles Tottil
+seccion: TX
 horario:
-  - Miércoles 14:15 - 17:15
+  - Miércoles 16:45 - 19:00
   - Sábado 08:00 - 11:00
 parcial_1: 2026-09-12T00:00:00
 parcial_2: 2026-11-07T00:00:00

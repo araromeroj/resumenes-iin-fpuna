@@ -1,7 +1,7 @@
 ---
 tipo: materia
 profesor:
-seccion: T
+seccion: TX
 horario:
   - Martes 17:30 - 19:00
   - Viernes 15:00 - 17:15
