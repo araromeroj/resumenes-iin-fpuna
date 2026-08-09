@@ -12,7 +12,6 @@ Thumbs.db
 .obsidian/indexedDB/
 .obsidian/community-plugins.json
 
-
-Opcional: Si quieres temas/plugins distintos por dispositivo
+# Temas y plugins distintos por dispositivo
 .obsidian/appearance.json
 .obsidian/plugins/
