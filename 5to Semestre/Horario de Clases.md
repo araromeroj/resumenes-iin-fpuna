@@ -77,6 +77,19 @@ WHERE tipo = "materia"
 SORT split(h, " ")[1] ASC
 ```
 
+## Laboratorios
+
+```dataview
+TABLE 
+  dateformat(fecha_lab, "EEEE") AS "Día", 
+  dateformat(fecha_lab, "dd/MM/yyyy") AS "Fecha", 
+  dateformat(fecha_lab, "HH:mm") AS "Hora"
+WHERE tipo = "laboratorio"
+FLATTEN list(lab1, lab2, lab3, lab4) AS fecha_lab
+WHERE fecha_lab != null AND fecha_lab >= date(now)
+SORT fecha_lab ASC
+```
+
 ## Profes y Secciones
 
 ```dataview

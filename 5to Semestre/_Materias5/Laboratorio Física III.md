@@ -1,10 +1,11 @@
 ---
-tipo: materia
+tipo: laboratorio
 profesor:
-seccion:
-horario:
-  - Lunes 08:00 - 11:00
+seccion: "02"
+lab1: 2026-08-12T19:00:00
+lab2:
+lab3:
+lab4:
 semestre: 5
 ---
-
 
