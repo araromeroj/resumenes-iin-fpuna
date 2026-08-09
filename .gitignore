@@ -3,15 +3,21 @@
 Thumbs.db
 .trash/
 
-# Obsidian - Interfaz y Cache (Causan el 90% de los conflictos)
+# Obsidian - Interfaz, Cache y Vistas (Causan el 90% de los conflictos)
 .obsidian/workspace
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/app.json
 .obsidian/cache/
 .obsidian/indexedDB/
-.obsidian/community-plugins.json
+.obsidian/graph.json
 
-# Temas y plugins distintos por dispositivo
+# Temas, plugins y personalización visual distintos por dispositivo
 .obsidian/appearance.json
+.obsidian/community-plugins.json
 .obsidian/plugins/
+.obsidian/themes/
+.obsidian/snippets/
+
+# Para plugins nativos distintos en PC y móvil
+.obsidian/core-plugins.json
