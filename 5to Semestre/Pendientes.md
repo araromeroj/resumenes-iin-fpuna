@@ -1,0 +1,34 @@
+## Sin Completar
+```dataview
+TASK
+FROM "5to Semestre"
+WHERE !completed and file.name != this.file.name and status = " "
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
+```
+
+## Resúmenes Pendientes
+
+```dataview
+TASK
+FROM "5to Semestre"
+WHERE !completed and file.name != this.file.name and status = "<"
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
+```
+
+## Bookmarks
+
+```dataview
+TASK
+FROM "5to Semestre"
+WHERE !completed and file.name != this.file.name and status = "b"
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
+```
+
+## Completadas
+
+```dataview
+TASK
+FROM "5to Semestre"
+WHERE completed and file.name != this.file.name
+GROUP BY regexreplace(file.folder, ".*\/", "") AS "Carpeta"
+```
