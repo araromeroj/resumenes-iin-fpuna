@@ -1,7 +1,7 @@
 ---
 tipo: materia
 profesor: Herman Agustín Mereles Tottil
-seccion: TX
+seccion: TQ
 horario:
   - Miércoles 16:45 - 19:00
   - Sábado 08:00 - 11:00
