@@ -10,7 +10,7 @@ parcial_2: 2026-11-04T16:00:00
 final_1: 2026-11-25T18:00:00
 final_2: 2026-12-23T18:00:00
 semestre: 5
-aula:
+aula: F34
 aulap1:
 aulap2:
 aulaf1:

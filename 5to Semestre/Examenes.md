@@ -5,7 +5,7 @@ TABLE
     dateformat(parcial_1, "dd/MM") AS "1er Parcial",
     dateformat(parcial_1, "HH:mm") AS "Horario",
     choice(parcial_1 < date(today), "Finalizado", (parcial_1 - date(today))) AS "Días restantes",
-    aulap1 AS "Aula"
+    aula AS "Aula"
 FROM "5to Semestre/_Materias5"
 WHERE tipo = "materia"
 SORT parcial_1 ASC
@@ -18,7 +18,7 @@ TABLE
     dateformat(parcial_2, "dd/MM") AS "2do Parcial",
     dateformat(parcial_2, "HH:mm") AS "Horario",
     choice(parcial_2 < date(today), "Finalizado", (parcial_2 - date(today))) AS "Días restantes",
-    aulap2 AS "Aula"
+    aula AS "Aula"
 FROM "5to Semestre/_Materias5"
 WHERE tipo = "materia"
 SORT parcial_2 ASC
