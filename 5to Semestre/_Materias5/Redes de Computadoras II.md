@@ -1,12 +1,12 @@
 ---
 tipo: materia
-profesor:
-seccion:
+profesor: Maximiliano Villamayor
+seccion: TR
 horario:
   - Miércoles 16:45-19:45
   - Jueves 14:15-16:30
-parcial_1: 2026-09-09T16:00:00
-parcial_2: 2026-11-04T16:00:00
+parcial_1: 2026-09-09T16:45:00
+parcial_2: 2026-11-04T16:45:00
 final_1: 2026-11-25T18:00:00
 final_2: 2026-12-23T18:00:00
 semestre: 5
