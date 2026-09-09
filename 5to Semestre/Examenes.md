@@ -2,6 +2,7 @@
 ```dataview
 TABLE 
     profesor AS "Profesor",
+    dateformat(parcial_1, "EEEE") AS "Día",
     dateformat(parcial_1, "dd/MM") AS "1er Parcial",
     dateformat(parcial_1, "HH:mm") AS "Horario",
     choice(parcial_1 < date(today), "Finalizado", (parcial_1 - date(today))) AS "Días restantes",
@@ -15,6 +16,7 @@ SORT parcial_1 ASC
 ```dataview
 TABLE 
     profesor AS "Profesor",
+    dateformat(parcial_2, "EEEE") AS "Día",
     dateformat(parcial_2, "dd/MM") AS "2do Parcial",
     dateformat(parcial_2, "HH:mm") AS "Horario",
     choice(parcial_2 < date(today), "Finalizado", (parcial_2 - date(today))) AS "Días restantes",
@@ -29,6 +31,7 @@ SORT parcial_2 ASC
 ```dataview
 TABLE 
     profesor AS "Profesor",
+    dateformat(final_1, "EEEE") AS "Día",
     dateformat(final_1, "dd/MM") AS "1er Final",
     dateformat(final_1, "HH:mm") AS "Horario",
     choice(final_1 < date(today), "Finalizado", (final_1 - date(today))) AS "Días restantes",
@@ -42,6 +45,7 @@ SORT final_1 ASC
 ```dataview
 TABLE 
     profesor AS "Profesor",
+    dateformat(final_2, "EEEE") AS "Día",
     dateformat(final_2, "dd/MM") AS "2do Final",
     dateformat(final_2, "HH:mm") AS "Horario",
     choice(final_2 < date(today), "Finalizado", (final_2 - date(today))) AS "Días restantes",
