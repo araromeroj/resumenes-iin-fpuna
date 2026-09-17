@@ -7,15 +7,15 @@
 
 ## 📑 Tabla de Contenidos
 
-1. [[#1. Movimiento Armónico Simple (MAS) Libre]]
-2. [[#2. Oscilaciones Amortiguadas]]
-3. [[#3. Oscilaciones Forzadas y Resonancia]]
-4. [[#4. Movimiento Ondulatorio y Ondas Mecánicas]]
-5. [[#5. Acústica, Intensidad Sonora y Efecto Doppler]]
-6. [[#6. Interferencia, Superposición y Ondas Estacionarias]]
-7. [[#7. Ondas Electromagnéticas y Vector de Poynting]]
-8. [[#8. Momento, Presión de Radiación e Inercia]]
-9. [[#9. Apéndice Matemático]]
+1. 1. Movimiento Armónico Simple (MAS) Libre
+2. 2. Oscilaciones Amortiguadas
+3. 3. Oscilaciones Forzadas y Resonancia
+4. 4. Movimiento Ondulatorio y Ondas Mecánicas
+5. 5. Acústica, Intensidad Sonora y Efecto Doppler
+6. 6. Interferencia, Superposición y Ondas Estacionarias
+7. 7. Ondas Electromagnéticas y Vector de Poynting
+8. 8. Momento, Presión de Radiación e Inercia
+9. 9. Apéndice Matemático
 
 ---
 
@@ -66,9 +66,9 @@
 * **Nombre:** Frecuencia angular natural del oscilador masa-resorte.
 * **Situación y Uso:** Calcula la rapidez con la que oscila libremente un bloque de masa $m$ unido a un resorte ideal de constante elástica $k$.
 * **Variables:**
-  * $\omega$: Frecuencia angular natural $[	ext{rad/s}]$.
-  * $k$: Constante elástica del resorte $[	ext{N/m}]$.
-  * $m$: Masa del oscilador $[	ext{kg}]$.
+  * $\omega$: Frecuencia angular natural $[\text{rad/s}]$.
+  * $k$: Constante elástica del resorte $[\text{N/m}]$.
+  * $m$: Masa del oscilador $[\text{kg}]$.
 
 ---
 
@@ -78,10 +78,10 @@
 * **Nombre:** Ecuación de energía cinética del MAS en el dominio del tiempo.
 * **Situación y Uso:** Describe la variación temporal de la energía cinética del oscilador. Muestra que la energía cinética oscila al doble de la frecuencia del movimiento entre $0$ y $K_{	ext{máx}}$.
 * **Variables:**
-  * $K$: Energía cinética instantánea $[	ext{J}]$.
-  * $v$: Velocidad instantánea $[	ext{m/s}]$.
-  * $m$: Masa del cuerpo $[	ext{kg}]$.
-  * $A$: Amplitud $[	ext{m}]$.
+  * $K$: Energía cinética instantánea $[\text{J}]$.
+  * $v$: Velocidad instantánea $[\text{m/s}]$.
+  * $m$: Masa del cuerpo $[\text{kg}]$.
+  * $A$: Amplitud $[\text{m}]$.
 
 ---
 
@@ -91,9 +91,9 @@
 * **Nombre:** Energía cinética del MAS respecto a la elongación.
 * **Situación y Uso:** Permite hallar la energía cinética o la velocidad del oscilador en un punto específico $x$ de la trayectoria sin conocer el tiempo.
 * **Variables:**
-  * $K$: Energía cinética $[	ext{J}]$.
-  * $x$: Posición o elongación $[	ext{m}]$.
-  * $A$: Amplitud $[	ext{m}]$.
+  * $K$: Energía cinética $[\text{J}]$.
+  * $x$: Posición o elongación $[\text{m}]$.
+  * $A$: Amplitud $[\text{m}]$.
 
 ---
 
@@ -103,9 +103,9 @@
 * **Nombre:** Energía potencial elástica instantánea.
 * **Situación y Uso:** Evalúa la energía almacenada en el resorte o sistema restaurador cuando la partícula se encuentra desplazada una distancia $x$ de la posición de equilibrio.
 * **Variables:**
-  * $U$: Energía potencial elástica $[	ext{J}]$.
-  * $k$: Constante de restitución $[	ext{N/m}]$.
-  * $x$: Posición respecto al origen $[	ext{m}]$.
+  * $U$: Energía potencial elástica $[\text{J}]$.
+  * $k$: Constante de restitución $[\text{N/m}]$.
+  * $x$: Posición respecto al origen $[\text{m}]$.
 
 ---
 
@@ -115,9 +115,9 @@
 * **Nombre:** Expresión de la amplitud mediante condiciones iniciales.
 * **Situación y Uso:** Determina la amplitud total de la oscilación conociendo la posición inicial $x_0$ y la velocidad inicial $v_0$ en el instante $t = 0$.
 * **Variables:**
-  * $A$: Amplitud resultante $[	ext{m}]$.
-  * $x_0$: Posición inicial en $t=0$ $[	ext{m}]$.
-  * $v_0$: Velocidad inicial en $t=0$ $[	ext{m/s}]$.
+  * $A$: Amplitud resultante $[\text{m}]$.
+  * $x_0$: Posición inicial en $t=0$ $[\text{m}]$.
+  * $v_0$: Velocidad inicial en $t=0$ $[\text{m/s}]$.
 
 ---
 
@@ -127,8 +127,8 @@
 * **Nombre:** Ecuación diferencial del oscilador armónico simple.
 * **Situación y Uso:** Ecuación fundamental que rige a todo sistema dinámico conservativo que realiza un movimiento armónico simple en ausencia de fuerzas disipativas.
 * **Variables:**
-  * $\frac{d^2x}{dt^2}$: Aceleración instantánea $a(t)$ $[	ext{m/s}^2]$.
-  * $\omega$: Frecuencia angular natural $[	ext{rad/s}]$.
+  * $\frac{d^2x}{dt^2}$: Aceleración instantánea $a(t)$ $[\text{m/s}^2]$.
+  * $\omega$: Frecuencia angular natural $[\text{rad/s}]$.
 
 ---
 
@@ -143,9 +143,9 @@
 * **Nombre:** Factor / constante de amortiguamiento (o atenuación).
 * **Situación y Uso:** Mide la intensidad de la fuerza disipativa por unidad de masa. Define los regímenes de oscilación (subamortiguado, crítico o sobreamortiguado).
 * **Variables:**
-  * $\gamma$: Factor de amortiguamiento $[	ext{s}^{-1}]$.
-  * $b$: Coeficiente de fricción viscosa $[	ext{kg/s}]$ o $[	ext{N}\cdot	ext{s/m}]$.
-  * $m$: Masa del oscilador $[	ext{kg}]$.
+  * $\gamma$: Factor de amortiguamiento $[\text{s}^{-1}]$.
+  * $b$: Coeficiente de fricción viscosa $[\text{kg/s}]$ o $[\text{N}\cdot\text{s/m}]$.
+  * $m$: Masa del oscilador $[\text{kg}]$.
 
 ---
 
@@ -155,19 +155,19 @@
 * **Nombre:** Ecuación diferencial del movimiento amortiguado libre.
 * **Situación y Uso:** Modela el movimiento de una masa sujeta a una fuerza recuperadora lineal y a una fuerza de resistencia viscosa proporcional a la velocidad.
 * **Variables:**
-  * $\gamma$: Factor de amortiguamiento $[	ext{s}^{-1}]$.
-  * $\omega_0$: Frecuencia natural no amortiguada ($\sqrt{k/m}$) $[	ext{rad/s}]$.
+  * $\gamma$: Factor de amortiguamiento $[\text{s}^{-1}]$.
+  * $\omega_0$: Frecuencia natural no amortiguada ($\sqrt{k/m}$) $[\text{rad/s}]$.
 
 ---
 
 ### (12) Solución para el Régimen Sobreamortiguado
 * **Fórmula:**
-  $$x(t) = A_1 e^{-(\gamma - q)t} + A_2 e^{-(\gamma + q)t} \quad 	ext{donde } q = \sqrt{\gamma^2 - \omega_0^2}$$
+  $$x(t) = A_1 e^{-(\gamma - q)t} + A_2 e^{-(\gamma + q)t} \quad \text{donde} \quad q = \sqrt{\gamma^2 - \omega_0^2}$$
 * **Nombre:** Ecuación de posición en régimen sobreamortiguado ($\gamma > \omega_0$).
 * **Situación y Uso:** Se usa cuando el rozamiento es muy fuerte. El sistema no realiza oscilaciones; simplemente retorna exponencialmente y de forma lenta a su posición de equilibrio.
 * **Variables:**
   * $A_1, A_2$: Constantes determinadas por las condiciones iniciales.
-  * $q$: Parámetro característico de sobreamortiguamiento $[	ext{s}^{-1}]$.
+  * $q$: Parámetro característico de sobreamortiguamiento $[\text{s}^{-1}]$.
 
 ---
 
@@ -187,8 +187,8 @@
 * **Nombre:** Frecuencia angular del movimiento subamortiguado.
 * **Situación y Uso:** Calcula la frecuencia de oscilación real en el régimen subamortiguado ($\gamma < \omega_0$). Muestra que la presencia de amortiguamiento disminuye la frecuencia respecto a la natural ($\omega_d < \omega_0$).
 * **Variables:**
-  * $\omega_d$: Frecuencia angular amortiguada $[	ext{rad/s}]$.
-  * $\omega_0$: Frecuencia natural no amortiguada $[	ext{rad/s}]$.
+  * $\omega_d$: Frecuencia angular amortiguada $[\text{rad/s}]$.
+  * $\omega_0$: Frecuencia natural no amortiguada $[\text{rad/s}]$.
 
 ---
 
@@ -198,8 +198,8 @@
 * **Nombre:** Ecuación de posición para movimiento subamortiguado ($\gamma < \omega_0$).
 * **Situación y Uso:** Describe un movimiento oscilatorio de frecuencia $\omega_d$ cuya amplitud decae exponencialmente con el tiempo según la envolvente $A(t) = A e^{-\gamma t}$.
 * **Variables:**
-  * $A$: Amplitud inicial $[	ext{m}]$.
-  * $\phi_0$: Fase inicial $[	ext{rad}]$.
+  * $A$: Amplitud inicial $[\text{m}]$.
+  * $\phi_0$: Fase inicial $[\text{rad}]$.
 
 ---
 
@@ -207,10 +207,10 @@
 * **Fórmula:**
   $$	\tau = \frac{1}{2\gamma}$$
 * **Nombre:** Constante de tiempo de relajación de la energía.
-* **Situación y Uso:** Representa el intervalo de tiempo necesario para que la energía mecánica total del oscilador amortiguado se reduzca a un factor $1/e  pprox 36.8\%$ de su valor inicial.
+* **Situación y Uso:** Representa el intervalo de tiempo necesario para que la energía mecánica total del oscilador amortiguado se reduzca a un factor $1/e\approx 36.8\%$ de su valor inicial.
 * **Variables:**
-  * $\tau$: Tiempo de relajación $[	ext{s}]$.
-  * $\gamma$: Factor de amortiguamiento $[	ext{s}^{-1}]$.
+  * $\tau$: Tiempo de relajación $[\text{s}]$.
+  * $\gamma$: Factor de amortiguamiento $[\text{s}^{-1}]$.
 
 ---
 
@@ -220,8 +220,8 @@
 * **Nombre:** Energía mecánica total en oscilaciones amortiguadas.
 * **Situación y Uso:** Muestra la pérdida progresiva e irreversible de energía del oscilador disipada en el medio ambiente en función del tiempo.
 * **Variables:**
-  * $E$: Energía mecánica instantánea $[	ext{J}]$.
-  * $\tau$: Tiempo de relajación $[	ext{s}]$.
+  * $E$: Energía mecánica instantánea $[\text{J}]$.
+  * $\tau$: Tiempo de relajación $[\text{s}]$.
 
 ---
 
@@ -231,8 +231,8 @@
 * **Nombre:** Factor de calidad $Q$ del oscilador.
 * **Situación y Uso:** Parámetro adimensional que mide la eficiencia del oscilador. Cuanto mayor es $Q$, menor es la pérdida relativa de energía por ciclo y más duraderas son las oscilaciones.
 * **Variables:**
-  * $Q$: Factor de calidad $[	ext{adimensional}]$.
-  * $|\Delta E|_{	ext{ciclo}}$: Energía disipada en un ciclo $[	ext{J}]$.
+  * $Q$: Factor de calidad $[\text{adimensional}]$.
+  * $|\Delta E|_{	ext{ciclo}}$: Energía disipada en un ciclo $[\text{J}]$.
 
 ---
 
@@ -242,7 +242,7 @@
 * **Nombre:** Ancho de banda relativo del resueno / Agudeza de resonancia.
 * **Situación y Uso:** Relaciona el ancho de la curva de resonancia a media potencia ($\Delta \omega$) con la frecuencia natural. Un alto factor $Q$ implica una curva de respuesta sumamente aguzada o selectiva.
 * **Variables:**
-  * $\Delta \omega$: Ancho de banda de la respuesta en frecuencia $[	ext{rad/s}]$.
+  * $\Delta \omega$: Ancho de banda de la respuesta en frecuencia $[\text{rad/s}]$.
 
 ---
 
@@ -257,7 +257,7 @@
 * **Nombre:** Frecuencia angular de resonancia en amplitud.
 * **Situación y Uso:** Determina la frecuencia de la fuerza impulsora $\omega_f$ para la cual la amplitud de desplazamiento del oscilador alcanza su valor máximo absoluto.
 * **Variables:**
-  * $\omega_{	ext{res}}$: Frecuencia de resonancia de amplitud $[	ext{rad/s}]$.
+  * $\omega_{	ext{res}}$: Frecuencia de resonancia de amplitud $[\text{rad/s}]$.
 
 ---
 
@@ -267,8 +267,8 @@
 * **Nombre:** Ecuación diferencial del oscilador armónico forzado.
 * **Situación y Uso:** Modela la dinámica de un oscilador amortiguado accionado por una fuerza externa armónica por unidad de masa ($F_0$).
 * **Variables:**
-  * $F_0$: Amplitud de la fuerza impulsora por unidad de masa $[	ext{N/kg} = 	ext{m/s}^2]$.
-  * $\omega_f$: Frecuencia angular de la fuerza impulsora $[	ext{rad/s}]$.
+  * $F_0$: Amplitud de la fuerza impulsora por unidad de masa $[\text{N/kg} = 	ext{m/s}^2]$.
+  * $\omega_f$: Frecuencia angular de la fuerza impulsora $[\text{rad/s}]$.
 
 ---
 
@@ -278,8 +278,8 @@
 * **Nombre:** Amplitud de oscilación forzada estacionaria.
 * **Situación y Uso:** Permite calcular la amplitud constante alcanzada por el sistema en función de la frecuencia impulsora $\omega_f$.
 * **Variables:**
-  * $A$: Amplitud permanente de oscilación $[	ext{m}]$.
-  * $F_0/m$: Fuerza impulsora máxima dividida por la masa $[	ext{m/s}^2]$.
+  * $A$: Amplitud permanente de oscilación $[\text{m}]$.
+  * $F_0/m$: Fuerza impulsora máxima dividida por la masa $[\text{m/s}^2]$.
 
 ---
 
@@ -289,7 +289,7 @@
 * **Nombre:** Ángulo de desfase $\delta$ en oscilaciones forzadas.
 * **Situación y Uso:** Determina cuánto se retrasa la posición del oscilador respecto a la fuerza impulsora externa. En la resonancia ($\omega_f = \omega_0$), $tan\delta \to \infty \implies \delta = \pi/2$.
 * **Variables:**
-  * $\delta$: Ángulo de desfase $[	ext{rad}]$.
+  * $\delta$: Ángulo de desfase $[\text{rad}]$.
 
 ---
 
@@ -305,7 +305,7 @@
 * **Situación y Uso:** Modela una onda de forma arbitraria $f$ viajando con velocidad constante $v$. El signo ($-$) indica propagación en dirección $+x$ y ($+$) en $-x$.
 * **Variables:**
   * $y(x,t)$: Perturbación en la posición $x$ y tiempo $t$.
-  * $v$: Velocidad de fase de la onda $[	ext{m/s}]$.
+  * $v$: Velocidad de fase de la onda $[\text{m/s}]$.
 
 ---
 
@@ -315,8 +315,8 @@
 * **Nombre:** Número de onda angular / Constante de propagación espacial.
 * **Situación y Uso:** Indica el cambio de fase angular por unidad de distancia recorrida.
 * **Variables:**
-  * $k$: Número de onda $[	ext{rad/m}]$.
-  * $\lambda$: Longitud de onda $[	ext{m}]$.
+  * $k$: Número de onda $[\text{rad/m}]$.
+  * $\lambda$: Longitud de onda $[\text{m}]$.
 
 ---
 
@@ -326,7 +326,7 @@
 * **Nombre:** Velocidad de fase de una onda armónica.
 * **Situación y Uso:** Vincula la velocidad de la onda con sus parámetros espaciales ($\lambda, k$) y temporales ($f, T, \omega$).
 * **Variables:**
-  * $v$: Velocidad de propagación $[	ext{m/s}]$.
+  * $v$: Velocidad de propagación $[\text{m/s}]$.
 
 ---
 
@@ -336,8 +336,8 @@
 * **Nombre:** Expresión de una onda sinusoidal viajera unidimensional.
 * **Situación y Uso:** Describe la perturbación producida por una onda armónica que se desplaza en el sentido positivo del eje $x$.
 * **Variables:**
-  * $y_m$: Amplitud máxima de la onda $[	ext{m}]$.
-  * $\phi$: Constante de fase inicial $[	ext{rad}]$.
+  * $y_m$: Amplitud máxima de la onda $[\text{m}]$.
+  * $\phi$: Constante de fase inicial $[\text{rad}]$.
 
 ---
 
@@ -355,8 +355,8 @@ $$\frac{\partial^2 y}{\partial t^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial
 * **Nombre:** Velocidad de propagación en una cuerda tensa.
 * **Situación y Uso:** Calcula la rapidez con la que viajan las ondas mecánicas transversales en una cuerda sometida a una tensión $T$ y con densidad de masa por unidad de longitud $\mu$.
 * **Variables:**
-  * $T$: Tensión mecánica de la cuerda $[	ext{N}]$.
-  * $\mu$: Densidad lineal de masa $[	ext{kg/m}]$.
+  * $T$: Tensión mecánica de la cuerda $[\text{N}]$.
+  * $\mu$: Densidad lineal de masa $[\text{kg/m}]$.
 
 ---
 
@@ -366,9 +366,8 @@ $$\frac{\partial^2 y}{\partial t^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial
 * **Nombre:** Velocidad de ondas longitudinales de presión en un fluido.
 * **Situación y Uso:** Expresa la velocidad de propagación del sonido en un medio líquido o gaseoso homogéneo.
 * **Variables:**
-  * $B$: Módulo de compresibilidad volumétrica (Bulk modulus) $[	ext{Pa}]$.
-  * $
-ho$: Densidad volumétrica del fluido $[	ext{kg/m}^3]$.
+  * $B$: Módulo de compresibilidad volumétrica (Bulk modulus) $[\text{Pa}]$.
+  * $ho$: Densidad volumétrica del fluido $[	ext{kg/m}^3]$.
 
 ---
 
@@ -379,7 +378,7 @@ ho$: Densidad volumétrica del fluido $[	ext{kg/m}^3]$.
 * **Situación y Uso:** Determina la velocidad del sonido en el aire ideal dada la temperatura en grados Celsius $T$.
 * **Variables:**
   * $v$: Velocidad del sonido en m/s.
-  * $T$: Temperatura ambiental en Celsius $[^\circ	ext{C}]$.
+  * $T$: Temperatura ambiental en Celsius $[^\circ\text{C}]$.
 
 ---
 
@@ -394,9 +393,9 @@ ho$: Densidad volumétrica del fluido $[	ext{kg/m}^3]$.
 * **Nombre:** Intensidad física de una onda.
 * **Situación y Uso:** Mide la rapidez con la que se transporta energía por unidad de área normal a la dirección de propagación (potencia $P$ por unidad de superficie).
 * **Variables:**
-  * $I$: Intensidad $[	ext{W/m}^2]$.
-  * $P$: Potencia transportada por la onda $[	ext{W}]$.
-  * $\Delta A$: Área transversal $[	ext{m}^2]$.
+  * $I$: Intensidad $[\text{W/m}^2]$.
+  * $P$: Potencia transportada por la onda $[\text{W}]$.
+  * $\Delta A$: Área transversal $[\text{m}^2]$.
 
 ---
 
@@ -405,48 +404,46 @@ ho$: Densidad volumétrica del fluido $[	ext{kg/m}^3]$.
   $$I = \frac{1}{2}
 ho v (\omega s_{\text{máx}})^2 =\frac{(\Delta P_{\text{máx}})^2}{2ho v}$$
 * **Nombre:** Intensidad sonora en términos de presión y desplazamiento.
-* **Situación y Uso:** Evalúa la intensidad de una onda sonora plana a partir de la amplitud de desplazamiento de las moléculas del medio ($s_{	ext{máx}}$) o de la variación máxima de presión ($\Delta P_{	ext{máx}}$).
+* **Situación y Uso:** Evalúa la intensidad de una onda sonora plana a partir de la amplitud de desplazamiento de las moléculas del medio ($s_{\text{máx}}$) o de la variación máxima de presión ($\Delta P_{\text{máx}}$).
 * **Variables:**
-  * $s_{	ext{máx}}$: Amplitud de desplazamiento de partícula $[	ext{m}]$.
-  * $\Delta P_{	ext{máx}}$: Amplitud de la variación de presión $[	ext{Pa}]$.
+  * $s_{\text{máx}}$: Amplitud de desplazamiento de partícula $[\text{m}]$.
+  * $\Delta P_{\text{máx}}$: Amplitud de la variación de presión $[\text{Pa}]$.
 
 ---
 
 ### (34) Ley de la Inversa del Cuadrado para Fuentes Puntuales
 * **Fórmula:**
-  $$I = rac{P}{4\pi r^2}$$
+  $$I =\frac{P}{4\pi r^2}$$
 * **Nombre:** Intensidad de una onda esférica tridimensional.
 * **Situación y Uso:** Modela la atenuación de la intensidad sonora producida por una fuente puntual e isótropa de potencia $P$ al alejarse a una distancia $r$.
 * **Variables:**
-  * $r$: Distancia radial desde la fuente $[	ext{m}]$.
+  * $r$: Distancia radial desde la fuente $[\text{m}]$.
 
 ---
 
 ### (35) Nivel de Intensidad Sonora (Decibelios)
 * **Fórmula:**
-  $$ eta = 10 \log\left(rac{I}{10^{-12}}
-ight)$$
+  $$ \beta = 10 \log\left(\frac{I}{10^{-12}}\right)$$
 * **Nombre:** Escala de nivel sonoro en decibelios (dB).
-* **Situación y Uso:** Escala logarítmica que cuantifica la sensación auditiva humana respecto al umbral de audición estándar $I_0 = 10^{-12} 	ext{ W/m}^2$.
+* **Situación y Uso:** Escala logarítmica que cuantifica la sensación auditiva humana respecto al umbral de audición estándar $I_0 = 10^{-12} \text{ W/m}^2$.
 * **Variables:**
-  * $ eta$: Nivel sonoro en decibelios $[	ext{dB}]$.
-  * $I$: Intensidad medida $[	ext{W/m}^2]$.
+  * $\beta$: Nivel sonoro en decibelios $[\text{dB}]$.
+  * $I$: Intensidad medida $[\text{W/m}^2]$.
 
 ---
 
 ### (36) Efecto Doppler Acústico
 * **Fórmula:**
-  $$f' = f \left(rac{v \pm v_o}{v \mp v_f}
-ight)$$
+  $$f' = f \left(\frac{v \pm v_o}{v \mp v_f}\right)$$
 * **Nombre:** Ecuación general del Efecto Doppler sonoro.
 * **Situación y Uso:** Permite calcular la frecuencia $f'$ percibida por un observador cuando existe movimiento relativo entre la fuente sonora ($v_f$) y el observador ($v_o$) a lo largo de la línea que los une.
 * **Regla de signos:** Numerador ($+$ si el observador se acerca, $-$ si se aleja); Denominador ($-$ si la fuente se acerca, $+$ si se aleja).
 * **Variables:**
-  * $f'$: Frecuencia aparente percibida $[	ext{Hz}]$.
-  * $f$: Frecuencia propia emitida por la fuente $[	ext{Hz}]$.
-  * $v$: Velocidad del sonido en el medio $[	ext{m/s}]$.
-  * $v_o$: Velocidad del observador $[	ext{m/s}]$.
-  * $v_f$: Velocidad de la fuente $[	ext{m/s}]$.
+  * $f'$: Frecuencia aparente percibida $[\text{Hz}]$.
+  * $f$: Frecuencia propia emitida por la fuente $[\text{Hz}]$.
+  * $v$: Velocidad del sonido en el medio $[\text{m/s}]$.
+  * $v_o$: Velocidad del observador $[\text{m/s}]$.
+  * $v_f$: Velocidad de la fuente $[\text{m/s}]$.
 
 ---
 
@@ -457,9 +454,7 @@ ight)$$
 
 ### (37) Interferencia de dos Ondas Armónicas Coherentes
 * **Fórmula:**
-  $$y = 2A \cos\left(rac{\phi}{2}
-ight) \sin\left(kx - \omega t + rac{\phi}{2}
-ight)$$
+  $$y = 2A \cos\left(\frac{\phi}{2}\right) \sin\left(kx - \omega t + \frac{\phi}{2}\right)$$
 * **Nombre:** Onda resultante por interferencia de ondas de igual frecuencia y amplitud con diferencia de fase $\phi$.
 * **Situación y Uso:** Describe el perfil de onda resultante de la superposición de dos ondas viajeras idénticas en la misma dirección pero desplazadas en fase una cantidad $\phi$.
 * **Variables:**
@@ -473,14 +468,14 @@ ight)$$
 * **Nombre:** Condición de diferencia de camino para interferencia constructiva.
 * **Situación y Uso:** Indica las diferencias de distancia $\Delta r$ desde dos fuentes en fase hasta un punto del espacio donde las ondas se refuerzan al máximo.
 * **Variables:**
-  * $\Delta r$: Diferencia de trayectoria $|r_1 - r_2|$ $[	ext{m}]$.
+  * $\Delta r$: Diferencia de trayectoria $|r_1 - r_2|$ $[\text{m}]$.
   * $n$: Orden de interferencia (entero positivo).
 
 ---
 
 ### (39) Condición de Interferencia Destructiva (Mínimos / Nodos)
 * **Fórmula:**
-  $$\Delta r = rac{n\lambda}{2} \quad (n = 1, 3, 5, \dots 	ext{ números impares})$$
+  $$\Delta r = \frac{n\lambda}{2} \quad (n = 1, 3, 5, \dots \text{ números impares})$$
 * **Nombre:** Condición de diferencia de camino para interferencia destructiva.
 * **Situación y Uso:** Muestra la condición espacial en la que dos ondas coherentes en fase se cancelan totalmente debido a una oposición de fase ($\Delta r$ igual a un número impar de medias longitudes de onda).
 
@@ -498,7 +493,7 @@ ight)$$
 
 ### (41) Posición de los Nodos en Ondas Estacionarias
 * **Fórmula:**
-  $$x = rac{n\lambda}{2} \quad (n = 0, 1, 2, \dots)$$
+  $$x = \frac{n\lambda}{2} \quad (n = 0, 1, 2, \dots)$$
 * **Nombre:** Ubicación espacial de nodos de interferencia.
 * **Situación y Uso:** Posiciones $x$ a lo largo del medio donde la amplitud de la onda estacionaria es permanentemente igual a cero (puntos en reposo).
 
@@ -506,7 +501,7 @@ ight)$$
 
 ### (42) Posición de Antinodos (Vientres) en Ondas Estacionarias
 * **Fórmula:**
-  $$x = rac{n\lambda}{4} \quad (n = 1, 3, 5, \dots 	ext{ impares})$$
+  $$x = \frac{n\lambda}{4} \quad (n = 1, 3, 5, \dots 	ext{ impares})$$
 * **Nombre:** Ubicación espacial de antinodos o vientres.
 * **Situación y Uso:** Determina los puntos $x$ donde la amplitud de vibración es máxima (igual a $2A$).
 
@@ -514,47 +509,47 @@ ight)$$
 
 ### (43) Modos Normales de Vibración en Cuerda con Ambos Extremos Fijos
 * **Fórmula:**
-  $$f_n = rac{n}{2L}\sqrt{rac{T}{\mu}} \quad (n = 1, 2, 3, \dots)$$
+  $$f_n = \frac{n}{2L}\sqrt{\frac{T}{\mu}} \quad (n = 1, 2, 3, \dots)$$
 * **Nombre:** Frecuencias de resonancia / Armónicos en cuerdas fijas.
 * **Situación y Uso:** Permite hallar las frecuencias naturales de resonancia de una cuerda de longitud $L$ atada en sus dos extremos ($n=1$ fundamental, $n=2$ segundo armónico, etc.).
 * **Variables:**
-  * $f_n$: Frecuencia del $n$-ésimo armónico $[	ext{Hz}]$.
-  * $L$: Longitud de la cuerda $[	ext{m}]$.
+  * $f_n$: Frecuencia del $n$-ésimo armónico $[\text{Hz}]$.
+  * $L$: Longitud de la cuerda $[\text{m}]$.
 
 ---
 
 ## 7. Ondas Electromagnéticas y Vector de Poynting
 
 > [!abstract] **Contexto Físico**
-> Oscilaciones acopladas e interdependientes de campos eléctricos ($ ec{E}$) y magnéticos ($ ec{B}$) que se propagan en el vacío o medos materiales a la velocidad de la luz.
+> Oscilaciones acopladas e interdependientes de campos eléctricos ($\vec{E}$) y magnéticos ($\vec{B}$) que se propagan en el vacío o medos materiales a la velocidad de la luz.
 
 ### (44) Campo Eléctrico de una Onda EM Plana
 * **Fórmula:**
-  $$ ec{E}(x,t) = \hat{j} E_{	ext{máx}} \cos(kx \mp \omega t)$$
+  $$\vec{E}(x,t) = \hat{j} E_{\text{máx}} \cos(kx \mp \omega t)$$
 * **Nombre:** Expresión del campo eléctrico en una onda EM plana monocromática.
 * **Situación y Uso:** Describe la oscilación sinusoidal del campo eléctrico orientada según el eje $y$ y propagándose a lo largo del eje $x$.
 * **Variables:**
-  * $E_{	ext{máx}}$: Amplitud del campo eléctrico $[	ext{V/m}]$.
+  * $E_{\text{máx}}$: Amplitud del campo eléctrico $[\text{V/m}]$.
 
 ---
 
 ### (45) Campo Magnético de una Onda EM Plana
 * **Fórmula:**
-  $$ ec{B}(x,t) = \hat{k} B_{	ext{máx}} \cos(kx \mp \omega t)$$
+  $$\vec{B}(x,t) = \hat{k} B_{\text{máx}} \cos(kx \mp \omega t)$$
 * **Nombre:** Expresión del campo magnético en una onda EM plana.
-* **Situación y Uso:** Describe la oscilación del campo de inducción magnética en el eje $z$, perpendicular a $ ec{E}$ y a la dirección de propagación $x$.
+* **Situación y Uso:** Describe la oscilación del campo de inducción magnética en el eje $z$, perpendicular a $\vec{E}$ y a la dirección de propagación $x$.
 * **Variables:**
-  * $B_{	ext{máx}}$: Amplitud del campo magnético $[	ext{T}]$. Nota: $E_{	ext{máx}} / B_{	ext{máx}} = c$.
+  * $B_{\text{máx}}$: Amplitud del campo magnético $[\text{T}]$. Nota: $E_{\text{máx}} / B_{\text{máx}} = c$.
 
 ---
 
 ### (46) Velocidad de Ondas EM en Medios Dieléctricos y Magnéticos
 * **Fórmula:**
-  $$v = rac{1}{\sqrt{\epsilon \mu}} = rac{1}{\sqrt{K K_m}} rac{1}{\sqrt{\epsilon_0 \mu_0}} = rac{c}{\sqrt{K K_m}}$$
+  $$v = \frac{1}{\sqrt{\epsilon \mu}} = \frac{1}{\sqrt{K K_m}}\frac{1}{\sqrt{\epsilon_0 \mu_0}} = \frac{c}{\sqrt{K K_m}}$$
 * **Nombre:** Velocidad de la luz en un medio material.
 * **Situación y Uso:** Modela la reducción de la velocidad de las ondas electromagnéticas al atravesar medios no conductores materiales caracterizados por su constante dieléctrica $K$ y permeabilidad $K_m$.
 * **Variables:**
-  * $c$: Velocidad de la luz en el vacío ($ pprox 3 	imes 10^8 	ext{ m/s}$).
+  * $c$: Velocidad de la luz en el vacío ($\approx 3 \times 10^8 \text{ m/s}$).
   * $K$: Constante dieléctrica / permitividad relativa.
   * $K_m$: Permeabilidad relativa del medio.
 
@@ -562,29 +557,29 @@ ight)$$
 
 ### (47) Densidad de Energía Electromagnética Instantánea
 * **Fórmula:**
-  $$u = rac{1}{2}\epsilon_0 E^2 + rac{1}{2\mu_0} B^2 = \epsilon_0 E^2$$
+  $$u = \frac{1}{2}\epsilon_0 E^2 + \frac{1}{2\mu_0} B^2 = \epsilon_0 E^2$$
 * **Nombre:** Densidad volumétrica de energía en ondas EM.
 * **Situación y Uso:** Almacenamiento total de energía por unidad de volumen en los campos eléctrico y magnético de la onda en el vacío. Muestra que la energía se reparte equitativamente entre ambos campos.
 * **Variables:**
-  * $u$: Densidad de energía $[	ext{J/m}^3]$.
-  * $\epsilon_0$: Permitividad del vacío ($8.854 	imes 10^{-12} 	ext{ F/m}$).
-  * $\mu_0$: Permeabilidad del vacío ($4\pi 	imes 10^{-7} 	ext{ H/m}$).
+  * $u$: Densidad de energía $[\text{J/m}^3]$.
+  * $\epsilon_0$: Permitividad del vacío ($8.854 \times 10^{-12} \text{ F/m}$).
+  * $\mu_0$: Permeabilidad del vacío ($4\pi \times 10^{-7} \text{ H/m}$).
 
 ---
 
 ### (48) Módulo del Vector de Poynting (Flujo en función de $E$)
 * **Fórmula:**
-  $$S = rac{1}{A}rac{dU}{dt} = \epsilon_0 c E^2 = rac{\epsilon_0}{\sqrt{\epsilon_0\mu_0}} E^2$$
+  $$S = \frac{1}{A}\frac{dU}{dt} = \epsilon_0 c E^2 = \frac{\epsilon_0}{\sqrt{\epsilon_0\mu_0}} E^2$$
 * **Nombre:** Magnitud instantánea del Vector de Poynting.
 * **Situación y Uso:** Representa la tasa instantánea de transferencia de energía electromagnética por unidad de superficie perpendicular a la dirección del flujo.
 * **Variables:**
-  * $S$: Módulo del vector de Poynting $[	ext{W/m}^2]$.
+  * $S$: Módulo del vector de Poynting $[\text{W/m}^2]$.
 
 ---
 
 ### (49) Módulo del Vector de Poynting en función de $E$ y $B$
 * **Fórmula:**
-  $$S = \sqrt{rac{\epsilon_0}{\mu_0}} E^2 = rac{EB}{\mu_0}$$
+  $$S = \sqrt{\frac{\epsilon_0}{\mu_0}} E^2 = \frac{EB}{\mu_0}$$
 * **Nombre:** Relación escalar del flujo instantáneo de potencia EM.
 * **Situación y Uso:** Expresión equivalente del modulo de Poynting expresada de forma directa mediante las amplitudes instantáneas de los campos $E$ y $B$.
 
@@ -592,16 +587,15 @@ ight)$$
 
 ### (50) Definición Vectorial del Vector de Poynting
 * **Fórmula:**
-  $$ ec{S} = rac{1}{\mu_0} \left( ec{E} 	imes  ec{B}
-ight)$$
+  $$\vec{S} = \frac{1}{\mu_0} \left(\vec{E} \times \vec{B} \right)$$
 * **Nombre:** Vector de Poynting.
 * **Situación y Uso:** Vector que especifica la dirección, sentido y densidad de flujo de potencia transportada por los campos electromagnéticos.
 
 ---
 
-### (51) Intensidad Promedio de una Onda EM (en función de $E_{	ext{máx}}$ y $B_{	ext{máx}}$)
+### (51) Intensidad Promedio de una Onda EM (en función de $E_{\text{máx}}$ y $B_{\text{máx}}$)
 * **Fórmula:**
-  $$I = S_{	ext{prom}} = rac{E_{	ext{máx}} B_{	ext{máx}}}{2\mu_0} = rac{E_{	ext{máx}}^2}{2\mu_0 c}$$
+  $$I = S_{\text{prom}} = \frac{E_{\text{máx}} B_{\text{máx}}}{2\mu_0} =\frac{E_{\text{máx}}^2}{2\mu_0 c}$$
 * **Nombre:** Intensidad media o irradiancia de una onda EM plana.
 * **Situación y Uso:** Evalúa la potencia promedio por unidad de área medida por detectores o superficies expuestas a la radiación continua en el vacío.
 
@@ -609,7 +603,7 @@ ight)$$
 
 ### (52) Intensidad Promedio EM (con Permitividad del Vacío)
 * **Fórmula:**
-  $$I = S_{	ext{prom}} = rac{1}{2}\sqrt{rac{\epsilon_0}{\mu_0}} E_{	ext{máx}}^2 = rac{1}{2}\epsilon_0 c E_{	ext{máx}}^2$$
+  $$I = S_{\text{prom}} = \frac{1}{2}\sqrt{\frac{\epsilon_0}{\mu_0}}E_{\text{máx}}^2 = \frac{1}{2}\epsilon_0 c E_{\text{máx}}^2$$
 * **Nombre:** Irradiancia en función del campo eléctrico y constantes del vacío.
 * **Situación y Uso:** Forma de calcular la intensidad promedio de la luz u onda EM conociendo únicamente la amplitud del campo eléctrico pico $E_{	ext{máx}}$.
 
@@ -622,17 +616,17 @@ ight)$$
 
 ### (53) Densidad Volumétrica de Momento Lineal EM
 * **Fórmula:**
-  $$rac{dp}{dV} = rac{EB}{\mu_0 c^2} = rac{S}{c^2}$$
+  $$\frac{dp}{dV} = \frac{EB}{\mu_0 c^2} = \frac{S}{c^2}$$
 * **Nombre:** Densidad espacial de momento electromagnético.
 * **Situación y Uso:** Representa la cantidad de momento lineal por unidad de volumen almacenada y transportada en los campos EM.
 * **Variables:**
-  * $rac{dp}{dV}$: Densidad de momento $[	ext{kg}\cdot	ext{m}^{-2}\cdot	ext{s}^{-1} = 	ext{N}\cdot	ext{s/m}^3]$.
+  * $\frac{dp}{dV}$: Densidad de momento $[\text{kg}\cdot\text{m}^{-2}\cdot\text{s}^{-1} = \text{N}\cdot\text{s/m}^3]$.
 
 ---
 
 ### (54) Flujo Temporal de Momento Lineal
 * **Fórmula:**
-  $$rac{1}{A} rac{dp}{dt} = rac{S}{c} = rac{EB}{\mu_0 c}$$
+  $$\frac{1}{A} \frac{dp}{dt} = \frac{S}{c} = \frac{EB}{\mu_0 c}$$
 * **Nombre:** Flujo de momento por unidad de área (fuerza instantánea específica).
 * **Situación y Uso:** Mide la rapidez con la que se transfiere momento a una superficie expuesta a la radiación.
 
@@ -640,32 +634,32 @@ ight)$$
 
 ### (55) Presión de Radiación sobre Superficie de Absorción Total
 * **Fórmula:**
-  $$p_{	ext{rad}} = rac{I}{c}$$
+  $$p_{\text{rad}} = \frac{I}{c}$$
 * **Nombre:** Presión de radiación para absorción completa (Cuerpo Negro).
 * **Situación y Uso:** Calcula la presión mecánica ejercida por la radiación incidente cuando la superficie **absorbe por completo** toda la energía incidente (sin reflexión).
 * **Variables:**
-  * $p_{	ext{rad}}$: Presión de radiación $[	ext{Pa} = 	ext{N/m}^2]$.
-  * $I$: Intensidad media de la radiación $[	ext{W/m}^2]$.
-  * $c$: Velocidad de la luz en el vacío $[	ext{m/s}]$.
+  * $p_{\text{rad}}$: Presión de radiación $[\text{Pa} = \text{N/m}^2]$.
+  * $I$: Intensidad media de la radiación $[\text{W/m}^2]$.
+  * $c$: Velocidad de la luz en el vacío ${[\text{m/s}}]$.
 
 ---
 
 ### (56) Presión de Radiación sobre Superficie de Reflexión Total
 * **Fórmula:**
-  $$p_{	ext{rad}} = rac{2I}{c}$$
+  $$p_{\text{rad}} = \frac{2I}{c}$$
 * **Nombre:** Presión de radiación para reflexión completa (Espejo Perfecto).
-* **Situación y Uso:** Mide la presión exercida cuando la luz es **totalmente reflejada** por un espejo perfecto. Debido al cambio de sentido en el momento de los fotones, la presión ejercida es exactamente el doble que en la absorción total.
+* **Situación y Uso:** Mide la presión ejercida cuando la luz es **totalmente reflejada** por un espejo perfecto. Debido al cambio de sentido en el momento de los fotones, la presión ejercida es exactamente el doble que en la absorción total.
 
 ---
 
 ### (57) Momento de Inercia de una Esfera Sólida Uniforme
 * **Fórmula:**
-  $$I_{	ext{Esfera}} = rac{2}{5} M R^2$$
+  $$I_{\text{Esfera}} = \frac{2}{5} M R^2$$
 * **Nombre:** Momento de inercia de una esfera maciza homogênea.
 * **Situación y Uso:** Elemento de mecánica rígida aplicado en oscilaciones rotacionales o péndulos físicos esféricos. Mide la inercia rotacional respecto a un eje que atraviesa su centro geométrico.
 * **Variables:**
-  * $M$: Masa total de la esfera $[	ext{kg}]$.
-  * $R$: Radio de la esfera $[	ext{m}]$.
+  * $M$: Masa total de la esfera $[\text{kg}]$.
+  * $R$: Radio de la esfera $[\text{m}]$.
 
 ---
 
@@ -673,12 +667,12 @@ ight)$$
 
 ### Desarrollo en Serie del Binomio de Newton
 * **Fórmula:**
-  $$(1+x)^n = 1 + nx + rac{n(n-1)}{2!}x^2 + rac{n(n-1)(n-2)}{3!}x^3 + \dots$$
+  $$(1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \dots$$
 * **Nombre:** Expansión Binomial de Taylor.
 * **Situación y Uso:** Herramienta matemática empleada recurrentemente en física para aproximar expresiones complejas cuando un parámetro es muy pequeño ($|x| \ll 1$). 
 * **Ejemplos de aplicación en Física:**
-  * Aproximación para pequeñas oscilaciones en péndulos ($\sin	heta  pprox 	heta$).
-  * Correcciones de frecuencia en oscilaciones subamortiguadas ($\omega_d = \omega_0 \sqrt{1 - (\gamma/\omega_0)^2}  pprox \omega_0 [1 - rac{1}{2}(\gamma/\omega_0)^2]$).
+  * Aproximación para pequeñas oscilaciones en péndulos ($\sin\theta \approx \theta$).
+  * Correcciones de frecuencia en oscilaciones subamortiguadas ($\omega_d = \omega_0\sqrt{1 - (\gamma/\omega_0)^2} \approx \omega_0 [1 - \frac{1}{2(\gamma/\omega_0)^2}]$).
   * Aproximaciones relativistas para bajas velocidades ($v \ll c$).
 
 ---
