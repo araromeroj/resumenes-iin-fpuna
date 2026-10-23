@@ -62,7 +62,7 @@ Aunque el _Backoff_ es el estándar comercial, el **Algoritmo de Árbol** es una
 >	- Si hay otra colisión en la rama 0, ese grupo se vuelve a dividir en dos sub-ramas.
 >4. **Finalización:** El proceso continúa hasta que todas las estaciones han transmitido con éxito siguiendo un recorrido en orden (in-order traversal) del árbol.  
 
-![[Pasted image 20260503172819.png]]
+![[Pasted image 20260503172819.webp]]
 
 ---
 ## Fast Ethernet (100 Mbps)
@@ -108,7 +108,7 @@ Estandarizado como **802.3z** (fibra) y **802.3ab** (cobre). Aquí la industria 
 	- Permite uso de hubs (CSMA/CD) y conmutadores.
 - [*] **FDX:** Full dúplex dual
 
-![[Pasted image 20260429185030.png]]
+![[Pasted image 20260429185030.webp]]
 
 - **Conmutación:** Aunque soporta CSMA/CD para ser compatible, casi todas las instalaciones son **Full-Duplex** conectadas a un Switch.
     
@@ -123,7 +123,7 @@ $$L_{\text{ Trama minima}}=2*\tau *V_{\text{transmisión}}$$ $$L_{\text{ Trama m
 
 El estándar **802.3ae** marcó un antes y un después.
 
-![[Pasted image 20260429185231.png]]
+![[Pasted image 20260429185231.webp]]
 
 - **Adiós al CSMA/CD:** Este estándar **no soporta CSMA/CD**. Solo funciona en modo Full-Duplex.
     
@@ -141,7 +141,7 @@ IEEE 802.3z:
 - **1000Base-TX:** 2 pares de UTP cat 6 - TIA/EIA 854 - Estándar distinto al 1000Base-T
 - **Jumbo frames:** tramas de 9000 bytes (no estandarizado por IEEE)
 
-![[Pasted image 20260429190422.png]]
+![[Pasted image 20260429190422.webp]]
 
 ---
 # Diferencias Clave

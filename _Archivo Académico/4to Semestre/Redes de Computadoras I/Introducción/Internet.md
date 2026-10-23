@@ -8,7 +8,7 @@ El NSFNET reemplazó a arpanet como la principal columna vertebral de internet, 
 
 ## Arquitectura de la Internet
 
-![[arquitectura de internet.png|550]]
+![[arquitectura de internet.webp|550]]
 
 (no había mucho que escribir xdxd)
 

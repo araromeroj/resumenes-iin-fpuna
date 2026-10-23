@@ -1,5 +1,5 @@
 
-![[Pasted image 20260524233024.png]]
+![[Pasted image 20260524233024.webp]]
 
 >[!note] Explique
 >**TXOP:** Es un método de calidad de servicio en las redes 802.11, sirve para que estaciones lentas no saturen o perjudiquen mucho a estaciones rápidas.
@@ -10,14 +10,14 @@
 >**APSD:** Es una técnica o mecanismo de ahorro de energía utilizado en el 802.11 (Automatic Power Save Delivery) Consiste en que se envían las tramas al cliente automáticamente después de que este haya enviado el mensaje durante periodos de servicio programados o no programados.
 >**PAT:** Port Adress Translation es un protocolo que relaciona direcciones IP públicas a IP privadas de modo que si dos estaciones quieren acceder a una misma red y tienen el mismo puerto, en el router con el PAT se le asignan diferentes puertos a ambos hosts y se utiliza una tabla de NAT para el seguimiento.
 
-![[Pasted image 20260524233034.png]]
+![[Pasted image 20260524233034.webp]]
 
 - Memoria **RAM**: Guarda la tabla de enrutamiento, la configuración actual del router, colas de paquetes y el SO en ejecución.
 - Memoria **NVRAM**: Guarda la configuración de inicio que se copia en la memoria de trabajo durante el inicio del equipo. Es una memoria ram de poca capacidad.
 - Memoria **Flash**: Guarda la imagen del SO
 - Memoria **ROM**: Guarda el programa de arranque y el software básico del SO, las pruebas de inicio y rutinas de diagnóstico de hardware.
 
-![[Pasted image 20260524233524.png]]
+![[Pasted image 20260524233524.webp]]
 
 1. Escucha el medio para saber si alguien más está transmitiendo.
 2. Si el canal está ocupado, espera que se libere.
@@ -29,7 +29,7 @@
 8. Si la estacón transmite pero no recibe el ACK, asume que hubo colisión o interferencia, entonces el número aleatorio se vuelve a elegir pero esta vez con el doble de rango que el anterior. $[1, 2CW_{min}]$
 No se usa el algoritmo de backoff cuando el medio está inactivo a la llegada de una nueva trama. Si el canal ha estado libre durante un tiempo igual o mayor al DIFS se transmite la trama por el medio inmediatamente.
 
-![[Pasted image 20260524234521.png]]
+![[Pasted image 20260524234521.webp]]
 
 1. Se recibe la trama en el puerto "x".
 2. Se lee la dirección MAC de destino
@@ -40,7 +40,7 @@ No se usa el algoritmo de backoff cuando el medio está inactivo a la llegada de
 	Si es así, se termina el forwarding
 4. Si no está, se envía la trama por el puerto de salida indicado "x".
 
-![[Pasted image 20260525114816.png]]
+![[Pasted image 20260525114816.webp]]
 
 1. Preámbulo (7 bytes): Para indicar que es la trama de ethernet.
 2. SFD (1 byte): Indica el inicio de la trama
@@ -53,7 +53,7 @@ No se usa el algoritmo de backoff cuando el medio está inactivo a la llegada de
 9. Pad (0 - 46 bytes): es un campo que se utiliza para rellenar y llegar a los 64 bytes de trama mínima.
 10. CRC (4 bytes): indicado para la detección y corrección de errores.
 
-![[Pasted image 20260525001010.png]]
+![[Pasted image 20260525001010.webp]]
 
 - Repetición selectiva -> $2^{k-1}$ que sería la mitad de los bits de la ventana corrediza.
 - $k=3 \text{ bits}$
@@ -66,7 +66,7 @@ $$L \geq t_t*V_t$$
 $$L \geq 13.333*10^{-6} *50*10^6$$
 $$L = 500 \text{ bytes}$$
 
-![[Pasted image 20260525114105.png]]
+![[Pasted image 20260525114105.webp]]
 Protocolos de árbol de expansión:
 Los protocolos de arbol de expansión sirven para determinar caminos entre dos nodos pero sin entrar en bucles.
 - **STP - Spanning Tree Protocol (802.11d):** Es el protocolo original en el que el switch elige y bloquea los cables redundantes, en el caso de que el cable principal elegido se corte el stp sabe otro camino por el cual seguir que era el otro inactivo.
@@ -76,19 +76,19 @@ Los protocolos de arbol de expansión sirven para determinar caminos entre dos n
 - **MSTP - Multiple Spanning Tree (802.11s):** Como ambos protocolos STP y RSTP crean el mismo árbol para toda la red, es decir, los cables bloqueados afectan a toda la red, el mstp permite crear varios árboles independientes. Los árboles independientes permiten que el mismo cable pueda estar activo para una VLAN e inactivo para otra VLAN.
 	- Evita bucles optimizando el tráfico por cada VLAN.
 
-![[Pasted image 20260525114114.png]]
+![[Pasted image 20260525114114.webp]]
 
 Ahorro de energía en 802.11
 1. **PSM - Power Save Mode:** Consiste en que cuando una estación entra en modo de ahorro de energía, envía un mensaje al AP avisándole de su estado. Entonces el AP sabe que la estación existe pero estará inactiva por un tiempo. Por lo que si el AP recibe un mensaje para esa estación, manda un aviso junto con el mensaje. La estación se despierta cada cierto tiempo, si recibe el mensaje junto con una trama entonces se despierta y envía al AP el aviso de que se despertó y está listo para recibir el mensaje.
 2. **APSD - Automatic Power Save Delivery:** El envío automático en ahorro de energía permite el envío inmediato de las tramas al cliente después de que se haya enviado el mensaje durante periodos de tiempo programados o no programados.
 
-![[Pasted image 20260525114456.png]]
+![[Pasted image 20260525114456.webp]]
 
 ALOHA puro vs ranurado
 - **Aloha puro:** tiene una eficiencia de $1/2e$ debido a que el tiempo de vulnerabilidad en este tipo de aloha es el doble del tiempo de propagación. Las tramas se envían durante periodos de tiempo largos.
 - **Aloha ranurado:** tiene una eficiencia del $1/e$ debido a que el tiempo de vulnerabilidad de este es igual al tiempo de propagación nada más. Las tramas se envían durante el inicio de cada ranura determinada, entonces el periodo de vulnerabilidad se reduce a la mitad.
 
-![[Pasted image 20260525115959.png]]
+![[Pasted image 20260525115959.webp]]
 
 Tipos de NAT
 - **NAT Estática:** Se establecen relaciones de 1 a 1, quiere decir que ya existe una tabla en la que fueron asignadas las relaciones únicas de cada IP pública a cada IP privada.

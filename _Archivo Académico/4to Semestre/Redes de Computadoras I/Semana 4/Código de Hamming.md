@@ -2,9 +2,9 @@ Los bits de la palabra clave se enumeran secuencialmente, empezando desde el 1 h
 >[!Important] Los bits de posición potencia de 2 (1, 2, 4, 8, 16, ...) son los de **control**
 
 Si la palabra con longitud **m** es $00010011001$ se obtiene lo siguiente:
-![[CDH siendo emisor.png]]
+![[CDH siendo emisor.webp]]
 Si se recibe con error (en este caso el 6)
-![[CDH siendo receptor.png]]
+![[CDH siendo receptor.webp]]
 
 ## CDH en errores de ráfaga
 

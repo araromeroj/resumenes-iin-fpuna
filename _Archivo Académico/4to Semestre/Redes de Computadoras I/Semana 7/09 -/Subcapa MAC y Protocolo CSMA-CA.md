@@ -2,9 +2,9 @@
 
 La subcapa **MAC** (**Medium Access Control** - Control de Acceso al Medio) en el estándar **IEEE** (**Institute of Electrical and Electronics Engineers** - Instituto de Ingenieros Eléctricos y Electrónicos) **802.11**, conocido comúnmente como **WiFi** (**Wireless Fidelity** - Fidelidad Inalámbrica), es la encargada de decidir qué dispositivo tiene el turno para transmitir en el canal compartido.
 
-![[Pasted image 20260504154244.png]]
+![[Pasted image 20260504154244.webp]]
 
-![[Pasted image 20260506173859.png]]
+![[Pasted image 20260506173859.webp]]
 
 ## CSMA/CA
 A diferencia de **Ethernet**, donde se puede detectar colisiones (**CSMA/CD** - **Carrier Sense Multiple Access with Collision Detection**), en las redes inalámbricas las radios son semidúplex y la señal transmitida es mucho más fuerte que cualquier señal recibida, lo que impide detectar colisiones mientras se envía información. Por ello, se utiliza **CSMA/CA** (**Carrier Sense Multiple Access with Collision Avoidance** - Acceso Múltiple con Detección de Portadora y Evitación de Colisiones).
@@ -38,7 +38,7 @@ Para evitar colisiones, la subcapa **MAC** (**Medium Access Control** - Control 
 - [*] **CTS - Clear to Send:** Listo para enviar
 
 
-![[Pasted image 20260506194604.png]]
+![[Pasted image 20260506194604.webp]]
 ### Intervalos y Tiempos de Espera (IFS - InterFrame Spacing)
 
 - [*] **IFS - InterFrame Spacing:** Epaciado entre tramas
@@ -65,10 +65,10 @@ Para evitar colisiones, la subcapa **MAC** (**Medium Access Control** - Control 
 	- Si hay colisión (no llega el ACK), el $CW$ se duplica ($2^i-1$) hasta un máximo.
 
 
-![[Pasted image 20260510112629.png]]
+![[Pasted image 20260510112629.webp]]
 
 Donde: $1 \text{ slot} = 9 \text{ a } 20 \mu s$
 
-![[Pasted image 20260510112909.png]]
+![[Pasted image 20260510112909.webp]]
 
-![[Pasted image 20260510122249.png]]
+![[Pasted image 20260510122249.webp]]

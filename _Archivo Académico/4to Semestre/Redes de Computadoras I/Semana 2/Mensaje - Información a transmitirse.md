@@ -1,6 +1,6 @@
 En una red de computadoras, cuando la información se prepara para su transmisión, se organiza en unidades de datos (como las **tramas** en la capa de enlace) que se dividen en tres partes fundamentales: **encabezado**, **carga útil** y **tráiler**.
 
-![[R1.Mensaje.png]]
+![[R1.Mensaje.webp]]
 
 
 ## Encabezado (Header o Cabecera)

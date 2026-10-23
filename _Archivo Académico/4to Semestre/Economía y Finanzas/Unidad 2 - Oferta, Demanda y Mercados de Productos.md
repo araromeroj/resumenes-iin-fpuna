@@ -28,7 +28,7 @@ El modelo de oferta y demanda son el núcleo básico común.
 - [I] **Función de demanda:** es la relación entre la cantidad demandada de un bien y su precio. Indica la cantidad que querrían adquirir los compradores a cada uno de los precios dados.
 - [I] **Función de oferta:** indica la cantidad que desean vender los vendedores a cada uno de los precios. $\text{Precio} = f(\text{cantidad ofertada})$
 
-![[Pasted image 20260408092827.png|500]]
+![[Pasted image 20260408092827.webp|500]]
 
 - [I] **Precio de equilibrio:** es aquel al que la cantidad demandada es igual a la ofrecida.
 	$\text{Precio}(\text{oferta})=\text{Precio}(\text{demanda})$

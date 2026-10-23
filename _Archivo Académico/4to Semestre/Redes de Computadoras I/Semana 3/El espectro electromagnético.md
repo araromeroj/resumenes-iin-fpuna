@@ -16,10 +16,10 @@
 >[!note] Nota:
 >En el cobre o la fibra, la velocidad de la luz disminuye a unos $2/3$ de su valor y pasa a depender ligeramente de la frecuencia
 
-![[Ondas electromagnéticas.png|600]]
+![[Ondas electromagnéticas.webp|600]]
 ## Usos del espectro electromagnético
 
-![[Usos del espectro.png|600]]
+![[Usos del espectro.webp|600]]
 
 ## Bandas ITU - T
 Son las denominaciones oficiales para las distintas porciones del espectro electromagnético basadas en sus longitudes de onda y frecuencias. Estas bandas permiten organizar el uso de las ondas de radio y microondas para diferentes tecnologías de comunicación a nivel mundial.

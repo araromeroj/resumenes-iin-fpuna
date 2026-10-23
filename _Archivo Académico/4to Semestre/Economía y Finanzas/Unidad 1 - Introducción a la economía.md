@@ -63,7 +63,7 @@
 
 ## Problemas de organización económica
 Conflicto entre los deseos casi ilimitados de los individuos de bienes y servicios y los recursos limitados que pueden usarse para satisfacerlos.
-![[Pasted image 20260408001442.png|500]]
+![[Pasted image 20260408001442.webp|500]]
 
 
 

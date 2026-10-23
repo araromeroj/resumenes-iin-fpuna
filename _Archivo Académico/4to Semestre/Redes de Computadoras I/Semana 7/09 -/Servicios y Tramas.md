@@ -1,5 +1,5 @@
 ## Servicios
-![[Pasted image 20260506160058.png]]
+![[Pasted image 20260506160058.webp]]
 
 ## Tramas IEEE 802.11
 
@@ -10,7 +10,7 @@ Son las encargadas de transportar la carga útil (el paquete de red) entre las e
 
 #### Estructura y Campos:
 
-![[Pasted image 20260510143521.png]]
+![[Pasted image 20260510143521.webp]]
 
 - **Control de Trama (2 bytes):** Contiene los subcampos que definen el comportamiento de la trama (ver detalle abajo).
 - **Duración (2 bytes):** Indica el tiempo en microsegundos que la trama y su respectivo **ACK** (**Acknowledgment** - Acuse de Recibo) ocuparán el canal. Se usa para actualizar el **NAV** (**Network Allocation Vector** - Vector de Asignación de Red) de otras estaciones.

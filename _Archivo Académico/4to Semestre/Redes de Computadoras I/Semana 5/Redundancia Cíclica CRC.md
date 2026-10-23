@@ -30,7 +30,7 @@ El proceso se divide en los pasos realizados por el emisor y el receptor:
 
 ## Errores de transmisión
 
-![[Pasted image 20260420160339.png|400]]
+![[Pasted image 20260420160339.webp|400]]
 
 $$E(x) = x^i$$
 donde:
@@ -39,7 +39,7 @@ donde:
 >[!important] Entonces:
 >Si $G(x)$ tiene más de un término, $E(x)/G(x)$ nunca será exacto y detectará todos los errores de un bit.
 
-![[Pasted image 20260420160720.png|400]]
+![[Pasted image 20260420160720.webp|400]]
 ### Errores de cantidad impar de bits
 
 >[!important] Propiedades
@@ -58,11 +58,11 @@ donde:
 ## Análisis del polinomio generador
 
 
-![[Pasted image 20260420161749.png]]
+![[Pasted image 20260420161749.webp]]
 
 ## Práctica hecha en clase
 
-![[IMG_20260420_162010.jpg|400]]
+![[IMG_20260420_162010.webp|400]]
 
 ---
 # Resumen

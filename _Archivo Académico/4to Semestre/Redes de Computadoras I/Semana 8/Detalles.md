@@ -12,7 +12,7 @@ El protocolo IPv4 es el pilar de la capa de red en la Internet moderna. Proporci
 - **Gestión Global:** Las direcciones son asignadas globalmente por la **ICANN** (Internet Corporation for Assigned Names and Numbers - Corporación de Internet para la Asignación de Nombres y Números) a través de registros regionales como **LACNIC** (Latin American and Caribbean Internet Addresses Registry - Registro de Direcciones de Internet para América Latina y el Caribe).
 - **Interfaces, no hosts:** Es crucial entender que una dirección IP no identifica a una computadora, sino a una **interfaz de red**. Si una computadora está conectada a dos redes, debe tener dos direcciones IP.
 
-![[Pasted image 20260514110149.png|500]]
+![[Pasted image 20260514110149.webp|500]]
 #### Campos de la Cabecera IPv4:
 
 *   **Versión (4 bits):** Indica la versión del protocolo (actualmente 4).
@@ -25,7 +25,7 @@ El protocolo IPv4 es el pilar de la capa de red en la Internet moderna. Proporci
 *   **Checksum de Cabecera:** Suma de comprobación para detectar errores solo en la cabecera.
 *   **Direcciones de Origen y Destino:** Direcciones lógicas de 32 bits de los hosts.
 
-![[Pasted image 20260513182752.png]]
+![[Pasted image 20260513182752.webp]]
 
 ### 1.2 Cálculo de Máscaras, Prefijos y Capacidad de Hosts
 
@@ -33,7 +33,7 @@ El protocolo IPv4 es el pilar de la capa de red en la Internet moderna. Proporci
 - **Prefijo (Notación CIDR - Classless Inter-Domain Routing - Enrutamiento Entre Dominios Sin Clases):** Se expresa como `/n`, donde `n` es el número de bits de la red. Por ejemplo, una máscara `255.255.240.0` corresponde a un prefijo `/20`.
 - **Agregación de Rutas:** Esta técnica permite juntar múltiples prefijos IP en una sola entrada más grande en la tabla de enrutamiento, reduciendo su tamaño y mejorando la eficiencia de los routers centrales.
 
-![[Pasted image 20260514110341.png]]
+![[Pasted image 20260514110341.webp]]
 
 - **Cálculo de Capacidad:** El número máximo de dispositivos direccionables en una subred se calcula con la fórmula ($2^{32−n}−2$, siendo $n$ la cantidad de bits de la red). Se restan dos direcciones porque:
 	- La **Dirección de RED** (todos los bits de host en 0) está reservada para identificar al segmento.
@@ -55,7 +55,7 @@ Existen direcciones reservadas que tienen propósitos específicos en la arquite
 	- **Difusión en red distante:** Red | 111 ... 111. Todo "1" en el campo de host.
 - **Loopback (Bucle de retorno):** Las direcciones en el rango `127.xx.yy.zz` se procesan localmente para pruebas de software; los paquetes enviados aquí nunca salen al cable de red.
 
-![[Pasted image 20260514110515.png]]
+![[Pasted image 20260514110515.webp]]
 
 
 ---
@@ -68,7 +68,7 @@ Existen direcciones reservadas que tienen propósitos específicos en la arquite
 - **Visibilidad:** Internamente, una organización divide su bloque IP en trozos más pequeños, pero para el mundo exterior (Internet), la red sigue apareciendo como un solo bloque grande.
 - **Prefijo más largo coincidente:** Los paquetes son enviados a la entrada con el prefijo más largo coincidente o bloque de direcciones más pequeño. Complica el envío pero agrega flexibilidad.
 
-![[Pasted image 20260514111228.png]]
+![[Pasted image 20260514111228.webp]]
 ### 3.2 Puerta de Enlace Predeterminada (Default Gateway)
 
 - **Comunicación Local:** Un host puede hablar directamente con otro si comparten el mismo ID de red.

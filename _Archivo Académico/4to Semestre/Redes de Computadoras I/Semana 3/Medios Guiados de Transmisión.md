@@ -18,19 +18,19 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 >[!important]
 >**Hasta** la Cat.6 son UTP
 
-![[UTP.png|50]]
+![[UTP.webp|50]]
 ### FTP - Foiled Twisted Pair - Con hoja metálica
 - Hoja metálica que rodea a los cuatro pares de cables
 - Protección intermedia
-![[FTP.png|50]]
+![[FTP.webp|50]]
 
 ### STP - Shielded Twisted Pair - Con malla metálica
 - Malla metálica que reduce la interferencia
 - Más caras y difíciles de manejar por ser pesadas y gruesas
-![[STP 1.png|50]]
+![[STP 1.webp|50]]
 ## Categorías de cable de par trenzado
 
-![[cable por categoría.png]]
+![[cable por categoría.webp]]
 >[!info]
 >Cables de categoría 6 pueden ser UTP y soportar hasta 10Gbps
 >Cables nuevos Cat.8 con ancho de banda de 2 HHz usados en Ethernet 25 y 40 Gb con distancias de 30 m
@@ -44,7 +44,7 @@ Compuesto por dos hilos de cobre aislados y trenzados helicoidalmente para reduc
 2. Rodeado de un material aislante.
 3. El aislante está envuelto por un conductor cilíndrico, en forma de malla trenzada.
 4. El conductor está cubierto por una funda protectora de plástico.
-![[Cable coaxial.png]]
+![[Cable coaxial.webp]]
 
 - Tiene mejor apantallamiento.
 - Ancho de banda **amplio**. Mayor ancho de banda que los UTP.
@@ -109,7 +109,7 @@ Se compone de:
 | Baja atenuación                                              | Costo elevado                |
 | Espaciado entre repetidores                                  | Tecnología muy específica    |
 
-![[Fibra óptica dibujo.png|400]]
+![[Fibra óptica dibujo.webp|400]]
 
 >[!important] No olvidar!
 >**Convertir una relación de potencia a escala logarítmica de decibelios**

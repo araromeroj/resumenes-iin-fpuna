@@ -13,11 +13,11 @@ En el FHSS, la señal no se mantiene en una frecuencia fija, sino que el transmi
 #### Slow FHSS
 El tiempo entre saltos es de $T_c$ es mayor o igual a la duración del elemento de señal $T_s$.
 $$T_c\geq{T_s}$$
-![[Slow FHSS.png|500]]
+![[Slow FHSS.webp|500]]
 #### Fast FHSS
 El tiempo entre saltos es menor que la duración del elemento de señal, lo que ofrece un mayor rendimiento frente al ruido.
 $$T_c<T_s$$
-![[Fast FHSS.png|500]]
+![[Fast FHSS.webp|500]]
 ## DSSS - Espectro ensanchado de secuencia directa
 
 - [*] **DSSS -  Direct Sequence Spread Spectrum:** Espectro ensanchado por secuencia directa.

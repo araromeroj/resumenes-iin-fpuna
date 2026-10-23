@@ -12,10 +12,10 @@ A diferencia de los **hubs** (capa 1), que actúan como repetidores y mantienen 
 
 - [I] **CAM - Content Addressable Memory:** Memoria direccionada de contenido.
 #### DE RETRANSMISIÓN
-![[Pasted image 20260429103310.png]]
+![[Pasted image 20260429103310.webp]]
 
 #### DE APRENDIZAJE
-![[Pasted image 20260429103359.png]]
+![[Pasted image 20260429103359.webp]]
 
 
 
