@@ -1,5 +1,3 @@
-# Resumen Completo de Física III: Ondas Electromagnéticas
-
 ## 1. Las Ecuaciones de Maxwell y el Origen de las Ondas Electromagnéticas
 Las ecuaciones de Maxwell sintetizan las leyes fundamentales del electromagnetismo y demuestran que un campo magnético variable en el tiempo induce un campo eléctrico (Ley de Faraday) y que un campo eléctrico variable induce un campo magnético (Ley de Ampère-Maxwell). Esta interacción acoplada permite la propagación de una perturbación electromagnética autosostenida a través del espacio, incluso en ausencia de un medio material.
 
