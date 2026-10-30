@@ -1,9 +1,6 @@
 # Resumen Completo de Física III: Ondas Mecánicas y en Cuerdas
 
----
-
 ## 1. Modelo Físico e Hipótesis para Ondas en Cuerdas
-
 Para analizar la propagación de una onda transversal a lo largo de una cuerda tensa, se considera un elemento infinitesimal de cuerda de longitud en equilibrio $\Delta x$ y masa $\Delta m$.
 
 ### Hipótesis del Modelo Ideal
@@ -14,8 +11,6 @@ Para analizar la propagación de una onda transversal a lo largo de una cuerda t
 4. **Pequeños desplazamientos (Aproximación de ángulos pequeños):** La amplitud de la onda es pequeña en comparación con la longitud de onda. Para la pendiente $\theta$ de la cuerda en cualquier punto:
    $$\sin\theta \approx \tan\theta \approx \theta \approx \frac{\partial y}{\partial x}$$
    $$\cos\theta \approx 1$$
-
----
 
 ## 2. Equilibrio Dinámico y Deducción de la Ecuación de Onda
 
@@ -28,27 +23,20 @@ $$T_1 \approx T_2 \approx T$$
 ### Componente Transversal (Eje $y$)
 La fuerza neta en la dirección vertical acciona la aceleración transversal de la masa del elemento $\Delta m$:
 $$\sum F_y = T \sin\theta_2 - T \sin\theta_1 = \Delta m \cdot a_y$$
-
 Aplicando la aproximación $\sin\theta \approx \tan\theta = \frac{\partial y}{\partial x}$:
 $$T \left( \left.\frac{\partial y}{\partial x}\right|_{x+\Delta x} - \left.\frac{\partial y}{\partial x}\right|_x \right) = \Delta m \frac{\partial^2 y}{\partial t^2}$$
-
 Sustituyendo $\Delta m = \mu \Delta x$ y dividiendo entre $\Delta x$:
 $$T \frac{\left.\frac{\partial y}{\partial x}\right|_{x+\Delta x} - \left.\frac{\partial y}{\partial x}\right|_x}{\Delta x} = \mu \frac{\partial^2 y}{\partial t^2}$$
-
 Tomando el límite cuando $\Delta x \to 0$, el término del lado izquierdo se convierte en la derivada parcial de segundo orden respecto a $x$:
 $$T \frac{\partial^2 y}{\partial x^2} = \mu \frac{\partial^2 y}{\partial t^2} \implies \frac{\partial^2 y}{\partial x^2} = \frac{\mu}{T} \frac{\partial^2 y}{\partial t^2}$$
 
 ### Comparación con la Ecuación Unidimensional General de Onda
 La ecuación general de onda diferencial es:
 $$\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}$$
-
 Comparando términos se obtiene la **rapidez de propagación de la onda transversal**:
 $$v = \sqrt{\frac{T}{\mu}}$$
 
----
-
 ## 3. Deducción por Teorema del Impulso y Cantidad de Movimiento
-
 Alternativamente, al aplicar una fuerza constante $F_y$ en el extremo de una cuerda con tensión longitudinal $F$:
 1. **Relación geométrica de triángulos semejantes:**
    $$\frac{F_y}{F} = \frac{v_y t}{v t} \implies F_y = F \frac{v_y}{v}$$
@@ -63,78 +51,65 @@ Alternativamente, al aplicar una fuerza constante $F_y$ en el extremo de una cue
 Para cualquier onda mecánica, la rapidez responde a la estructura general:
 $$v = \sqrt{\frac{\text{Propiedad Elástica (Fuerza de restitución)}}{\text{Propiedad Inercial (Resistencia al retorno)}}}$$
 
----
-
 ## 4. Casos Especiales y Formulaciones Específicas de Ejercicios
-
 1. **Relación con Densidad Volumétrica ($\rho$) y Geometría:**
    $$\mu = \rho \cdot A = \rho \cdot \pi \frac{d^2}{4}$$
    Donde $d$ es el diámetro del alambre y $A$ la sección transversal.
-
 2. **Tensión por Deformación Elástica / Térmica (Módulo de Young $Y$):**
    La tensión elástica ejercida por la ley de Hooke es $T = Y A \frac{\Delta L}{L}$. Sustituyendo en la rapidez:
    $$v = \sqrt{\frac{Y A \frac{\Delta L}{L}}{\rho A}} = \sqrt{\frac{Y}{\rho} \frac{\Delta L}{L}}$$
-
 3. **Cuerda Vertical Suspendida por su Propio Peso:**
-   - Tensión variable a una distancia $x$ del extremo inferior: $T(x) = \mu x g$.
-   - Rapidez en función de la posición: $v(x) = \sqrt{\frac{\mu x g}{\mu}} = \sqrt{g x}$.
-   - Tiempo de tránsito total para recorrer una longitud $L$:
+   * Tensión variable a una distancia $x$ del extremo inferior: $T(x) = \mu x g$.
+   * Rapidez en función de la posición: $v(x) = \sqrt{\frac{\mu x g}{\mu}} = \sqrt{g x}$.
+   * Tiempo de tránsito total para recorrer una longitud $L$:
      $$\Delta t = \int_0^L \frac{dx}{v(x)} = \int_0^L \frac{dx}{\sqrt{gx}} = 2 \sqrt{\frac{L}{g}}$$
-
 4. **Cuerda Vertical Suspendida con Masa Puntual $M$ en el Extremo:**
-   - Tensión local: $T(x) = (M + \mu x)g$.
-   - Tiempo de tránsito del pulso:
+   * Tensión local: $T(x) = (M + \mu x)g$.
+   * Tiempo de tránsito del pulso:
      $$\Delta t = 2 \sqrt{\frac{L}{m g}} \left(\sqrt{M+m} - \sqrt{M}\right)$$
-   - Si $m \ll M$ (cuerda de masa despreciable): $\Delta t \approx \sqrt{\frac{m L}{M g}}$.
-
+   * Si $m \ll M$ (cuerda de masa despreciable): $\Delta t \approx \sqrt{\frac{m L}{M g}}$.
 5. **Aceleración del Sistema (p. ej., Helicóptero acelerando verticalmente hacia arriba con aceleración $a$):**
    La gravedad efectiva pasa a ser $g_{\text{efectiva}} = g + a$, por lo que la tensión en la base de la carga o cable incrementa en proporción a la aceleración.
-
----
 
 ## 5. Energía, Potencia e Intensidad en Ondas
 
 ### Componentes dinámicas transversales
-- **Fuerza transversal ejercida por la tensión:**
+* **Fuerza transversal ejercida por la tensión:**
   $$F_y = -T \frac{\partial y}{\partial x}$$
-- **Velocidad transversal del elemento de cuerda:**
+* **Velocidad transversal del elemento de cuerda:**
   $$u_y = \frac{\partial y}{\partial t}$$
 
 ### Energía en una Longitud de Onda ($\lambda$)
 Para una onda sinusoidal $y(x,t) = A \sin(kx - \omega t)$:
-- **Energía Cinética en una longitud de onda:**
+* **Energía Cinética en una longitud de onda:**
   $$K_\lambda = \frac{1}{4} \mu \omega^2 A^2 \lambda$$
-- **Energía Potencial en una longitud de onda:**
+* **Energía Potencial en una longitud de onda:**
   $$U_\lambda = \frac{1}{4} \mu \omega^2 A^2 \lambda$$
-- **Energía Total en una longitud de onda:**
+* **Energía Total en una longitud de onda:**
   $$E_\lambda = K_\lambda + U_\lambda = \frac{1}{2} \mu \omega^2 A^2 \lambda$$
 
 ### Potencia Transmitida por una Onda
-- **Potencia Instantánea:**
+* **Potencia Instantánea:**
   $$P(x,t) = -F_y u_y = T \frac{\partial y}{\partial x} \frac{\partial y}{\partial t}$$
   Para una onda armónica $y(x,t) = y_m \sin(kx - \omega t - \phi)$:
   $$P(x,t) = T k \omega y_m^2 \cos^2(kx - \omega t - \phi) = \mu v \omega^2 y_m^2 \cos^2(kx - \omega t - \phi)$$
-
-- **Potencia Media ($P_{\text{med}}$):**
+* **Potencia Media ($P_{\text{med}}$):**
   Como el valor promedio del $\cos^2(\theta)$ en un ciclo es $\frac{1}{2}$:
   $$P_{\text{med}} = \frac{1}{2} \mu \omega^2 y_m^2 v = \frac{1}{2} \sqrt{T \mu} \omega^2 y_m^2$$
-
   *Proporcionalidades:* $P_{\text{med}} \propto \omega^2$, $P_{\text{med}} \propto y_m^2$, $P_{\text{med}} \propto v$.
 
 ### Intensidad de Ondas Tridimensionales
-- **Intensidad ($I$):** Potencia media transmitida por unidad de área perpendicular a la dirección de propagación ($W/m^2$).
+* **Intensidad ($I$):** Potencia media transmitida por unidad de área perpendicular a la dirección de propagación ($\text{W/m}^2$).
   $$I = \frac{P_{\text{med}}}{A}$$
-- **Para una fuente puntual isotrópica (Ondas Esféricas):**
+* **Para una fuente puntual isotrópica (Ondas Esféricas):**
   $$I = \frac{P}{4 \pi r^2}$$
-- **Ley del Inverso del Cuadrado:**
+* **Ley del Inverso del Cuadrado:**
   $$\frac{I_1}{I_2} = \frac{r_2^2}{r_1^2} \implies I_1 r_1^2 = I_2 r_2^2$$
-
----
 
 ## 6. Formulario Completo Explicado
 
 | Concepto / Nombre de Ecuación | Fórmula | Explicación |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | **Densidad Lineal de Masa** | $\mu = \frac{m}{L}$ | Masa por unidad de longitud de la cuerda. Propiedad inercial del medio. |
 | **Relación con Densidad Volumétrica** | $\mu = \rho \cdot A = \rho \pi \frac{d^2}{4}$ | Expresa la densidad lineal en función de la densidad del material $\rho$, área $A$ o diámetro $d$. |
 | **Aproximación de Ángulos Pequeños** | $\sin\theta \approx \tan\theta \approx \frac{\partial y}{\partial x}$ | Válida para pendientes transversales pequeñas ($\cos\theta \approx 1$). |
