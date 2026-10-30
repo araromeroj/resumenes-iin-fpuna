@@ -75,7 +75,7 @@ UDP es un protocolo de transporte **sin conexión, no confiable y de funcionalid
 #### A. Estructura del Encabezado UDP (8 bytes)
 
 Un segmento UDP consta de una **cabecera fija de 8 bytes** seguida de la carga útil de datos. El encabezado se divide en 4 campos de 16 bits (2 bytes cada uno):
-![[Pasted image 20260924114144.png]]
+![[Pasted image 20260924114144.webp]]
 
 1. **Puerto de Origen (16 bits):** Identifica el proceso o aplicación que envía el paquete. Se utiliza principalmente cuando el receptor necesita devolver una respuesta.
 2. **Puerto de Destino (16 bits):** Identifica el proceso o aplicación receptora en la máquina de destino.
@@ -86,7 +86,7 @@ Un segmento UDP consta de una **cabecera fija de 8 bytes** seguida de la carga �
 
 Para calcular la suma de comprobación de manera más estricta, UDP incluye conceptualmente una **pseudocabecera IPv4** antes de los datos. Contiene:
 
-![[Pasted image 20260924114209.png|637]]
+![[Pasted image 20260924114209.webp|637]]
 
 - Dirección IP de origen (32 bits).
 - Dirección IP de destino (32 bits).
@@ -123,7 +123,7 @@ Para lograr la ilusión de una llamada local, RPC utiliza dos componentes client
 - **Stub del Servidor:** Procedimiento en la máquina remota que recibe el mensaje de red y llama al procedimiento real.
 
 #### B. Pasos para ejecutar una RPC
-![[Pasted image 20260924114636.png|527]]
+![[Pasted image 20260924114636.webp|527]]
 1. El programa cliente hace una llamada local estándar al _stub_ del cliente.
 2. El _stub_ del cliente empaqueta los parámetros en un formato neutro para la red (proceso denominado _**marshaling**_ o serialización) y realiza una llamada al sistema operativo.
 3. El SO del cliente envía el mensaje por la red hacia el servidor.

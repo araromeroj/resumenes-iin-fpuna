@@ -9,7 +9,7 @@ La versión 6 del Protocolo de Internet (**IPv6**) fue diseñada específicament
 
 ## Estructura de la Cabecera Fija (40 bytes)
 
-![[Pasted image 20260830162547.png|458]]
+![[Pasted image 20260830162547.webp|458]]
 
 >[!success] La cabecera obligatoria de IPv6 mide exactamente **40 bytes** y consta de los siguientes campos:
 >- **Versión (4 bits):** Contiene el valor **6** para identificar de forma unívoca el protocolo.
@@ -37,7 +37,7 @@ Para acelerar el procesamiento de paquetes, IPv6 eliminó varios campos de la ca
 ## Cabeceras de Extensión (Opcionales)
 
 Para mantener la eficiencia de la cabecera fija, las características que solo se requieren ocasionalmente se agregaron en cabeceras de extensión opcionales. Estas se colocan directamente después de la cabecera fija en el orden sugerido de transmisión. Existen 6 tipos principales:
-![[Pasted image 20260830171232.png|494]]
+![[Pasted image 20260830171232.webp|494]]
 
 1. **Opciones salto a salto (_Hop-by-hop options_):** Información miscelánea que deben examinar de forma obligatoria todos los routers de la ruta. Su aplicación principal es el soporte de **jumbogramas** (paquetes con cargas útiles que superan los 64 KB para aplicaciones de supercomputación), configurando el campo de longitud de carga útil fija a 0.
 2. **Opciones de destino (_Destination options_):** Contiene campos que solo deben ser procesados e interpretados por el host de destino final.

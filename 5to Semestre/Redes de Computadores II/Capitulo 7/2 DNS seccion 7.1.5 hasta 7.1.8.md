@@ -17,7 +17,7 @@ Cuando no existe información previa en la caché local, la búsqueda remota deb
 #### Ejemplo Detallado del Proceso de Búsqueda (En 10 Pasos)
 
 El material ilustra la resolución iterativa completa cuando el host `filts.cs.vu.nl` desea obtener la dirección IP de `noise.cs.uchicago.edu`:
-![[Pasted image 20261025130207.png|491]]
+![[Pasted image 20261025130207.webp|491]]
 
 1. **Paso 1:** La aplicación en `filts.cs.vu.nl` invoca al _stub resolver_, el cual envía una consulta UDP (con nombre, tipo `A` y clase `IN`) a su servidor de nombres local (`cs.vu.nl`).
 2. **Paso 2:** El servidor local (`cs.vu.nl`) no posee la información y envía la consulta iterativa a un **servidor de nombres raíz** (`a.root-servers.net`).

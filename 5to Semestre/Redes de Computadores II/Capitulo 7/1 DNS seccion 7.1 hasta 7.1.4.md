@@ -55,7 +55,7 @@ El espacio de nombres está organizado como una estructura jerárquica en árbol
 - **Dominios de Segundo Nivel y Subdominios:** Constituyen las ramas intermedias y hojas del árbol. Por ejemplo, en el nombre `cs.uchicago.edu`, `uchicago` es el dominio de segundo nivel registrado bajo `.edu`, mientras que `cs` es un subdominio administrado internamente por el departamento de informática de esa universidad[6][7].
 - **Delegación y límites:** Cada dominio tiene autoridad para administrar y delegar subdominios por debajo de él (ejemplo: `.edu.py` bajo el ccTLD `.py`). Una vez registrado un dominio de segundo nivel, la organización propietaria puede crear nuevos subdominios sin solicitar permisos adicionales. Los nombres siguen divisiones organizativas y no coinciden necesariamente con las fronteras de las redes físicas o LANs.
 
-![[Pasted image 20261025124343.png|456]]
+![[Pasted image 20261025124343.webp|456]]
 ##### Cadena de Administración del Árbo
 La administración del espacio de nombres se distribuye en una cadena de tres niveles jerárquicos:
 1. **ICANN (_Internet Corporation for Assigned Names and Numbers_):** Organización internacional que supervisa el sistema global de nombres y delega la gestión de cada TLD.

@@ -12,7 +12,7 @@ En el enrutamiento IP tradicional, los routers realizan un "reenvío" (_forwardi
 # La Cabecera MPLS (4 bytes)
 La cabecera de etiquetas se inserta justo antes de la cabecera IP. Tiene una longitud de **4 bytes** y consta de los siguientes cuatro campos:
 
-![[Pasted image 20260830181115.png|498]]
+![[Pasted image 20260830181115.webp|498]]
 
 1. **Etiqueta (20 bits):** Contiene el índice de conmutación. Estas etiquetas tienen únicamente un **significado local** entre routers adyacentes y se reasignan en cada salto para evitar conflictos de numeración.
 2. **QoS (3 bits):** Indica la clase de servicio para dar prioridad al paquete (Calidad de Servicio).

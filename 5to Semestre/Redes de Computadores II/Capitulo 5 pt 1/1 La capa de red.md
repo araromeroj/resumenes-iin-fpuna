@@ -10,7 +10,7 @@
 # 1. Conmutación de paquetes de almacenamiento y reenvío (Store-and-Forward):
 Un host envía un paquete al router más cercano, el cual lo almacena hasta recibirlo por completo y verificar su suma de comprobación (control de errores); solo entonces lo reenvía al siguiente salto.
 
-![[Screenshot 2026-08-10 203803.png|470]]
+![[Screenshot 2026-08-10 203803.webp|470]]
 
 
 >[!danger] Explicacion
@@ -27,7 +27,7 @@ En este modelo, inspirado en el sistema de telegramas, cada paquete se inyecta e
 >- **Configuración:** No se requiere ninguna configuración previa antes de enviar los datos.
 >- **Ejemplo:** El protocolo **IP**, que es la base de Internet, funciona bajo este esquema.
 
-![[Screenshot 2026-08-10 205108.png|558]]
+![[Screenshot 2026-08-10 205108.webp|558]]
 
 >[!info] Explicacion
 >**Estructura de la tabla**
@@ -46,7 +46,7 @@ En este modelo, inspirado en el sistema de telegramas, cada paquete se inyecta e
 >- **Enrutamiento:** La decisión de ruta se toma una sola vez al establecer la conexión; todos los paquetes subsiguientes siguen esa misma trayectoria.
 >- **Ejemplo:** Tecnologías como ATM, Frame Relay y **MPLS** utilizan este enfoque
 
-![[Screenshot 2026-08-10 210650.png|461]]
+![[Screenshot 2026-08-10 210650.webp|461]]
 
 >[!info] Explicacion
 >**Estructura de las tablas de conmutación**

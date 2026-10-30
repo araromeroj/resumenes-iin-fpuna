@@ -5,7 +5,7 @@ Para que este algoritmo funcione, cada enrutador debe ejecutar los siguientes **
 1. **Conocer a los vecinos:** Al arrancar, el router envía un paquete especial **HELLO** por sus enlaces punto a punto; los routers en el otro extremo responden con su identidad para establecer quiénes son sus vecinos directos.
 2. **Fijar los costes de enlace:** Se establece una métrica de distancia o costo para cada vecino. Comúnmente, este costo es inversamente proporcional al ancho de banda (por ejemplo, Ethernet de 1 Gbps tiene costo 1 y 100 Mbps tiene costo 10) o se basa en el retardo medido con paquetes ECHO.
 3. **Crear paquetes de estado de enlace (LSP):** El router construye un paquete que contiene su identidad, un número de secuencia, una "edad" y una lista de todos sus vecinos con sus respectivos costos.
-![[Pasted image 20260815165750.png|408]]
+![[Pasted image 20260815165750.webp|408]]
 >[!info] Notas
 >- **Identidad (Letra superior):** Cada columna es el paquete generado por ese nodo (A, B, C, etc.).
  >- **Secuencia (`Sec.`):** Es el número de versión de la ficha. Si a un router le llega el paquete de A con secuencia 20 y luego recibe el 21, descarta el 20 por ser viejo.  
@@ -14,7 +14,7 @@ Para que este algoritmo funcione, cada enrutador debe ejecutar los siguientes **
 
 4. **Distribuir los paquetes LSP:** Los LSP se envían a todos los demás enrutadores mediante un proceso de **inundación confiable**. Para evitar saturar la red, se usan los n  úmeros de secuencia (para no procesar duplicados) y el campo de "edad" (que disminuye con el tiempo para descartar información obsoleta).
 
-![[Pasted image 20260815165831.png|368]]
+![[Pasted image 20260815165831.webp|368]]
 >[!info] Notas 
 >Esta es la tabla interna que guarda el **Router B** para administrar el reparto de las fichas sin saturar las líneas ni generar bucles. Como el Router B está conectado físicamente con **A, C y F**, usa banderas (0 o 1) para cada línea.
 >Analicemos la **primera fila (Origen A)**:
@@ -36,7 +36,7 @@ En este modelo, los enrutadores se dividen en unidades de agregación llamadas *
 
 - **Conocimiento local:** Cada enrutador conoce todos los detalles sobre cómo enrutar paquetes a destinos dentro de su propia región.
 - **Conocimiento remoto:** El enrutador no sabe nada sobre la estructura interna de otras regiones. Para enviar tráfico a una región distinta, simplemente sabe qué línea de salida utilizar para alcanzar dicha región de manera general.
-![[Pasted image 20260815171444.png|391]]
+![[Pasted image 20260815171444.webp|391]]
 >[!important] Funcionamiento
 >- **Tabla completa (_Full table for 1A_):**    
 >- **Estructura:** Contiene una entrada individual para **todos** los nodos de la red ($1B, 1C, 2A, \dots, 5E$).
@@ -72,7 +72,7 @@ Consiste en enviar simultáneamente un paquete desde un nodo de origen a **todos
 - **Enrutamiento multidestino:** El paquete contiene una lista de destinos o un mapa de bits. El router examina la lista, determina qué líneas de salida son necesarias para alcanzar al menos a uno de los destinos y reenvía copias filtradas solo con los destinos que usan esa línea.
 - **Inundación (Flooding):** El router reenvía cada paquete entrante por todas sus líneas excepto por la que llegó. Para evitar duplicados infinitos, se usan **números de secuencia** o un **límite de saltos (TTL)** que se decrementa en cada router. Es el método más robusto y garantiza encontrar la ruta más corta.
 - **Reenvío por Ruta Inversa (RPF):** Un router solo reenvía un paquete de difusión si este llegó por el enlace que el router usa normalmente para alcanzar al origen de la difusión. Esto evita duplicados de forma sencilla y eficiente.
-![[Pasted image 20260815174108.png|375]]
+![[Pasted image 20260815174108.webp|375]]
 >[!info] Nota
 >Cuando un router recibe un paquete de difusión cuya fuente original es el **nodo I**:
 >1. **Consulta la ruta invertida:** El router revisa su propia tabla de enrutamiento y se pregunta: _¿Este paquete llegó por la misma línea/interfaz que yo usaría para enviarle un paquete normal a I?_

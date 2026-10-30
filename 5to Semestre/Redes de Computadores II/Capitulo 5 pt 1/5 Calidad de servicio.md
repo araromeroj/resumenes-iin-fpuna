@@ -63,7 +63,7 @@ Su funcionamiento se basa en:
 - **Enfoque preventivo:** Se aplica en una escala de tiempo intermedia y es principalmente utilizado en redes de **circuitos virtuales**.
 - **Decisión de entrada:** No se establece un nuevo circuito virtual a menos que la red confirme que puede soportar el tráfico adicional. Si la red está muy cargada, la solicitud de conexión falla, de forma similar a cuando un sistema telefónico no da tono de llamada por sobrecarga.
 - **Combinación con enrutamiento:** Puede combinarse con el **enrutamiento consciente del tráfico** para buscar rutas alternativas que eviten los "puntos calientes" o nodos ya congestionados durante el proceso de configuración de la conexión.
-![[Pasted image 20260816172639.png|374]]
+![[Pasted image 20260816172639.webp|374]]
 ## Servicios integrados
 Los **Servicios Integrados** (frecuentemente abreviados como **IntServ**) son una arquitectura de red. Su objetivo principal es proporcionar garantías de **Calidad de Servicio (QoS)** específicas para cada flujo de datos individual, manejando tanto tráfico unicast como multicast.
 # Modelo basado en flujos

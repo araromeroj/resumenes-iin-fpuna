@@ -11,7 +11,7 @@ RTP se ejecuta normalmente en el **espacio de usuario sobre UDP**. Su función p
 ##### Cabecera RTP
 El diseño del encabezado se organiza en palabras de **32 bits** de la siguiente manera:
 
-![[Pasted image 20260924115134.png|504]]
+![[Pasted image 20260924115134.webp|504]]
 #### **Primera palabra de 32 bits:**
 
 1. **Versión / Ver (2 bits):** Identifica la versión del protocolo RTP utilizada (la versión estándar actual es la 2).

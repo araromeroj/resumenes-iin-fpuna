@@ -69,7 +69,7 @@ El **enrutamiento por vector de distancia** o (Bellman-Ford) es un algoritmo de 
 - **Contenido de la tabla:** Cada entrada de la tabla de enrutamiento consta de dos partes: la línea de salida preferida para ese destino y una estimación de la distancia (métrica) hacia él.
 - **Proceso de actualización:** Periódicamente, cada enrutador envía a sus vecinos una lista de sus distancias estimadas a todos los destinos. Cuando un enrutador recibe un vector de un vecino \(X\), y sabe que el retraso hacia \(X\) es de \(m\) unidades, calcula que puede llegar a cualquier destino \(i\) a través de \(X\) con una distancia total de \(X_i + m\). Si este nuevo cálculo resulta ser menor que la mejor distancia que ya tenía registrada, actualiza su tabla.
 
-![[Screenshot 2026-08-14 125441.png|432]]
+![[Screenshot 2026-08-14 125441.webp|432]]
   
 Para construir su nueva tabla, el Router J necesita combinar tres datos:
 1. **Sus vecinos directos:** Mirando el mapa (_Network_), los vecinos conectados directamente a **J** son **A**, **I**, **H** y **K**.
@@ -98,7 +98,7 @@ El **problema del conteo al infinito** es un inconveniente fundamental de los al
 **¿Por qué ocurre?**
 El núcleo del problema es que, en el enrutamiento por vector de distancia, cuando un enrutador le informa a un vecino que tiene una ruta hacia un destino, el vecino **no tiene forma de saber si él mismo forma parte de esa ruta**
 
-![[Pasted image 20260815150732.png|486]]
+![[Pasted image 20260815150732.webp|486]]
 
 >[!example] Funcionamiento
 >**Gráfico (a): Propagación de "Buenas Noticias"**
