@@ -1,5 +1,3 @@
-# Resumen Completo de Física III: Ondas Mecánicas y en Cuerdas
-
 ## 1. Modelo Físico e Hipótesis para Ondas en Cuerdas
 Para analizar la propagación de una onda transversal a lo largo de una cuerda tensa, se considera un elemento infinitesimal de cuerda de longitud en equilibrio $\Delta x$ y masa $\Delta m$.
 

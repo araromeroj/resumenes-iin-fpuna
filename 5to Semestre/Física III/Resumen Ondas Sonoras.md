@@ -1,5 +1,3 @@
-# Resumen Completo de Física III: Ondas Sonoras
-
 ## 1. Naturaleza y Clasificación de las Ondas Sonoras
 Las ondas sonoras son ondas mecánicas longitudinales que consisten en perturbaciones de la presión y del desplazamiento que se propagan a través de un medio material (sólido, líquido o gas).
 
