@@ -1,3 +1,4 @@
+
 # Unidad VI: Entropía
 
 ## 1. Introducción y Desigualdad de Clausius
@@ -133,3 +134,67 @@ $$p V^n = \text{cte}$$
 | **Principio de Aumento de Entropía** | $\Delta S_{\text{Universo}} \ge 0$ | La entropía total de un sistema aislado o del Universo siempre aumenta en procesos reales e irreversibles. |
 | **Exponente Politrópico** | $n = \frac{C_P - C}{C_V - C}$ | Relación de capacidades caloríficas que define el exponente de una transformación politrópica. |
 | **Ecuación de Proceso Politrópico** | $p V^n = \text{cte}$ | Relación entre la presión y el volumen en transformaciones donde la capacidad calorífica se mantiene constante. |
+
+---
+
+Entender cuándo una fuente térmicamente interviene, cómo influye la transferencia de calor y cuándo varía o no la entropía es la clave central de la termodinámica.
+### 1. ¿Qué es una Fuente Térmica (o Depósito Térmico)?
+
+**Definición:** Una **fuente térmica** o reserva de calor es un sistema capaz de absorber o ceder una cantidad arbitraria de calor sin que su temperatura cambie apreciablemente.
+- **Ejemplos cotidianos:** El océano, la atmósfera terrestre, la superficie del Sol o un gran baño de agua con hielo.
+- **Característica fundamental:** Opera de forma isotérmica ($T = \text{constante}$).
+### 2. Signos del Calor ($Q$): Ceder vs. Absorber Calor
+
+El sentido de la transferencia de calor se rige por la convención internacional de signos de la termodinámica:
+- **La fuente CEDE calor (pierde calor):**  
+    - **¿Cuándo pasa?** Cuando la fuente está a una temperatura mayor que el cuerpo o sistema con el que entra en contacto térmico (el calor fluye espontáneamente del objeto más caliente al más frío).
+    - **Signo matemático:** **$Q_{\text{fuente}} < 0$** (es negativo).    
+    - **Consecuencia:** La fuente **pierde energía interna**.    
+- **La fuente ABSORBE calor (gana calor):**  
+    - **¿Cuándo pasa?** Cuando la fuente está a una temperatura menor que el cuerpo o sistema que le transfiere energía.    
+    - **Signo matemático:** **$Q_{\text{fuente}} > 0$** (es positivo).     
+    - **Consecuencia:** La fuente **gana energía interna**.
+### 3. Entropía en una Fuente Térmica: ¿Cuándo TIENE variación y cuándo NO?
+
+Por definición, el cambio de entropía diferencial de cualquier proceso reversible está dado por:
+
+$$dS = \frac{dQ_{\text{rev}}}{T}$$
+
+Puesto que una fuente térmica permanece a **temperatura constante ($T$)**, la variación total de su entropía al intercambiar calor es simplemente:
+
+$$\Delta S_{\text{fuente}} = \frac{Q_{\text{fuente}}}{T_{\text{fuente}}}$$
+
+#### **A. ¿Cuándo la fuente SÍ TIENE cambio de entropía ($\Delta S_{\text{fuente}} \neq 0$)?**
+
+Siempre que la fuente **intercambie calor** con el exterior o con otro cuerpo:
+1. **Si CEDE calor ($Q < 0$):**
+    $$\Delta S_{\text{fuente}} = \frac{-Q}{T} < 0$$
+    
+    _La entropía de la fuente **disminuye**._
+1. **Si ABSORBE calor ($Q > 0$):**
+    $$\Delta S_{\text{fuente}} = \frac{+Q}{T} > 0$$
+    
+    _La entropía de la fuente **aumenta**._
+    
+#### **B. ¿Cuándo la fuente NO TIENE cambio de entropía ($\Delta S_{\text{fuente}} = 0$)?**
+
+Una fuente (o un elemento dentro del sistema) **NO cambia su entropía** en los siguientes momentos específicos:
+1. **Proceso Adiabático ($Q = 0$):** Si la fuente o el objeto está térmicamente aislado y no gana ni pierde calor.
+2. **Sustancia en Régimen Estacionario / Máquina Térmica:**  
+    - La sustancia de trabajo dentro de una máquina térmica o resistencia en estado estacionario (como en el _Ejercicio 1_ del ejercitario) no almacena calor ni cambia sus propiedades termodinámicas a lo largo del tiempo. Al no cambiar sus variables de estado, su variación de entropía nula ($\Delta S = 0$).    
+3. **Disipación pura de trabajo eléctrico (Fuente que genera calor):**  
+    - Cuando una resistencia convierte trabajo eléctrico directamente en calor sin cambiar sus propias propiedades de estado, la entropía de la resistencia no varía ($\Delta S_{\text{resistencia}} = 0$), y todo el cambio de entropía ocurre en el medio ambiente que recibe dicho calor.    
+
+### 4. Cuadro Resumen Integrador
+
+| Situación de la Fuente                                      | Flujo de Calor (QQQ)            | Variación de Entropía (ΔS=QT\Delta S = \frac{Q}{T}ΔS=TQ​) | ¿Qué le pasa a la entropía de la fuente? |
+| ----------------------------------------------------------- | ------------------------------- | --------------------------------------------------------- | ---------------------------------------- |
+| **Cede calor** (Foco caliente hacia un cuerpo más frío)     | $Q < 0$ (Negativo)              | $\Delta S < 0$                                            | **Disminuye**                            |
+| **Absorbe calor** (Foco frío recibiendo calor)              | $Q > 0$ (Positivo)              | $\Delta S > 0$                                            | **Aumenta**                              |
+| **Sin transferencia de calor** (Aislamiento o adiabático)   | $Q = 0$                         | $\Delta S = 0$                                            | **Permanece constante**                  |
+| **Dispositivo en régimen permanente** (Resistencia/máquina) | $Q_{\text{neto}} = 0$ por ciclo | $\Delta S = 0$                                            | **No cambia**                            |
+
+### 5. Regla de Oro para la Entropía del Universo ($\Delta S_{\text{universo}}$)
+Es vital no confundir la **entropía de la fuente** con la **entropía del universo**:
+- La entropía de una fuente individual **sí puede disminuir** cuando cede calor ($\Delta S_{\text{fuente}} < 0$).
+- Sin embargo, la entropía total del universo ($\Delta S_{\text{universo}} = \Delta S_{\text{sistema}} + \Delta S_{\text{fuente}}$) **siempre aumenta** ($\Delta S_{\text{universo}} > 0$) en cualquier proceso real e irreversible, debido a que la fuente que recibe el calor a menor temperatura siempre gana más entropía que la entropía que pierde la fuente más caliente que cede el calor.

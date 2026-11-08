@@ -9,5 +9,7 @@
   },
   "promptDelete": false,
   "newFileLocation": "current",
-  "attachmentFolderPath": "_Recursos/Imágenes"
+  "attachmentFolderPath": "_Recursos/Imágenes",
+  "readableLineLength": true,
+  "showInlineTitle": true
 }
