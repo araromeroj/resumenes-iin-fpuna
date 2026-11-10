@@ -1,5 +1,3 @@
-# Unidad II: Ecuación de Estado y Teoría Cinético-Molecular
-
 ## 1. Conceptos Fundamentales de Sistemas Termodinámicos
 
 * **Sistema:** Porción del espacio delimitada (por fronteras reales o imaginarias) que se aísla para su estudio.
@@ -190,7 +188,7 @@ $$
 
 ---
 
-## Tabla Resumen de Fórmulas de la Unidad II
+## Tabla Resumen de Fórmulas de la Unidad
 
 | Nombre | Fórmula Matemática | Descripción |
 | ----- | ----- | ----- |
