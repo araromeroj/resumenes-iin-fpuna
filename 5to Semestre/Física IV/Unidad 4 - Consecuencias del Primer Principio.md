@@ -274,21 +274,22 @@ $$\eta_{\text{Diesel}} = 1 - \frac{1}{r^{\gamma - 1}} \left[ \frac{r_c^{\gamma} 
 
 ## 7. Resumen de Fórmulas de la Unidad
 
-| Nombre de la Fórmula | Fórmula en LaTeX | Descripción y Aplicación |
-| :--- | :--- | :--- |
-| **Primera Ley (Diferencial)** | $dQ = dU + P \, dV$ | Balance energético infinitesimal para procesos cuasiestáticos. |
-| **Definición de Entalpía** | $H = U + P V$ | Función de estado ideal para procesos a presión constante. |
-| **Capacidad Calorífica ($V$ constante)** | $C_v = \left( \frac{\partial u}{\partial T} \right)_V$ | Tasa de cambio de la energía interna respecto a $T$ a volumen constante. |
-| **Capacidad Calorífica ($P$ constante)** | $C_p = \left( \frac{\partial h}{\partial T} \right)_P$ | Tasa de cambio de la entalpía respecto a $T$ a presión constante. |
-| **Ecuación de Joule (Gas Ideal)** | $\left( \frac{\partial u}{\partial v} \right)_T = 0$ | Indica que la energía interna de un gas ideal solo depende de $T$. |
-| **Coeficiente Joule-Thomson** | $\mu_{JT} = \left( \frac{\partial T}{\partial P} \right)_H$ | Mide el cambio de temperatura durante una expansión isoentálpica. |
-| **Relación de Mayer** | $C_p - C_v = R$ | Relación entre las capacidades caloríficas molares de un gas ideal. |
-| **Razón de Capacidades Caloríficas** | $\gamma = \frac{C_p}{C_v}$ | Coeficiente adiabático del gas. |
-| **Proceso Adiabático ($T-V$)** | $T V^{\gamma - 1} = \text{constante}$ | Relación entre temperatura y volumen en expansión/compresión adiabática. |
-| **Proceso Adiabático ($P-V$)** | $P V^{\gamma} = \text{constante}$ | Ecuación de estado del camino para procesos adiabáticos reversibles. |
-| **Proceso Adiabático ($T-P$)** | $T P^{\frac{1 - \gamma}{\gamma}} = \text{constante}$ | Relación entre temperatura y presión en procesos adiabáticos. |
-| **Trabajo Adiabático** | $W = \frac{P_1 V_1 - P_2 V_2}{\gamma - 1}$ | Trabajo realizado por/sobre el gas en un proceso adiabático. |
-| **Eficiencia Térmica General** | $\eta = 1 - \frac{\|Q_C\|}{Q_H}$ | Eficiencia de cualquier máquina térmica que opera en ciclo. |
-| **Eficiencia de Carnot** | $\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H}$ | Eficiencia máxima teórica asignada a dos fuentes térmicas a $T_H$ y $T_C$. |
-| **Eficiencia Ciclo Otto** | $\eta_{\text{Otto}} = 1 - \frac{1}{r^{\gamma - 1}}$ | Eficiencia ideal de un motor a gasolina en función de la razón de compresión $r$. |
-| **Eficiencia Ciclo Diesel** | $\eta_{\text{Diesel}} = 1 - \frac{1}{r^{\gamma - 1}} \left[ \frac{r_c^{\gamma} - 1}{\gamma (r_c - 1)} \right]$ | Eficiencia ideal de un motor diésel en función de $r$ y la razón de corte $r_c$. |
+| Nombre de la Fórmula                     | Fórmula en LaTeX                                                                                               | Descripción y Aplicación                                                          |
+| :--------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| **Primera Ley (Diferencial)**            | $dQ = dU + P \, dV$                                                                                            | Balance energético infinitesimal para procesos cuasiestáticos.                    |
+| **Definición de Entalpía**               | $H = U + P V$                                                                                                  | Función de estado ideal para procesos a presión constante.                        |
+| **Capacidad Calorífica ($V$ constante)** | $C_v = \left( \frac{\partial u}{\partial T} \right)_V$                                                         | Tasa de cambio de la energía interna respecto a $T$ a volumen constante.          |
+| **Capacidad Calorífica ($P$ constante)** | $C_p = \left( \frac{\partial h}{\partial T} \right)_P$                                                         | Tasa de cambio de la entalpía respecto a $T$ a presión constante.                 |
+| **Ecuación de Joule (Gas Ideal)**        | $\left( \frac{\partial u}{\partial v} \right)_T = 0$                                                           | Indica que la energía interna de un gas ideal solo depende de $T$.                |
+| **Coeficiente Joule-Thomson**            | $\mu_{JT} = \left( \frac{\partial T}{\partial P} \right)_H$                                                    | Mide el cambio de temperatura durante una expansión isoentálpica.                 |
+| **Relación de Mayer**                    | $C_p - C_v = R$                                                                                                | Relación entre las capacidades caloríficas molares de un gas ideal.               |
+| **Razón de Capacidades Caloríficas**     | $\gamma = \frac{C_p}{C_v}$                                                                                     | Coeficiente adiabático del gas.                                                   |
+| **Proceso Adiabático ($T-V$)**           | $T V^{\gamma - 1} = \text{constante}$                                                                          | Relación entre temperatura y volumen en expansión/compresión adiabática.          |
+| **Proceso Adiabático ($P-V$)**           | $P V^{\gamma} = \text{constante}$                                                                              | Ecuación de estado del camino para procesos adiabáticos reversibles.              |
+| **Proceso Adiabático ($T-P$)**           | $T P^{\frac{1 - \gamma}{\gamma}} = \text{constante}$                                                           | Relación entre temperatura y presión en procesos adiabáticos.                     |
+| **Entalpía en Procesos Adiabáticos**     | $H=n.C_p(T_2-T_1)$                                                                                             |                                                                                   |
+| **Trabajo Adiabático**                   | $W = \frac{P_1 V_1 - P_2 V_2}{\gamma - 1}$                                                                     | Trabajo realizado por/sobre el gas en un proceso adiabático.                      |
+| **Eficiencia Térmica General**           | $\eta = 1 - \frac{\|Q_C\|}{Q_H}$                                                                               | Eficiencia de cualquier máquina térmica que opera en ciclo.                       |
+| **Eficiencia de Carnot**                 | $\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H}$                                                                   | Eficiencia máxima teórica asignada a dos fuentes térmicas a $T_H$ y $T_C$.        |
+| **Eficiencia Ciclo Otto**                | $\eta_{\text{Otto}} = 1 - \frac{1}{r^{\gamma - 1}}$                                                            | Eficiencia ideal de un motor a gasolina en función de la razón de compresión $r$. |
+| **Eficiencia Ciclo Diesel**              | $\eta_{\text{Diesel}} = 1 - \frac{1}{r^{\gamma - 1}} \left[ \frac{r_c^{\gamma} - 1}{\gamma (r_c - 1)} \right]$ | Eficiencia ideal de un motor diésel en función de $r$ y la razón de corte $r_c$.  |
