@@ -1,0 +1,12 @@
+La Hacemos fácil. Contenidos para el segundo parcial:
+- [ ] 6.3 Control de congestión (5ta edición)
+- [ ] 6.4 Protocolos de transporte en Internet: UDP (5ta edición)
+- [ ] 6.5 Protocolos de transporte en Internet: TCP (5ta edición) 6.51 a 6.5.10
+- [ ] 6.5 Continuación. 6.5.11 TCP CUBIC (6ta edición).
+- [ ] 6.6 Protocolos de Transporte y control de congestión (6ta edición)
+- [ ] 6.7 Asuntos de desempeño (6ta edición)
+- [ ] 7.1 El sistema DNS . (6ta edición)
+- [ ] 7.2 Correo electrónico (5ta edición)
+- [ ] 7.3 La WWW 7.3.1 a 7.3.3 (5ta edición)
+- [ ] 7.3 La World Wide Web
+- [ ] 7.3.4 (6ta edición)
