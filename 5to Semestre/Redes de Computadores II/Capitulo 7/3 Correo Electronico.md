@@ -15,7 +15,6 @@ La arquitectura del sistema de correo electrónico se organiza en torno a dos su
     
     - Son procesos de servidor que se ejecutan continuamente en segundo plano en las máquinas servidoras de correo.
     - **Funciones:** Mueven automáticamente los mensajes a través de la red desde el origen hasta el destino utilizando el protocolo **SMTP** (_Simple Mail Transfer Protocol_, RFC 822 / RFC 5321) e informan el estado de entrega o errores.
-    - **Funciones avanzadas:** Gestionan listas de distribución masiva, copias carbón (Cc), copias ocultas (Bcc), prioridades y soporte para correo cifrado.
 3. **Buzones de Correo (_Mailboxes_):**
     
     - Son repositorios alojados en los servidores de correo que almacenan los mensajes entrantes de cada usuario.
@@ -41,14 +40,7 @@ Para permitir el transporte y la lectura adecuada, el sistema establece una dist
     - **Cuerpo (_Body_):** Contiene el texto o material destinado exclusivamente al receptor humano.
 # Seccion 7.2.3 Agente de usuario
 
-El **agente de usuario** (conocido popularmente como **lector de correo** o MUA, _Mail User Agent_) es un programa que acepta una serie de comandos para redactar, recibir, responder y organizar mensajes, además de permitir la manipulación remota de los buzones de correo.
-
-- **Ejemplos populares:** Google Gmail, Microsoft Outlook, Mozilla Thunderbird y Apple Mail.
-- **Entorno de ejecución:** Se ejecuta localmente en el dispositivo del usuario (PC, laptop, smartphone) y solo funciona cuando el usuario lo inicia, a diferencia de los agentes de transferencia (MTA), que son procesos de servidor que se ejecutan continuamente en segundo plano.
-#### Tipos de Interfaz
-
-- **Gráficas y Táctiles (Modernas):** Basadas en menús, botones e iconos accionables mediante ratón o pantallas táctiles en dispositivos móviles.
-- **Basadas en Texto (Clásicas):** Lectores más antiguos como _Elm_, _mh_ y _Pine_, que funcionan en consola y responden a comandos de un solo carácter desde el teclado.
+![[Pasted image 20261028104806.png|468]] 
 #### Elementos Principales de la Interfaz y Resumen del Buzón
 
 Al iniciar el agente de usuario, este presenta un **resumen formateado del contenido del buzón** (por lo general ordenado por fecha de recepción, mostrando los más recientes primero):
@@ -89,15 +81,17 @@ El RFC 5322 define un conjunto de cabeceras estándar orientadas a la entrega y 
 Existen cabeceras adicionales utilizadas por los agentes de usuario:
 
 - **`Date:`:** Fecha y hora de emisión del mensaje.
-- **`Respuesta a:` (`Reply-To:`):** Dirección a la que deben dirigirse las respuestas. Se utiliza cuando el emisor o redactor no desea recibir las respuestas en su propia cuenta.
+- **`Respuesta a:` (`Reply-To:`):** Dirección a la que deben dirigirse las respuestas.
 - **`Message-Id:`:** Identificador único generado automáticamente para enlazar mensajes en conversaciones y evitar entregas duplicadas.
 - **`In-Reply-To:`** y **`Referencias:`:** Almacenan el `Message-Id` del mensaje original al que se responde para agrupar correos por hilos.
 - **`Asunto:` (`Subject:`):** Breve resumen del contenido para la vista previa en el lector de correo.
-- **Cabeceras Privadas (`X-`):** El estándar permite a los usuarios o aplicaciones inventar cabeceras personalizadas. Por convención, deben comenzar con la cadena **`X-`** para garantizar que nunca colisionen con futuras cabeceras oficiales estandarizadas.
+- **Cabeceras Privadas (`X-`):** El estándar permite a los usuarios o aplicaciones inventar cabeceras personalizadas. 
 #### MIME (_Multipurpose Internet Mail Extensions_)
-Inicialmente, el correo electrónico solo admitía texto plano en inglés codificado en **ASCII de 7 bits** con un límite máximo de 1000 caracteres por línea. En la década de 1990, la expansión global de Internet hizo necesario enviar textos con acentos/diacríticos, alfabetos no latinos (ruso, hebreo, japonés) y archivos binarios (imágenes, audio, ejecutable, documentos).
+Inicialmente, el correo electrónico solo admitía texto plano en inglés codificado en **ASCII de 7 bits** con un límite máximo de 1000 caracteres por línea. 
 
-Para solucionar esto sin romper la infraestructura de servidores existente, se creó **MIME** (RFC 2045, RFC 4288, RFC 4289). MIME añade estructura al cuerpo del mensaje e introduce **cinco nuevas cabeceras**:
+Permite enviar archivos adjuntos (audio, video, imágenes,etc), además de permitir idiomas con marcas diacríticas (francés, alemán), idiomas no basados en el alfabeto latino.
+
+La idea básica es mantener el formato RFC 822 añadiendo estructura al cuerpo del mensaje y definiendo reglas de codificación para transferencia de mensajes no ASCII, manteniendo compatibilidad con la estructura actual. MIME añade estructura al cuerpo del mensaje e introduce **cinco nuevas cabeceras**:
 
 1. **`Versión MIME:` (`MIME-Version:`):** Identifica la versión de MIME utilizada (ej. `1.0`). Si esta cabecera no está presente, se asume texto plano en ASCII.
 2. **`Content-Description:`:** Cadena de texto legible que describe el contenido del mensaje.
@@ -110,7 +104,7 @@ Para solucionar esto sin romper la infraestructura de servidores existente, se c
 - **7-bit:** ASCII puro sin líneas superiores a 1000 caracteres.
 - **8-bit:** Permite caracteres extendidos de 8 bits (valores 0–255) respetando el límite de longitud de línea.
 - **Binary:** Permite datos binarios sin restricción de longitud de línea (ej. archivos ejecutables).
-- **Base64:** Divide grupos de 24 bits de datos binarios en cuatro unidades de 6 bits, representando cada una mediante 64 caracteres ASCII imprimibles. Añade un ~33% de sobrecarga pero garantiza la transmisión segura sobre cualquier servidor tradicional.
+- **Base64:** Divide grupos de 24 bits de datos binarios en cuatro unidades de 6 bits, representando cada una mediante 64 caracteres ASCII imprimibles. 
 - **Quoted-Printable:** Ideal para textos mayoritariamente ASCII con pocos caracteres especiales. Mantiene intactos los caracteres normales y codifica los especiales mediante su valor hexadecimal precedido de un signo igual (ej. la letra `ñ` se codifica como `=C3=B1`).
 #### Tipos de Contenido (_Content-Type_):
 Se definen mediante la sintaxis **`tipo/subtipo`** (administrados centralmente por la IANA):
@@ -132,7 +126,7 @@ El protocolo SMTP (especificado originalmente en la RFC 821 y actualizado en la 
 SMTP es un protocolo sencillo basado en texto ASCII, lo que facilita su desarrollo, prueba y depuración (permitiendo incluso realizar pruebas manuales mediante la herramienta `telnet` al puerto 25 de un servidor).
 El proceso de transferencia sigue un diálogo cliente-servidor sobre una conexión **TCP en el puerto 25**:
 - **Establecimiento de la sesión:** El emisor (cliente) inicia una conexión TCP al puerto 25 del servidor receptor. El servidor responde primero enviando una línea de bienvenida con el código numérico `220` para anunciar su identidad y disponibilidad. Si el servidor no está preparado, el cliente cierra la conexión para reintentar más tarde.
-- **Saludo inicial (`HELO` / `EHLO`):** El cliente se identifica enviando el comando `HELO` seguido del nombre de su dominio.
+- **Saludo inicial (`HELO`):** El cliente se identifica enviando el comando `HELO` seguido del nombre de su dominio.
 - **Identificación del sobre:**
     - El cliente emite `MAIL FROM: <direccion_emisor>` para indicar la dirección del remitente.
     - A continuación, transmite uno o varios comandos `RCPT TO: <direccion_destino>` para especificar a los destinatarios. Cada destinatario es aceptado o rechazado individualmente por el servidor.

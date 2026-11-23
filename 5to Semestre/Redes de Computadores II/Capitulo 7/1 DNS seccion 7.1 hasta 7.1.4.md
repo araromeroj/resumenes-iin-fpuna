@@ -1,10 +1,8 @@
-# Capítulo 7: La Capa de Aplicación (Visión General)
-La **Capa de Aplicación** es el nivel superior de la arquitectura de red donde residen las aplicaciones reales con las que interactúan los usuarios. Todas las capas inferiores existen exclusivamente para proporcionar servicios de transporte confiables o no confiables, pero no realizan el trabajo directo que requieren los usuarios.
-
+# Capítulo 7: La Capa de Aplicación 
+La **Capa de Aplicación** es el nivel superior de la arquitectura de red donde residen las aplicaciones reales con las que interactúan los usuarios. 
 Incluso en este nivel, existen **protocolos de apoyo** fundamentales que permiten el funcionamiento global de las aplicaciones. El más importante es el **Sistema de Nombres de Dominio (DNS)**, el cual asigna nombres de Internet a direcciones IP. A partir de este servicio de soporte se estructuran las aplicaciones reales de la red, como el correo electrónico, la _World Wide Web_ (WWW), la transmisión de multimedia (_video streaming_) y las redes de distribución de contenidos (CDNs y P2P).
 # Sección 7.1: El Sistema de Nombres de Dominio (DNS)
 
-El **DNS** (_Domain Name System_) es un esquema de nombres jerárquico implementado sobre una base de datos distribuida. Está especificado principalmente en las RFC 1034, RFC 1035 y RFC 2181.
 #### 7.1.1 Historia y Visión General
 - **Contexto histórico:** Antes de 1983, la red ARPANET mantenía un archivo de texto centralizado denominado `hosts.txt` que contenía el listado de todos los nombres de las máquinas con sus correspondientes direcciones IP. Cada noche, los _hosts_ de la red descargaban una copia actualizada de este archivo. Sin embargo, el crecimiento exponencial de la red provocó la saturación del sistema, retrasos en las descargas y frecuentes conflictos de nombres al carecer de una administración descentralizada.
 - **Creación y propósito:** En 1983 se creó el DNS para resolver estos problemas. Su función principal es **traducir nombres de dominio legibles por humanos a direcciones IP numéricas**.
@@ -41,8 +39,8 @@ El proceso de resolución abarca la interacción entre tres componentes clave:
     - Para evitar repetir todo el proceso iterativo en cada consulta, tanto el _local resolver_ como el _stub resolver_ guardan las respuestas obtenidas en una memoria caché local.
     - Cada registro incluye un campo **Time-To-Live (TTL)** que indica la cantidad de segundos que esa información puede ser conservada en caché antes de ser descartada.
 - **Seguridad y Privacidad en la Búsqueda:**
-    - **Minimización de QNAME:** Para proteger la privacidad del usuario y evitar revelar el nombre completo consultado (_FQDN_) a todos los servidores de la cadena, el _local resolver_ envía a cada nivel jerárquico únicamente la etiqueta del nombre estrictamente necesaria para continuar la delegación (por ejemplo, envía solo `uchicago.edu` al servidor del TLD `.edu`).
-    - **Codificación 0x20:** Dado que los nombres en las consultas no distinguen entre mayúsculas y minúsculas, este mecanismo altera arbitrariamente las mayúsculas y minúsculas del nombre consultado (ej. `uCHicaGO.EDu`) para inyectar bits de entropía adicionales al ID de transacción de 16 bits, dificultando ataques de envenenamiento de caché como el ataque Kaminsky.
+    - **Minimización de QNAME:** Para proteger la privacidad del usuario y evitar revelar el nombre completo consultado (_FQDN_) Fully Qualified Domain Name, a todos los servidores de la cadena, el _local resolver_ envía a cada nivel jerárquico únicamente la etiqueta del nombre estrictamente neces aria para continuar la delegación (por ejemplo, envía solo `uchicago.edu` al servidor del TLD `.edu`).
+    - **Evolución del transporte:** Inicialmente el tráfico de DNS se realizaba solo sobre el protocolo UDP; sin embargo, existe una tendencia creciente a adoptar TCP para posibilitar implementaciones cifradas y más seguras como DNS over TLS (DoT) y DNS over HTTPS (DoH).
 #### 7.1.3 El Espacio de Nombres DNS y su Jerarquía
 
 El espacio de nombres está organizado como una estructura jerárquica en árbol, análoga al sistema postal:
@@ -52,14 +50,14 @@ El espacio de nombres está organizado como una estructura jerárquica en árbol
 - **Dominios de Nivel Superior (TLDs - _Top-Level Domains_):** Administrados a nivel global por la **ICANN**. Se dividen en dos categorías principales:
     1. **gTLDs (genéricos):** `.com`, `.edu`, `.org`, `.net`, `.gov`, `.biz`, entre otros.
     2. **ccTLDs (por país):** Códigos geográficos de dos letras basados en la norma ISO 3166 (ej. `.py`, `.us`, `.uk`, `.nl`).
-- **Dominios de Segundo Nivel y Subdominios:** Constituyen las ramas intermedias y hojas del árbol. Por ejemplo, en el nombre `cs.uchicago.edu`, `uchicago` es el dominio de segundo nivel registrado bajo `.edu`, mientras que `cs` es un subdominio administrado internamente por el departamento de informática de esa universidad[6][7].
+- **Dominios de Segundo Nivel y Subdominios:** Constituyen las ramas intermedias y hojas del árbol. Por ejemplo, en el nombre `cs.uchicago.edu`, `uchicago` es el dominio de segundo nivel registrado bajo `.edu`, mientras que `cs` es un subdominio administrado internamente por el departamento de informática de esa universidad.
 - **Delegación y límites:** Cada dominio tiene autoridad para administrar y delegar subdominios por debajo de él (ejemplo: `.edu.py` bajo el ccTLD `.py`). Una vez registrado un dominio de segundo nivel, la organización propietaria puede crear nuevos subdominios sin solicitar permisos adicionales. Los nombres siguen divisiones organizativas y no coinciden necesariamente con las fronteras de las redes físicas o LANs.
 
-![[Pasted image 20261025124343.webp|456]]
-##### Cadena de Administración del Árbo
+![[Pasted image 20261025124343.png|528]]
+##### Cadena de Administración del Árbol
 La administración del espacio de nombres se distribuye en una cadena de tres niveles jerárquicos:
 1. **ICANN (_Internet Corporation for Assigned Names and Numbers_):** Organización internacional que supervisa el sistema global de nombres y delega la gestión de cada TLD.
-2. **Registry (Registro):** Entidad que administra un TLD específico. Por ejemplo, _Verisign_ administra el TLD `.com`, mientras que el _NIC Paraguay_ administra el ccTLD `.py`.
+2. **Registry (Registro):** Entidad que administra un TLD específico. Por ejemplo, _Verisign_ administra el TL![[_Recursos/Imágenes/Pasted image 20261025124343.webp|456]]administra el ccTLD `.py`.
 3. **Registrar (Registrador Acreditado):** Empresas autorizadas por ICANN o por el _Registry_ de un país para comercializar y registrar dominios de segundo nivel directamente a los usuarios (ej. GoDaddy, Namecheap).
 ##### Aspectos Clave del Árbol de Dominios
 El funcionamiento operativo del árbol se rige por varios principios fundamentales:
@@ -80,14 +78,14 @@ El funcionamiento operativo del árbol se rige por varios principios fundamental
 ##### Ampliaciones y Mejoras en las Consultas
 Con el crecimiento de la red y las exigencias de rendimiento y seguridad, se introdujeron extensiones para sofisticar las consultas:
 - **EDNS Client Subnet (EDNS0 CS):** En esta extensión, el resolutor recursivo local incluye la subred IP del cliente original (_stub resolver_) en la consulta enviada al servidor autoritativo. Esto permite al servidor de nombres autoritativo identificar la ubicación geográfica o topológica del cliente y devolver la dirección IP de un servidor réplica cercano, lo cual es fundamental para el funcionamiento de las Redes de Distribución de Contenidos (CDNs).
-- **Codificación 0x20:** El ID de transacción original de 16 bits del DNS era vulnerable a ataques de envenenamiento de caché como el ataque Kaminsky. Dado que los nombres en las consultas DNS no distinguen entre mayúsculas y minúsculas, los resolutores modernos alternan arbitrariamente entre mayúsculas y minúsculas en cada letra del nombre buscado (QNAME) para inyectar bits de entropía adicionales en la transacción sin alterar el protocolo.
+- **Codificación 0x20:** Dado que los nombres en las consultas no distinguen entre mayúsculas y minúsculas, este mecanismo altera arbitrariamente las mayúsculas y minúsculas del nombre consultado (ej. `uCHicaGO.EDu`) para inyectar bits de entropía adicionales al ID de transacción de 16 bits, dificultando ataques de envenenamiento de caché como el ataque Kaminsky.
 ##### Estructura del Registro de Recurso (La 5-tupla)
 Los datos devueltos en las respuestas DNS se organizan en **registros de recursos**. Aunque internamente se codifican en formato binario, en texto se representan mediante una estructura de cinco campos o **5-tupla**:
 
 $[{DomainName} | {Timetolive} | {Class} |{Type} | {Value}]$
 
 1. **Domain_name (Nombre de Dominio):** Indica el dominio al que aplica el registro y funciona como la clave principal de búsqueda en la base de datos.
-2. **Time_to_live (TTL):** Expresa la estabilidad del registro mediante la cantidad de segundos que una entrada puede ser conservada en una memoria caché remota antes de ser descartada. Para datos estables se asignan valores elevados (como 86400 segundos = 1 día), mientras que para información volátil o balanceo de carga se usan valores reducidos (como 60 segundos).
+2. **Time_to_live (TTL):** Expresa la estabilidad del registro mediante la cantidad de segundos que una entrada puede ser conservada en una memoria caché remota antes de ser descartada. 
 3. **Class (Clase):** Especifica la clase de red; para el tráfico de Internet adopta prácticamente siempre el valor `IN`.
 4. **Type (Tipo):** Define el tipo de registro y la estructura de los datos contenidos.
 5. **Value (Valor):** Es la carga útil o contenido del registro, el cual varía entre enteros de 32/128 bits, nombres de dominio o cadenas ASCII según el tipo.
@@ -112,6 +110,6 @@ En DNSSEC, los registros del mismo tipo para un dominio se agrupan en conjuntos 
 1. **RRSIG (Resource Record Signature):** Almacena la firma digital calculada sobre un RRSET, generada con la clave privada del servidor autoritativo.
 2. **DNSKEY:** Almacena la clave pública utilizada para verificar las firmas RRSIG de los conjuntos RRSET; esta clave pública se encuentra firmada a su vez por la clave privada del dominio padre para establecer la cadena de confianza.
 #### Zona DNS 
-Zonas DNS DNS se divide en zonas delegadas dentro de la jerarquía de dominios. Esto permite que distintas organizaciones o suborganizaciones gestionen sus propios registros, manteniendo el sistema distribuido, escalable y tolerante a fallos.
+Zonas DNS se divide en zonas delegadas dentro de la jerarquía de dominios. Esto permite que distintas organizaciones o suborganizaciones gestionen sus propios registros, manteniendo el sistema distribuido, escalable y tolerante a fallos.
 
 [[2 DNS seccion 7.1.5 hasta 7.1.8]]

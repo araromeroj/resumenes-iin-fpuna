@@ -1,7 +1,7 @@
 El protocolo **IPv4 (Internet Protocol versión 4)** es el "pegamento" que mantiene unida a la Internet, encargándose de transportar paquetes de datos desde un origen a un destino de la manera más eficiente posible (**"mejor esfuerzo"**), sin importar cuántas redes intermedias deba atravesar.
 ##  El Formato del Datagrama IPv4
 
-![[Pasted image 20260512150703.png|605]]
+![[Pasted image 20260512150703.webp|605]]
 La cabecera tiene una **parte fija de 20 bytes** y una parte opcional de longitud variable.
 
 >[!info] Explicacion de cada campo 

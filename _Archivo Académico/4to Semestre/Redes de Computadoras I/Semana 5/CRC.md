@@ -19,11 +19,11 @@ Todos los errores de E(x) que sean divisibles entre G(x) no seran detectados.
 La capacidad del CRC para detectar fallos depende de las propiedades de G(x):
 
 - **Errores de un solo bit:** Si G(x) tiene más de un término (lo cual incluye siempre el término xn y el término x0), nunca podrá dividir a un error de tipo E(x)=xi, por lo que **detectará todos los errores de un solo bit**.
-![[Pasted image 20260421130530.png]]
+![[Pasted image 20260421130530.webp]]
 
 
 - **Errores de dos bits:** Para detectar todos los errores dobles aislados, G(x) no debe dividir a xt+1 para ningún valor de t hasta la longitud máxima de la trama o bien hasta t menores o iguales a la longitud del mensaje.
-![[Pasted image 20260421130836.png|697]]
+![[Pasted image 20260421130836.webp|697]]
 
 - **Número impar de bits con error:** Si se incluye (x+1) **como factor de** G(x), el código podrá detectar todos los errores que afecten a un número impar de bits. Si al dividir G(x) entre x+1 el resto es cero, significa que todos los errores con numero impar de bits seran detectados.
 - **Errores de ráfaga (Burst errors):**

@@ -123,8 +123,7 @@ Para lograr la ilusión de una llamada local, RPC utiliza dos componentes client
 - **Stub del Servidor:** Procedimiento en la máquina remota que recibe el mensaje de red y llama al procedimiento real.
 
 #### B. Pasos para ejecutar una RPC
-![[Pasted image 20260924114636.webp|527]]
-1. El programa cliente hace una llamada local estándar al _stub_ del cliente.
+![![[_Recursos/Imágenes/Pasted image 20260924114636.webp|527]]. El programa cliente hace una llamada local estándar al _stub_ del cliente.
 2. El _stub_ del cliente empaqueta los parámetros en un formato neutro para la red (proceso denominado _**marshaling**_ o serialización) y realiza una llamada al sistema operativo.
 3. El SO del cliente envía el mensaje por la red hacia el servidor.
 4. El SO del servidor entrega el paquete entrante al _stub_ del servidor.

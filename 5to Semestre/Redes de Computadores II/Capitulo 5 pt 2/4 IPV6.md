@@ -66,7 +66,7 @@ Aunque opera en la capa de red (Capa 3), el protocolo ICMP no envía sus mensaje
 
 - Un mensaje ICMP se entrega a la capa **IP**, la cual lo **encapsula** dentro de un datagrama IP estándar como si fueran datos normales antes de transmitirlo.
 - Cada mensaje contiene una **cabecera** con tres campos fijos de 4 bytes en total: **Tipo** (8 bits), **Código** (8 bits) y **Suma de comprobación** (16 bits), seguidos de datos que dependen del tipo de mensaje.
-![[Pasted image 20260516191305.png|573]]
+![[Pasted image 20260516191305.webp|573]]
 # Principales Tipos de Mensajes ICMP
 
 Existen diversos tipos de mensajes definidos para diferentes diagnósticos y situaciones de error:
