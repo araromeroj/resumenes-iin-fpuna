@@ -26,4 +26,12 @@ El objetivo de los algoritmos de enrutamiento es buscar la ruta más corta o la 
 - El camino más corto es el de menor costo.
 - Si los pesos son todos, se elige el de menor cantidad de saltos.
 
-## Inundación
+### Inundación
+- Sí o si encuentra la ruta más larga
+- Es un tipo de algoritmo de broadcast, envía a todos los vecinos
+- Se logra llegar a todos los nodos de la red
+
+### Enrutamiento por Vector de Distancia (Bellman Ford)
+- Parecido a Dijkstra, pero encuentra el camino más corto dividido entre nodos
+>[!info] Funcionamiento
+>Cada nodo conoce la distancia solamente a sus vecinos, luego cada uno anuncia sus vecinos a todos los nodos (es el vector de distancia a sus vecinos), cada nodo usa estos vectores para actualizar sus distancias a sus vecinos. Esto se repite hasta encontrar el camino minimo.
