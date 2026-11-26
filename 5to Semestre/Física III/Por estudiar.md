@@ -1,0 +1,15 @@
+En un examen final se evaluan todos los temas desarrollados:
+- [ ] Movimiento armónico simple
+- [ ] Movimiento sub amortiguado
+- [ ] Movimiento críticamente amortiguado
+- [ ] Movimiento sobre amortiguado
+- [ ] Movimiento forzado
+- [ ] Función de onda
+- [ ] Ondas en cuerdas
+- [ ] Ondas de sonido, intensidad de ondas sonoras
+- [ ] Nivel sonoro
+- [ ] Efecto Doppler
+- [ ] Función de onda en ondas electromagnéticas
+- [ ] Vector de Poynting
+- [ ] Intensidad de ondas electromagnéticas
+- [ ] Presión de radiación
